@@ -1,0 +1,4 @@
+scenario,issue
+S2,All Ultimatum Game fixed-strategy conditions have zero pair payoff. Treat these as a technical/baseline limitation; do not use as substantive UG adaptation evidence.
+All,"mean_overall_state is negative in most conditions and negative_state_share is high. Interpret internal-state metrics comparatively, not as direct psychological validation."
+All,Runner output explicitly labels tables as descriptive and not sufficient for H2/human-like behavior confirmation.

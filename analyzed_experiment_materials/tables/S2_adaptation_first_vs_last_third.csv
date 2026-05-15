@@ -1,0 +1,28 @@
+game_name,agent_1_type,fixed_strategy_2,condition_label,metric_name,first_metric,last_metric,delta_metric_mean,delta_metric_std,first_payoff,last_payoff,delta_payoff_mean,delta_payoff_std,episodes_n
+Battle of Sexes,emotional,always_cooperate,emotional-neutral-neutral__vs__fixed-always_cooperate,agreement_flag,0.0,0.0,0.0,0.0,96.45,97.95,1.5,24.147572614196537,20
+Battle of Sexes,emotional,always_defect,emotional-neutral-neutral__vs__fixed-always_defect,agreement_flag,0.0,0.0,0.0,0.0,67.4,58.7,-8.7,14.513514573085248,20
+Battle of Sexes,emotional,tit_for_tat,emotional-neutral-neutral__vs__fixed-tit_for_tat,agreement_flag,0.0,0.0,0.0,0.0,68.35,63.8,-4.55,17.515331629896796,20
+Battle of Sexes,emotional_rational,always_cooperate,hybrid-neutral-neutral__vs__fixed-always_cooperate,agreement_flag,0.0,0.0,0.0,0.0,99.3,103.2,3.9,24.836094277228224,20
+Battle of Sexes,emotional_rational,always_defect,hybrid-neutral-neutral__vs__fixed-always_defect,agreement_flag,0.0,0.0,0.0,0.0,65.7,67.9,2.2,14.894718244362576,20
+Battle of Sexes,emotional_rational,tit_for_tat,hybrid-neutral-neutral__vs__fixed-tit_for_tat,agreement_flag,0.0,0.0,0.0,0.0,67.25,66.5,-0.75,13.867322437260459,20
+Battle of Sexes,rational,always_cooperate,rational__vs__fixed-always_cooperate,agreement_flag,0.0,0.0,0.0,0.0,110.1,151.35,41.25,16.657146403744836,20
+Battle of Sexes,rational,always_defect,rational__vs__fixed-always_defect,agreement_flag,0.0,0.0,0.0,0.0,75.7,104.8,29.1,10.59245014149229,20
+Battle of Sexes,rational,tit_for_tat,rational__vs__fixed-tit_for_tat,agreement_flag,0.0,0.0,0.0,0.0,76.45,104.8,28.35,10.454286454041611,20
+Prisoners Dilemma,emotional,always_cooperate,emotional-neutral-neutral__vs__fixed-always_cooperate,cooperation_flag_1,0.4878787878787879,0.5212121212121212,0.033333333333333326,0.14021669676991588,265.6,261.2,-4.4,18.508603973628905,20
+Prisoners Dilemma,emotional,always_defect,emotional-neutral-neutral__vs__fixed-always_defect,cooperation_flag_1,0.4893939393939394,0.5303030303030303,0.04090909090909091,0.12260956806640959,33.7,31.0,-2.7,8.092231492383036,20
+Prisoners Dilemma,emotional,tit_for_tat,emotional-neutral-neutral__vs__fixed-tit_for_tat,cooperation_flag_1,0.48636363636363633,0.5295454545454545,0.04318181818181817,0.12650667535998825,148.35,150.1,1.75,15.361863236771221,20
+Prisoners Dilemma,emotional_rational,always_cooperate,hybrid-neutral-neutral__vs__fixed-always_cooperate,cooperation_flag_1,0.5045454545454545,0.44545454545454544,-0.05909090909090907,0.1162147672127441,263.4,271.2,7.8,15.340349272082225,20
+Prisoners Dilemma,emotional_rational,always_defect,hybrid-neutral-neutral__vs__fixed-always_defect,cooperation_flag_1,0.4992424242424242,0.4575757575757575,-0.041666666666666644,0.10564683471442542,33.05,35.8,2.75,6.97269109115208,20
+Prisoners Dilemma,emotional_rational,tit_for_tat,hybrid-neutral-neutral__vs__fixed-tit_for_tat,cooperation_flag_1,0.503030303030303,0.4712121212121212,-0.0318181818181818,0.14828290795519397,149.9,142.05,-7.85,19.879306881912736,20
+Prisoners Dilemma,rational,always_cooperate,rational__vs__fixed-always_cooperate,cooperation_flag_1,0.45151515151515154,0.206060606060606,-0.24545454545454543,0.10504181455076704,270.4,302.8,32.4,13.865519520701246,20
+Prisoners Dilemma,rational,always_defect,rational__vs__fixed-always_defect,cooperation_flag_1,0.42727272727272725,0.206060606060606,-0.2212121212121212,0.08008380898323549,37.8,52.4,14.6,5.285531392893544,20
+Prisoners Dilemma,rational,tit_for_tat,rational__vs__fixed-tit_for_tat,cooperation_flag_1,0.4333333333333333,0.21060606060606055,-0.22272727272727266,0.08153415169017844,142.05,105.7,-36.35,12.062447163778476,20
+Ultimatum Game,emotional,always_cooperate,emotional-neutral-neutral__vs__fixed-always_cooperate,fairness_proxy,0.8533181818181819,0.8486818181818181,-0.00463636363636364,0.06584274832972878,0.0,0.0,0.0,0.0,20
+Ultimatum Game,emotional,always_defect,emotional-neutral-neutral__vs__fixed-always_defect,fairness_proxy,0.8533181818181819,0.8486818181818181,-0.00463636363636364,0.06584274832972878,0.0,0.0,0.0,0.0,20
+Ultimatum Game,emotional,tit_for_tat,emotional-neutral-neutral__vs__fixed-tit_for_tat,fairness_proxy,0.8533181818181819,0.8486818181818181,-0.00463636363636364,0.06584274832972878,0.0,0.0,0.0,0.0,20
+Ultimatum Game,emotional_rational,always_cooperate,hybrid-neutral-neutral__vs__fixed-always_cooperate,fairness_proxy,0.8469015151515151,0.8507196969696971,0.0038181818181818317,0.057791181809928024,0.0,0.0,0.0,0.0,20
+Ultimatum Game,emotional_rational,always_defect,hybrid-neutral-neutral__vs__fixed-always_defect,fairness_proxy,0.8469015151515151,0.8507196969696971,0.0038181818181818317,0.057791181809928024,0.0,0.0,0.0,0.0,20
+Ultimatum Game,emotional_rational,tit_for_tat,hybrid-neutral-neutral__vs__fixed-tit_for_tat,fairness_proxy,0.8469015151515151,0.8507196969696971,0.0038181818181818317,0.057791181809928024,0.0,0.0,0.0,0.0,20
+Ultimatum Game,rational,always_cooperate,rational__vs__fixed-always_cooperate,fairness_proxy,0.8486287878787879,0.8423939393939394,-0.006234848484848489,0.1421634695290327,0.0,0.0,0.0,0.0,20
+Ultimatum Game,rational,always_defect,rational__vs__fixed-always_defect,fairness_proxy,0.8486287878787879,0.8423939393939394,-0.006234848484848489,0.1421634695290327,0.0,0.0,0.0,0.0,20
+Ultimatum Game,rational,tit_for_tat,rational__vs__fixed-tit_for_tat,fairness_proxy,0.8486287878787879,0.8423939393939394,-0.006234848484848489,0.1421634695290327,0.0,0.0,0.0,0.0,20

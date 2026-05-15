@@ -1,0 +1,13 @@
+game_name,condition_label,pair_total_payoff_mean,agent_1_payoff_mean,agent_2_payoff_mean,agent_1_mean_overall_state,agent_2_mean_overall_state,agent_1_negative_state_share,agent_2_negative_state_share,game_metric_name,game_metric_value
+Prisoners Dilemma,hybrid-neutral-neutral__vs__rational,832.75,313.5,519.25,-1.0079590903357287,-0.2274687350513,0.9975,0.92125,mutual cooperation rate,0.15675
+Prisoners Dilemma,hybrid-neutral-neutral__vs__fixed-always_defect,695.35,101.55,593.8,-1.054285450302908,-0.6236068728218097,0.99925,1.0,mutual cooperation rate,0.0
+Prisoners Dilemma,hybrid-neutral-neutral__vs__fixed-tit_for_tat,884.1,443.3,440.8,-1.0620797135295452,-0.6399508489988399,0.999,1.0,mutual cooperation rate,0.2575
+Prisoners Dilemma,emotional-neutral-neutral__vs__rational,830.35,327.8,502.55,-0.8091295397154494,-0.1897805100667255,0.99925,0.8495,mutual cooperation rate,0.159
+Battle of Sexes,hybrid-neutral-neutral__vs__rational,477.25,226.05,251.2,-1.0719937133917967,-0.3883195669516744,0.998,0.973,agreement rate,0.47725
+Battle of Sexes,hybrid-neutral-neutral__vs__fixed-always_defect,497.75,199.1,298.65,-1.1005380885001477,-0.7262492052246032,0.99925,1.0,agreement rate,0.0
+Battle of Sexes,hybrid-neutral-neutral__vs__fixed-tit_for_tat,499.25,200.35,298.9,-1.1025368651894976,-0.7232748019258028,0.99925,1.0,agreement rate,0.0
+Battle of Sexes,emotional-neutral-neutral__vs__rational,509.0,243.55,265.45,-0.7981163004790454,-0.3747116020780494,0.99925,0.969,agreement rate,0.509
+Ultimatum Game,hybrid-neutral-neutral__vs__rational,1183.0,572.0575,610.9425,-1.071295196202788,-0.1755960793851625,0.9995,0.95125,acceptance rate / mean offer,0.5915 / 5.433613172814509
+Ultimatum Game,hybrid-neutral-neutral__vs__fixed-always_defect,0.0,0.0,0.0,-0.9986800508740248,-0.7521740298640427,0.99875,1.0,acceptance rate / mean offer,0.0 / 5.422996938023452
+Ultimatum Game,hybrid-neutral-neutral__vs__fixed-tit_for_tat,0.0,0.0,0.0,-0.9986800508740248,-0.7521740298640427,0.99875,1.0,acceptance rate / mean offer,0.0 / 5.422996938023452
+Ultimatum Game,emotional-neutral-neutral__vs__rational,1144.0,550.4875000000001,593.5124999999999,-0.7996298123711756,-0.1925650381756211,0.9985,0.97425,acceptance rate / mean offer,0.5720000000000001 / 5.638919480345601

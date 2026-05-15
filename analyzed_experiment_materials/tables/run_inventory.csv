@@ -1,0 +1,11 @@
+run_dir,scenario,profile,games,episodes,rounds,seeds_count,conditions,round_rows,episode_rows,summary_rows,plots_count,ok
+results/02_paper/20260511_201116_paper_S1,S1,paper,Prisoners Dilemma; Battle of Sexes; Ultimatum Game,20,200,20,48,192000,960,48,48,True
+results/02_paper/20260511_204523_paper_S2,S2,paper,Prisoners Dilemma; Battle of Sexes; Ultimatum Game,20,200,20,27,108000,540,27,152,True
+results/02_paper/20260511_210148_paper_S3,S3,paper,Prisoners Dilemma,20,200,20,27,108000,540,27,18,True
+results/02_paper_optional/20260511_213155_paper_S3,S3,paper,Prisoners Dilemma; Battle of Sexes; Ultimatum Game,20,200,20,81,324000,1620,81,48,True
+results/02_paper/20260511_211733_paper_S4,S4,paper,Prisoners Dilemma; Battle of Sexes; Ultimatum Game,20,200,20,12,48000,240,12,168,True
+results/00_smoke/20260511_193635_quick_S0,S0,quick,Prisoners Dilemma,1,20,1,1,20,1,1,13,True
+results/01_standard/20260511_194003_standard_S1,S1,standard,Prisoners Dilemma; Battle of Sexes; Ultimatum Game,10,100,10,48,48000,480,48,24,True
+results/01_standard/20260511_195447_standard_S2,S2,standard,Prisoners Dilemma; Battle of Sexes; Ultimatum Game,10,100,10,27,27000,270,27,76,True
+results/01_standard/20260511_200159_standard_S3,S3,standard,Prisoners Dilemma,10,100,10,27,27000,270,27,9,True
+results/01_standard/20260511_200637_standard_S4,S4,standard,Prisoners Dilemma; Battle of Sexes; Ultimatum Game,10,100,10,12,12000,120,12,84,True
