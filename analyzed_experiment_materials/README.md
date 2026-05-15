@@ -1,7 +1,5 @@
 # Analyzed paper experiment materials
 
-This package was generated from `paper_experiment_bundle_20260511_224550.zip`.
-
 Contents:
 - `experiment_report.docx` — Russian-language report with interpretation and recommended use in the article.
 - `experiment_report.md` — Markdown version of the report.
