@@ -1,0 +1,13 @@
+Game,Pair,Payoff,A1 state,A2 state,A1 neg.,Metric
+PD,Hybrid--Rational,832.8,-1.008,-0.227,0.998,0.157
+PD,Hybrid--Fixed D,695.4,-1.054,-0.624,0.999,0.000
+PD,Hybrid--Fixed TFT,884.1,-1.062,-0.640,0.999,0.258
+PD,Emotional--Rational,830.4,-0.809,-0.190,0.999,0.159
+BoS,Hybrid--Rational,477.2,-1.072,-0.388,0.998,0.477
+BoS,Hybrid--Fixed D,497.8,-1.101,-0.726,0.999,0.000
+BoS,Hybrid--Fixed TFT,499.2,-1.103,-0.723,0.999,0.000
+BoS,Emotional--Rational,509.0,-0.798,-0.375,0.999,0.509
+UG,Hybrid--Rational,1183.0,-1.071,-0.176,1.000,0.592
+UG,Hybrid--Fixed D,0.0,-0.999,-0.752,0.999,0.000
+UG,Hybrid--Fixed TFT,0.0,-0.999,-0.752,0.999,0.000
+UG,Emotional--Rational,1144.0,-0.800,-0.193,0.999,0.572
