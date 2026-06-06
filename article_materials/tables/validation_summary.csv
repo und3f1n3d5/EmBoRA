@@ -1,0 +1,9 @@
+model_mode,scenario,run_dir,missing_files,round_rows,episode_rows,mood_out_of_range,fatigue_out_of_range,nan_or_inf_cells,duplicate_observe_count,fallback_rows,passed
+reported_runs_compat,S1,paper_runs_reported\20260521_163020_paper_S1_reported_runs_compat,[],192000,960,0,0,0,0,0,True
+reported_runs_compat,S2,paper_runs_reported\20260521_163508_paper_S2_reported_runs_compat,[],108000,540,0,0,0,0,0,True
+reported_runs_compat,S3,paper_runs_reported\20260521_163747_paper_S3_reported_runs_compat,[],108000,540,0,0,0,0,0,True
+reported_runs_compat,S4,paper_runs_reported\20260521_163931_paper_S4_reported_runs_compat,[],48000,240,0,0,0,0,0,True
+integrated_model,S1,paper_runs_integrated\20260521_173035_paper_S1_integrated_model,[],192000,960,0,0,0,0,0,True
+integrated_model,S2,paper_runs_integrated\20260521_173426_paper_S2_integrated_model,[],108000,540,0,0,0,0,0,True
+integrated_model,S3,paper_runs_integrated\20260521_174014_paper_S3_integrated_model,[],108000,540,0,0,0,0,0,True
+integrated_model,S4,paper_runs_integrated\20260521_174430_paper_S4_integrated_model,[],48000,240,0,0,0,0,0,True

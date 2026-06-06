@@ -1,0 +1,12 @@
+root,run_dir,status,reason,files_count
+paper_runs_reported,20260521_160703_paper_S1_reported_runs_compat,ignored,"incomplete run, only config or failed pre-output run",1
+paper_runs_reported,20260521_161642_paper_S1_reported_runs_compat,ignored,"incomplete run, only config or failed pre-output run",1
+paper_runs_reported,20260521_161912_paper_S1_reported_runs_compat,ignored,complete duplicate of official reported S1; same summary_for_paper hash as 20260521_163020,12
+paper_runs_reported,20260521_163020_paper_S1_reported_runs_compat,official,,12
+paper_runs_reported,20260521_163508_paper_S2_reported_runs_compat,official,,12
+paper_runs_reported,20260521_163747_paper_S3_reported_runs_compat,official,,12
+paper_runs_reported,20260521_163931_paper_S4_reported_runs_compat,official,,12
+paper_runs_integrated,20260521_173035_paper_S1_integrated_model,official,,12
+paper_runs_integrated,20260521_173426_paper_S2_integrated_model,official,,12
+paper_runs_integrated,20260521_174014_paper_S3_integrated_model,official,,12
+paper_runs_integrated,20260521_174430_paper_S4_integrated_model,official,,12
