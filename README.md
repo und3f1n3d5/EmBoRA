@@ -17,7 +17,3 @@ This archive contains analyzed paper-scale results for the architecture-aligned 
 ## Validation verdict
 
 All official S1-S4 runs passed validation in both modes. Unit tests passed locally: `15 passed`.
-
-## Important caveat
-
-The original `paper_plots_to_send_20260521_180107.zip` archive contained only empty plot directories. Figures in this package were regenerated from summary CSV files.
