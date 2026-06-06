@@ -1,0 +1,325 @@
+{
+  "scenario_name": "S4",
+  "run_profile": "paper",
+  "games": [
+    "Prisoners Dilemma",
+    "Battle of Sexes",
+    "Ultimatum Game"
+  ],
+  "episodes_per_condition": 20,
+  "rounds_per_episode": 200,
+  "seed_count": 20,
+  "seeds": [
+    20260430,
+    20260431,
+    20260432,
+    20260433,
+    20260434,
+    20260435,
+    20260436,
+    20260437,
+    20260438,
+    20260439,
+    20260440,
+    20260441,
+    20260442,
+    20260443,
+    20260444,
+    20260445,
+    20260446,
+    20260447,
+    20260448,
+    20260449
+  ],
+  "conditions": [
+    {
+      "condition_id": "S4_001_Prisoners_Dilemma_hybrid_vs_rational",
+      "scenario_name": "S4",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_rational"
+      }
+    },
+    {
+      "condition_id": "S4_002_Prisoners_Dilemma_hybrid_vs_always_defect",
+      "scenario_name": "S4",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_always_defect"
+      }
+    },
+    {
+      "condition_id": "S4_003_Prisoners_Dilemma_hybrid_vs_tit_for_tat",
+      "scenario_name": "S4",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_tit_for_tat"
+      }
+    },
+    {
+      "condition_id": "S4_004_Prisoners_Dilemma_emotional_vs_rational",
+      "scenario_name": "S4",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "emotional_vs_rational"
+      }
+    },
+    {
+      "condition_id": "S4_005_Battle_of_Sexes_hybrid_vs_rational",
+      "scenario_name": "S4",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_rational"
+      }
+    },
+    {
+      "condition_id": "S4_006_Battle_of_Sexes_hybrid_vs_always_defect",
+      "scenario_name": "S4",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_always_defect"
+      }
+    },
+    {
+      "condition_id": "S4_007_Battle_of_Sexes_hybrid_vs_tit_for_tat",
+      "scenario_name": "S4",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_tit_for_tat"
+      }
+    },
+    {
+      "condition_id": "S4_008_Battle_of_Sexes_emotional_vs_rational",
+      "scenario_name": "S4",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "emotional_vs_rational"
+      }
+    },
+    {
+      "condition_id": "S4_009_Ultimatum_Game_hybrid_vs_rational",
+      "scenario_name": "S4",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_rational"
+      }
+    },
+    {
+      "condition_id": "S4_010_Ultimatum_Game_hybrid_vs_always_defect",
+      "scenario_name": "S4",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_always_defect"
+      }
+    },
+    {
+      "condition_id": "S4_011_Ultimatum_Game_hybrid_vs_tit_for_tat",
+      "scenario_name": "S4",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "hybrid_vs_tit_for_tat"
+      }
+    },
+    {
+      "condition_id": "S4_012_Ultimatum_Game_emotional_vs_rational",
+      "scenario_name": "S4",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "diagnostic": "collapse",
+        "template": "emotional_vs_rational"
+      }
+    }
+  ],
+  "model_mode": "integrated_model",
+  "strict": true,
+  "allow_fallback": false,
+  "output_root": "paper_runs_integrated",
+  "notes": "cli_run",
+  "save_svg": false,
+  "timestamp": "20260521_174430",
+  "episodes": 20,
+  "rounds": 200,
+  "deprecated_aliases": {
+    "paper_v10_compat": "reported_runs_compat",
+    "paper_v11_compat": "reported_runs_compat"
+  }
+}
