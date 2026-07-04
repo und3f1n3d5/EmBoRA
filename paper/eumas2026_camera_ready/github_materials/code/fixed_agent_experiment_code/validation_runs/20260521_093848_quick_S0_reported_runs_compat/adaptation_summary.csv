@@ -1,0 +1,2 @@
+scenario_name,condition_id,condition_label,game_name,run_profile,episode_id,random_seed,agent_1_type,agent_2_type,fixed_strategy_2,metric_name,first_third_metric,last_third_metric,delta_metric,first_third_payoff_1,last_third_payoff_1,delta_payoff_1,simple_adaptation_lag_proxy
+S0,S0_smoke_hybrid_vs_tft,hybrid-neutral-neutral__vs__fixed-tit_for_tat,Prisoners Dilemma,quick,1,20260430,emotional_rational,fixed_strategy,tit_for_tat,cooperation_flag_1,1.0,1.0,0.0,9.0,9.0,0.0,1

@@ -1,0 +1,49 @@
+scenario_name,game_name,condition_label,mean_negative_state_share_integrated_model,mean_negative_state_share_reported_runs_compat,pair_state_mean_integrated_model,pair_state_mean_reported_runs_compat,pair_total_payoff_mean_integrated_model,pair_total_payoff_mean_reported_runs_compat,delta_pair_state_integrated_minus_reported,delta_payoff_integrated_minus_reported,delta_negative_share_integrated_minus_reported
+S1,Battle of Sexes,emotional-neutral-neutral__vs__emotional-neutral-neutral,0.557625,0.833,-0.1919904890834132,-0.4604467980873428,536.75,395.25,0.2684563090039296,141.5,-0.2753749999999999
+S1,Battle of Sexes,emotional-neutral-neutral__vs__fixed-tit_for_tat,0.062625,0.54875,0.654343639889136,-0.04522500307835155,951.0,961.0,0.6995686429674876,-10.0,-0.486125
+S1,Battle of Sexes,emotional-neutral-neutral__vs__hybrid-neutral-neutral,0.752,0.904875,-0.4309655338181207,-0.5856623161529648,453.0,206.5,0.15469678233484413,246.5,-0.15287499999999998
+S1,Battle of Sexes,emotional-neutral-neutral__vs__rational,0.755625,0.904875,-0.28440663157820767,-0.5856623161529648,260.0,206.5,0.30125568457475715,53.5,-0.14925
+S1,Battle of Sexes,fixed-tit_for_tat__vs__emotional-neutral-neutral,0.02962499999999995,0.536875,0.7287549588763202,-0.027009251972312253,977.5,979.0,0.7557642108486325,-1.5,-0.5072500000000001
+S1,Battle of Sexes,fixed-tit_for_tat__vs__fixed-tit_for_tat,0.0,0.5,0.8348235647403155,-9.71445146547012e-17,1000.0,1000.0,0.8348235647403156,0.0,-0.5
+S1,Battle of Sexes,fixed-tit_for_tat__vs__hybrid-neutral-neutral,0.005,0.51,0.7220224800979609,-0.006458311341092149,995.0,995.0,0.728480791439053,0.0,-0.505
+S1,Battle of Sexes,fixed-tit_for_tat__vs__rational,0.005,0.51,0.8261427980481192,-0.006458311341092149,995.0,995.0,0.8326011093892114,0.0,-0.505
+S1,Battle of Sexes,hybrid-neutral-neutral__vs__emotional-neutral-neutral,0.35462499999999997,0.7202500000000001,0.1862119226506074,-0.31624811356876126,700.75,570.25,0.5024600362193686,130.5,-0.3656250000000001
+S1,Battle of Sexes,hybrid-neutral-neutral__vs__fixed-tit_for_tat,0.0,0.5,0.7558679426275523,-9.71445146547012e-17,1000.0,1000.0,0.7558679426275524,0.0,-0.5
+S1,Battle of Sexes,hybrid-neutral-neutral__vs__hybrid-neutral-neutral,1.0,1.0,-0.8516275407098326,-0.7323522749348269,275.5,0.0,-0.11927526577500569,275.5,0.0
+S1,Battle of Sexes,hybrid-neutral-neutral__vs__rational,0.9962500000000001,1.0,-0.6342217102076458,-0.7323522749348269,87.5,0.0,0.09813056472718107,87.5,-0.00374999999999992
+S1,Battle of Sexes,rational__vs__emotional-neutral-neutral,0.35424999999999995,0.7202500000000001,0.2895504435667495,-0.31624811356876126,645.75,570.25,0.6057985571355108,75.5,-0.3660000000000001
+S1,Battle of Sexes,rational__vs__fixed-tit_for_tat,0.0,0.5,0.8348235647403155,-9.71445146547012e-17,1000.0,1000.0,0.8348235647403156,0.0,-0.5
+S1,Battle of Sexes,rational__vs__hybrid-neutral-neutral,0.992625,1.0,-0.7419355410144861,-0.7323522749348269,228.75,0.0,-0.009583266079659203,228.75,-0.00737500000000002
+S1,Battle of Sexes,rational__vs__rational,1.0,1.0,-0.4616232079929975,-0.7323522749348269,0.0,0.0,0.2707290669418294,0.0,0.0
+S1,Prisoners Dilemma,emotional-neutral-neutral__vs__emotional-neutral-neutral,0.0,0.0,0.2806132256585746,0.2405972911312445,1200.0,1200.0,0.0400159345273301,0.0,0.0
+S1,Prisoners Dilemma,emotional-neutral-neutral__vs__fixed-tit_for_tat,0.0,0.0,0.30672743706741534,0.2405972911312445,1200.0,1200.0,0.06613014593617084,0.0,0.0
+S1,Prisoners Dilemma,emotional-neutral-neutral__vs__hybrid-neutral-neutral,0.0,0.0,0.2806132256585746,0.2405972911312445,1200.0,1200.0,0.0400159345273301,0.0,0.0
+S1,Prisoners Dilemma,emotional-neutral-neutral__vs__rational,0.9125,0.975,-0.7535622703880751,-0.6054811461596463,643.0,415.0,-0.14808112422842878,228.0,-0.0625
+S1,Prisoners Dilemma,fixed-tit_for_tat__vs__emotional-neutral-neutral,0.0,0.0,0.30672743706741534,0.2405972911312445,1200.0,1200.0,0.06613014593617084,0.0,0.0
+S1,Prisoners Dilemma,fixed-tit_for_tat__vs__fixed-tit_for_tat,0.0,0.0,0.3328416484762561,0.2405972911312445,1200.0,1200.0,0.09224435734501157,0.0,0.0
+S1,Prisoners Dilemma,fixed-tit_for_tat__vs__hybrid-neutral-neutral,0.0,0.0,0.30672743706741534,0.2405972911312445,1200.0,1200.0,0.06613014593617084,0.0,0.0
+S1,Prisoners Dilemma,fixed-tit_for_tat__vs__rational,0.0125,0.995,0.1185155414660759,-0.6195349701140226,403.0,403.0,0.7380505115800985,0.0,-0.9825
+S1,Prisoners Dilemma,hybrid-neutral-neutral__vs__emotional-neutral-neutral,0.0,0.0,0.2806132256585746,0.2405972911312445,1200.0,1200.0,0.0400159345273301,0.0,0.0
+S1,Prisoners Dilemma,hybrid-neutral-neutral__vs__fixed-tit_for_tat,0.0,0.0,0.30672743706741534,0.2405972911312445,1200.0,1200.0,0.06613014593617084,0.0,0.0
+S1,Prisoners Dilemma,hybrid-neutral-neutral__vs__hybrid-neutral-neutral,0.0,0.0,0.2806132256585746,0.2405972911312445,1200.0,1200.0,0.0400159345273301,0.0,0.0
+S1,Prisoners Dilemma,hybrid-neutral-neutral__vs__rational,0.7475,0.985,-0.25940011349195174,-0.6126680654971068,442.0,409.0,0.3532679520051551,33.0,-0.23749999999999993
+S1,Prisoners Dilemma,rational__vs__emotional-neutral-neutral,0.9125,0.975,-0.7535622703880751,-0.6054811461596463,643.0,415.0,-0.14808112422842878,228.0,-0.0625
+S1,Prisoners Dilemma,rational__vs__fixed-tit_for_tat,0.0125,0.995,0.1185155414660759,-0.6195349701140226,403.0,403.0,0.7380505115800985,0.0,-0.9825
+S1,Prisoners Dilemma,rational__vs__hybrid-neutral-neutral,0.7475,0.985,-0.25940011349195174,-0.6126680654971068,442.0,409.0,0.3532679520051551,33.0,-0.23749999999999993
+S1,Prisoners Dilemma,rational__vs__rational,0.0,1.0,0.1232745346956132,-0.6228399686098542,400.0,400.0,0.7461145033054675,0.0,-1.0
+S1,Ultimatum Game,emotional-neutral-neutral__vs__emotional-neutral-neutral,0.0,0.0,0.5369992691447881,0.0,2000.0,2000.0,0.5369992691447881,0.0,0.0
+S1,Ultimatum Game,emotional-neutral-neutral__vs__fixed-tit_for_tat,0.0,0.0,0.571125699345155,0.0,2000.0,2000.0,0.571125699345155,0.0,0.0
+S1,Ultimatum Game,emotional-neutral-neutral__vs__hybrid-neutral-neutral,0.0,0.0,0.5369992691447881,0.0,2000.0,2000.0,0.5369992691447881,0.0,0.0
+S1,Ultimatum Game,emotional-neutral-neutral__vs__rational,0.0,0.0,0.571125699345155,0.0,2000.0,2000.0,0.571125699345155,0.0,0.0
+S1,Ultimatum Game,fixed-tit_for_tat__vs__emotional-neutral-neutral,0.0,0.5,0.4800374375604009,-9.71445146547012e-17,2000.0,2000.0,0.480037437560401,0.0,-0.5
+S1,Ultimatum Game,fixed-tit_for_tat__vs__fixed-tit_for_tat,0.0,0.5,0.4830439405083641,-9.71445146547012e-17,2000.0,2000.0,0.4830439405083642,0.0,-0.5
+S1,Ultimatum Game,fixed-tit_for_tat__vs__hybrid-neutral-neutral,0.0,0.5,0.4800374375604009,-9.71445146547012e-17,2000.0,2000.0,0.480037437560401,0.0,-0.5
+S1,Ultimatum Game,fixed-tit_for_tat__vs__rational,0.0,0.5,0.4830439405083641,-9.71445146547012e-17,2000.0,2000.0,0.4830439405083642,0.0,-0.5
+S1,Ultimatum Game,hybrid-neutral-neutral__vs__emotional-neutral-neutral,0.0,0.0,0.5369992691447881,0.0,2000.0,2000.0,0.5369992691447881,0.0,0.0
+S1,Ultimatum Game,hybrid-neutral-neutral__vs__fixed-tit_for_tat,0.0,0.0,0.571125699345155,0.0,2000.0,2000.0,0.571125699345155,0.0,0.0
+S1,Ultimatum Game,hybrid-neutral-neutral__vs__hybrid-neutral-neutral,0.0,0.0,0.5369992691447881,0.0,2000.0,2000.0,0.5369992691447881,0.0,0.0
+S1,Ultimatum Game,hybrid-neutral-neutral__vs__rational,0.0,0.0,0.571125699345155,0.0,2000.0,2000.0,0.571125699345155,0.0,0.0
+S1,Ultimatum Game,rational__vs__emotional-neutral-neutral,0.0,0.5,0.4800374375604009,-9.71445146547012e-17,2000.0,2000.0,0.480037437560401,0.0,-0.5
+S1,Ultimatum Game,rational__vs__fixed-tit_for_tat,0.0,0.5,0.4830439405083641,-9.71445146547012e-17,2000.0,2000.0,0.4830439405083642,0.0,-0.5
+S1,Ultimatum Game,rational__vs__hybrid-neutral-neutral,0.0,0.5,0.4800374375604009,-9.71445146547012e-17,2000.0,2000.0,0.480037437560401,0.0,-0.5
+S1,Ultimatum Game,rational__vs__rational,0.0,0.5,0.4830439405083641,-9.71445146547012e-17,2000.0,2000.0,0.4830439405083642,0.0,-0.5

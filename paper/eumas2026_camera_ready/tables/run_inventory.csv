@@ -1,0 +1,9 @@
+model_mode,scenario,run_dir,games,conditions_n,episodes_per_condition,seed_count,rounds_per_episode,expected_round_rows,expected_episode_rows,actual_round_rows,actual_episode_rows,validation_passed,fallback_rows,duplicate_observe_count,mood_out_of_range,fatigue_out_of_range,nan_or_inf_cells,missing_files_count
+reported_runs_compat,S1,20260521_163020_paper_S1_reported_runs_compat,"Battle of Sexes, Prisoners Dilemma, Ultimatum Game",48,20,20,200,192000,960,192000,960,True,0,0,0,0,0,0
+reported_runs_compat,S2,20260521_163508_paper_S2_reported_runs_compat,"Battle of Sexes, Prisoners Dilemma, Ultimatum Game",27,20,20,200,108000,540,108000,540,True,0,0,0,0,0,0
+reported_runs_compat,S3,20260521_163747_paper_S3_reported_runs_compat,Prisoners Dilemma,27,20,20,200,108000,540,108000,540,True,0,0,0,0,0,0
+reported_runs_compat,S4,20260521_163931_paper_S4_reported_runs_compat,"Battle of Sexes, Prisoners Dilemma, Ultimatum Game",12,20,20,200,48000,240,48000,240,True,0,0,0,0,0,0
+integrated_model,S1,20260521_173035_paper_S1_integrated_model,"Battle of Sexes, Prisoners Dilemma, Ultimatum Game",48,20,20,200,192000,960,192000,960,True,0,0,0,0,0,0
+integrated_model,S2,20260521_173426_paper_S2_integrated_model,"Battle of Sexes, Prisoners Dilemma, Ultimatum Game",27,20,20,200,108000,540,108000,540,True,0,0,0,0,0,0
+integrated_model,S3,20260521_174014_paper_S3_integrated_model,Prisoners Dilemma,27,20,20,200,108000,540,108000,540,True,0,0,0,0,0,0
+integrated_model,S4,20260521_174430_paper_S4_integrated_model,"Battle of Sexes, Prisoners Dilemma, Ultimatum Game",12,20,20,200,48000,240,48000,240,True,0,0,0,0,0,0

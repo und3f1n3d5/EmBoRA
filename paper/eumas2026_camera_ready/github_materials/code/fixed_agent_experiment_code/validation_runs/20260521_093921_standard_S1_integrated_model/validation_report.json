@@ -1,0 +1,12 @@
+{
+  "run_dir": "/mnt/data/work_isdg/final_runs/20260521_093921_standard_S1_integrated_model",
+  "missing_files": [],
+  "round_rows": 960,
+  "episode_rows": 48,
+  "mood_out_of_range": 0,
+  "fatigue_out_of_range": 0,
+  "nan_or_inf_cells": 0,
+  "duplicate_observe_count": 0,
+  "fallback_rows": 0,
+  "passed": true
+}
