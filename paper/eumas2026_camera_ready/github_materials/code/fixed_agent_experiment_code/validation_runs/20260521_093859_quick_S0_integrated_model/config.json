@@ -1,0 +1,50 @@
+{
+  "scenario_name": "S0",
+  "run_profile": "quick",
+  "games": [
+    "Prisoners Dilemma"
+  ],
+  "episodes_per_condition": 1,
+  "rounds_per_episode": 10,
+  "seed_count": 1,
+  "seeds": [
+    20260430
+  ],
+  "conditions": [
+    {
+      "condition_id": "S0_smoke_hybrid_vs_tft",
+      "scenario_name": "S0",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "purpose": "smoke"
+      }
+    }
+  ],
+  "model_mode": "integrated_model",
+  "strict": true,
+  "allow_fallback": false,
+  "output_root": "/mnt/data/work_isdg/final_runs",
+  "notes": "cli_run",
+  "save_svg": false,
+  "timestamp": "20260521_093859",
+  "episodes": 1,
+  "rounds": 10,
+  "deprecated_aliases": {
+    "paper_v10_compat": "reported_runs_compat",
+    "paper_v11_compat": "reported_runs_compat"
+  }
+}

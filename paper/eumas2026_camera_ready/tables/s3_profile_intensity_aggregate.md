@@ -1,0 +1,20 @@
+| model_mode           | profile     | intensity   |   conditions_n |   pair_total_payoff_mean |   agent_1_mean_overall_state |   agent_1_negative_state_share |   main_game_metric |
+|:---------------------|:------------|:------------|---------------:|-------------------------:|-----------------------------:|-------------------------------:|-------------------:|
+| integrated_model     | neutral     | high        |              3 |                  942.333 |                        0.02  |                          0.413 |              0.667 |
+| integrated_model     | neutral     | low         |              3 |                  956.333 |                        0.085 |                          0.333 |              0.667 |
+| integrated_model     | neutral     | neutral     |              3 |                  947.333 |                        0.058 |                          0.333 |              0.667 |
+| integrated_model     | optimistic  | high        |              3 |                  942.333 |                        0.02  |                          0.413 |              0.667 |
+| integrated_model     | optimistic  | low         |              3 |                  956.333 |                        0.085 |                          0.333 |              0.667 |
+| integrated_model     | optimistic  | neutral     |              3 |                  947.333 |                        0.058 |                          0.333 |              0.667 |
+| integrated_model     | pessimistic | high        |              3 |                  946.333 |                        0.014 |                          0.413 |              0.667 |
+| integrated_model     | pessimistic | low         |              3 |                  956.333 |                        0.085 |                          0.333 |              0.667 |
+| integrated_model     | pessimistic | neutral     |              3 |                  947.333 |                        0.058 |                          0.333 |              0.667 |
+| reported_runs_compat | neutral     | high        |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | neutral     | low         |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | neutral     | neutral     |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | optimistic  | high        |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | optimistic  | low         |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | optimistic  | neutral     |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | pessimistic | high        |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | pessimistic | low         |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |
+| reported_runs_compat | pessimistic | neutral     |              3 |                  936.333 |                       -0.049 |                          0.333 |              0.667 |

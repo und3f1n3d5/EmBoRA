@@ -1,0 +1,25 @@
+model_mode,game_name,condition_label,pair_total_payoff_mean,agent_1_payoff_mean,agent_2_payoff_mean,agent_1_mean_overall_state,agent_2_mean_overall_state,agent_1_negative_state_share,agent_2_negative_state_share,game_metric_name,game_metric_value
+reported_runs_compat,Prisoners Dilemma,hybrid-neutral-neutral__vs__rational,409.0,197.0,212.0,-0.6291093923079399,-0.5962267386862736,1.0,0.97,mutual cooperation rate,0.0
+reported_runs_compat,Prisoners Dilemma,hybrid-neutral-neutral__vs__fixed-always_defect,409.0,197.0,212.0,-0.6291093923079399,-0.5962267386862736,1.0,0.97,mutual cooperation rate,0.0
+reported_runs_compat,Prisoners Dilemma,hybrid-neutral-neutral__vs__fixed-tit_for_tat,1200.0,600.0,600.0,0.2405972911312445,0.2405972911312445,0.0,0.0,mutual cooperation rate,1.0
+reported_runs_compat,Prisoners Dilemma,emotional-neutral-neutral__vs__rational,415.0,195.0,220.0,-0.6329571129609495,-0.5780051793583433,1.0,0.95,mutual cooperation rate,0.0
+reported_runs_compat,Battle of Sexes,hybrid-neutral-neutral__vs__rational,0.0,0.0,0.0,-0.7323522749348269,-0.7323522749348269,1.0,1.0,agreement rate,0.0
+reported_runs_compat,Battle of Sexes,hybrid-neutral-neutral__vs__fixed-always_defect,0.0,0.0,0.0,-0.7323522749348269,-0.7323522749348269,1.0,1.0,agreement rate,0.0
+reported_runs_compat,Battle of Sexes,hybrid-neutral-neutral__vs__fixed-tit_for_tat,1000.0,600.0,400.0,0.2405972911312445,-0.2405972911312447,0.0,1.0,agreement rate,1.0
+reported_runs_compat,Battle of Sexes,emotional-neutral-neutral__vs__rational,206.5,82.6,123.9,-0.6333747621920869,-0.5379498701138428,1.0,0.80975,agreement rate,0.2065
+reported_runs_compat,Ultimatum Game,hybrid-neutral-neutral__vs__rational,2000.0,1000.0,1000.0,0.0,0.0,0.0,0.0,acceptance rate / mean offer,1.0 / 5.0
+reported_runs_compat,Ultimatum Game,hybrid-neutral-neutral__vs__fixed-always_defect,0.0,0.0,0.0,-0.7323522749348269,-0.7323522749348269,1.0,1.0,acceptance rate / mean offer,0.0 / 5.0
+reported_runs_compat,Ultimatum Game,hybrid-neutral-neutral__vs__fixed-tit_for_tat,2000.0,1000.0,1000.0,0.0,0.0,0.0,0.0,acceptance rate / mean offer,1.0 / 5.0
+reported_runs_compat,Ultimatum Game,emotional-neutral-neutral__vs__rational,2000.0,1000.0,1000.0,0.0,0.0,0.0,0.0,acceptance rate / mean offer,1.0 / 5.0
+integrated_model,Prisoners Dilemma,hybrid-neutral-neutral__vs__rational,442.0,186.0,256.0,-0.3885478976043458,-0.1302523293795577,1.0,0.495,mutual cooperation rate,0.0
+integrated_model,Prisoners Dilemma,hybrid-neutral-neutral__vs__fixed-always_defect,442.0,186.0,256.0,-0.3885478976043458,-0.1302523293795577,1.0,0.495,mutual cooperation rate,0.0
+integrated_model,Prisoners Dilemma,hybrid-neutral-neutral__vs__fixed-tit_for_tat,1200.0,600.0,600.0,0.2806132256585746,0.3328416484762561,0.0,0.0,mutual cooperation rate,1.0
+integrated_model,Prisoners Dilemma,emotional-neutral-neutral__vs__rational,643.0,119.0,524.0,-1.0426321615990903,-0.4644923791770598,1.0,0.825,mutual cooperation rate,0.0
+integrated_model,Battle of Sexes,hybrid-neutral-neutral__vs__rational,87.5,35.0,52.5,-0.7596275226015693,-0.5088158978137224,1.0,0.9925,agreement rate,0.0875
+integrated_model,Battle of Sexes,hybrid-neutral-neutral__vs__fixed-always_defect,87.5,35.0,52.5,-0.7596275226015693,-0.5088158978137224,1.0,0.9925,agreement rate,0.0875
+integrated_model,Battle of Sexes,hybrid-neutral-neutral__vs__fixed-tit_for_tat,1000.0,600.0,400.0,0.7424153008332824,0.7693205844218222,0.0,0.0,agreement rate,1.0
+integrated_model,Battle of Sexes,emotional-neutral-neutral__vs__rational,260.0,104.0,156.0,-0.411611371359416,-0.1572018917969994,0.761,0.75025,agreement rate,0.26
+integrated_model,Ultimatum Game,hybrid-neutral-neutral__vs__rational,2000.0,1000.0,1000.0,0.5369992691447881,0.6052521295455218,0.0,0.0,acceptance rate / mean offer,1.0 / 5.0
+integrated_model,Ultimatum Game,hybrid-neutral-neutral__vs__fixed-always_defect,0.0,0.0,0.0,-0.1763895884695421,0.2831635933358941,1.0,0.0,acceptance rate / mean offer,0.0 / 5.0
+integrated_model,Ultimatum Game,hybrid-neutral-neutral__vs__fixed-tit_for_tat,2000.0,1000.0,1000.0,0.5369992691447881,0.6052521295455218,0.0,0.0,acceptance rate / mean offer,1.0 / 5.0
+integrated_model,Ultimatum Game,emotional-neutral-neutral__vs__rational,2000.0,1000.0,1000.0,0.5369992691447881,0.6052521295455218,0.0,0.0,acceptance rate / mean offer,1.0 / 5.0

@@ -1,0 +1,54 @@
+/usr/local/lib/python3.11/site-packages/ddtrace/vendor/psutil/_pslinux.py:527: RuntimeWarning: 'sin' and 'sout' swap memory stats couldn't be determined and were set to 0 ([Errno 2] No such file or directory: '/proc/vmstat')
+  warnings.warn(msg, RuntimeWarning)
+...............                                                          [100%]
+=============================== warnings summary ===============================
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._family)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:70: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._size)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:74: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._name)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:78: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._value)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._families)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:92: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._point_sizes)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:102: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._property)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    self._parser.parseString(pattern)
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    self._parser.resetCache()
+
+tests/test_model_mode_status_flags.py::test_reported_compat_marks_diagnostics_only
+  /usr/local/lib/python3.11/site-packages/matplotlib/_mathtext.py:29: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+15 passed, 18 warnings in 12.21s

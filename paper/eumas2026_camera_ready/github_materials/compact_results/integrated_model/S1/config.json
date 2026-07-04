@@ -1,0 +1,1105 @@
+{
+  "scenario_name": "S1",
+  "run_profile": "paper",
+  "games": [
+    "Prisoners Dilemma",
+    "Battle of Sexes",
+    "Ultimatum Game"
+  ],
+  "episodes_per_condition": 20,
+  "rounds_per_episode": 200,
+  "seed_count": 20,
+  "seeds": [
+    20260430,
+    20260431,
+    20260432,
+    20260433,
+    20260434,
+    20260435,
+    20260436,
+    20260437,
+    20260438,
+    20260439,
+    20260440,
+    20260441,
+    20260442,
+    20260443,
+    20260444,
+    20260445,
+    20260446,
+    20260447,
+    20260448,
+    20260449
+  ],
+  "conditions": [
+    {
+      "condition_id": "S1_001_Prisoners_Dilemma_hybrid-neutral-neutral__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_002_Prisoners_Dilemma_hybrid-neutral-neutral__rational",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_003_Prisoners_Dilemma_hybrid-neutral-neutral__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_004_Prisoners_Dilemma_hybrid-neutral-neutral__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_005_Prisoners_Dilemma_rational__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_006_Prisoners_Dilemma_rational__rational",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_007_Prisoners_Dilemma_rational__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_008_Prisoners_Dilemma_rational__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_009_Prisoners_Dilemma_emotional-neutral-neutral__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_010_Prisoners_Dilemma_emotional-neutral-neutral__rational",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_011_Prisoners_Dilemma_emotional-neutral-neutral__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_012_Prisoners_Dilemma_emotional-neutral-neutral__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_013_Prisoners_Dilemma_fixed-tit_for_tat__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_014_Prisoners_Dilemma_fixed-tit_for_tat__rational",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_015_Prisoners_Dilemma_fixed-tit_for_tat__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_016_Prisoners_Dilemma_fixed-tit_for_tat__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_017_Battle_of_Sexes_hybrid-neutral-neutral__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_018_Battle_of_Sexes_hybrid-neutral-neutral__rational",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_019_Battle_of_Sexes_hybrid-neutral-neutral__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_020_Battle_of_Sexes_hybrid-neutral-neutral__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_021_Battle_of_Sexes_rational__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_022_Battle_of_Sexes_rational__rational",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_023_Battle_of_Sexes_rational__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_024_Battle_of_Sexes_rational__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_025_Battle_of_Sexes_emotional-neutral-neutral__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_026_Battle_of_Sexes_emotional-neutral-neutral__rational",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_027_Battle_of_Sexes_emotional-neutral-neutral__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_028_Battle_of_Sexes_emotional-neutral-neutral__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_029_Battle_of_Sexes_fixed-tit_for_tat__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_030_Battle_of_Sexes_fixed-tit_for_tat__rational",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_031_Battle_of_Sexes_fixed-tit_for_tat__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_032_Battle_of_Sexes_fixed-tit_for_tat__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_033_Ultimatum_Game_hybrid-neutral-neutral__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_034_Ultimatum_Game_hybrid-neutral-neutral__rational",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_035_Ultimatum_Game_hybrid-neutral-neutral__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_036_Ultimatum_Game_hybrid-neutral-neutral__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_037_Ultimatum_Game_rational__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_038_Ultimatum_Game_rational__rational",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_039_Ultimatum_Game_rational__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_040_Ultimatum_Game_rational__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_041_Ultimatum_Game_emotional-neutral-neutral__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_042_Ultimatum_Game_emotional-neutral-neutral__rational",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_043_Ultimatum_Game_emotional-neutral-neutral__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_044_Ultimatum_Game_emotional-neutral-neutral__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_045_Ultimatum_Game_fixed-tit_for_tat__hybrid-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_046_Ultimatum_Game_fixed-tit_for_tat__rational",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_047_Ultimatum_Game_fixed-tit_for_tat__emotional-neutral-neutral",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    },
+    {
+      "condition_id": "S1_048_Ultimatum_Game_fixed-tit_for_tat__fixed-tit_for_tat",
+      "scenario_name": "S1",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "matrix": "ordered_cross_type"
+      }
+    }
+  ],
+  "model_mode": "integrated_model",
+  "strict": true,
+  "allow_fallback": false,
+  "output_root": "paper_runs_integrated",
+  "notes": "cli_run",
+  "save_svg": false,
+  "timestamp": "20260521_173035",
+  "episodes": 20,
+  "rounds": 200,
+  "deprecated_aliases": {
+    "paper_v10_compat": "reported_runs_compat",
+    "paper_v11_compat": "reported_runs_compat"
+  }
+}

@@ -1,0 +1,697 @@
+{
+  "scenario_name": "S2",
+  "run_profile": "paper",
+  "games": [
+    "Prisoners Dilemma",
+    "Battle of Sexes",
+    "Ultimatum Game"
+  ],
+  "episodes_per_condition": 20,
+  "rounds_per_episode": 200,
+  "seed_count": 20,
+  "seeds": [
+    20260430,
+    20260431,
+    20260432,
+    20260433,
+    20260434,
+    20260435,
+    20260436,
+    20260437,
+    20260438,
+    20260439,
+    20260440,
+    20260441,
+    20260442,
+    20260443,
+    20260444,
+    20260445,
+    20260446,
+    20260447,
+    20260448,
+    20260449
+  ],
+  "conditions": [
+    {
+      "condition_id": "S2_001_Prisoners_Dilemma_emotional_rational_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_002_Prisoners_Dilemma_emotional_rational_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_003_Prisoners_Dilemma_emotional_rational_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_004_Prisoners_Dilemma_emotional_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_005_Prisoners_Dilemma_emotional_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_006_Prisoners_Dilemma_emotional_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_007_Prisoners_Dilemma_rational_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_008_Prisoners_Dilemma_rational_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_009_Prisoners_Dilemma_rational_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Prisoners Dilemma",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_010_Battle_of_Sexes_emotional_rational_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_011_Battle_of_Sexes_emotional_rational_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_012_Battle_of_Sexes_emotional_rational_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_013_Battle_of_Sexes_emotional_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_014_Battle_of_Sexes_emotional_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_015_Battle_of_Sexes_emotional_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_016_Battle_of_Sexes_rational_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_017_Battle_of_Sexes_rational_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_018_Battle_of_Sexes_rational_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Battle of Sexes",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_019_Ultimatum_Game_emotional_rational_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_020_Ultimatum_Game_emotional_rational_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_021_Ultimatum_Game_emotional_rational_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional_rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional_rational",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_022_Ultimatum_Game_emotional_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_023_Ultimatum_Game_emotional_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_024_Ultimatum_Game_emotional_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "emotional",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "emotional",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_025_Ultimatum_Game_rational_vs_always_cooperate",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_cooperate",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "always_cooperate",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_026_Ultimatum_Game_rational_vs_always_defect",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "always_defect",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "always_defect",
+        "hypothesis": "H1"
+      }
+    },
+    {
+      "condition_id": "S2_027_Ultimatum_Game_rational_vs_tit_for_tat",
+      "scenario_name": "S2",
+      "game_name": "Ultimatum Game",
+      "agent_1": {
+        "agent_type": "rational",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": null,
+        "name": null
+      },
+      "agent_2": {
+        "agent_type": "fixed_strategy",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "fixed_strategy": "tit_for_tat",
+        "name": null
+      },
+      "tags": {
+        "tested_agent": "rational",
+        "fixed_strategy": "tit_for_tat",
+        "hypothesis": "H1"
+      }
+    }
+  ],
+  "model_mode": "reported_runs_compat",
+  "strict": true,
+  "allow_fallback": false,
+  "output_root": "paper_runs_reported",
+  "notes": "cli_run",
+  "save_svg": false,
+  "timestamp": "20260521_163508",
+  "episodes": 20,
+  "rounds": 200,
+  "deprecated_aliases": {
+    "paper_v10_compat": "reported_runs_compat",
+    "paper_v11_compat": "reported_runs_compat"
+  }
+}
