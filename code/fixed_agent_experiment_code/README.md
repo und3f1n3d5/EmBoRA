@@ -1,6 +1,6 @@
 # Emotionally Bounded-Rational Agents — architecture-aligned code snapshot
 
-This package contains a corrected and documented implementation of the repeated-game emotionally bounded-rational agent pipeline. It is aligned with the article v11 status boundary: external game outcome → game-to-values adapter → appraisal → mood/fatigue/well-being/overall state → System 1/System 2 → next action.
+This package contains a corrected and documented implementation of the repeated-game emotionally bounded-rational agent pipeline. It is aligned with the article status boundary: external game outcome → game-to-values adapter → appraisal → mood/fatigue/well-being/overall state → System 1/System 2 → next action.
 
 ## What changed
 
@@ -10,9 +10,9 @@ Legacy files (`agent_fixed.py`, `emotional_agent.py`, `rational_new.py`, `fixed_
 
 ## Model modes
 
-`reported_runs_compat` preserves the article-v11 interpretation boundary: adapter/appraisal values are logged as diagnostic/explanatory variables and are not behavior-driving.
+`reported_runs_compat` preserves the article interpretation boundary: adapter/appraisal values are logged as diagnostic/explanatory variables and are not behavior-driving.
 
-`integrated_model` implements the full target architecture: adapter/appraisal update internal values and state and therefore affect future decisions. Results in this mode are new architecture results and should not be mixed with the v11 reported runs.
+`integrated_model` implements the full target architecture: adapter/appraisal update internal values and state and therefore affect future decisions. Results in this mode are new architecture results and should not be mixed with the reported runs.
 
 Deprecated aliases such as `paper_v10_compat` are accepted but saved as `reported_runs_compat`.
 
