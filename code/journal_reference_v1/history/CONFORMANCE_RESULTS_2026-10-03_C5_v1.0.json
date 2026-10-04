@@ -1,0 +1,129 @@
+{
+  "status": "REVISE",
+  "test_summary": {
+    "passed": 143,
+    "failed": 1,
+    "total": 144
+  },
+  "legacy_base": {
+    "passed": 15,
+    "failed": 0
+  },
+  "legacy_worktree": {
+    "passed": 15,
+    "failed": 0
+  },
+  "syntax": "PASS",
+  "S12": {
+    "AT-INIT": [
+      "PARTIAL_PASS",
+      "State helper and derived/default serialization; constructor/reset engine not certified"
+    ],
+    "AT-GAMES": [
+      "PARTIAL_PASS",
+      "All legal adapter outcome payoffs and malformed action helpers; full grid/role/payload set not yet covered"
+    ],
+    "AT-BOS": [
+      "PARTIAL_PASS",
+      "Convention helper 1→O,2→F only; parity episodes not run"
+    ],
+    "AT-UG-POLICY": [
+      "NOT_RUN",
+      "Dependent candidate/policy coverage halted"
+    ],
+    "AT-UG-CHOICE": [
+      "PARTIAL_PASS",
+      "Numerator helper tie/neighbors/negative and map permutations only; candidate projections not certified"
+    ],
+    "AT-UG-OFFER": [
+      "PARTIAL_PASS",
+      "Frozen intervals/ties/permutation helper and external offer types"
+    ],
+    "AT-EVENT": [
+      "NOT_RUN",
+      "Draft engine; no episodes executed"
+    ],
+    "AT-LEAK": [
+      "NOT_RUN",
+      "Draft closed payloads; exhaustive leakage/spies not executed"
+    ],
+    "AT-UG-ADAPTER": [
+      "PARTIAL_PASS",
+      "84/84 exact rational rows, every allowed row context, prohibited A/B contexts; full candidate/realized/raw-purity integration not tested"
+    ],
+    "AT-ADAPTER-PDBOS": [
+      "PASS_ENUMERATED_OUTCOMES",
+      "8 outcomes ×2 seats; direct frozen q table"
+    ],
+    "AT-URGENCY": [
+      "FAIL",
+      "near-epsilon gain direct 7/40 oracle outside tolerance; near-zero loss and wider-helper cases pass"
+    ],
+    "AT-FOCUS": [
+      "PARTIAL_PASS",
+      "Two explicit ties and all-zero null helpers"
+    ],
+    "AT-THRESHOLD": [
+      "PARTIAL_PASS",
+      "Exact cuts, branch equality and specified scalar witness; full trace/switch episode not executed"
+    ],
+    "AT-PD": [
+      "PARTIAL_PASS",
+      "Direct helper equality and kind matrix"
+    ],
+    "AT-STATE": [
+      "PARTIAL_PASS",
+      "Derived initial state only; realized recurrence and clips not certified"
+    ],
+    "AT-SUPPRESSION": [
+      "NOT_RUN",
+      "Dependent realized updates halted"
+    ],
+    "AT-MATERIAL": [
+      "NOT_RUN",
+      "Draft q_star intervention not certified"
+    ],
+    "AT-SWITCH": [
+      "NOT_RUN",
+      "Draft single path not certified"
+    ],
+    "AT-INVALID": [
+      "PARTIAL_PASS",
+      "Required fields, 19 config negatives, action types, JSON duplicates/nonfinite; full trace/payload/round negatives not yet run"
+    ],
+    "AT-RNG": [
+      "PARTIAL_PASS",
+      "Fixed-input independent cluster descriptors only; F34 hash examples not run"
+    ],
+    "AT-BASELINE": [
+      "NOT_RUN",
+      "Draft B01 policies not certified"
+    ],
+    "AT-CLAIMS": [
+      "NOT_RUN",
+      "Normative contract read; no empirical claims or evidence map created"
+    ],
+    "AT-LEGACY": [
+      "PARTIAL_PASS",
+      "AST import isolation; unchanged legacy tree and 15/15 legacy tests; object/fallback integration audit still pending"
+    ],
+    "AT-PACKAGE": [
+      "PASS",
+      "Exact ZIP/manifest anchors, CRC, entries, 13 hashes/sizes and 84 rows"
+    ]
+  },
+  "not_run": [
+    "full S12 acceptance",
+    "golden/unit episode traces",
+    "pilot",
+    "full frame",
+    "ablations census",
+    "sensitivity trajectories",
+    "independent code/spec audit",
+    "clean venv replay"
+  ],
+  "open_new_P0": 0,
+  "open_new_P1": 1,
+  "remote_publication_blocker": true,
+  "claims_promoted": false
+}

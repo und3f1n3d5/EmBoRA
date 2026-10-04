@@ -1,0 +1,21 @@
+# EmBoRA bounded C6 candidate
+
+Package EMBORA-R0PKG-2026-10-04-C6-v1.1. Owner: Model Architect / numerical scientific-contract revision owner. One executor, no subagents. Readiness: see fresh external integrity receipt for READY_FOR_TARGETED_R0_RECHECK / NOT_ADOPTED / NOT_APPROVED.
+
+Read MODEL_SPEC_JOURNAL_V1_R1C6.md, NUMERICAL_CONTRACT_C6.md and PARAMETER_TABLE_R1C6.yaml together. Claims/frame/adapter tables remain exact C5 anchors in UPSTREAM_C5. C5_SOURCE_INTEGRITY_RECEIPT.json verifies the original immutable ZIP and manifest; v1.0 decisions remain historical in AUTHORITY_SOURCES; current v1.1 decisions/review are copied in REVISION_AUTHORITY_SOURCES. Historical C5 pending labels do not supersede U1 C5.
+
+Independent reference source: reference_binary64.py. It imports only Python standard-library modules; exact rational arithmetic and integer RNE generate expected nodes before any native comparison. It neither imports production nor reads observed production outputs. Reproduce in an empty scratch directory with Python 3.12.14:
+
+    python /path/to/reference_binary64.py /path/to/new_reference_output
+
+Compare generated ORACLE_FIXTURES_C6.json, F35_FIXTURES_C6.json and SIGNED_ZERO_FIXTURES_C6.json to package copies. SELF_CHECK_C6.json contains runtime metadata and therefore may vary across environments; numerical payload must match after explicit qualification. This is a scalar/helper specification check, no engine, population, episode or neutral-frame trajectory run. The supplied fixtures supplement proofs, not independent review.
+
+Evidence: 45 scalar fixtures (17 known-origin / 28 unknown-origin), 840 F35 combinations, 28 bit-sensitive signed-zero fixtures, four material_only signed copying vectors, 84 exact same-offer/channel gaps, exact rational residuals, independent per-node RN, exact identity witness, epsilon/endpoints/nextafter, subnormal/halfway RNE, legal tie/one-sided neighbors, helper-negative distinction, material_only realized identity, all-24 fsum permutations, invalid scalar-domain rejection. Remaining production code/config/schema/CLI/PAP checks are NOT_RUN and require Engineer after adoption; C5 full S12 remains in ACCEPTANCE_MATRIX_C6.csv.
+
+P0 observed by owner=0; P1=1 OPEN (P2-C5-P1-01). Proposed disposition is addressed by candidate, pending R0/author/Engineer, never self-closed. C5 U1 unchanged; no new author adoption. The three R0 C6 findings are addressed / pending independent recheck. Next owner Coordinator should verify this v1.1 candidate and route targeted independent R0 recheck, then request short author U1 addendum only after verified PASS. Production patch, pilot/full runs, code freeze and global RUN_BOARD/STATE edits are outside this task.
+
+The external manifest describes all package payloads except itself; the ZIP contains those files plus byte-identical manifest. External fresh readback receipt and final linked handoff are generated after ZIP publication and kept outside the immutable archive to avoid circular hashes. Use the exact linked handoff/receipt to identify remote objects. No PDF/slide/report summary substitutes for archive/reference recovery.
+
+The v1.0 corrected-gap/signed-zero/unknown-origin review is an immutable historical input, not an adoption decision. Active v1.1 proof is GAP_SEPARATION_PROOF_C6.md; exact enumeration is GAP_SEPARATION_DERIVATION_C6.json. ISSUE_TO_FIX_ACCEPTANCE_C6_v1.1.json and REVISION_CHECKS_C6_v1.1.json connect each issue to its actual checks. Full v1.0-to-v1.1 diff inventory covers every changed/unchanged/deleted/new payload; historical false bounds remain only in frozen parent/history.
+
+Reproduce the gap derivation with `python derive_gap_proof.py /path/to/gap_output.json`. Reproduce owner regressions with `python verify_revision_v11.py /path/to/extracted_parent_v1.0 /path/to/new_candidate`; the audit requires PyYAML 6.0.3 and writes a checks receipt. Recover exact parent from UPSTREAM_C6_v1.0 ZIP/manifest. The old files under UPSTREAM_C5 and AUTHORITY_SOURCES remain immutable historical scientific/provenance anchors. Use NUMERIC_EVIDENCE_SCHEMA_C6.json as the explicit evidence envelope/fixture field contract; its logical layer names are mapped to serialized fixture names.

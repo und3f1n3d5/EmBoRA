@@ -1,0 +1,107 @@
+{
+  "manifest_version_id": "EMBORA-MANIFEST-2026-09-24-C5",
+  "package_id": "EMBORA-R0PKG-2026-09-24-C5",
+  "parent_package_id": "EMBORA-R0PKG-2026-09-20-C4",
+  "parent_zip_sha256": "2c4639f19213da4b9074318e26b741236a152a07ee0baf32ea6fd26765a17b80",
+  "parent_manifest_sha256": "2129354b7312e791e66b24ce57b95584d27107275f842111196decb154c34695",
+  "created_utc": "2026-09-24",
+  "specification_id": "EMBORA-MSJ1-2026-09-24-R1C5",
+  "claim_contract_id": "EMBORA-CC-2026-09-24-R1C5",
+  "target_folder_id": "1ieCp_p9YLXIxBYi3db9VLyczPHC3zyKF",
+  "status": "IMMUTABLE_C5_CANDIDATE_PENDING_TARGETED_R0",
+  "issue": "R0-C3-P1-01 ADDRESSED / PENDING R0 VERIFICATION",
+  "gate": "U1 NOT APPROVED",
+  "review_files": [
+    {
+      "path": "MODEL_SPEC_JOURNAL_V1_R1C5.md",
+      "drive_id": "1lSAOnMSN7cyptoJVoXLThOPKRHls46uM",
+      "url": "https://drive.google.com/file/d/1lSAOnMSN7cyptoJVoXLThOPKRHls46uM/view?usp=drivesdk",
+      "bytes": 51651,
+      "sha256": "5bb19bcf8db77184489ed90a3674d65785cc23393cc69f3c8173559c42da9434"
+    },
+    {
+      "path": "PARAMETER_TABLE_R1C5.yaml",
+      "drive_id": "1roxj6tx7iZc0ORg21STQ0oDUIXfxTvKm",
+      "url": "https://drive.google.com/file/d/1roxj6tx7iZc0ORg21STQ0oDUIXfxTvKm/view?usp=drivesdk",
+      "bytes": 10478,
+      "sha256": "1f72c9cbc679fd61a3c71979a22c49c6f48a5e326b3d57df030d76be8db7dc68"
+    },
+    {
+      "path": "MECHANISM_STATUS_MATRIX_R1C5.md",
+      "drive_id": "14y2Ympi8RSED_4j2YikA0M34fIRZWFbl",
+      "url": "https://drive.google.com/file/d/14y2Ympi8RSED_4j2YikA0M34fIRZWFbl/view?usp=drivesdk",
+      "bytes": 5638,
+      "sha256": "4f74b05603b3e9815bbab6b9a5960ea84469455c2261b66b44fbeeb95fd6d6df"
+    },
+    {
+      "path": "CLAIM_CONTRACT_R1C5.md",
+      "drive_id": "1IpnaerDaHN1DzjPVzZMmacG2u8iD6Eax",
+      "url": "https://drive.google.com/file/d/1IpnaerDaHN1DzjPVzZMmacG2u8iD6Eax/view?usp=drivesdk",
+      "bytes": 18188,
+      "sha256": "da95060e88ac5ecb1f960779ec6e4b75ddfcbc6810d3e7579ce111d960ff017d"
+    },
+    {
+      "path": "FORMULA_CODE_TRACEABILITY_R1C5.csv",
+      "drive_id": "1mcjf6q4tvk6Mk7x8mJMru5yWzH4I3kb7",
+      "url": "https://drive.google.com/file/d/1mcjf6q4tvk6Mk7x8mJMru5yWzH4I3kb7/view?usp=drivesdk",
+      "bytes": 17004,
+      "sha256": "1d3e678893c7fc91700c6c3b5f842aa5197475a215b6294ec4ada413dbd6d544"
+    },
+    {
+      "path": "BASELINE_AND_COMPARATOR_MATRIX_R1C5.md",
+      "drive_id": "1E6R4DRQdFjdzBRfX9b3Sh0beNAYm4Hku",
+      "url": "https://drive.google.com/file/d/1E6R4DRQdFjdzBRfX9b3Sh0beNAYm4Hku/view?usp=drivesdk",
+      "bytes": 14500,
+      "sha256": "c677c57ad8cf55f44946c677f2f394d07cb07a3ce3a03f90f51969b607cba308"
+    },
+    {
+      "path": "UG_REJECTION_SEMANTICS_R1C5.md",
+      "drive_id": "1z2SLKwaOHGJo6H8wpfBV_CrHQPtI1kIq",
+      "url": "https://drive.google.com/file/d/1z2SLKwaOHGJo6H8wpfBV_CrHQPtI1kIq/view?usp=drivesdk",
+      "bytes": 10479,
+      "sha256": "39317f80494920a26330e9adca4fc3d910d956a99526bc310bd2f2760659ef13"
+    },
+    {
+      "path": "UG_OUTCOME_TABLE_R1C5.csv",
+      "drive_id": "1HE9DvaJ6igQDzXk6CvtvmimMKzQya9-M",
+      "url": "https://drive.google.com/file/d/1HE9DvaJ6igQDzXk6CvtvmimMKzQya9-M/view?usp=drivesdk",
+      "bytes": 13456,
+      "sha256": "28625e870675a893488fb8cb6ba7c3dd5e6758bcfef10a3ce43cf94bfd3f7cfd"
+    },
+    {
+      "path": "AUTHOR_VERIFICATION_NOTE_U1_R1C5.md",
+      "drive_id": "1SZOkV1mRl2EOaDjgUE5BN3TCSTMg14Yd",
+      "url": "https://drive.google.com/file/d/1SZOkV1mRl2EOaDjgUE5BN3TCSTMg14Yd/view?usp=drivesdk",
+      "bytes": 3377,
+      "sha256": "04031875ff0aaa592326fac7ec46b44eee661ce9b0bb64932c4c245acad8cf8a"
+    },
+    {
+      "path": "DRAFT_FINAL_U1_BRIEF_C5.md",
+      "drive_id": "16xY897COFc1ZwgFF14J5K9pH29Pot3Dz",
+      "url": "https://drive.google.com/file/d/16xY897COFc1ZwgFF14J5K9pH29Pot3Dz/view?usp=drivesdk",
+      "bytes": 4396,
+      "sha256": "d46e58c5a5df7e33538f83a425758c8e28e229d891ab66fb9ede784f665e9fa7"
+    },
+    {
+      "path": "C4_TO_C5_CHANGELOG.md",
+      "drive_id": "1olhcBPP2-2OKK9fQqr5qHLUAm4IDhcht",
+      "url": "https://drive.google.com/file/d/1olhcBPP2-2OKK9fQqr5qHLUAm4IDhcht/view?usp=drivesdk",
+      "bytes": 1827,
+      "sha256": "b2ae403c213fe81454bd84aad473796cdbee7e0ae51069426902e50af66b595a"
+    },
+    {
+      "path": "R0_C4_ISSUE_DISPOSITION_C5.csv",
+      "drive_id": "1BIPkeDe6NPXdpt9Zpnk-53T7rHeEs-_-",
+      "url": "https://drive.google.com/file/d/1BIPkeDe6NPXdpt9Zpnk-53T7rHeEs-_-/view?usp=drivesdk",
+      "bytes": 634,
+      "sha256": "644658168531c560ca66f1a8b867690643e5292d7a78dd9bbab815dd21f73279"
+    },
+    {
+      "path": "SELF_REVIEW_C5.md",
+      "drive_id": "1-Oaxv6GUmdkmfWvPRq7JudLRr9F92-KA",
+      "url": "https://drive.google.com/file/d/1-Oaxv6GUmdkmfWvPRq7JudLRr9F92-KA/view?usp=drivesdk",
+      "bytes": 1500,
+      "sha256": "b30df479a43ad161d0b90043ac18df149d7b7d39b84e695eca96ba1cae272113"
+    }
+  ]
+}

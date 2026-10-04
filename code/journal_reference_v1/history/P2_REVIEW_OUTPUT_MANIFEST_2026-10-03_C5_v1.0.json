@@ -1,0 +1,82 @@
+{
+  "id": "EMBORA-P2-REVIEW-OUTPUTS-2026-10-03-C5-v1.0",
+  "status": "REVISE",
+  "code_included": false,
+  "files": [
+    {
+      "name": "CONFIG_LOG_SCHEMA_DRAFT_2026-10-03_C5_v1.0.json",
+      "bytes": 6533,
+      "sha256": "0c329a3cbd81f457c4910c449bd97b388a74d74e1eef7ce77dd6393b84c02a59"
+    },
+    {
+      "name": "CONFORMANCE_RESULTS_2026-10-03_C5_v1.0.json",
+      "bytes": 3597,
+      "sha256": "7043106a04bf36454367399754c437c42b0501dd59ec048d3510d8cc7943973e"
+    },
+    {
+      "name": "CONFORMANCE_TEST_REPORT_2026-10-03_C5_v1.0.md",
+      "bytes": 4208,
+      "sha256": "ce40ae9e70f191ea17ec79b9ea519a47eb91966740857a27dfbc1738c5bdcb52"
+    },
+    {
+      "name": "DEPENDENCIES_2026-10-03_C5_v1.0.lock",
+      "bytes": 187,
+      "sha256": "af8de7e9e176f50e0cbcccf03c9b6b036bc084d95840ba72c5a8db0d2db1f9c4"
+    },
+    {
+      "name": "EFFECTIVE_CONFIG_EXAMPLE_2026-10-03_C5_v1.0.json",
+      "bytes": 4490,
+      "sha256": "36305a20996ff7fdc1074903ceb1e77b3e66986197a2d8eefa915a30ef59fac5"
+    },
+    {
+      "name": "ENVIRONMENT_LOCK_2026-10-03_C5_v1.0.json",
+      "bytes": 1075,
+      "sha256": "4b808e63ca4453e7feeb94bd648ba65dfc9ca0100b68ef6b7f13771fefc850f5"
+    },
+    {
+      "name": "FORMULA_CODE_TEST_TRACEABILITY_2026-10-03_C5_v1.0.csv",
+      "bytes": 25380,
+      "sha256": "6371e5347d4231e3198587f37bfac8a1e64cba2e112724006693b6f43be23ac5"
+    },
+    {
+      "name": "IMPLEMENTATION_REPORT_2026-10-03_C5_v1.0.md",
+      "bytes": 2929,
+      "sha256": "40dcf6a458b648ae16806c8dda99bac3f97bd60be5ae4d3176c0053be1c47a45"
+    },
+    {
+      "name": "P2_C5_P1_01_NUMERIC_ORACLE_2026-10-03_C5_v1.0.md",
+      "bytes": 3348,
+      "sha256": "35dd2d04558b60d38b9457f018f9cb9518a0b5442ceb9e3d67ef0cd4b03f1b96"
+    },
+    {
+      "name": "P2_HANDOFF_TO_COORDINATOR_2026-10-03_C5_v1.0.md",
+      "bytes": 8254,
+      "sha256": "336f38bb7c1a38a6294071ab766f5929123f2e1afcd1b07759243401bbcdca00"
+    },
+    {
+      "name": "SOURCE_SNAPSHOT_2026-10-03_C5_v1.0.json",
+      "bytes": 4465,
+      "sha256": "99646abd453e4bfce136d4a9376b397683f764014a01e97f79df4fb7f0982ce2"
+    },
+    {
+      "name": "legacy_worktree_junit_C5_v1.0.xml",
+      "bytes": 2094,
+      "sha256": "7cbba51d2e7cec85eb3afb0aadbcd2370776840c138a042b0472bf462fb6c433"
+    },
+    {
+      "name": "legacy_worktree_pytest_C5_v1.0.txt",
+      "bytes": 99,
+      "sha256": "d88a1c20000ae401543a362da86aa3b8c90b2879df550ea0eb983b6e36a15503"
+    },
+    {
+      "name": "partial_junit_C5_v1.0.xml",
+      "bytes": 23725,
+      "sha256": "8dfcde6906d8121874bd8f5a62e73830625506a232d391615919f1e1ecb353bf"
+    },
+    {
+      "name": "partial_pytest_C5_v1.0.txt",
+      "bytes": 1817,
+      "sha256": "6574bd4e3899e5d2417d7f96925b2f13e7d84febb4f62bd465040de5685593f0"
+    }
+  ]
+}

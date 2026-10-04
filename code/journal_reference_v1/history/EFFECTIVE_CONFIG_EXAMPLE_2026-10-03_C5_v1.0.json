@@ -1,0 +1,187 @@
+{
+  "status": "CONSTRUCTOR_HELPER_FIXTURE_NOT_RUN",
+  "original_config": {
+    "schema_id": "EMBORA-PARAMS-2026-09-24-R1C5",
+    "specification_id": "EMBORA-MSJ1-2026-09-24-R1C5",
+    "condition_id": "AT-INIT-config",
+    "pair_id": "AT-INIT-pair",
+    "game": "UG",
+    "focal_agent_id": 2,
+    "selected_adapter_convention": "normative_resisted_inequity_v1",
+    "run_purpose": "structural_fixture",
+    "horizon": 2,
+    "agents": [
+      {
+        "agent_id": 1,
+        "seat": 1,
+        "role": "proposer",
+        "controller_type": "model"
+      },
+      {
+        "agent_id": 2,
+        "seat": 2,
+        "role": "responder",
+        "controller_type": "model"
+      }
+    ]
+  },
+  "effective_config": {
+    "schema_id": "EMBORA-PARAMS-2026-09-24-R1C5",
+    "specification_id": "EMBORA-MSJ1-2026-09-24-R1C5",
+    "condition_id": "AT-INIT-config",
+    "pair_id": "AT-INIT-pair",
+    "game": "UG",
+    "focal_agent_id": 2,
+    "selected_adapter_convention": "normative_resisted_inequity_v1",
+    "run_purpose": "structural_fixture",
+    "horizon": 2,
+    "agents": [
+      {
+        "agent_id": 1,
+        "seat": 1,
+        "role": "proposer",
+        "controller_type": "model",
+        "kind": "hybrid",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "variant": "full",
+        "priority_profile": "equal",
+        "initial_primary_state": {
+          "v": {
+            "material": 0.5,
+            "fairness": 0.5,
+            "relationship": 0.5,
+            "safety": 0.5
+          },
+          "d": {
+            "material": 1.0,
+            "fairness": 1.0,
+            "relationship": 1.0,
+            "safety": 1.0
+          },
+          "p": {
+            "material": 1.0,
+            "fairness": 1.0,
+            "relationship": 1.0,
+            "safety": 1.0
+          },
+          "m": 0.0,
+          "f": 0.0
+        }
+      },
+      {
+        "agent_id": 2,
+        "seat": 2,
+        "role": "responder",
+        "controller_type": "model",
+        "kind": "hybrid",
+        "personality": "neutral",
+        "intensity": "neutral",
+        "variant": "full",
+        "priority_profile": "equal",
+        "initial_primary_state": {
+          "v": {
+            "material": 0.5,
+            "fairness": 0.5,
+            "relationship": 0.5,
+            "safety": 0.5
+          },
+          "d": {
+            "material": 1.0,
+            "fairness": 1.0,
+            "relationship": 1.0,
+            "safety": 1.0
+          },
+          "p": {
+            "material": 1.0,
+            "fairness": 1.0,
+            "relationship": 1.0,
+            "safety": 1.0
+          },
+          "m": 0.0,
+          "f": 0.0
+        }
+      }
+    ],
+    "model_mode": "journal_reference_v1",
+    "stochastic_mode": "none",
+    "rng_algorithm": null,
+    "stream_id": null,
+    "replicate_id": null,
+    "training": false,
+    "dqn_config": null,
+    "refocus_config": null
+  },
+  "source_and_effective_initial_states": [
+    {
+      "v": {
+        "material": 0.5,
+        "fairness": 0.5,
+        "relationship": 0.5,
+        "safety": 0.5
+      },
+      "d": {
+        "material": 1.0,
+        "fairness": 1.0,
+        "relationship": 1.0,
+        "safety": 1.0
+      },
+      "p": {
+        "material": 1.0,
+        "fairness": 1.0,
+        "relationship": 1.0,
+        "safety": 1.0
+      },
+      "m": 0.0,
+      "f": 0.0,
+      "personality": "neutral",
+      "intensity": "neutral",
+      "pbar": {
+        "material": 0.25,
+        "fairness": 0.25,
+        "relationship": 0.25,
+        "safety": 0.25
+      },
+      "r": 1.0,
+      "W": 0.5,
+      "Wtilde": 0.0,
+      "S": 0.0
+    },
+    {
+      "v": {
+        "material": 0.5,
+        "fairness": 0.5,
+        "relationship": 0.5,
+        "safety": 0.5
+      },
+      "d": {
+        "material": 1.0,
+        "fairness": 1.0,
+        "relationship": 1.0,
+        "safety": 1.0
+      },
+      "p": {
+        "material": 1.0,
+        "fairness": 1.0,
+        "relationship": 1.0,
+        "safety": 1.0
+      },
+      "m": 0.0,
+      "f": 0.0,
+      "personality": "neutral",
+      "intensity": "neutral",
+      "pbar": {
+        "material": 0.25,
+        "fairness": 0.25,
+        "relationship": 0.25,
+        "safety": 0.25
+      },
+      "r": 1.0,
+      "W": 0.5,
+      "Wtilde": 0.0,
+      "S": 0.0
+    }
+  ],
+  "spec_sha256": "5bb19bcf8db77184489ed90a3674d65785cc23393cc69f3c8173559c42da9434",
+  "parameter_sha256": "1f72c9cbc679fd61a3c71979a22c49c6f48a5e326b3d57df030d76be8db7dc68"
+}

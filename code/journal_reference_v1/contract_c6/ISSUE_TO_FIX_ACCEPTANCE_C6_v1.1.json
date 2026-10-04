@@ -1,0 +1,70 @@
+{
+  "package_id": "EMBORA-R0PKG-2026-10-04-C6-v1.1",
+  "independent_input_verdict": "REVISE P0=0 P1=1 P2=2 Observation=0",
+  "issues": [
+    {
+      "issue_id": "R0-C6-P1-01",
+      "severity": "P1",
+      "status": "addressed / pending independent recheck",
+      "candidate_fix": "Correct same-offer/channel enumeration, explicit positive uniform proof including endpoints/identity/epsilon",
+      "artifacts": [
+        "GAP_SEPARATION_PROOF_C6.md",
+        "GAP_SEPARATION_DERIVATION_C6.json",
+        "derive_gap_proof.py",
+        "MODEL_SPEC_JOURNAL_V1_R1C6.md",
+        "NUMERICAL_CONTRACT_C6.md"
+      ],
+      "owner_check_result": "84 exact pairs, minima N=1/5 A=1/4 B=1/10; 642 rational boundary/identity/epsilon checks; exact positive global margin; 840 inherited F35 outputs unchanged",
+      "acceptance_criterion": "Exact rational enumeration independently yields N=1/5 A=1/4 B=1/10; explicit uniform lower bound remains strictly positive including v=0/1, identity and epsilon; no linked false 1/8 floor remains. Fresh ZIP/manifest plus independent recheck.",
+      "checks_receipt": "REVISION_CHECKS_C6_v1.1.json",
+      "closure_authority": "independent R0 recheck only",
+      "independent_closure": false
+    },
+    {
+      "issue_id": "R0-C6-P2-01",
+      "severity": "P2",
+      "status": "addressed / pending independent recheck",
+      "candidate_fix": "Preserve exact dyadic value with IEEE bits/sign; identity copies v including -0; explicit +0 Delta and signed/absolute urgency",
+      "artifacts": [
+        "reference_binary64.py",
+        "SIGNED_ZERO_FIXTURES_C6.json",
+        "PARAMETER_TABLE_R1C6.yaml",
+        "NUMERIC_EVIDENCE_SCHEMA_C6.json",
+        "NUMERICAL_CONTRACT_C6.md"
+      ],
+      "owner_check_result": "28 exact-bit cases including 4 identity pairs on each candidate/realized path, four material_only copies, nonidentity zero-delta; input v never normalized",
+      "acceptance_criterion": "All four (+0/-0 v,q) identity combinations preserve vhat input-v sign and produce positive-zero Delta/signed/absolute urgency; reference hex matches independent expected bits; material_only copying and nonidentity zero-delta cases separately checked.",
+      "checks_receipt": "REVISION_CHECKS_C6_v1.1.json",
+      "closure_authority": "independent R0 recheck only",
+      "independent_closure": false
+    },
+    {
+      "issue_id": "R0-C6-P2-02",
+      "severity": "P2",
+      "status": "addressed / pending independent recheck",
+      "candidate_fix": "Emit actual I/input/total diagnostics only with known original input origin; explicit unavailable unknown I",
+      "artifacts": [
+        "reference_binary64.py",
+        "ORACLE_FIXTURES_C6.json",
+        "F35_FIXTURES_C6.json",
+        "SIGNED_ZERO_FIXTURES_C6.json",
+        "SELF_CHECK_C6.json",
+        "NUMERIC_EVIDENCE_SCHEMA_C6.json",
+        "PARAMETER_TABLE_R1C6.yaml",
+        "NUMERICAL_CONTRACT_C6.md"
+      ],
+      "owner_check_result": "28 inherited unknown scalar rows audited; 17 known exact-rational rows and original diagnostics unchanged; 840 unknown F35 rows/6720 nested R/B residuals; signed-zero and ancillary executable witnesses audited; no counterfactual actual diagnostics",
+      "acceptance_criterion": "All unknown-origin rows lack claimed actual I and conversion/total residuals; known ideal rows retain exact original tokens/rationals and valid decomposition. Schema/reference/fixtures agree and bounds are checked only where inputs are known.",
+      "checks_receipt": "REVISION_CHECKS_C6_v1.1.json",
+      "closure_authority": "independent R0 recheck only",
+      "independent_closure": false
+    }
+  ],
+  "preexisting_implementation_issue": {
+    "issue_id": "P2-C5-P1-01",
+    "severity": "P1",
+    "status": "CONFIRMED OPEN; not counted as additional R0 finding"
+  },
+  "author_adoption": false,
+  "production_conformance": "NOT_RUN"
+}
