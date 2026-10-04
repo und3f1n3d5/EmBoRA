@@ -7,6 +7,7 @@ from .formulas import *
 
 def candidate_choice(state, offer, adapter):
     """F-18/35; both candidates project the identical pre-state, never q_star."""
+    if type(state) is not State or type(adapter) is not Adapter: raise TraceError('Immutable State and selected Adapter required')
     integer(offer, 2, 8, ActionError)
     candidates = {}
     for action in ('accept', 'reject'):
@@ -19,8 +20,7 @@ def candidate_choice(state, offer, adapter):
 
 
 def validate_choice(trace, state, offer, adapter):
-    if canonical(trace) != canonical(candidate_choice(state, offer, adapter)):
-        raise TraceError('Candidate adapter/q/projection/vote/N/P/D/category/action mismatch')
+    assert_exact_tree(trace,candidate_choice(state, offer, adapter))
 
 
 def baseline_policy(baseline_id, obs):
@@ -52,6 +52,7 @@ class Agent:
     @classmethod
     def construct(cls, config, agent_id, adapter):
         validate_config(config); integer(agent_id, 1, 2, ConfigError)
+        if type(adapter) is not Adapter: raise ConfigError('Selected immutable Adapter required')
         if (adapter.selected_adapter_convention, adapter.run_purpose) != (config['selected_adapter_convention'], config['run_purpose']):
             raise ConfigError('Constructor adapter mismatch')
         return cls(canonical(config), agent_id, adapter)
@@ -70,6 +71,12 @@ class Agent:
         return None if s is None else s.project(self.descriptor['variant'])
 
     def decide(self, payload):
+        return self._compute_decision(payload)
+
+    def validate_decision(self, decision, payload):
+        assert_exact_tree(decision, self._compute_decision(payload))
+
+    def _compute_decision(self, payload):
         keys(payload, ('public_observation', 'own_pre_state'), PayloadError)
         config = self.config; a = self.descriptor; obs = payload['public_observation']
         validate_observation(obs, config, a)
@@ -106,24 +113,29 @@ class Agent:
 
     def prepare_update(self, state, observation, decision, result, expected_round):
         """Compute without mutation; orchestrator alone owns exactly-once atomic commit."""
-        a = self.descriptor; data = result.validate(self.config, a)
+        a = self.descriptor
+        if type(result) is not Result: raise PayloadError('Immutable Result required')
+        validate_observation(observation, self.config, a)
+        data = result.validate(self.config, a)
         if type(expected_round) is not int or data['round'] != expected_round or observation['round'] != expected_round: raise UpdateError('Duplicate/stale result before mutation')
         payload = {'public_observation': observation, 'own_pre_state': None if state is None else state.to_dict()}
-        if canonical(decision) != canonical(self.decide(payload)): raise TraceError('Malformed decision trace')
+        self.validate_decision(decision,payload)
         if decision['action'] != data['actions_by_seat'][a['seat'] - 1]: raise TraceError('Final action/result mismatch')
         if self.config['game'] == 'UG' and a['role'] == 'responder' and observation['current_offer'] != data['actions_by_seat'][0]['offer']: raise TraceError('Current offer/result mismatch')
-        if state is None: return None, {'raw_q': None, 'q_star': None, 'V': None, 'L': None, 'k_star': None, 'rho': None, 'adapter_id': self.adapter.adapter_id}
+        if state is None:
+            return None, {**{k: None for k in ('raw_q','q_star','delta','u_signed','u','V','L','k_star','rho','sigma','Csup_raw','Csup_applied','mood_preclip','fatigue_preclip','unprojected_post_state','post_state','numeric_evidence','variant')},
+                          'adapter_id': self.adapter.adapter_id, 'selected_adapter_convention': self.adapter.selected_adapter_convention, 'update_count': 1}
+
         pre = state.project(a['variant'])
         q = self.adapter.raw(data['game'], a['seat'], a['role'], data['actions_by_seat'])
         q_star = tuple(q[j] if j == 0 or a['variant'] != 'material_only' else pre.v[j] for j in range(4))  # F-32
         projected = projection(pre, q_star)
-        # A material_only neutral nonmaterial target is exactly the pre-value.
-        # Avoid rounding drift in the identity recurrence (its real-valued Δ is zero).
-        vnew = tuple(pre.v[j] if a['variant'] == 'material_only' and j != 0 else projected['vhat'][K[j]] for j in range(4))
-        delta = tuple(v - prev for v, prev in zip(vnew, pre.v))
-        signed = tuple(urgency(prev, cur, d) for prev, cur, d in zip(pre.v, vnew, pre.d))
-        u = tuple(abs(x) for x in signed)
-        V = sum(p * s for p, s in zip(pre.pbar, signed)); L = sum(p * x for p, x in zip(pre.pbar, u))  # F-09
+        vnew = tuple(projected['vhat'][k] for k in K)
+        delta = tuple(projected['Deltahat'][k] for k in K)
+        signed = tuple(projected['uhat_signed'][k] for k in K)
+        u = tuple(projected['uhat_absolute'][k] for k in K)
+        V = ordered_sum(p * s for p, s in zip(pre.pbar, signed))
+        L = ordered_sum(p * x for p, x in zip(pre.pbar, u))
         rho = reaction(V, pre.chi2)  # F-11
         sigma = int(decision['aE'] != decision['action']); cost_raw = sigma * abs(decision['iota'])  # F-21
         cost_applied = 0. if a['variant'] == 'no_suppression' else cost_raw
@@ -136,4 +148,4 @@ class Agent:
                       'Csup_raw': cost_raw, 'Csup_applied': cost_applied, 'mood_preclip': mood_preclip, 'fatigue_preclip': fatigue_preclip,
                       'unprojected_post_state': unprojected.to_dict(), 'post_state': post.to_dict(),
                       'adapter_id': self.adapter.adapter_id, 'selected_adapter_convention': self.adapter.selected_adapter_convention,
-                      'variant': a['variant'], 'update_count': 1}
+                      'variant': a['variant'], 'numeric_evidence': projected['numeric_evidence'], 'update_count': 1}

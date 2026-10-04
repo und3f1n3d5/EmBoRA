@@ -1,5 +1,6 @@
 """Pure model helpers. Branch comparisons are exact; no tolerances."""
 from .schema import *
+from .numeric import channel_projection
 
 
 def urgency(prev, current, desired, epsilon=C['epsilon']):
@@ -17,10 +18,15 @@ def projection(state, q):
     """F-05/07/08: side-effect-free projection from one immutable pre-state."""
     if type(q) is not tuple or len(q) != 4: raise StateError('K target vector required')
     for x in q: real(x, 0, 1, StateError)
-    vhat = tuple(clip(0, 1, (1 - C['alpha']) * v + C['alpha'] * target) for v, target in zip(state.v, q))
-    delta = tuple(vh - v for vh, v in zip(vhat, state.v))
-    signed = tuple(urgency(v, vh, d) for v, vh, d in zip(state.v, vhat, state.d))
-    return {'vhat': mapping(vhat), 'Deltahat': mapping(delta), 'uhat_signed': mapping(signed)}
+    channels = [channel_projection(v, target, d) for v, target, d in zip(state.v, q, state.d)]
+    from .evidence import channel_evidence
+    evidence = [channel_evidence(v, target, result) for v, target, result in zip(state.v, q, channels)]
+    return {'vhat': mapping([x['current'] for x in channels]),
+            'Deltahat': mapping([x['delta'] for x in channels]),
+            'uhat_signed': mapping([x['u'] for x in channels]),
+            'uhat_absolute': mapping([x['u_abs'] for x in channels]),
+            'numeric_evidence': mapping(evidence)}
+
 
 
 def focus(pbar, signed):

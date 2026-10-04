@@ -8,19 +8,29 @@ from pathlib import Path
 import yaml
 
 CONTRACT = Path(__file__).parent / 'contract'
-PARAMETER_SHA256 = '1f72c9cbc679fd61a3c71979a22c49c6f48a5e326b3d57df030d76be8db7dc68'
-SPEC_SHA256 = '5bb19bcf8db77184489ed90a3674d65785cc23393cc69f3c8173559c42da9434'
-raw = (CONTRACT / 'PARAMETER_TABLE_R1C5.yaml').read_bytes()
+C6_CONTRACT = Path(__file__).parent / 'contract_c6'
+PARAMETER_SHA256 = 'e22fceab6edcb99de00d04e4ef547e813bb05ce4f296cf4594ad59bc69196a86'
+SPEC_SHA256 = '6000a98f2fc6451522b56f932ab93f4a36a1e8947301c871a5951bce55a7fb70'
+raw = (C6_CONTRACT / 'PARAMETER_TABLE_R1C6.yaml').read_bytes()
 if hashlib.sha256(raw).hexdigest() != PARAMETER_SHA256:
-    raise RuntimeError('Frozen parameter bytes differ from C5')
-if hashlib.sha256((CONTRACT / 'MODEL_SPEC_JOURNAL_V1_R1C5.md').read_bytes()).hexdigest() != SPEC_SHA256:
-    raise RuntimeError('Frozen specification bytes differ from C5')
+    raise RuntimeError('Frozen C6 parameter bytes differ')
+if hashlib.sha256((C6_CONTRACT / 'MODEL_SPEC_JOURNAL_V1_R1C6.md').read_bytes()).hexdigest() != SPEC_SHA256:
+    raise RuntimeError('Frozen C6 specification bytes differ')
 REGISTRY = yaml.safe_load(raw)
 C = REGISTRY['constants']
 K = tuple(REGISTRY['enums']['value_keys_order'])
 SPEC_ID = REGISTRY['specification_id']
 SCHEMA_ID = REGISTRY['schema_id']
-U1_ID = 'EMBORA-U1-DECISION-2026-10-03-C5-v1.0'
+U1_ID = 'EMBORA-U1-ADDENDUM-2026-10-04-C6-v1.1-v1.0'
+NUMERIC_POLICY_ID = 'EMBORA-NUMERIC-2026-10-04-C6-v1.1'
+EVIDENCE_ID = 'EMBORA-NUMERIC-EVIDENCE-2026-10-04-C6-v1.1'
+
+
+def ordered_sum(terms):
+    total = 0.
+    for term in terms:
+        total = total + term
+    return total
 
 class ContractError(ValueError):
     """Malformed input; never replace an invalid value with a fallback."""
@@ -35,6 +45,20 @@ class ScopeError(ContractError): pass
 
 def canonical(data):
     return json.dumps(data, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False)
+
+
+def assert_exact_tree(actual, expected, error=TraceError):
+    """Closed structural types and exact rounded values, including zero sign."""
+    if type(expected) is dict:
+        keys(actual, expected, error)
+        for key in expected: assert_exact_tree(actual[key], expected[key], error)
+    elif type(expected) is list:
+        if type(actual) is not list or len(actual) != len(expected): raise error('Trace array mismatch')
+        for a,b in zip(actual,expected): assert_exact_tree(a,b,error)
+    elif type(expected) is float:
+        if real(actual,error=error).hex() != expected.hex(): raise error('Rounded scalar/zero-sign mismatch')
+    elif type(actual) is not type(expected) or actual != expected:
+        raise error('Exact trace value/type mismatch')
 
 
 def parse_json(text):
@@ -54,9 +78,14 @@ def keys(obj, expected, error=ContractError):
 
 
 def real(x, lo=-math.inf, hi=math.inf, error=ContractError):
-    if type(x) not in (int, float) or not math.isfinite(x) or not lo <= x <= hi:
+    try:
+        valid = type(x) in (int, float) and math.isfinite(x) and lo <= x <= hi
+        value = float(x) if valid else None
+    except (OverflowError, ValueError, TypeError):
+        valid = False
+    if not valid:
         raise error('Expected finite real in declared domain')
-    return float(x)
+    return value
 
 
 def integer(x, lo, hi, error=ContractError):
@@ -105,6 +134,9 @@ class State:
         real(self.m, -.5, .5, StateError); real(self.f, 0, 1, StateError)
         enum(self.personality, REGISTRY['personality_map'], StateError)
         enum(self.intensity, REGISTRY['intensity_map'], StateError)
+        for field in ('v','d','p'):
+            object.__setattr__(self,field,tuple(float(x) for x in getattr(self,field)))
+        object.__setattr__(self,'m',float(self.m)); object.__setattr__(self,'f',float(self.f))
 
     @classmethod
     def from_primary(cls, primary, personality, intensity):
@@ -119,11 +151,11 @@ class State:
     @property
     def pbar(self):
         p = self.p_clip
-        return tuple(x / sum(p) for x in p)  # F-06, fixed K
+        return tuple(x / ordered_sum(p) for x in p)  # F-06, fixed K
     @property
     def r(self): return 1 - self.f  # F-24
     @property
-    def W(self): return sum(p * v for p, v in zip(self.pbar, self.v))  # F-25
+    def W(self): return ordered_sum(p * v for p, v in zip(self.pbar, self.v))  # F-25
     @property
     def Wtilde(self): return clip(C['wellbeing_min'], C['wellbeing_max'], 2 * self.W - 1)  # F-26
     @property
@@ -144,7 +176,10 @@ class State:
     def from_dict(cls, data):
         keys(data, ('v', 'd', 'p', 'm', 'f', 'personality', 'intensity', 'pbar', 'r', 'W', 'Wtilde', 'S'), StateError)
         state = cls.from_primary({k: data[k] for k in ('v', 'd', 'p', 'm', 'f')}, data['personality'], data['intensity'])
-        if canonical(state.to_dict()) != canonical(data): raise StateError('Inconsistent derived state')
+        expected = state.to_dict()
+        if tuple(x.hex() for x in vector(data['pbar'])) != tuple(x.hex() for x in state.pbar): raise StateError('Inconsistent derived pbar')
+        for field in ('r','W','Wtilde','S'):
+            if real(data[field],error=StateError).hex() != float(expected[field]).hex(): raise StateError('Inconsistent derived state: '+field)
         return state
 
     def project(self, variant):
@@ -176,7 +211,7 @@ def prepare_config(source):
             for key, default in contract['agent_default_resolution'].items():
                 if key != 'initial_primary_state': a.setdefault(key, default)
             if 'initial_primary_state' not in a:
-                if a['priority_profile'] not in REGISTRY['priority_profiles']: raise ConfigError('Unknown priority profile')
+                enum(a['priority_profile'], REGISTRY['priority_profiles'], ConfigError)
                 primary = copy.deepcopy(REGISTRY['initial_primary_defaults'])
                 primary['p'] = mapping(REGISTRY['priority_profiles'][a['priority_profile']])
                 a['initial_primary_state'] = primary
@@ -224,6 +259,7 @@ def validate_config(config):
             baseline_key = ('UG_' + role) if config['game'] == 'UG' else config['game']
             enum(a['baseline_id'], REGISTRY['enums']['baseline_id'][baseline_key], ConfigError)
     if {a['agent_id'] for a in agents} != {1, 2} or {a['seat'] for a in agents} != {1, 2}: raise ConfigError('Identities/seats not bijective')
+    if next(a for a in agents if a['agent_id'] == config['focal_agent_id'])['controller_type'] != 'model': raise ConfigError('Focal agent must be model')
     return config
 
 

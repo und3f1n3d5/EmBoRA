@@ -1,0 +1,15 @@
+{
+  "receipt_id": "EMBORA-C6-SOURCE-INTEGRITY-2026-10-03-v1.0",
+  "read_utc": "2026-10-03T19:01:28.149193+00:00",
+  "C5_zip_sha256": "7018b7271d4ce9159bff7344f6aca5a6e74021791bde07a5c7623d7a6e6a0c4c",
+  "C5_manifest_sha256": "f1a8b850d8f78676e8bd6db0f36a81dff5d75dd4725837fb0af73e38eebcb47c",
+  "C5_zip_bytes": 58842,
+  "C5_manifest_bytes": 4854,
+  "crc": "PASS",
+  "exact_entry_set": true,
+  "entries": 14,
+  "verified_artifacts": 13,
+  "internal_external_manifest_equal": true,
+  "source_bytes_unmodified": true,
+  "current_decisions": "C5 U1 APPROVED; C6 NOT_ADOPTED; P2 REVISE; P2-C5-P1-01 OPEN"
+}

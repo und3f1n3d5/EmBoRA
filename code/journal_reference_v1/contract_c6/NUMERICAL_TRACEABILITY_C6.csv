@@ -1,0 +1,7 @@
+formula,candidate_delta,reference_evidence,acceptance,production_status
+F-05,Literal RN graph plus common identity,ORACLE_FIXTURES_C6.json / SIGNED_ZERO_FIXTURES_C6.json / reference_binary64.py,B comparison; exact identity/range,NOT_PATCHED / NOT_CERTIFIED
+F-07/F-08,Rounded Delta-owned graph; same real equations,ORACLE_FIXTURES_C6.json,scientific +/-7/40 retained; separate diagnostics,NOT_PATCHED / NOT_CERTIFIED
+F-32,Copied material_only targets invoke identity,SELF_CHECK_C6.json / NUMERICAL_CONTRACT_C6,exact nonmaterial Delta=0; four candidate votes retained,NOT_PATCHED / NOT_CERTIFIED
+F-35,Unchanged scientific choice; executable gap proof,F35_FIXTURES_C6.json / GAP_SEPARATION_PROOF_C6.md / GAP_SEPARATION_DERIVATION_C6.json,exact z; fixed-K fsum; N-only tie; one-sided neighbors,NOT_PATCHED / NOT_CERTIFIED
+F-09/F-10/F-11,Dependent ordered/focus/branch checks,C5 S06 / NUMERICAL_CONTRACT_C6,no alpha snap; Engineer checks required,NOT_PATCHED / NOT_CERTIFIED
+F-34,Unchanged trajectory hash; not material_only,UPSTREAM_C5 S11,canonical hash; new numbers/config imply new hashes,NOT_PATCHED / NOT_CERTIFIED

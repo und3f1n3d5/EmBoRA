@@ -1,0 +1,108 @@
+{
+  "schema_id": "EMBORA-NUMERIC-EVIDENCE-2026-10-04-C6-v1.1",
+  "status": "CANDIDATE_NOT_ADOPTED",
+  "required": [
+    "numeric_policy_id",
+    "specification_id",
+    "parameter_schema_id",
+    "runtime_lock_sha256",
+    "input_origin",
+    "executable_reference_sha256",
+    "implementation_reference_comparison",
+    "exact_invariant_checks"
+  ],
+  "input_origin_enum": [
+    "exact_decimal_or_rational_known",
+    "binary64_hex_designated",
+    "derived_binary64_ideal_unknown"
+  ],
+  "known_ideal_diagnostics_required": [
+    "ideal_I",
+    "real_on_rounded_R",
+    "executable_B",
+    "input_residual_R_minus_I",
+    "arithmetic_residual_B_minus_R",
+    "total_residual_B_minus_I",
+    "independently_derived_bounds"
+  ],
+  "implementation_required": [
+    "observed_O",
+    "implementation_discrepancy_O_minus_B",
+    "absolute_tolerance_1e-12",
+    "relative_tolerance_1e-12",
+    "exact_categories"
+  ],
+  "unknown_ideal_rule": "do not invent I or zero input residual; compute B-R where rounded inputs known",
+  "not_a_config_override": true,
+  "author_adoption": false,
+  "fixture_contract": {
+    "shared_required": [
+      "ideal_input_known",
+      "input_origin"
+    ],
+    "scalar_and_signed_zero_required": [
+      "rounded_inputs",
+      "nodes",
+      "real_on_rounded_inputs",
+      "arithmetic_error"
+    ],
+    "known_origin_required": [
+      "ideal_inputs",
+      "original_exact_tokens",
+      "scientific_ideal",
+      "input_error",
+      "total_error",
+      "input_bound",
+      "total_bound"
+    ],
+    "unknown_origin_forbidden_actual": [
+      "ideal_inputs",
+      "original_exact_tokens",
+      "scientific_ideal",
+      "input_error",
+      "total_error",
+      "input_bound",
+      "total_bound"
+    ],
+    "F35_unknown_origin_required": [
+      "candidate_appraisal_diagnostics"
+    ],
+    "counterfactual_rule": "optional separately labelled counterfactual object, never actual diagnostics; not emitted in v1.1",
+    "ieee_nodes_required": [
+      "fraction",
+      "float",
+      "hex",
+      "bits_hex",
+      "sign_bit"
+    ],
+    "exact_rational_display_rule": "record exact rational plus explicitly labelled binary64 display metadata; ieee_nodes are exact rounded dyadics",
+    "unknown_origin_required": [
+      "actual_ideal_status"
+    ],
+    "ancillary_executable_witness_rule": "SELF_CHECK ancillary_input_origin declares hex-designated executable-only witnesses; copy vectors are bit-copy assertions; neither asserts actual I"
+  },
+  "bounds_applicability": {
+    "arithmetic": "R/B inputs known exactly as binary64, fixed production alpha/epsilon/d=1",
+    "input_and_total": "only known original exact inputs; never unknown-origin actual data",
+    "separation": "same-adapter same-offer same-channel frozen UG responder pairs; min N=1/5 A=1/4 B=1/10"
+  },
+  "signed_zero_required": {
+    "identity_current": "copy input-v bits including negative zero",
+    "identity_outputs": [
+      "Delta_positive_zero",
+      "signed_urgency_positive_zero",
+      "absolute_urgency_positive_zero"
+    ],
+    "assertion": "exact IEEE bits, not Fraction equality or scalar tolerance"
+  },
+  "schema_kind": "candidate evidence field contract; required at evidence-report envelope, fixture_contract at fixture rows",
+  "logical_layer_to_fixture_field": {
+    "ideal_I": "scientific_ideal",
+    "real_on_rounded_R": "real_on_rounded_inputs",
+    "executable_B": "nodes.u for scalar/signed-zero or executable_B for F35 nested appraisal",
+    "input_residual_R_minus_I": "input_error",
+    "arithmetic_residual_B_minus_R": "arithmetic_error",
+    "total_residual_B_minus_I": "total_error",
+    "independently_derived_bounds": "arithmetic_bound and, for known origin only, input_bound/total_bound"
+  }
+}

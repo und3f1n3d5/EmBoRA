@@ -4,6 +4,7 @@ import subprocess
 from .schema import *
 from .games import Adapter, Result, observation, execute, validate_action
 from .model import Agent
+from .evidence import runtime_record, runtime_hash, check_fp_controls
 
 
 @dataclass(frozen=True)
@@ -14,7 +15,7 @@ class P2ConformanceAuthority:
 
     def validate(self, config):
         if self.decision_record_id != U1_ID: raise ScopeError('Wrong administrative authority')
-        if type(self.acceptance_test_id) is not str or not self.acceptance_test_id.startswith('AT-'): raise ScopeError('Declared acceptance fixture required')
+        if type(self.acceptance_test_id) is not str or self.acceptance_test_id not in ACCEPTANCE_IDS: raise ScopeError('Declared acceptance fixture required')
         if type(self.episode_id) is not str or not self.episode_id: raise ScopeError('Explicit fixture episode ID required')
         # A/B vectors are checked via pure adapter/candidate helpers, never trajectories.
         if config['run_purpose'] != 'structural_fixture' or config['horizon'] > 8:
@@ -25,8 +26,12 @@ class P2ConformanceAuthority:
                 'episode_id': self.episode_id, 'work_kind': 'conformance', 'pilot_authorized': False, 'full_runs_authorized': False}
 
 
+ACCEPTANCE_IDS = ('AT-INIT AT-GAMES AT-BOS AT-UG-POLICY AT-UG-CHOICE AT-UG-OFFER AT-EVENT AT-LEAK AT-UG-ADAPTER AT-ADAPTER-PDBOS AT-URGENCY AT-FOCUS AT-THRESHOLD AT-PD AT-STATE AT-SUPPRESSION AT-MATERIAL AT-SWITCH AT-INVALID AT-RNG AT-BASELINE AT-CLAIMS AT-LEGACY AT-PACKAGE').split()
+
+
 class Engine:
     def __init__(self, effective_config, authority):
+        check_fp_controls()
         validate_config(effective_config)
         if type(authority) is not P2ConformanceAuthority: raise ScopeError('Explicit administrative authority required')
         authority.validate(effective_config)
@@ -55,30 +60,42 @@ class Engine:
         t = len(self._history) + 1
         if t > self.config['horizon']: raise UpdateError('Episode complete; duplicate round rejected')
         config = self.config
-        self.authority.validate(config)
         events = ['validate_config_and_pre_states', 'snapshot_both_pre_states_and_history']
         pre = self.states
         history = self.history
         try:
+            self.authority.validate(config)
+            check_fp_controls()
+            validate_config(config)
+            if [a.descriptor for a in self.agents] != sorted(config['agents'],key=lambda a:a['seat']): raise ConfigError('Agent/run identity mismatch')
+            for agent, state in zip(self.agents, pre):
+                if (state is None) != (agent.descriptor["controller_type"] == "baseline"): raise StateError("Controller/state mismatch")
+                if state is not None: State.from_dict(state.to_dict())
+            if self.execution_counter != t - 1 or self.update_counters != (t - 1, t - 1): raise UpdateError("Inconsistent pre-round counters")
             # Detect accidental replacement of the run selection before any affected round.
             if any(a.adapter != self.adapter for a in self.agents): raise TraceError('Agent/run adapter mismatch')
             decisions, observations = [], []
+            if config['game'] != 'UG':
+                observations = [observation(config, a.descriptor, history) for a in self.agents]
+                events.extend(['build_observation_seat_1', 'build_observation_seat_2'])
             for j, agent in enumerate(self.agents):
                 offer = decisions[0]['action']['offer'] if config['game'] == 'UG' and j == 1 else None
-                obs = observation(config, agent.descriptor, history, offer)
-                observations.append(obs); events.append(f'build_observation_seat_{j+1}')
+                if config['game'] == 'UG':
+                    obs = observation(config, agent.descriptor, history, offer)
+                    observations.append(obs); events.append(f'build_observation_seat_{j+1}')
+                else: obs = observations[j]
                 payload = {'public_observation': copy.deepcopy(obs), 'own_pre_state': None if pre[j] is None else pre[j].to_dict()}
                 before = canonical(payload)
                 decision = agent.decide(payload)
                 if canonical(payload) != before: raise TraceError('Decision mutated inputs')
                 events.append(f'decide_seat_{j+1}')
                 # Recompute exact typed trace before execution, not after mutation.
-                if canonical(decision) != canonical(agent.decide({'public_observation': obs, 'own_pre_state': None if pre[j] is None else pre[j].to_dict()})): raise TraceError('Invalid returned trace')
+                agent.validate_decision(decision,{'public_observation': obs, 'own_pre_state': None if pre[j] is None else pre[j].to_dict()})
                 validate_action(config['game'], agent.descriptor['role'], decision['action'])
                 decisions.append(decision); events.append(f'validate_decision_seat_{j+1}')
             actions = [d['action'] for d in decisions]
             payoffs = execute(config['game'], actions); events.append('execute_game_once')
-            results = tuple(Result.build(config['game'], t, a.descriptor, actions) for a in self.agents)
+            results = tuple(Result.build(config['game'], t, a.descriptor, actions, payoffs) for a in self.agents)
             # Both immutable results exist before either update computation.
             for result, agent in zip(results, self.agents): result.validate(config, agent.descriptor)
             events.extend(['build_result_seat_1', 'build_result_seat_2'])
@@ -88,7 +105,7 @@ class Engine:
                 computed.append(agent.prepare_update(pre[j], observations[j], decisions[j], results[j], t))
                 events.append(f'prepare_update_seat_{j+1}')
             post = tuple(c[0] for c in computed)
-            record = {'schema_id': 'EMBORA-PRIVATE-ROUND-C5-P2-v1.0', 'specification_id': SPEC_ID,
+            record = {'schema_id': 'EMBORA-PRIVATE-ROUND-C6-P2-v1.0', 'specification_id': SPEC_ID,
                       'condition_id': config['condition_id'], 'pair_id': config['pair_id'], 'episode_id': self.authority.episode_id,
                       'model_mode': 'journal_reference_v1', 'game': config['game'], 'round': t,
                       'selected_adapter_convention': self.adapter.selected_adapter_convention, 'selected_adapter_id': self.adapter.adapter_id,
@@ -116,19 +133,30 @@ class Engine:
         while len(self._history) < self.config['horizon']: self.step()
         return self.records
 
-    def manifest(self, original_config):
+    def manifest(self, original_config, original_config_text=None):
         cfg = self.config
         if canonical(prepare_config(original_config)) != canonical(cfg): raise ConfigError('Original/effective config mismatch')
+        if original_config_text is not None:
+            if type(original_config_text) is not str or canonical(parse_json(original_config_text)) != canonical(original_config): raise ConfigError('Original text/config mismatch')
+            from .cli import token_lineage
+            numeric_tokens = token_lineage(original_config_text)
+        else: numeric_tokens = None
         root = Path(__file__).resolve().parents[2]
         def git(*args):
             return subprocess.check_output(['git', '-C', str(root), *args], text=True).strip()
         lock = Path(__file__).parent / 'requirements.lock'
         hashes = {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                   for p in sorted(Path(__file__).parent.rglob('*')) if p.is_file() and p.suffix in ('.py', '.yaml', '.md', '.csv', '.json', '.lock') and '__pycache__' not in p.parts}
-        return {'schema_id': 'EMBORA-MANIFEST-C5-P2-v1.0', 'specification_id': SPEC_ID, 'parameter_schema_id': SCHEMA_ID,
+        return {'schema_id': 'EMBORA-MANIFEST-C6-P2-v1.0', 'specification_id': SPEC_ID, 'parameter_schema_id': SCHEMA_ID,
                 'original_config': copy.deepcopy(original_config), 'effective_config': cfg,
+                'original_config_text': original_config_text,
+                'original_config_text_sha256': None if original_config_text is None else hashlib.sha256(original_config_text.encode()).hexdigest(),
+                'original_numeric_tokens': numeric_tokens,
+                'configuration_input_origin': 'binary64_object_no_original_tokens' if original_config_text is None else 'original_json_numeric_tokens_preserved',
+                'numeric_policy_id': NUMERIC_POLICY_ID, 'numeric_evidence_schema_id': EVIDENCE_ID,
+                'runtime_lock': runtime_record(), 'runtime_lock_sha256': runtime_hash(),
                 'constants_and_enum_versions': copy.deepcopy(REGISTRY), 'u1_decision_record_id': U1_ID,
-                'c4_author_decision_id': 'Drive file 1OLKGRr1ebA3Mi2I_YIqpyrG2MwGpBdAo (historical source; live authority U1 C5)',
+                'c4_author_decision_id': 'Drive file 1OLKGRr1ebA3Mi2I_YIqpyrG2MwGpBdAo (historical source; historical provenance; live authority U1 C6 addendum)',
                 'spec_sha256': SPEC_SHA256, 'parameter_sha256': PARAMETER_SHA256,
                 'selected_adapter_convention': self.adapter.selected_adapter_convention, 'selected_adapter_id': self.adapter.adapter_id,
                 'source_initial_states_by_seat': [None if a.initial_source_state is None else a.initial_source_state.to_dict() for a in self.agents],
@@ -139,11 +167,14 @@ class Engine:
                 'pairing_and_data_generating_process_descriptor': {'pair_id': cfg['pair_id'], 'mode': 'deterministic', 'active_rng': None, 'sampling_units': 0},
                 'administrative_authority': self.authority.to_dict(), 'failure_status': self.failures, 'trajectory_hash': trajectory_hash(self.records)}
 
-    def save(self, destination, original_config):
+    def save(self, destination, original_config, original_config_text=None):
         destination = Path(destination)
         destination.mkdir(parents=True, exist_ok=False)  # preserve failed/existing artifacts
-        for name, data in [('manifest.json', self.manifest(original_config)), ('rounds.json', self.records), ('failures.json', self.failures)]:
+        if canonical(prepare_config(original_config)) != canonical(self.config): raise ConfigError('Original/effective config mismatch')
+        for name, data in [('manifest.json', self.manifest(original_config,original_config_text)), ('rounds.json', self.records), ('failures.json', self.failures)]:
             with (destination / name).open('x', encoding='utf-8') as out: out.write(canonical(data) + '\n')
+        file_hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in destination.glob('*.json')}
+        (destination/'artifact_hashes.json').write_text(canonical(file_hashes)+'\n')
 
 
 def trajectory_hash(records):

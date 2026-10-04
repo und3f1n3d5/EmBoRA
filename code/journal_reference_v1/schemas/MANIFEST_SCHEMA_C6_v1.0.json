@@ -1,0 +1,2527 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "EMBORA-MANIFEST_SCHEMA_C6_v1.0",
+  "title": "MANIFEST_SCHEMA_C6_v1.0",
+  "description": "Complete structural inventory; cross-field, exact-bit, context and operation-graph invariants are enforced by the closed Python validators and CLI.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "administrative_authority",
+    "c4_author_decision_id",
+    "code_branch",
+    "code_commit",
+    "code_hash",
+    "config_hash",
+    "configuration_input_origin",
+    "constants_and_enum_versions",
+    "dependency_lock_hash",
+    "dirty_state",
+    "effective_config",
+    "effective_initial_states_by_seat",
+    "failure_status",
+    "numeric_evidence_schema_id",
+    "numeric_policy_id",
+    "original_config",
+    "original_config_text",
+    "original_config_text_sha256",
+    "original_numeric_tokens",
+    "pairing_and_data_generating_process_descriptor",
+    "parameter_schema_id",
+    "parameter_sha256",
+    "runtime_lock",
+    "runtime_lock_sha256",
+    "schema_id",
+    "selected_adapter_convention",
+    "selected_adapter_id",
+    "source_hashes",
+    "source_initial_states_by_seat",
+    "spec_sha256",
+    "specification_id",
+    "trajectory_hash",
+    "u1_decision_record_id"
+  ],
+  "properties": {
+    "administrative_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "acceptance_test_id",
+        "decision_record_id",
+        "episode_id",
+        "full_runs_authorized",
+        "pilot_authorized",
+        "work_kind"
+      ],
+      "properties": {
+        "acceptance_test_id": {
+          "type": "string"
+        },
+        "decision_record_id": {
+          "type": "string"
+        },
+        "episode_id": {
+          "type": "string"
+        },
+        "full_runs_authorized": {
+          "type": "boolean"
+        },
+        "pilot_authorized": {
+          "type": "boolean"
+        },
+        "work_kind": {
+          "type": "string"
+        }
+      }
+    },
+    "c4_author_decision_id": {
+      "type": "string"
+    },
+    "code_branch": {
+      "type": "string"
+    },
+    "code_commit": {
+      "type": "string"
+    },
+    "code_hash": {
+      "type": "string"
+    },
+    "config_hash": {
+      "type": "string"
+    },
+    "configuration_input_origin": {
+      "type": "string"
+    },
+    "constants_and_enum_versions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "adapter_contract",
+        "authority",
+        "constants",
+        "derived_initial_fields",
+        "domains",
+        "effective_config_contract",
+        "enums",
+        "game_parameters",
+        "initial_primary_defaults",
+        "intensity_map",
+        "parameter_rule",
+        "personality_map",
+        "priority_profiles",
+        "provenance",
+        "readout_sensitivity",
+        "responder_action_evaluation",
+        "schema_id",
+        "serialization",
+        "specification_id",
+        "status"
+      ],
+      "properties": {
+        "adapter_contract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidate_and_realized_adapter_must_match_selected",
+            "context_matrix",
+            "mixed_or_implicit_selection",
+            "normative",
+            "per_row_or_per_action_override",
+            "reference_selected_adapter_convention",
+            "selection_required_explicit",
+            "selection_source",
+            "sensitivity_A",
+            "sensitivity_B"
+          ],
+          "properties": {
+            "candidate_and_realized_adapter_must_match_selected": {
+              "type": "boolean"
+            },
+            "context_matrix": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "normative_resisted_inequity_v1",
+                "sensitivity_neutral_no_exchange_v1",
+                "sensitivity_zero_exchange_v1"
+              ],
+              "properties": {
+                "normative_resisted_inequity_v1": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sensitivity_neutral_no_exchange_v1": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sensitivity_zero_exchange_v1": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "mixed_or_implicit_selection": {
+              "type": "string"
+            },
+            "normative": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "allowed_run_purpose",
+                "config_key",
+                "id",
+                "reject_fairness",
+                "reject_relationship"
+              ],
+              "properties": {
+                "allowed_run_purpose": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "config_key": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "reject_fairness": {
+                  "type": "string"
+                },
+                "reject_relationship": {
+                  "type": "number"
+                }
+              }
+            },
+            "per_row_or_per_action_override": {
+              "type": "string"
+            },
+            "reference_selected_adapter_convention": {
+              "type": "string"
+            },
+            "selection_required_explicit": {
+              "type": "boolean"
+            },
+            "selection_source": {
+              "type": "string"
+            },
+            "sensitivity_A": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "allowed_run_purpose",
+                "config_key",
+                "id",
+                "reject_fairness",
+                "reject_relationship"
+              ],
+              "properties": {
+                "allowed_run_purpose": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "config_key": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "reject_fairness": {
+                  "type": "number"
+                },
+                "reject_relationship": {
+                  "type": "number"
+                }
+              }
+            },
+            "sensitivity_B": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "allowed_run_purpose",
+                "config_key",
+                "id",
+                "reject_fairness",
+                "reject_relationship"
+              ],
+              "properties": {
+                "allowed_run_purpose": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "config_key": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "reject_fairness": {
+                  "type": "number"
+                },
+                "reject_relationship": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "authority": {
+          "type": "string"
+        },
+        "constants": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "W_center",
+            "a_f",
+            "alpha",
+            "b_W",
+            "b_f",
+            "b_m",
+            "epsilon",
+            "fatigue_impulse_rate",
+            "fatigue_load_rate",
+            "impulse_abs_max",
+            "impulse_max",
+            "impulse_min",
+            "kappa",
+            "lambda_W",
+            "lambda_f",
+            "lambda_m",
+            "m_negative_cut",
+            "m_negative_offset",
+            "m_positive_cut",
+            "m_positive_offset",
+            "mood_decay",
+            "mood_max",
+            "mood_min",
+            "mood_scale",
+            "p_max",
+            "p_min",
+            "pd_emotional_cut",
+            "pd_rational_state_cut",
+            "reaction_max",
+            "reaction_min",
+            "recovery_rate",
+            "resource_cut",
+            "resource_offset",
+            "suppression_cost_rate",
+            "theta_max",
+            "theta_min",
+            "ug_hybrid_system2_offer",
+            "ug_offer_center",
+            "ug_proposer_impulse_max",
+            "ug_proposer_impulse_min",
+            "ug_rational_only_offer",
+            "wellbeing_max",
+            "wellbeing_min"
+          ],
+          "properties": {
+            "W_center": {
+              "type": "number"
+            },
+            "a_f": {
+              "type": "number"
+            },
+            "alpha": {
+              "type": "number"
+            },
+            "b_W": {
+              "type": "number"
+            },
+            "b_f": {
+              "type": "number"
+            },
+            "b_m": {
+              "type": "number"
+            },
+            "epsilon": {
+              "type": "number"
+            },
+            "fatigue_impulse_rate": {
+              "type": "number"
+            },
+            "fatigue_load_rate": {
+              "type": "number"
+            },
+            "impulse_abs_max": {
+              "type": "number"
+            },
+            "impulse_max": {
+              "type": "number"
+            },
+            "impulse_min": {
+              "type": "number"
+            },
+            "kappa": {
+              "type": "number"
+            },
+            "lambda_W": {
+              "type": "number"
+            },
+            "lambda_f": {
+              "type": "number"
+            },
+            "lambda_m": {
+              "type": "number"
+            },
+            "m_negative_cut": {
+              "type": "number"
+            },
+            "m_negative_offset": {
+              "type": "number"
+            },
+            "m_positive_cut": {
+              "type": "number"
+            },
+            "m_positive_offset": {
+              "type": "number"
+            },
+            "mood_decay": {
+              "type": "number"
+            },
+            "mood_max": {
+              "type": "number"
+            },
+            "mood_min": {
+              "type": "number"
+            },
+            "mood_scale": {
+              "type": "number"
+            },
+            "p_max": {
+              "type": "number"
+            },
+            "p_min": {
+              "type": "number"
+            },
+            "pd_emotional_cut": {
+              "type": "number"
+            },
+            "pd_rational_state_cut": {
+              "type": "number"
+            },
+            "reaction_max": {
+              "type": "number"
+            },
+            "reaction_min": {
+              "type": "number"
+            },
+            "recovery_rate": {
+              "type": "number"
+            },
+            "resource_cut": {
+              "type": "number"
+            },
+            "resource_offset": {
+              "type": "number"
+            },
+            "suppression_cost_rate": {
+              "type": "number"
+            },
+            "theta_max": {
+              "type": "number"
+            },
+            "theta_min": {
+              "type": "number"
+            },
+            "ug_hybrid_system2_offer": {
+              "type": "number"
+            },
+            "ug_offer_center": {
+              "type": "number"
+            },
+            "ug_proposer_impulse_max": {
+              "type": "number"
+            },
+            "ug_proposer_impulse_min": {
+              "type": "number"
+            },
+            "ug_rational_only_offer": {
+              "type": "number"
+            },
+            "wellbeing_max": {
+              "type": "number"
+            },
+            "wellbeing_min": {
+              "type": "number"
+            }
+          }
+        },
+        "derived_initial_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "domains": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "D_VS",
+            "N_VS",
+            "S",
+            "W",
+            "Wtilde",
+            "candidate_q",
+            "candidate_uhat_signed",
+            "channel_comparison",
+            "chi_1",
+            "chi_2",
+            "current_offer",
+            "d",
+            "f",
+            "horizon",
+            "m",
+            "normalization_helper",
+            "numeric",
+            "p",
+            "pair_keys",
+            "policy_helper_impulse",
+            "r",
+            "regret_helper",
+            "urgency_helper",
+            "v"
+          ],
+          "properties": {
+            "D_VS": {
+              "type": "string"
+            },
+            "N_VS": {
+              "type": "string"
+            },
+            "S": {
+              "type": "string"
+            },
+            "W": {
+              "type": "string"
+            },
+            "Wtilde": {
+              "type": "string"
+            },
+            "candidate_q": {
+              "type": "string"
+            },
+            "candidate_uhat_signed": {
+              "type": "string"
+            },
+            "channel_comparison": {
+              "type": "string"
+            },
+            "chi_1": {
+              "type": "string"
+            },
+            "chi_2": {
+              "type": "string"
+            },
+            "current_offer": {
+              "type": "string"
+            },
+            "d": {
+              "type": "string"
+            },
+            "f": {
+              "type": "string"
+            },
+            "horizon": {
+              "type": "string"
+            },
+            "m": {
+              "type": "string"
+            },
+            "normalization_helper": {
+              "type": "string"
+            },
+            "numeric": {
+              "type": "string"
+            },
+            "p": {
+              "type": "string"
+            },
+            "pair_keys": {
+              "type": "string"
+            },
+            "policy_helper_impulse": {
+              "type": "string"
+            },
+            "r": {
+              "type": "string"
+            },
+            "regret_helper": {
+              "type": "string"
+            },
+            "urgency_helper": {
+              "type": "string"
+            },
+            "v": {
+              "type": "string"
+            }
+          }
+        },
+        "effective_config_contract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "agent_default_resolution",
+            "baseline_model_fields",
+            "baseline_required_field",
+            "common_default_resolution",
+            "manifest_must_embed",
+            "model_agent_resolved_fields",
+            "required_agent_fields",
+            "required_no_default",
+            "run_authorized"
+          ],
+          "properties": {
+            "agent_default_resolution": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "initial_primary_state",
+                "intensity",
+                "kind",
+                "personality",
+                "priority_profile",
+                "variant"
+              ],
+              "properties": {
+                "initial_primary_state": {
+                  "type": "string"
+                },
+                "intensity": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "neutral",
+                    "high"
+                  ]
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "hybrid",
+                    "emotional_only",
+                    "rational_only"
+                  ]
+                },
+                "personality": {
+                  "type": "string",
+                  "enum": [
+                    "pessimistic",
+                    "neutral",
+                    "optimistic"
+                  ]
+                },
+                "priority_profile": {
+                  "type": "string"
+                },
+                "variant": {
+                  "type": "string",
+                  "enum": [
+                    "full",
+                    "no_suppression",
+                    "no_mood",
+                    "no_fatigue",
+                    "fixed_threshold",
+                    "material_only"
+                  ]
+                }
+              }
+            },
+            "baseline_model_fields": {
+              "type": "string"
+            },
+            "baseline_required_field": {
+              "type": "string"
+            },
+            "common_default_resolution": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "dqn_config",
+                "horizon",
+                "model_mode",
+                "refocus_config",
+                "replicate_id",
+                "rng_algorithm",
+                "stochastic_mode",
+                "stream_id",
+                "training"
+              ],
+              "properties": {
+                "dqn_config": {
+                  "type": "null"
+                },
+                "horizon": {
+                  "type": "integer"
+                },
+                "model_mode": {
+                  "type": "string"
+                },
+                "refocus_config": {
+                  "type": "null"
+                },
+                "replicate_id": {
+                  "type": "null"
+                },
+                "rng_algorithm": {
+                  "type": "null"
+                },
+                "stochastic_mode": {
+                  "type": "string"
+                },
+                "stream_id": {
+                  "type": "null"
+                },
+                "training": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "manifest_must_embed": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "model_agent_resolved_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "required_agent_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "required_no_default": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "run_authorized": {
+              "type": "boolean"
+            }
+          }
+        },
+        "enums": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "agent_id",
+            "baseline_id",
+            "controller_type",
+            "game",
+            "intensity",
+            "k_star",
+            "model_kind",
+            "model_mode",
+            "personality",
+            "role_by_game",
+            "run_purpose",
+            "seat",
+            "selected_adapter_convention",
+            "selected_branch",
+            "stochastic_mode",
+            "value_keys_order",
+            "variant"
+          ],
+          "properties": {
+            "agent_id": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "baseline_id": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "BoS",
+                "PD",
+                "UG_proposer",
+                "UG_responder"
+              ],
+              "properties": {
+                "BoS": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "PD": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "UG_proposer": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "UG_responder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "controller_type": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "game": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "intensity": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "k_star": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "model_kind": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "model_mode": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "personality": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "role_by_game": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "BoS",
+                "PD",
+                "UG"
+              ],
+              "properties": {
+                "BoS": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "PD": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "UG": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "run_purpose": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "seat": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "selected_adapter_convention": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "selected_branch": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "stochastic_mode": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "value_keys_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "variant": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "game_parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "BoS_confirmatory_parity",
+            "confirmatory_horizon",
+            "horizon_sensitivity",
+            "o_max",
+            "o_min",
+            "payoff_authority",
+            "round_origin",
+            "ug_endowment",
+            "ug_legal_offers"
+          ],
+          "properties": {
+            "BoS_confirmatory_parity": {
+              "type": "string"
+            },
+            "confirmatory_horizon": {
+              "type": "number"
+            },
+            "horizon_sensitivity": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "o_max": {
+              "type": "number"
+            },
+            "o_min": {
+              "type": "number"
+            },
+            "payoff_authority": {
+              "type": "string"
+            },
+            "round_origin": {
+              "type": "number"
+            },
+            "ug_endowment": {
+              "type": "number"
+            },
+            "ug_legal_offers": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "initial_primary_defaults": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "d",
+            "f",
+            "m",
+            "p",
+            "v"
+          ],
+          "properties": {
+            "d": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "fairness",
+                "material",
+                "relationship",
+                "safety"
+              ],
+              "properties": {
+                "fairness": {
+                  "type": "number"
+                },
+                "material": {
+                  "type": "number"
+                },
+                "relationship": {
+                  "type": "number"
+                },
+                "safety": {
+                  "type": "number"
+                }
+              }
+            },
+            "f": {
+              "type": "number"
+            },
+            "m": {
+              "type": "number"
+            },
+            "p": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "fairness",
+                "material",
+                "relationship",
+                "safety"
+              ],
+              "properties": {
+                "fairness": {
+                  "type": "number"
+                },
+                "material": {
+                  "type": "number"
+                },
+                "relationship": {
+                  "type": "number"
+                },
+                "safety": {
+                  "type": "number"
+                }
+              }
+            },
+            "v": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "fairness",
+                "material",
+                "relationship",
+                "safety"
+              ],
+              "properties": {
+                "fairness": {
+                  "type": "number"
+                },
+                "material": {
+                  "type": "number"
+                },
+                "relationship": {
+                  "type": "number"
+                },
+                "safety": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "intensity_map": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "high",
+            "low",
+            "neutral"
+          ],
+          "properties": {
+            "high": {
+              "type": "number"
+            },
+            "low": {
+              "type": "number"
+            },
+            "neutral": {
+              "type": "number"
+            }
+          }
+        },
+        "parameter_rule": {
+          "type": "string"
+        },
+        "personality_map": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "neutral",
+            "optimistic",
+            "pessimistic"
+          ],
+          "properties": {
+            "neutral": {
+              "type": "number"
+            },
+            "optimistic": {
+              "type": "number"
+            },
+            "pessimistic": {
+              "type": "number"
+            }
+          }
+        },
+        "priority_profiles": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "equal",
+            "fairness_high",
+            "material_high",
+            "relationship_high",
+            "safety_high"
+          ],
+          "properties": {
+            "equal": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "fairness_high": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "material_high": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "relationship_high": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "safety_high": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "inherited",
+            "new_contract_objects",
+            "no_numeric_calibration",
+            "removed_parameters"
+          ],
+          "properties": {
+            "inherited": {
+              "type": "string"
+            },
+            "new_contract_objects": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "no_numeric_calibration": {
+              "type": "string"
+            },
+            "removed_parameters": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "readout_sensitivity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "interpretation",
+            "lambda_W",
+            "lambda_f",
+            "lambda_m"
+          ],
+          "properties": {
+            "interpretation": {
+              "type": "string"
+            },
+            "lambda_W": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "lambda_f": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "lambda_m": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "responder_action_evaluation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "accept_if",
+            "branch_numerator",
+            "branch_numerator_name",
+            "candidate_actions_order",
+            "channel_comparison",
+            "epsilon_or_tolerance_for_branch",
+            "executable_priority_inputs",
+            "future_offer_or_opponent_model",
+            "id",
+            "normalized_diagnostic",
+            "normalized_diagnostic_name",
+            "reject_if",
+            "sign_and_tie_source",
+            "state_mutation",
+            "tie_if",
+            "tie_rule"
+          ],
+          "properties": {
+            "accept_if": {
+              "type": "string"
+            },
+            "branch_numerator": {
+              "type": "string"
+            },
+            "branch_numerator_name": {
+              "type": "string"
+            },
+            "candidate_actions_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "channel_comparison": {
+              "type": "string"
+            },
+            "epsilon_or_tolerance_for_branch": {
+              "type": "string"
+            },
+            "executable_priority_inputs": {
+              "type": "string"
+            },
+            "future_offer_or_opponent_model": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "normalized_diagnostic": {
+              "type": "string"
+            },
+            "normalized_diagnostic_name": {
+              "type": "string"
+            },
+            "reject_if": {
+              "type": "string"
+            },
+            "sign_and_tie_source": {
+              "type": "string"
+            },
+            "state_mutation": {
+              "type": "string"
+            },
+            "tie_if": {
+              "type": "string"
+            },
+            "tie_rule": {
+              "type": "string"
+            }
+          }
+        },
+        "schema_id": {
+          "type": "string"
+        },
+        "serialization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "action_objects",
+            "boundary_policy",
+            "branch_sum",
+            "branch_tolerance",
+            "comparison_rule",
+            "comparison_target",
+            "comparison_tolerance",
+            "diagnostic_category",
+            "diagnostic_denominator",
+            "diagnostic_division",
+            "enums_case_sensitive",
+            "float",
+            "format",
+            "identity_projection",
+            "json",
+            "map_key_order",
+            "missing_required",
+            "nulls",
+            "numeric_policy_id",
+            "observation_schema_id",
+            "reference_ieee_metadata",
+            "result_schema_id",
+            "scientific_branch_fixtures",
+            "scientific_numeric_residuals",
+            "unknown_keys"
+          ],
+          "properties": {
+            "action_objects": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "BoS",
+                "PD",
+                "UG_proposer",
+                "UG_responder"
+              ],
+              "properties": {
+                "BoS": {
+                  "type": "string"
+                },
+                "PD": {
+                  "type": "string"
+                },
+                "UG_proposer": {
+                  "type": "string"
+                },
+                "UG_responder": {
+                  "type": "string"
+                }
+              }
+            },
+            "boundary_policy": {
+              "type": "string"
+            },
+            "branch_sum": {
+              "type": "string"
+            },
+            "branch_tolerance": {
+              "type": "number"
+            },
+            "comparison_rule": {
+              "type": "string"
+            },
+            "comparison_target": {
+              "type": "string"
+            },
+            "comparison_tolerance": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "absolute",
+                "relative"
+              ],
+              "properties": {
+                "absolute": {
+                  "type": "number"
+                },
+                "relative": {
+                  "type": "number"
+                }
+              }
+            },
+            "diagnostic_category": {
+              "type": "string"
+            },
+            "diagnostic_denominator": {
+              "type": "string"
+            },
+            "diagnostic_division": {
+              "type": "string"
+            },
+            "enums_case_sensitive": {
+              "type": "boolean"
+            },
+            "float": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string"
+            },
+            "identity_projection": {
+              "type": "string"
+            },
+            "json": {
+              "type": "string"
+            },
+            "map_key_order": {
+              "type": "string"
+            },
+            "missing_required": {
+              "type": "string"
+            },
+            "nulls": {
+              "type": "string"
+            },
+            "numeric_policy_id": {
+              "type": "string"
+            },
+            "observation_schema_id": {
+              "type": "string"
+            },
+            "reference_ieee_metadata": {
+              "type": "string"
+            },
+            "result_schema_id": {
+              "type": "string"
+            },
+            "scientific_branch_fixtures": {
+              "type": "string"
+            },
+            "scientific_numeric_residuals": {
+              "type": "string"
+            },
+            "unknown_keys": {
+              "type": "string"
+            }
+          }
+        },
+        "specification_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "dependency_lock_hash": {
+      "type": "string"
+    },
+    "dirty_state": {
+      "type": "string"
+    },
+    "effective_config": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "agents",
+        "condition_id",
+        "dqn_config",
+        "focal_agent_id",
+        "game",
+        "horizon",
+        "model_mode",
+        "pair_id",
+        "refocus_config",
+        "replicate_id",
+        "rng_algorithm",
+        "run_purpose",
+        "schema_id",
+        "selected_adapter_convention",
+        "specification_id",
+        "stochastic_mode",
+        "stream_id",
+        "training"
+      ],
+      "properties": {
+        "agents": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "agent_id",
+                  "controller_type",
+                  "initial_primary_state",
+                  "intensity",
+                  "kind",
+                  "personality",
+                  "priority_profile",
+                  "role",
+                  "seat",
+                  "variant"
+                ],
+                "properties": {
+                  "agent_id": {
+                    "type": "integer"
+                  },
+                  "controller_type": {
+                    "type": "string",
+                    "enum": [
+                      "model",
+                      "baseline"
+                    ]
+                  },
+                  "initial_primary_state": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "d",
+                      "f",
+                      "m",
+                      "p",
+                      "v"
+                    ],
+                    "properties": {
+                      "d": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "fairness",
+                          "material",
+                          "relationship",
+                          "safety"
+                        ],
+                        "properties": {
+                          "fairness": {
+                            "type": "number"
+                          },
+                          "material": {
+                            "type": "number"
+                          },
+                          "relationship": {
+                            "type": "number"
+                          },
+                          "safety": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "f": {
+                        "type": "number"
+                      },
+                      "m": {
+                        "type": "number"
+                      },
+                      "p": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "fairness",
+                          "material",
+                          "relationship",
+                          "safety"
+                        ],
+                        "properties": {
+                          "fairness": {
+                            "type": "number"
+                          },
+                          "material": {
+                            "type": "number"
+                          },
+                          "relationship": {
+                            "type": "number"
+                          },
+                          "safety": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "v": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "fairness",
+                          "material",
+                          "relationship",
+                          "safety"
+                        ],
+                        "properties": {
+                          "fairness": {
+                            "type": "number"
+                          },
+                          "material": {
+                            "type": "number"
+                          },
+                          "relationship": {
+                            "type": "number"
+                          },
+                          "safety": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "intensity": {
+                    "type": "string",
+                    "enum": [
+                      "low",
+                      "neutral",
+                      "high"
+                    ]
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "hybrid",
+                      "emotional_only",
+                      "rational_only"
+                    ]
+                  },
+                  "personality": {
+                    "type": "string",
+                    "enum": [
+                      "pessimistic",
+                      "neutral",
+                      "optimistic"
+                    ]
+                  },
+                  "priority_profile": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "seat": {
+                    "type": "integer"
+                  },
+                  "variant": {
+                    "type": "string",
+                    "enum": [
+                      "full",
+                      "no_suppression",
+                      "no_mood",
+                      "no_fatigue",
+                      "fixed_threshold",
+                      "material_only"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "agent_id",
+                  "baseline_id",
+                  "controller_type",
+                  "role",
+                  "seat"
+                ],
+                "properties": {
+                  "agent_id": {
+                    "type": "integer"
+                  },
+                  "baseline_id": {
+                    "type": "string"
+                  },
+                  "controller_type": {
+                    "type": "string",
+                    "enum": [
+                      "model",
+                      "baseline"
+                    ]
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "seat": {
+                    "type": "integer"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "condition_id": {
+          "type": "string"
+        },
+        "dqn_config": {
+          "type": "null"
+        },
+        "focal_agent_id": {
+          "type": "integer"
+        },
+        "game": {
+          "type": "string",
+          "enum": [
+            "PD",
+            "BoS",
+            "UG"
+          ]
+        },
+        "horizon": {
+          "type": "integer"
+        },
+        "model_mode": {
+          "type": "string"
+        },
+        "pair_id": {
+          "type": "string"
+        },
+        "refocus_config": {
+          "type": "null"
+        },
+        "replicate_id": {
+          "type": "null"
+        },
+        "rng_algorithm": {
+          "type": "null"
+        },
+        "run_purpose": {
+          "type": "string"
+        },
+        "schema_id": {
+          "type": "string"
+        },
+        "selected_adapter_convention": {
+          "type": "string"
+        },
+        "specification_id": {
+          "type": "string"
+        },
+        "stochastic_mode": {
+          "type": "string"
+        },
+        "stream_id": {
+          "type": "null"
+        },
+        "training": {
+          "type": "boolean"
+        }
+      }
+    },
+    "effective_initial_states_by_seat": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "S",
+              "W",
+              "Wtilde",
+              "d",
+              "f",
+              "intensity",
+              "m",
+              "p",
+              "pbar",
+              "personality",
+              "r",
+              "v"
+            ],
+            "properties": {
+              "S": {
+                "type": "number"
+              },
+              "W": {
+                "type": "number"
+              },
+              "Wtilde": {
+                "type": "number"
+              },
+              "d": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              },
+              "f": {
+                "type": "number"
+              },
+              "intensity": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "neutral",
+                  "high"
+                ]
+              },
+              "m": {
+                "type": "number"
+              },
+              "p": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              },
+              "pbar": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              },
+              "personality": {
+                "type": "string",
+                "enum": [
+                  "pessimistic",
+                  "neutral",
+                  "optimistic"
+                ]
+              },
+              "r": {
+                "type": "number"
+              },
+              "v": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "failure_status": {
+      "type": "array",
+      "items": {}
+    },
+    "numeric_evidence_schema_id": {
+      "type": "string"
+    },
+    "numeric_policy_id": {
+      "type": "string"
+    },
+    "original_config": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "EMBORA-SOURCE-CONFIG-C6-v1.0",
+      "title": "Source config with only YAML-declared defaults optional",
+      "description": "Complete structural inventory; cross-field, exact-bit, context and operation-graph invariants are enforced by the closed Python validators and CLI.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_id",
+        "specification_id",
+        "condition_id",
+        "pair_id",
+        "game",
+        "agents",
+        "focal_agent_id",
+        "selected_adapter_convention",
+        "run_purpose"
+      ],
+      "properties": {
+        "agents": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "agent_id",
+                  "seat",
+                  "role",
+                  "controller_type"
+                ],
+                "properties": {
+                  "agent_id": {
+                    "type": "integer"
+                  },
+                  "controller_type": {
+                    "type": "string",
+                    "enum": [
+                      "model",
+                      "baseline"
+                    ]
+                  },
+                  "initial_primary_state": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "d",
+                      "f",
+                      "m",
+                      "p",
+                      "v"
+                    ],
+                    "properties": {
+                      "d": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "fairness",
+                          "material",
+                          "relationship",
+                          "safety"
+                        ],
+                        "properties": {
+                          "fairness": {
+                            "type": "number"
+                          },
+                          "material": {
+                            "type": "number"
+                          },
+                          "relationship": {
+                            "type": "number"
+                          },
+                          "safety": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "f": {
+                        "type": "number"
+                      },
+                      "m": {
+                        "type": "number"
+                      },
+                      "p": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "fairness",
+                          "material",
+                          "relationship",
+                          "safety"
+                        ],
+                        "properties": {
+                          "fairness": {
+                            "type": "number"
+                          },
+                          "material": {
+                            "type": "number"
+                          },
+                          "relationship": {
+                            "type": "number"
+                          },
+                          "safety": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "v": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "fairness",
+                          "material",
+                          "relationship",
+                          "safety"
+                        ],
+                        "properties": {
+                          "fairness": {
+                            "type": "number"
+                          },
+                          "material": {
+                            "type": "number"
+                          },
+                          "relationship": {
+                            "type": "number"
+                          },
+                          "safety": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "intensity": {
+                    "type": "string",
+                    "enum": [
+                      "low",
+                      "neutral",
+                      "high"
+                    ]
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "hybrid",
+                      "emotional_only",
+                      "rational_only"
+                    ]
+                  },
+                  "personality": {
+                    "type": "string",
+                    "enum": [
+                      "pessimistic",
+                      "neutral",
+                      "optimistic"
+                    ]
+                  },
+                  "priority_profile": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "seat": {
+                    "type": "integer"
+                  },
+                  "variant": {
+                    "type": "string",
+                    "enum": [
+                      "full",
+                      "no_suppression",
+                      "no_mood",
+                      "no_fatigue",
+                      "fixed_threshold",
+                      "material_only"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "agent_id",
+                  "seat",
+                  "role",
+                  "controller_type",
+                  "baseline_id"
+                ],
+                "properties": {
+                  "agent_id": {
+                    "type": "integer"
+                  },
+                  "baseline_id": {
+                    "type": "string"
+                  },
+                  "controller_type": {
+                    "type": "string",
+                    "enum": [
+                      "model",
+                      "baseline"
+                    ]
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "seat": {
+                    "type": "integer"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "condition_id": {
+          "type": "string"
+        },
+        "dqn_config": {
+          "type": "null"
+        },
+        "focal_agent_id": {
+          "type": "integer"
+        },
+        "game": {
+          "type": "string",
+          "enum": [
+            "PD",
+            "BoS",
+            "UG"
+          ]
+        },
+        "horizon": {
+          "type": "integer"
+        },
+        "model_mode": {
+          "type": "string"
+        },
+        "pair_id": {
+          "type": "string"
+        },
+        "refocus_config": {
+          "type": "null"
+        },
+        "replicate_id": {
+          "type": "null"
+        },
+        "rng_algorithm": {
+          "type": "null"
+        },
+        "run_purpose": {
+          "enum": [
+            "confirmatory_frame",
+            "sensitivity",
+            "structural_fixture"
+          ]
+        },
+        "schema_id": {
+          "const": "EMBORA-PARAMS-2026-10-04-R1C6-v1.1"
+        },
+        "selected_adapter_convention": {
+          "enum": [
+            "normative_resisted_inequity_v1",
+            "sensitivity_zero_exchange_v1",
+            "sensitivity_neutral_no_exchange_v1"
+          ]
+        },
+        "specification_id": {
+          "const": "EMBORA-MSJ1-2026-10-04-R1C6-v1.1"
+        },
+        "stochastic_mode": {
+          "type": "string"
+        },
+        "stream_id": {
+          "type": "null"
+        },
+        "training": {
+          "type": "boolean"
+        }
+      }
+    },
+    "original_config_text": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "original_config_text_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "original_numeric_tokens": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "pairing_and_data_generating_process_descriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "active_rng",
+        "mode",
+        "pair_id",
+        "sampling_units"
+      ],
+      "properties": {
+        "active_rng": {
+          "type": "null"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "pair_id": {
+          "type": "string"
+        },
+        "sampling_units": {
+          "type": "number"
+        }
+      }
+    },
+    "parameter_schema_id": {
+      "type": "string"
+    },
+    "parameter_sha256": {
+      "type": "string"
+    },
+    "runtime_lock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cflags",
+        "compiler",
+        "dependency_lock_sha256",
+        "float_info",
+        "ftz_daz_probe",
+        "gradual_underflow",
+        "implementation",
+        "machine",
+        "platform",
+        "python",
+        "reference_sha256",
+        "rounding_control",
+        "runtime_vector_qualification"
+      ],
+      "properties": {
+        "cflags": {
+          "type": "string"
+        },
+        "compiler": {
+          "type": "string"
+        },
+        "dependency_lock_sha256": {
+          "type": "string"
+        },
+        "float_info": {
+          "type": "string"
+        },
+        "ftz_daz_probe": {
+          "type": "string"
+        },
+        "gradual_underflow": {
+          "type": "boolean"
+        },
+        "implementation": {
+          "type": "string"
+        },
+        "machine": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "python": {
+          "type": "string"
+        },
+        "reference_sha256": {
+          "type": "string"
+        },
+        "rounding_control": {
+          "type": "string"
+        },
+        "runtime_vector_qualification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "accumulator_vectors",
+            "episodes_executed",
+            "fixture_sha256",
+            "scalar_vectors",
+            "signed_zero_vectors",
+            "status"
+          ],
+          "properties": {
+            "accumulator_vectors": {
+              "type": "number"
+            },
+            "episodes_executed": {
+              "type": "number"
+            },
+            "fixture_sha256": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "F35_FIXTURES_C6.json",
+                "ORACLE_FIXTURES_C6.json",
+                "SIGNED_ZERO_FIXTURES_C6.json"
+              ],
+              "properties": {
+                "F35_FIXTURES_C6.json": {
+                  "type": "string"
+                },
+                "ORACLE_FIXTURES_C6.json": {
+                  "type": "string"
+                },
+                "SIGNED_ZERO_FIXTURES_C6.json": {
+                  "type": "string"
+                }
+              }
+            },
+            "scalar_vectors": {
+              "type": "number"
+            },
+            "signed_zero_vectors": {
+              "type": "number"
+            },
+            "status": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "runtime_lock_sha256": {
+      "type": "string"
+    },
+    "schema_id": {
+      "type": "string"
+    },
+    "selected_adapter_convention": {
+      "type": "string"
+    },
+    "selected_adapter_id": {
+      "type": "string"
+    },
+    "source_hashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "source_initial_states_by_seat": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "S",
+              "W",
+              "Wtilde",
+              "d",
+              "f",
+              "intensity",
+              "m",
+              "p",
+              "pbar",
+              "personality",
+              "r",
+              "v"
+            ],
+            "properties": {
+              "S": {
+                "type": "number"
+              },
+              "W": {
+                "type": "number"
+              },
+              "Wtilde": {
+                "type": "number"
+              },
+              "d": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              },
+              "f": {
+                "type": "number"
+              },
+              "intensity": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "neutral",
+                  "high"
+                ]
+              },
+              "m": {
+                "type": "number"
+              },
+              "p": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              },
+              "pbar": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              },
+              "personality": {
+                "type": "string",
+                "enum": [
+                  "pessimistic",
+                  "neutral",
+                  "optimistic"
+                ]
+              },
+              "r": {
+                "type": "number"
+              },
+              "v": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fairness",
+                  "material",
+                  "relationship",
+                  "safety"
+                ],
+                "properties": {
+                  "fairness": {
+                    "type": "number"
+                  },
+                  "material": {
+                    "type": "number"
+                  },
+                  "relationship": {
+                    "type": "number"
+                  },
+                  "safety": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "spec_sha256": {
+      "type": "string"
+    },
+    "specification_id": {
+      "type": "string"
+    },
+    "trajectory_hash": {
+      "type": "string"
+    },
+    "u1_decision_record_id": {
+      "type": "string"
+    }
+  }
+}

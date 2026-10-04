@@ -1,1 +1,1 @@
-"""Frozen C5 reference implementation, isolated from legacy model code."""
+"""Author-adopted C6 v1.1 implementation candidate; legacy isolated; NOT_FROZEN."""

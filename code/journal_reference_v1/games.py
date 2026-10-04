@@ -34,7 +34,7 @@ def descriptor(game):
     return {'payoff_table': [{'actions': list(a), 'payoffs': list(p)} for a, p in TABLES[game].items()]}
 
 
-def execute(game, actions):
+def payoffs_for(game, actions):
     if type(actions) is not list or len(actions) != 2: raise ActionError('Two seat-ordered actions required')
     for seat, action in enumerate(actions, 1):
         role = ('proposer' if seat == 1 else 'responder') if game == 'UG' else 'player'
@@ -50,7 +50,7 @@ def validate_history(history, game, round_number):
     for t, entry in enumerate(history, 1):
         keys(entry, ('round', 'actions_by_seat', 'payoffs_by_seat'), PayloadError)
         if integer(entry['round'], 1, round_number - 1, PayloadError) != t: raise PayloadError('Wrong history round')
-        payoffs = execute(game, entry['actions_by_seat'])
+        payoffs = payoffs_for(game, entry['actions_by_seat'])
         if type(entry['payoffs_by_seat']) is not list or len(entry['payoffs_by_seat']) != 2: raise PayloadError('Wrong history payoffs')
         for actual, expected in zip(entry['payoffs_by_seat'], payoffs):
             if real(actual, error=PayloadError) != expected: raise PayloadError('History payoff mismatch')
@@ -90,8 +90,10 @@ class Result:
     serialized: str
 
     @classmethod
-    def build(cls, game, t, agent, actions):
-        payoffs = execute(game, actions)
+    def build(cls, game, t, agent, actions, payoffs=None):
+        expected = payoffs_for(game, actions)
+        if payoffs is None: payoffs = expected
+        if tuple(payoffs) != expected: raise PayloadError("Result payoff mismatch")
         return cls(canonical({'schema_id': REGISTRY['serialization']['result_schema_id'], 'game': game, 'round': t,
                               'agent_id': agent['agent_id'], 'seat': agent['seat'], 'role': agent['role'],
                               'actions_by_seat': actions, 'payoffs_by_seat': list(payoffs)}))
@@ -106,7 +108,7 @@ class Result:
         integer(data['round'], 1, config['horizon'], PayloadError)
         for field in ('agent_id', 'seat', 'role'):
             if canonical(data[field]) != canonical(agent[field]): raise PayloadError('Wrong result identity')
-        expected = execute(config['game'], data['actions_by_seat'])
+        expected = payoffs_for(config['game'], data['actions_by_seat'])
         if type(data['payoffs_by_seat']) is not list or len(data['payoffs_by_seat']) != 2: raise PayloadError('Malformed payoffs')
         for value, oracle in zip(data['payoffs_by_seat'], expected):
             if real(value, error=PayloadError) != oracle: raise PayloadError('Illegal payoff, never clip into q')
@@ -142,14 +144,15 @@ class Adapter:
         integer(seat, 1, 2, PayloadError)
         expected_role = ('proposer' if seat == 1 else 'responder') if game == 'UG' else 'player'
         if role != expected_role: raise PayloadError('Adapter role/seat mismatch')
-        payoffs = execute(game, actions); idx = seat - 1
+        payoffs = payoffs_for(game, actions); idx = seat - 1
         if game == 'UG':
             offer = actions[0]['offer']; accepted = actions[1]['name'] == 'accept'
-            inequity = abs(10 - 2 * offer) / 10
-            fairness = 1 - inequity if accepted else (inequity if self.selected_adapter_convention == 'normative_resisted_inequity_v1' else
+            balance = 1. - abs(10. - 2. * offer) / 10.
+            resisted = 1. - balance
+            fairness = balance if accepted else (resisted if self.selected_adapter_convention == 'normative_resisted_inequity_v1' else
                         0. if self.selected_adapter_convention == 'sensitivity_zero_exchange_v1' else .5)
             relationship = 1. if accepted else (.5 if self.selected_adapter_convention == 'sensitivity_neutral_no_exchange_v1' else 0.)
-            alternatives = [execute('UG', [{'name': 'offer', 'offer': o}, actions[1]])[0] for o in OFFERS] if seat == 1 else [offer, 0]
+            alternatives = [payoffs_for('UG', [{'name': 'offer', 'offer': o}, actions[1]])[0] for o in OFFERS] if seat == 1 else [offer, 0]
             maximum_regret = 6 if seat == 1 else 8
             q = (normalize(payoffs[idx], 0, 8), fairness, relationship,
                  inverse_regret(max(alternatives) - payoffs[idx], maximum_regret))
@@ -163,4 +166,9 @@ class Adapter:
                  normalize(payoffs[idx], min(own_slice), max(own_slice)),
                  inverse_regret(max(counterfactual) - payoffs[idx], 2 if game == 'PD' else 3))
         for value in q: real(value, 0, 1, PayloadError)
-        return q
+        return tuple(float(value) for value in q)
+
+
+def execute(game, actions):
+    """External game execution boundary; validators/counterfactuals use pure lookup."""
+    return payoffs_for(game, actions)

@@ -1,4 +1,4 @@
-"""Direct frozen oracles; incomplete P2 coverage. No pilot/frame/trajectory execution."""
+"""Retained C5 direct oracles with explicit adopted C6 migration. No pilot/frame/trajectory execution."""
 import csv
 import copy
 import hashlib
@@ -142,16 +142,23 @@ def test_AT_FOCUS_explicit_ties_null():
 
 
 @pytest.mark.parametrize('gain',[True,False],ids=['gain_near_desired','loss_near_zero'])
-def test_AT_URGENCY_near_epsilon_frozen_scientific_oracle(gain):
-    # C5 S06-D and S12 AT-URGENCY: ±alpha/2, with table tolerance 1e-12.
-    v=1-C['epsilon']/2 if gain else C['epsilon']/2
-    # Material q=1 from legal offer-8 acceptance; q=0 from offer-5 rejection.
-    adapter=Adapter('normative_resisted_inequity_v1','structural_fixture')
-    q=adapter.raw('UG',2,'responder',[{'name':'offer','offer':8 if gain else 5},{'name':'accept' if gain else 'reject'}])
-    projected=projection(state_at(v), q)
-    expected=7/40 if gain else -7/40  # exact rational independent oracle
-    observed=projected['uhat_signed']['material']
-    assert math.isclose(observed,expected,abs_tol=1e-12,rel_tol=1e-12), (observed,expected,abs(observed-expected))
+def test_AT_URGENCY_C6_migration_keeps_scientific_I_and_historical_C5_FAIL(gain):
+    from journal_reference_v1.numeric import channel_projection
+    from journal_reference_v1.evidence import oracle, channel_evidence
+    vi = 1-Fraction(1,2000000) if gain else Fraction(1,2000000)
+    qi = Fraction(1) if gain else Fraction(0)
+    ideal = oracle.real(vi,qi)[2]
+    assert ideal == (Fraction(7,40) if gain else -Fraction(7,40))
+    v,q=float(vi),float(qi)
+    output=channel_projection(v,q)
+    expected=oracle.graph(v,q)['u']  # independent RN graph, never observed output
+    assert math.isclose(output['u'],float(expected),abs_tol=1e-12,rel_tol=1e-12)
+    ev=channel_evidence(v,q,output,{'v':str(vi),'q':str(qi)},'exact_decimal_or_rational_known')
+    assert ev['ideal_I']['exact_rational']==str(ideal)
+    assert Fraction(ev['input_residual_R_minus_I']['exact_rational'])+Fraction(ev['arithmetic_residual_B_minus_R']['exact_rational'])==Fraction(ev['total_residual_B_minus_I']['exact_rational'])
+    if gain:
+        assert not math.isclose(output['u'],float(ideal),abs_tol=1e-12,rel_tol=1e-12)
+        assert abs(output['u']-float(ideal))==6.435668664650507e-11  # historical discrepancy, not acceptance oracle
 
 
 def test_AT_URGENCY_helper_only_and_invalid_domain():
