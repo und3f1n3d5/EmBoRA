@@ -276,3 +276,30 @@ def test_AT_UG_OFFER_POLICY_F19_all_kinds_roles_and_production_envelope():
         for offer in range(2,9):
             d=responder.decide({'public_observation':observation(cfg,responder.descriptor,[],offer),'own_pre_state':responder.initial_state.to_dict()})
             assert d['aR']=={'name':'accept'}
+
+
+def test_AT_UG_ADAPTER_pure_sensitivity_candidate_realized_update_integration():
+    """No Engine/sensitivity trajectory: pure update from labelled injected pre-state."""
+    for selection in REGISTRY['enums']['selected_adapter_convention']:
+        for kind in ('emotional_only','rational_only'):
+            source=source_config(purpose='sensitivity',adapter=selection)
+            source['agents'][0]={'agent_id':1,'seat':1,'role':'proposer','controller_type':'baseline','baseline_id':'UG_Cycle'}
+            source['agents'][1].update(kind=kind,intensity='high',priority_profile='fairness_high')
+            cfg=prepare_config(source);adapter=Adapter(selection,'sensitivity');agent=Agent.construct(cfg,2,adapter)
+            state=state_at(.013,m=-.5,p=(.5,1.5,.5,.5),intensity='high')
+            for offer in range(2,9):
+                history=[{'round':t,'actions_by_seat':[{'name':'offer','offer':t+1},{'name':'accept'}],'payoffs_by_seat':[9-t,t+1]} for t in range(1,offer-1)]
+                obs=observation(cfg,agent.descriptor,history,offer)
+                payload={'public_observation':obs,'own_pre_state':state.to_dict()}
+                decision=agent.decide(payload)
+                actions=[{'name':'offer','offer':offer},decision['action']]
+                result=Result.build('UG',offer-1,agent.descriptor,actions)
+                before=canonical({'payload':payload,'decision':decision,'state':state.to_dict(),'result':result.to_dict()})
+                post,trace=agent.prepare_update(state,obs,decision,result,offer-1)
+                assert before==canonical({'payload':payload,'decision':decision,'state':state.to_dict(),'result':result.to_dict()})
+                q=expected_raw('UG',actions,2,selection)
+                expected_post,expected_trace=expected_update(state.to_dict(),q,kind,'full',decision['aE'],decision['action'])
+                assert trace['raw_q']==mapping(q)==decision['choice']['candidates'][decision['action']['name']]['q']
+                assert trace['adapter_id']==decision['adapter_id']==adapter.adapter_id and trace['update_count']==1
+                assert post.to_dict()==expected_post
+                for field,value in expected_trace.items():assert trace[field]==value
