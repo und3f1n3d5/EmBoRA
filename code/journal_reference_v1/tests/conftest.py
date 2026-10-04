@@ -5,6 +5,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 import json
 import subprocess
 import collections
+ACTUAL_COUNTS = None
+
+
+def record_cli(command,result):
+    if 'run-conformance' in command:
+        ACTUAL_COUNTS['subprocess_runner_calls'] += 1
+        if result.returncode==0:
+            receipt=json.loads(result.stdout)
+            ACTUAL_COUNTS['subprocess_conformance_episodes']+=1
+            ACTUAL_COUNTS['subprocess_conformance_rounds']+=receipt['rounds']
 
 
 def pytest_addoption(parser):
@@ -12,9 +22,11 @@ def pytest_addoption(parser):
 
 
 def pytest_sessionstart(session):
+    global ACTUAL_COUNTS
     import journal_reference_v1.engine as module
-    session.embora_counts={'constructors':0,'successful_rounds':0,'external_game_calls':0,'failed_step_calls':0,'started_episodes':0,'rounds_by_acceptance_id':collections.Counter()}
+    session.embora_counts={'constructors':0,'successful_rounds':0,'external_game_calls':0,'failed_step_calls':0,'started_episodes':0,'rounds_by_acceptance_id':collections.Counter(), 'subprocess_runner_calls':0,'subprocess_conformance_episodes':0,'subprocess_conformance_rounds':0}
     counts=session.embora_counts
+    ACTUAL_COUNTS=counts
     construct=module.Engine.__init__;step=module.Engine.step;execute=module.execute
     def init(self,*args,**kwargs):
         construct(self,*args,**kwargs);counts['constructors']+=1
@@ -39,7 +51,6 @@ def pytest_sessionfinish(session,exitstatus):
           'branch':git('branch','--show-current'),'dirty_state':git('status','--porcelain=v1'),
           'tests_collected':session.testscollected,'runtime_lock':runtime_record(),'runtime_lock_sha256':runtime_hash(),
           'in_process_actual_counts':session.embora_counts,
-          'subprocess_conformance_scope':'Three CLI run-conformance tests execute 2 rounds each in child processes; counted separately from in-process wrappers.',
-          'subprocess_conformance_episodes':3,'subprocess_conformance_rounds':6,
+          'subprocess_conformance_scope':'Successful child runner receipts are counted separately from in-process wrappers. Counts are observed rather than assumed.',
           'pilot_full_sensitivity_trajectories':0,'independent_audit':'PENDING','code_freeze':False}
     Path(destination).write_text(json.dumps(data,indent=2)+'\n')

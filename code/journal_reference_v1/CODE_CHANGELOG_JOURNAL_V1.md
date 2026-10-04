@@ -13,3 +13,5 @@ Conformance-discovered implementation corrections: explicit pre-round counter/id
 Pre-commit owner receipt: 1741 PASS / 0 FAIL. Final candidate-bound receipts are delivered externally with exact commit/tree/source/environment hashes; this log makes no independent review or code-freeze claim.
 
 Provenance cleanup retains R0-C5-OBS-01 (historical YAML C4 status) and OBS-02 (UG semantics repair/pending text) byte-for-byte. U1 C6 external addendum supersedes administrative labels; scientific source notes are not edited.
+
+Candidate-bound run at a752ad3fc66498091c40c3b48afcb32f7289896e from repository root: 1739 PASS / 4 FAIL. CLI child process import path was absent in the test harness; set child PYTHONPATH explicitly, without depending on caller environment. Receipt instrumentation now counts successful child runner outputs instead of assuming three episodes. Scientific implementation and normative files are unchanged by this correction. The failure receipt and original candidate commit are retained.

@@ -6,6 +6,7 @@ import json
 import math
 import subprocess
 import sys
+import os
 import zipfile
 from pathlib import Path
 import pytest
@@ -18,6 +19,16 @@ from test_integration_s12 import fixture, engine
 from test_partial_conformance import source_config
 
 DENIED = 'opponent_v opponent_d opponent_p opponent_m opponent_f opponent_r opponent_W opponent_Wtilde opponent_S opponent_personality opponent_intensity opponent_aE opponent_aR opponent_iota opponent_theta selected_branch current_response acceptance payoffs raw_q q_star appraisal post_state future_history rng_state trace logger'.split()
+
+
+def run_cli(command):
+    import conftest
+    environment=os.environ.copy()
+    environment['PYTHONPATH']=str(Path(__file__).resolve().parents[2])
+    environment['PYTHONDONTWRITEBYTECODE']='1'
+    result=subprocess.run(command,text=True,capture_output=True,env=environment)
+    conftest.record_cli(command,result)
+    return result
 
 
 @pytest.mark.parametrize('game',['PD','BoS','UG'])
@@ -186,11 +197,11 @@ def test_AT_INVALID_serialization_artifact_and_CLI_interfaces(game,tmp_path):
     assert validate_artifact(destination)['validated_rounds']==2
     path=tmp_path/'config.json';path.write_text(canonical(cfg))
     command=[sys.executable,'-m','journal_reference_v1','validate-config',str(path)]
-    result=subprocess.run(command,text=True,capture_output=True);assert result.returncode==0,result.stderr
+    result=run_cli(command);assert result.returncode==0,result.stderr
     receipt=parse_json(result.stdout);assert receipt['rounds_executed']==0 and receipt['administrative_execution_authorized'] is False
     command=[sys.executable,'-m','journal_reference_v1','run-conformance',str(path),'--authority',U1_ID,'--acceptance-id','AT-EVENT','--episode-id','cli-bounded','--output',str(tmp_path/'cli-artifact')]
-    result=subprocess.run(command,text=True,capture_output=True);assert result.returncode==0,result.stderr
-    result=subprocess.run([sys.executable,'-m','journal_reference_v1','validate-artifact',str(tmp_path/'cli-artifact')],text=True,capture_output=True);assert result.returncode==0,result.stderr
+    result=run_cli(command);assert result.returncode==0,result.stderr
+    result=run_cli([sys.executable,'-m','journal_reference_v1','validate-artifact',str(tmp_path/'cli-artifact')]);assert result.returncode==0,result.stderr
     data=parse_json((destination/'rounds.json').read_text());data[0]['decisions_by_seat'][1]['theta']=None
     (destination/'rounds.json').write_text(canonical(data)+'\n')
     hashes=parse_json((destination/'artifact_hashes.json').read_text());hashes['rounds.json']=hashlib.sha256((destination/'rounds.json').read_bytes()).hexdigest();(destination/'artifact_hashes.json').write_text(canonical(hashes)+'\n')
@@ -208,7 +219,7 @@ def test_AT_INVALID_validator_scope_token_lineage_and_cli_exit(tmp_path):
     long=copy.deepcopy(cfg);long['horizon']=9
     with pytest.raises(ScopeError):engine(long)
     path=tmp_path/'invalid.json';path.write_text('{"game":"UG","game":"PD"}')
-    result=subprocess.run([sys.executable,'-m','journal_reference_v1','validate-config',str(path)],text=True,capture_output=True)
+    result=run_cli([sys.executable,'-m','journal_reference_v1','validate-config',str(path)])
     assert result.returncode==2 and parse_json(result.stderr)['error_type']=='ContractError'
 
 
