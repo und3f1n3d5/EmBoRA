@@ -19,3 +19,28 @@ Candidate-bound run at a752ad3fc66498091c40c3b48afcb32f7289896e from repository 
 P2 v1.2 continuation: execution workspace reset (409 environment_offline). Restored exact 3830386 snapshot from cloud bundle SHA256 cd66c977…; all 511 tracked hashes match canonical inventory 2990bf08…. Added 42 pure same-pre-state selected-adapter candidate/Agent.prepare_update comparisons for N/A/B, 7 legal offers and emotional/rational kinds. These do not instantiate Engine or execute sensitivity trajectories; injected state and complete public history are explicitly fixtures. Scientific implementation and frozen inputs are unchanged. Final receipts regenerated on the restored workspace.
 
 The reset removed pre-final C6 scratch development receipts before they were uploaded; their outcomes above are historical notes. They are not substituted for final v1.2 evidence. Original C5 failure receipts remain tracked and byte-preserved in history/. Final owner, legacy and cloud-recovery receipts are regenerated and archived with the continuation handoff.
+# C6 P2 v1.4 — bounded audit repair, 2026-10-18
+
+AUD-C6-P2-01: preserve legal JSON real token -0 without converting other
+integer tokens to floats. Real-state sign survives serialization, shared q=v
+appraisal and F32 copying. Strict integer/Boolean/domain validation remains.
+
+AUD-C6-P2-02: new versioned manifest and artifact-validator receipt separate
+content replay from recorded source identity. Verify available Git objects,
+full tracked-byte inventory and the separate logged-source hash domain;
+reject inconsistent identities. Missing/legacy identity is explicitly
+UNVERIFIED in report mode, never ordinary PASS or accepted binding. Default
+strict validation fails closed. Historical metadata and equivalent trees are
+handled explicitly.
+
+AUD-C6-ENV-P1-01: add a hash-pinned companion legacy lock for all 26 exact
+dependencies. Complete compatible wheels, origins, closure evidence and fresh
+offline restoration are delivered separately from the isolated reference
+environment. Owner restoration/replay does not close the independent issue.
+
+The original numerical remedy remains closed only in Coordinator's verified
+scope. Frozen scientific C5/C6, I/R/B/O, +/-7/40, tolerance 1e-12, F35, legacy
+code, claims and execution authority are unchanged. Before/after evidence and
+all interim failures remain in the versioned review delivery. No experiment,
+PAP acceptance, R1/U2 or code freeze is implied by this implementation repair.
+
