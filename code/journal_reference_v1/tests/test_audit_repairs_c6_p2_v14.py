@@ -30,7 +30,10 @@ def test_AT_INVALID_STATE_signed_json_zero_lineage_serialization_qv_F32(token,ne
         assert all(bits(v)==expected for v in values.values())
     assert receipt['original_text_sha256']==hashlib.sha256(text.encode()).hexdigest()
     assert receipt['effective_config_sha256']==hashlib.sha256(s.canonical(receipt['effective_config']).encode()).hexdigest()
-    assert receipt['original_text_sha256']!=receipt['effective_config_sha256']
+    # Distinct hash domains can coincide when their input bytes coincide.
+    spaced=validate_config_text(text+'\n')
+    assert spaced['original_text_sha256']!=receipt['original_text_sha256']
+    assert spaced['effective_config_sha256']==receipt['effective_config_sha256']
     cfg=receipt['effective_config'];agent=Agent.construct(cfg,2,Adapter(cfg['selected_adapter_convention'],cfg['run_purpose']))
     state=agent.initial_state
     assert bits(channel_projection(state.v[0],-0.)['current'])==expected
