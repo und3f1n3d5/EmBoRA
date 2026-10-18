@@ -1,0 +1,68 @@
+{
+  "$id": "EMBORA-ARTIFACT-VALIDATOR-RECEIPT-C6-v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "interface_id",
+    "validated_rounds",
+    "content_status",
+    "identity",
+    "identity_requirement",
+    "accepted_code_binding_authorized",
+    "rounds_executed",
+    "trajectory_hash"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "PASS",
+        "CONTENT_VALID_IDENTITY_UNVERIFIED"
+      ]
+    },
+    "interface_id": {
+      "const": "EMBORA-ARTIFACT-VALIDATOR-C6-v1.1"
+    },
+    "validated_rounds": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "content_status": {
+      "const": "PASS"
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "status",
+        "strict_identity_satisfied"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "UNVERIFIED"
+          ]
+        },
+        "strict_identity_satisfied": {
+          "type": "boolean"
+        }
+      }
+    },
+    "identity_requirement": {
+      "enum": [
+        "required",
+        "report"
+      ]
+    },
+    "accepted_code_binding_authorized": {
+      "const": false
+    },
+    "rounds_executed": {
+      "const": 0
+    },
+    "trajectory_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

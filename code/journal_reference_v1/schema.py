@@ -39,6 +39,7 @@ class PayloadError(ContractError): pass
 class StateError(ContractError): pass
 class ActionError(ContractError): pass
 class TraceError(ContractError): pass
+class IdentityError(TraceError): pass
 class UpdateError(ContractError): pass
 class ScopeError(ContractError): pass
 
@@ -69,7 +70,13 @@ def parse_json(text):
             out[k] = v
         return out
     def invalid(s): raise ContractError('Nonfinite JSON: ' + s)
-    return json.loads(text, object_pairs_hook=unique, parse_constant=invalid)
+    # JSON's integer-shaped -0 is a legal real spelling. Preserve only this
+    # special token as binary64; every other integer token remains an int.
+    # The strict integer validator consequently still rejects real -0.0.
+    def signed_integer(token):
+        return -0.0 if token == '-0' else int(token)
+    return json.loads(text, object_pairs_hook=unique, parse_constant=invalid,
+                      parse_int=signed_integer)
 
 
 def keys(obj, expected, error=ContractError):

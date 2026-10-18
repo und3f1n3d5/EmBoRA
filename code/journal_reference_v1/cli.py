@@ -6,6 +6,7 @@ from .engine import Engine, P2ConformanceAuthority, trajectory_hash
 from .games import observation, Result, payoffs_for
 from .evidence import runtime_record, runtime_hash
 from .inventory import validate_inventory
+from .identity import verify_source_identity
 
 
 def token_lineage(text):
@@ -27,7 +28,7 @@ def validate_config_text(text):
     original = parse_json(text)
     effective = prepare_config(original)
     validate_inventory("EFFECTIVE_CONFIG_SCHEMA_C6_v1.0.json",effective,ConfigError)
-    return {'status': 'PASS', 'interface_id': 'EMBORA-CONFIG-VALIDATOR-C6-v1.0',
+    return {'status': 'PASS', 'interface_id': 'EMBORA-CONFIG-VALIDATOR-C6-v1.1',
             'specification_id': SPEC_ID, 'parameter_schema_id': SCHEMA_ID,
             'numeric_policy_id': NUMERIC_POLICY_ID, 'numeric_evidence_schema_id': EVIDENCE_ID,
             'original_config': original, 'original_text_sha256': hashlib.sha256(text.encode()).hexdigest(),
@@ -49,7 +50,9 @@ def expected_events(game):
                      'prepare_update_seat_1', 'prepare_update_seat_2', 'atomic_commit_both_states_history_and_log']
 
 
-def validate_artifact(destination):
+def validate_artifact(destination, identity_requirement='required'):
+    if identity_requirement not in ('required', 'report'):
+        raise IdentityError('Unknown identity requirement')
     destination = Path(destination)
     names = {'manifest.json','rounds.json','failures.json','artifact_hashes.json'}
     if set(p.name for p in destination.iterdir()) != names: raise TraceError('Artifact file set mismatch')
@@ -67,13 +70,21 @@ def validate_artifact(destination):
         keys(authority, ('decision_record_id','acceptance_test_id','episode_id','work_kind','pilot_authorized','full_runs_authorized'), TraceError)
         grant = P2ConformanceAuthority(authority['decision_record_id'], authority['acceptance_test_id'], authority['episode_id'])
         engine = Engine(config, grant)  # constructor only; never run an episode here
-        validate_inventory('MANIFEST_SCHEMA_C6_v1.0.json',manifest)
+        version = manifest.get('schema_id')
+        if version not in ('EMBORA-MANIFEST-C6-P2-v1.0', 'EMBORA-MANIFEST-C6-P2-v1.4'):
+            raise TraceError('Unknown implementation manifest schema')
+        validate_inventory('MANIFEST_SCHEMA_C6_v1.4.json' if version.endswith('v1.4') else 'MANIFEST_SCHEMA_C6_v1.0.json',manifest)
+        identity = verify_source_identity(manifest)
+        if identity_requirement == 'required' and not identity['strict_identity_satisfied']:
+            raise IdentityError('Required source identity is UNVERIFIED: '+identity['reason'])
         expected_manifest = engine.manifest(original,manifest.get('original_config_text'))
+        if version.endswith('v1.0'):
+            expected_manifest.pop('source_identity')
         keys(manifest, expected_manifest, TraceError)
-        # Artifact provenance describes creation time. Verify its source bytes,
-        # config/schema/runtime and all other fields; commit/dirty are retained.
+        # Immutable source identity is verified independently above. Historical
+        # branch/dirty labels are descriptive, never compared with today's labels.
         for k in expected_manifest:
-            if k not in ('code_commit','code_branch','dirty_state','trajectory_hash'):
+            if k not in ('schema_id','source_identity','source_hashes','code_hash','code_commit','code_branch','dirty_state','trajectory_hash'):
                 if canonical(manifest[k])!=canonical(expected_manifest[k]): raise TraceError('Manifest mismatch: '+k)
         if len(rounds) != config['horizon']: raise TraceError('Incomplete conformance artifact')
         states = engine.states; history = []
@@ -106,8 +117,13 @@ def validate_artifact(destination):
         if manifest['trajectory_hash']!=trajectory_hash(rounds):raise TraceError('Trajectory hash mismatch')
     except (KeyError, TypeError, StopIteration) as exc:
         raise TraceError('Malformed artifact') from exc
-    return {'status':'PASS','interface_id':'EMBORA-ARTIFACT-VALIDATOR-C6-v1.0','validated_rounds':len(rounds),
+    result = {'status':'PASS' if identity['strict_identity_satisfied'] else 'CONTENT_VALID_IDENTITY_UNVERIFIED',
+            'interface_id':'EMBORA-ARTIFACT-VALIDATOR-C6-v1.1','validated_rounds':len(rounds),
+            'content_status':'PASS', 'identity':identity, 'identity_requirement':identity_requirement,
+            'accepted_code_binding_authorized':False,
             'rounds_executed':0,'trajectory_hash':manifest['trajectory_hash']}
+    validate_inventory('ARTIFACT_VALIDATOR_RECEIPT_C6_v1.1.json',result)
+    return result
 
 
 def main(argv=None):
@@ -116,9 +132,10 @@ def main(argv=None):
     v=sub.add_parser('validate-config');v.add_argument('config');v.add_argument('--receipt')
     r=sub.add_parser('run-conformance');r.add_argument('config');r.add_argument('--authority',required=True);r.add_argument('--acceptance-id',required=True);r.add_argument('--episode-id',required=True);r.add_argument('--output',required=True)
     a=sub.add_parser('validate-artifact');a.add_argument('artifact');a.add_argument('--receipt')
+    a.add_argument('--identity-requirement',choices=('required','report'),default='required')
     args=parser.parse_args(argv)
     try:
-        if args.command=='validate-artifact':result=validate_artifact(args.artifact)
+        if args.command=='validate-artifact':result=validate_artifact(args.artifact,args.identity_requirement)
         else:
             text=Path(args.config).read_text();receipt=validate_config_text(text)
             if args.command=='validate-config':result=receipt
@@ -131,7 +148,7 @@ def main(argv=None):
                 result={'status':'PASS','work_kind':'conformance','artifact':args.output,'rounds':len(engine.records),'trajectory_hash':trajectory_hash(engine.records)}
         if getattr(args,'receipt',None):
             with Path(args.receipt).open('x') as f:f.write(canonical(result)+'\n')
-        print(canonical(result));return 0
+        print(canonical(result));return 0 if result['status']=='PASS' else 3
     except (ContractError, OSError, json.JSONDecodeError) as exc:
         print(canonical({'status':'FAIL','error_type':type(exc).__name__,'message':str(exc)}),file=sys.stderr);return 2
 

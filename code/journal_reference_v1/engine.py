@@ -147,7 +147,8 @@ class Engine:
         lock = Path(__file__).parent / 'requirements.lock'
         hashes = {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                   for p in sorted(Path(__file__).parent.rglob('*')) if p.is_file() and p.suffix in ('.py', '.yaml', '.md', '.csv', '.json', '.lock') and '__pycache__' not in p.parts}
-        return {'schema_id': 'EMBORA-MANIFEST-C6-P2-v1.0', 'specification_id': SPEC_ID, 'parameter_schema_id': SCHEMA_ID,
+        from .identity import capture_source_identity
+        return {'schema_id': 'EMBORA-MANIFEST-C6-P2-v1.4', 'specification_id': SPEC_ID, 'parameter_schema_id': SCHEMA_ID,
                 'original_config': copy.deepcopy(original_config), 'effective_config': cfg,
                 'original_config_text': original_config_text,
                 'original_config_text_sha256': None if original_config_text is None else hashlib.sha256(original_config_text.encode()).hexdigest(),
@@ -162,6 +163,7 @@ class Engine:
                 'source_initial_states_by_seat': [None if a.initial_source_state is None else a.initial_source_state.to_dict() for a in self.agents],
                 'effective_initial_states_by_seat': [None if a.initial_state is None else a.initial_state.to_dict() for a in self.agents],
                 'code_commit': git('rev-parse', 'HEAD'), 'code_branch': git('branch', '--show-current'), 'dirty_state': git('status', '--porcelain=v1'),
+                'source_identity': capture_source_identity(root),
                 'source_hashes': hashes, 'code_hash': hashlib.sha256(canonical(hashes).encode()).hexdigest(),
                 'dependency_lock_hash': hashlib.sha256(lock.read_bytes()).hexdigest(), 'config_hash': hashlib.sha256(canonical(cfg).encode()).hexdigest(),
                 'pairing_and_data_generating_process_descriptor': {'pair_id': cfg['pair_id'], 'mode': 'deterministic', 'active_rng': None, 'sampling_units': 0},
