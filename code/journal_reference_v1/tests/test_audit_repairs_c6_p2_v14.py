@@ -144,4 +144,24 @@ def test_AT_INVALID_full_inventory_separate_from_logged_domain_and_equivalent_tr
     (repo/'outside.bin').write_bytes(b'two');git('add','.');git('commit','-qm','outside logged domain')
     wrong=copy.deepcopy(manifest);wrong['code_commit']=git('rev-parse','HEAD')
     with pytest.raises(s.IdentityError):verify_source_identity(wrong,repo)
-    assert verify_source_identity(manifest,repo)['relation_to_verifier']=='VERIFIED_HISTORICAL_TREE'
+    historical=verify_source_identity(manifest,repo)
+    assert historical['relation_to_verifier']=='VERIFIED_HISTORICAL_TREE'
+    assert historical['status']=='UNVERIFIED' and historical['strict_identity_satisfied'] is False
+
+
+@pytest.mark.parametrize('modified_path',['code/journal_reference_v1/demo.py','outside.bin'])
+def test_AT_INVALID_available_object_does_not_verify_changed_actual_source(tmp_path,modified_path):
+    repo=tmp_path/'git';repo.mkdir()
+    def git(*args):return subprocess.check_output(['git','-C',str(repo),*args],text=True).strip()
+    git('init','-q');git('config','user.name','Conformance fixture');git('config','user.email','fixture@example.invalid')
+    module=repo/'code/journal_reference_v1/demo.py';module.parent.mkdir(parents=True);module.write_text('marker = 1\n')
+    (repo/'outside.bin').write_bytes(b'original');git('add','.');git('commit','-qm','source binding fixture')
+    hashes={'code/journal_reference_v1/demo.py':hashlib.sha256(module.read_bytes()).hexdigest()}
+    manifest={'code_commit':git('rev-parse','HEAD'),'source_hashes':hashes,'code_hash':digest(hashes),'source_identity':capture_source_identity(repo)}
+    assert verify_source_identity(manifest,repo)['status']=='VERIFIED'
+    path=repo/modified_path;original=path.read_bytes();path.write_bytes(b'changed actual source')
+    changed=verify_source_identity(manifest,repo)
+    assert changed['recorded_object_verified'] is True
+    assert changed['status']=='UNVERIFIED' and changed['strict_identity_satisfied'] is False
+    path.write_bytes(original)
+    assert verify_source_identity(manifest,repo)['status']=='VERIFIED'

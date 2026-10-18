@@ -28,7 +28,11 @@ Available recorded objects are checked locally, without network fetches.
 Immutable objects may be cached; mutable worktree bytes are never cached.
 Historical branch/dirty labels are descriptive, not compared with today's
 checkout labels. Different commits with equivalent trees are explicitly
-identified; a verified historical tree remains identified as historical.
+identified. Actual tracked bytes and active logged-domain files must match the
+recorded tree/inventory for strict binding. A valid historical Git object whose
+source differs from the actual verifier files is reported as UNVERIFIED until
+its exact/equivalent source is checked out. Mutable source is checked anew on
+every verification, even when immutable Git objects are cached.
 
 `validate-artifact` defaults to `--identity-requirement required`: missing or
 unverified identity is a typed failure, exit 2. Explicit `report` mode permits

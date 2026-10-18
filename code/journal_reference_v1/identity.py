@@ -123,6 +123,20 @@ def verify_source_identity(manifest, repo=ROOT):
     current_tree = None if current_tree is None else current_tree.decode().strip()
     relation = ('EXACT_COMMIT' if commit == current else
                 'EQUIVALENT_TREE' if tree == current_tree else 'VERIFIED_HISTORICAL_TREE')
+    # A real Git object is not by itself a binding to the files being checked.
+    # Keep mutable source checks fresh, including files outside the logged
+    # suffix domain. Historical labels are still not compared with HEAD labels.
+    actual = worktree_inventory(repo)
+    active_hashes = {str(p.relative_to(repo)): hashlib.sha256(p.read_bytes()).hexdigest()
+                     for p in sorted((repo/PREFIX).rglob('*'))
+                     if p.is_file() and logged_path(str(p.relative_to(repo)))}
+    if actual != inventory or active_hashes != committed_hashes:
+        return {'status': 'UNVERIFIED', 'recorded_commit': commit,
+                'recorded_tree': tree, 'recorded_object_verified': True,
+                'logged_source_verified': True, 'relation_to_verifier': relation,
+                'verifier_commit': current, 'verifier_tree': current_tree,
+                'reason': 'recorded_identity_not_bound_to_actual_verifier_source',
+                'strict_identity_satisfied': False}
     return {'status': 'VERIFIED', 'recorded_commit': commit, 'recorded_tree': tree,
             'tracked_inventory_sha256': digest(inventory), 'tracked_files': len(inventory),
             'logged_source_verified': True, 'relation_to_verifier': relation,
