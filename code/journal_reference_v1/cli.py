@@ -54,7 +54,7 @@ def validate_artifact(destination, identity_requirement='required'):
     return _validate_artifact(destination, identity_requirement)
 
 
-def _validate_artifact(destination, identity_requirement='required', execution_authority=None):
+def _validate_artifact(destination, identity_requirement='required', execution_authority=None, allow_partial=False):
     if identity_requirement not in ('required', 'report'):
         raise IdentityError('Unknown identity requirement')
     destination = Path(destination)
@@ -67,7 +67,7 @@ def _validate_artifact(destination, identity_requirement='required', execution_a
     manifest = parse_json((destination/'manifest.json').read_text())
     rounds = parse_json((destination/'rounds.json').read_text())
     failures = parse_json((destination/'failures.json').read_text())
-    if type(rounds) is not list or failures != []: raise TraceError('Failed/incomplete episode cannot pass conformance artifact validation')
+    if type(rounds) is not list or type(failures) is not list or (failures and not allow_partial): raise TraceError('Failed/incomplete episode cannot pass conformance artifact validation')
     try:
         original = manifest['original_config']; config = prepare_config(original)
         authority = manifest['administrative_authority']
@@ -89,6 +89,14 @@ def _validate_artifact(destination, identity_requirement='required', execution_a
         if identity_requirement == 'required' and not identity['strict_identity_satisfied']:
             raise IdentityError('Required source identity is UNVERIFIED: '+identity['reason'])
         expected_manifest = engine.manifest(original,manifest.get('original_config_text'))
+        if allow_partial:
+            if execution_authority is None: raise ScopeError('Partial replay is administrative-only')
+            if manifest['failure_status'] != failures: raise TraceError('Partial failure/manifest mismatch')
+            expected_manifest['failure_status'] = failures
+            if len(failures) > 1: raise TraceError('Failed episode cannot resume')
+            for failure in failures:
+                if failure.get('committed') is not False or failure.get('round') != len(rounds)+1 or failure.get('effective_config') != config:
+                    raise TraceError('Partial failure position/config mismatch')
         if version == 'EMBORA-MANIFEST-C6-P2-v1.0':
             expected_manifest.pop('source_identity')
         keys(manifest, expected_manifest, TraceError)
@@ -97,7 +105,7 @@ def _validate_artifact(destination, identity_requirement='required', execution_a
         for k in expected_manifest:
             if k not in ('schema_id','source_identity','source_hashes','code_hash','code_commit','code_branch','dirty_state','trajectory_hash'):
                 if canonical(manifest[k])!=canonical(expected_manifest[k]): raise TraceError('Manifest mismatch: '+k)
-        if len(rounds) != config['horizon']: raise TraceError('Incomplete conformance artifact')
+        if len(rounds) > config['horizon'] or (not allow_partial and len(rounds) != config['horizon']): raise TraceError('Incomplete conformance artifact')
         states = engine.states; history = []
         for t, record in enumerate(rounds,1):
             validate_inventory('PRIVATE_ROUND_SCHEMA_P3_v1.0.json' if execution_authority is not None else 'PRIVATE_ROUND_SCHEMA_C6_v1.0.json',record)
@@ -125,6 +133,14 @@ def _validate_artifact(destination, identity_requirement='required', execution_a
                       'failure_status':None, 'event_order':expected_events(config['game']), 'event_counters':{'game_executions_this_round':1,'updates_this_round_by_seat':[1,1],'total_game_executions':t,'total_updates_by_seat':[t,t]}}
             assert_exact_tree(record,expected)
             states=post;history.append({'round':t,'actions_by_seat':actions,'payoffs_by_seat':list(payoffs)})
+        if allow_partial:
+            for failure in failures:
+                assert_exact_tree(failure['history_before_failure'],history)
+                assert_exact_tree(failure['pre_states_by_seat'],[None if s is None else s.to_dict() for s in states])
+                if type(failure.get('error_type')) is not str or type(failure.get('reason')) is not str:
+                    raise TraceError('Malformed partial failure cause')
+                events=failure.get('events_before_failure');expected=expected_events(config['game'])[:-1]
+                if type(events) is not list or events!=expected[:len(events)]:raise TraceError('Malformed partial failure event prefix')
         if manifest['trajectory_hash']!=trajectory_hash(rounds):raise TraceError('Trajectory hash mismatch')
     except (KeyError, TypeError, StopIteration) as exc:
         raise TraceError('Malformed artifact') from exc
@@ -133,7 +149,10 @@ def _validate_artifact(destination, identity_requirement='required', execution_a
             'content_status':'PASS', 'identity':identity, 'identity_requirement':identity_requirement,
             'accepted_code_binding_authorized':False,
             'rounds_executed':0,'trajectory_hash':manifest['trajectory_hash']}
-    validate_inventory('ARTIFACT_VALIDATOR_RECEIPT_C6_v1.1.json',result)
+    if allow_partial:
+        result.update(interface_id='EMBORA-PARTIAL-CONTENT-VALIDATOR-P3-v1.1',
+                      status='PARTIAL_CONTENT_VERIFIED' if identity['strict_identity_satisfied'] else 'PARTIAL_CONTENT_IDENTITY_UNVERIFIED')
+    else: validate_inventory('ARTIFACT_VALIDATOR_RECEIPT_C6_v1.1.json',result)
     return result
 
 
