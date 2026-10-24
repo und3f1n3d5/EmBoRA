@@ -51,6 +51,10 @@ def expected_events(game):
 
 
 def validate_artifact(destination, identity_requirement='required'):
+    return _validate_artifact(destination, identity_requirement)
+
+
+def _validate_artifact(destination, identity_requirement='required', execution_authority=None):
     if identity_requirement not in ('required', 'report'):
         raise IdentityError('Unknown identity requirement')
     destination = Path(destination)
@@ -67,18 +71,25 @@ def validate_artifact(destination, identity_requirement='required'):
     try:
         original = manifest['original_config']; config = prepare_config(original)
         authority = manifest['administrative_authority']
-        keys(authority, ('decision_record_id','acceptance_test_id','episode_id','work_kind','pilot_authorized','full_runs_authorized'), TraceError)
-        grant = P2ConformanceAuthority(authority['decision_record_id'], authority['acceptance_test_id'], authority['episode_id'])
+        if execution_authority is None:
+            keys(authority, ('decision_record_id','acceptance_test_id','episode_id','work_kind','pilot_authorized','full_runs_authorized'), TraceError)
+            grant = P2ConformanceAuthority(authority['decision_record_id'], authority['acceptance_test_id'], authority['episode_id'])
+        else:
+            from .execution import ExecutionAuthority
+            if type(execution_authority) is not ExecutionAuthority or execution_authority._guard is not None:
+                raise ScopeError('Artifact replay requires a non-executing authority')
+            grant = execution_authority
+            assert_exact_tree(authority,grant.to_dict())
         engine = Engine(config, grant)  # constructor only; never run an episode here
         version = manifest.get('schema_id')
-        if version not in ('EMBORA-MANIFEST-C6-P2-v1.0', 'EMBORA-MANIFEST-C6-P2-v1.4'):
+        if version not in (('EMBORA-MANIFEST-P3-v1.0',) if execution_authority is not None else ('EMBORA-MANIFEST-C6-P2-v1.0', 'EMBORA-MANIFEST-C6-P2-v1.4')):
             raise TraceError('Unknown implementation manifest schema')
-        validate_inventory('MANIFEST_SCHEMA_C6_v1.4.json' if version.endswith('v1.4') else 'MANIFEST_SCHEMA_C6_v1.0.json',manifest)
+        validate_inventory('MANIFEST_SCHEMA_P3_v1.0.json' if execution_authority is not None else 'MANIFEST_SCHEMA_C6_v1.4.json' if version.endswith('v1.4') else 'MANIFEST_SCHEMA_C6_v1.0.json',manifest)
         identity = verify_source_identity(manifest)
         if identity_requirement == 'required' and not identity['strict_identity_satisfied']:
             raise IdentityError('Required source identity is UNVERIFIED: '+identity['reason'])
         expected_manifest = engine.manifest(original,manifest.get('original_config_text'))
-        if version.endswith('v1.0'):
+        if version == 'EMBORA-MANIFEST-C6-P2-v1.0':
             expected_manifest.pop('source_identity')
         keys(manifest, expected_manifest, TraceError)
         # Immutable source identity is verified independently above. Historical
@@ -89,7 +100,7 @@ def validate_artifact(destination, identity_requirement='required'):
         if len(rounds) != config['horizon']: raise TraceError('Incomplete conformance artifact')
         states = engine.states; history = []
         for t, record in enumerate(rounds,1):
-            validate_inventory('PRIVATE_ROUND_SCHEMA_C6_v1.0.json',record)
+            validate_inventory('PRIVATE_ROUND_SCHEMA_P3_v1.0.json' if execution_authority is not None else 'PRIVATE_ROUND_SCHEMA_C6_v1.0.json',record)
             keys(record, ('schema_id','specification_id','condition_id','pair_id','episode_id','model_mode','game','round','selected_adapter_convention','selected_adapter_id','run_purpose','administrative_authority','agent_descriptors_by_seat','observations_by_seat','pre_states_by_seat','decisions_by_seat','actions_by_seat','payoffs_by_seat','results_by_seat','updates_by_seat','post_states_by_seat','intervention','event_order','event_counters','failure_status'), TraceError)
             observations=[];decisions=[];computed=[]
             for j, agent in enumerate(engine.agents):
@@ -101,7 +112,7 @@ def validate_artifact(destination, identity_requirement='required'):
             results=[Result.build(config['game'],t,a.descriptor,actions,payoffs) for a in engine.agents]
             for j,a in enumerate(engine.agents):computed.append(a.prepare_update(states[j],observations[j],decisions[j],results[j],t))
             post=tuple(x[0] for x in computed)
-            expected={'schema_id':'EMBORA-PRIVATE-ROUND-C6-P2-v1.0','specification_id':SPEC_ID,
+            expected={'schema_id':'EMBORA-PRIVATE-ROUND-P3-v1.0' if execution_authority is not None else 'EMBORA-PRIVATE-ROUND-C6-P2-v1.0','specification_id':SPEC_ID,
                       'condition_id':config['condition_id'],'pair_id':config['pair_id'],'episode_id':grant.episode_id,
                       'model_mode':'journal_reference_v1','game':config['game'],'round':t,
                       'selected_adapter_convention':engine.adapter.selected_adapter_convention,'selected_adapter_id':engine.adapter.adapter_id,

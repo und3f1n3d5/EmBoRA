@@ -5,6 +5,7 @@ from .schema import *
 from .games import Adapter, Result, observation, execute, validate_action
 from .model import Agent
 from .evidence import runtime_record, runtime_hash, check_fp_controls
+from .execution import ExecutionAuthority
 
 
 @dataclass(frozen=True)
@@ -33,7 +34,7 @@ class Engine:
     def __init__(self, effective_config, authority):
         check_fp_controls()
         validate_config(effective_config)
-        if type(authority) is not P2ConformanceAuthority: raise ScopeError('Explicit administrative authority required')
+        if type(authority) not in (P2ConformanceAuthority, ExecutionAuthority): raise ScopeError('Explicit administrative authority required')
         authority.validate(effective_config)
         self._config_json = canonical(effective_config)
         self.authority = authority
@@ -94,6 +95,7 @@ class Engine:
                 validate_action(config['game'], agent.descriptor['role'], decision['action'])
                 decisions.append(decision); events.append(f'validate_decision_seat_{j+1}')
             actions = [d['action'] for d in decisions]
+            if type(self.authority) is ExecutionAuthority: self.authority.before_game()
             payoffs = execute(config['game'], actions); events.append('execute_game_once')
             results = tuple(Result.build(config['game'], t, a.descriptor, actions, payoffs) for a in self.agents)
             # Both immutable results exist before either update computation.
@@ -105,7 +107,7 @@ class Engine:
                 computed.append(agent.prepare_update(pre[j], observations[j], decisions[j], results[j], t))
                 events.append(f'prepare_update_seat_{j+1}')
             post = tuple(c[0] for c in computed)
-            record = {'schema_id': 'EMBORA-PRIVATE-ROUND-C6-P2-v1.0', 'specification_id': SPEC_ID,
+            record = {'schema_id': 'EMBORA-PRIVATE-ROUND-P3-v1.0' if type(self.authority) is ExecutionAuthority else 'EMBORA-PRIVATE-ROUND-C6-P2-v1.0', 'specification_id': SPEC_ID,
                       'condition_id': config['condition_id'], 'pair_id': config['pair_id'], 'episode_id': self.authority.episode_id,
                       'model_mode': 'journal_reference_v1', 'game': config['game'], 'round': t,
                       'selected_adapter_convention': self.adapter.selected_adapter_convention, 'selected_adapter_id': self.adapter.adapter_id,
@@ -148,7 +150,7 @@ class Engine:
         hashes = {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                   for p in sorted(Path(__file__).parent.rglob('*')) if p.is_file() and p.suffix in ('.py', '.yaml', '.md', '.csv', '.json', '.lock') and '__pycache__' not in p.parts}
         from .identity import capture_source_identity
-        return {'schema_id': 'EMBORA-MANIFEST-C6-P2-v1.4', 'specification_id': SPEC_ID, 'parameter_schema_id': SCHEMA_ID,
+        return {'schema_id': 'EMBORA-MANIFEST-P3-v1.0' if type(self.authority) is ExecutionAuthority else 'EMBORA-MANIFEST-C6-P2-v1.4', 'specification_id': SPEC_ID, 'parameter_schema_id': SCHEMA_ID,
                 'original_config': copy.deepcopy(original_config), 'effective_config': cfg,
                 'original_config_text': original_config_text,
                 'original_config_text_sha256': None if original_config_text is None else hashlib.sha256(original_config_text.encode()).hexdigest(),
