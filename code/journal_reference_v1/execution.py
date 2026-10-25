@@ -1,4 +1,4 @@
-"""P3 v1.1 administrative execution. No production permission ships with code.
+"""P3 v1.2 administrative execution. No production permission ships with code.
 
 The caller obtains an external permission and its trusted digest independently.
 An artifact can prove consistency, never confer execution permission on itself.
@@ -20,9 +20,9 @@ from .evidence import runtime_hash
 from .identity import ROOT, capture_source_identity, git, digest
 from .inventory import validate_inventory
 
-VERSION = 'EMBORA-P3-EXECUTION-v1.1'
+VERSION = 'EMBORA-P3-EXECUTION-v1.2'
 AUTHORITY_VERSION = 'EMBORA-P3-EXECUTION-v1.0'
-PLAN = 'EMBORA-P3-PLAN-v1.1'
+PLAN = 'EMBORA-P3-PLAN-v1.2'
 PERMISSION = 'EMBORA-P3-PERMISSION-v1.1'
 ATTEMPT = 'EMBORA-P3-ATTEMPT-v1.1'
 QUEUE = 'EMBORA-P3-QUEUE-v1.1'
@@ -60,7 +60,7 @@ def exact_source():
 
 
 def check_plan(plan, protocol, allowlist, *, source_required=True, _seen=()):
-    validate_inventory('EXECUTION_SCHEMA_P3_v1.1.json',plan,ScopeError)
+    validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',plan,ScopeError)
     keys(plan, ('schema_id','scope','protocol_id','protocol_sha256','allowlist_sha256',
                 'source','runs','parent_queue'), ScopeError)
     if plan['schema_id'] != PLAN or plan['scope'] not in SCOPES:
@@ -107,19 +107,21 @@ def check_plan(plan, protocol, allowlist, *, source_required=True, _seen=()):
         if [r['base_run_id'] for r in runs] != [r['run_id'] for r in rows]:
             raise ScopeError('Original dispatch must match the complete ordered allowlist')
     else:
-        parent = plan['parent_queue']; keys(parent, ('path','queue_sha256','completion_sha256','failure_sha256'), ScopeError)
+        parent = plan['parent_queue']; keys(parent, ('path','queue_sha256','completion_sha256','failure_sha256','seal_sha256'), ScopeError)
         path = Path(parent['path'])
         if sha((path/'queue.json').read_bytes()) != parent['queue_sha256']: raise ScopeError('Replay parent digest mismatch')
         marker = path/'failure.json'
         if (sha(marker.read_bytes()) if marker.exists() else None) != parent['failure_sha256']:
             raise ScopeError('Replay parent late-failure binding mismatch')
+        if sha((path/'seal.json').read_bytes()) != parent['seal_sha256']:
+            raise ScopeError('Replay parent final seal binding mismatch')
         previous = read(path/'plan.json')
         from .accounting import verify_accounting
         result = verify_accounting(path, expected_completion=parent['completion_sha256'],seen=_seen)
         if result['plan_sha256'] != digest(previous): raise ScopeError('Parent plan binding mismatch')
         for key in ('scope','protocol_id','protocol_sha256','allowlist_sha256','source'):
             if previous[key] != plan[key]: raise ScopeError('Replay changed snapshot/protocol')
-        if result['status'] != 'FAILED' or result['error_type'] not in ('OSError','InterruptedError'):
+        if result['status'] != 'FAILED' or not result['recoverable_transient']:
             raise ScopeError('Only confirmed same-snapshot transient I/O/process failures permit replay')
         failed_group = result['failed_group']
         if failed_group in result['replayed_groups']: raise ScopeError('Second replay of a group is forbidden')
@@ -140,7 +142,7 @@ def check_permission(permission, trusted_sha256, plan, output, *, existing=False
     if permission is None or trusted_sha256 is None: raise ScopeError('External explicit permission and independently trusted SHA256 required')
     if sha(permission) != trusted_sha256: raise ScopeError('Permission digest mismatch')
     grant = parse_json(permission.decode('utf-8'))
-    validate_inventory('EXECUTION_SCHEMA_P3_v1.1.json',grant,ScopeError)
+    validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',grant,ScopeError)
     keys(grant, ('schema_id','permission_id','decision_id','issuer','status','scope','plan_sha256',
                  'output','caps','replay_policy','stop_rule'), ScopeError)
     if (grant['schema_id'] != PERMISSION or grant['status'] != 'AUTHORIZED' or
@@ -226,8 +228,8 @@ def output_size(path):
 
 
 def verify_payloads(path, queue):
-    validate_inventory('EXECUTION_SCHEMA_P3_v1.1.json',queue)
-    actual = {str(p.relative_to(path)):sha(p.read_bytes()) for p in Path(path).rglob('*') if p.is_file() and p not in {Path(path)/n for n in ('queue.json','completion.json','failure.json')}}
+    validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',queue)
+    actual = {str(p.relative_to(path)):sha(p.read_bytes()) for p in Path(path).rglob('*') if p.is_file() and p not in {Path(path)/n for n in ('queue.json','completion.json','failure.json','seal.json')}}
     if queue['payload_hashes'] != actual: raise TraceError('Queue payload inventory mismatch')
 
 
@@ -261,19 +263,21 @@ def outcome(path):
     """Read finalized observations, never promote a queue payload by itself."""
     path = Path(path); q = read(path/'queue.json'); c = read(path/'completion.json')
     late = read(path/'failure.json') if (path/'failure.json').exists() else c
-    q.update(status=late['status'],wall_seconds=late['wall_seconds'],cpu_seconds=late['cpu_seconds'],
+    seal = read(path/'seal.json')  # Absence of a veto is never positive success.
+    q.update(status=seal['status'],wall_seconds=seal['wall_seconds'],cpu_seconds=late['cpu_seconds'],
              output_bytes=output_size(path)+c['prior_output_bytes'])
-    if late['status'] == 'FAILED': q.update(error_type=late['error_type'],failed_group=late['failed_group'])
+    if seal['status'] == 'FAILED': q.update(error_type=seal['error_type'],failed_group=seal['failed_group'])
     return q
 
 
 def run_queue(plan, protocol, allowlist, permission, trusted_sha256, output):
-    """Durable payload -> measured terminal receipt -> post-commit bound check.
+    """Durable payload -> completion -> finite checks -> positive final seal.
 
     The terminal receipt excludes its own commit from its sampled clock/CPU.
-    Its commit is checked immediately afterward; an observed overrun creates
-    an exclusive failure marker. Missing/failed terminal commits are incomplete.
-    No self-hash or self-timing recursion and no truncation of mandatory logs.
+    Completion alone is provisional. A final seal confirms finished checks;
+    interruption before it is incomplete. Only the final seal commit and
+    return/control-restoration tail are excluded, with no post-seal check.
+    No self-hash/time recursion and no truncation of mandatory logs.
     """
     from .engine import Engine
     grant, counts, prior = preflight(plan,protocol,allowlist,permission,trusted_sha256,output)
@@ -349,7 +353,7 @@ def run_queue(plan, protocol, allowlist, permission, trusted_sha256, output):
                     failure = error; failed_group = run['group_id']; item.update(status='FAILED',error_type=type(error).__name__,message=str(error))
                 item.update(wall_seconds=time.monotonic()-episode_start,peak_rss_bytes=peak_rss(),
                             cpu_seconds=cpu_delta(cpu_snapshot(),episode_cpu))
-                validate_inventory('EXECUTION_SCHEMA_P3_v1.1.json',item); write(directory/'attempt.json',item); sync_directory(directory)
+                validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',item); write(directory/'attempt.json',item); sync_directory(directory)
                 attempts.append(item)
                 size = output_size(output); m = measurements()
                 boundaries.append(dict(attempt_id=run['attempt_id'],wall_seconds=m['episode_seconds'],total_wall_seconds=m['wall_seconds'],output_bytes=size+prior['output_bytes'],peak_rss_bytes=m['peak_rss_bytes'],
@@ -374,12 +378,12 @@ def run_queue(plan, protocol, allowlist, permission, trusted_sha256, output):
         result['payload_hashes'] = {str(p.relative_to(output)):sha(p.read_bytes()) for p in sorted(output.rglob('*')) if p.is_file()}
         result['output_bytes'] = output_size(output)+prior['output_bytes']
         result['wall_seconds'] = measurements()['wall_seconds']; result['cpu_seconds'] = measurements()['cpu_seconds']
-        validate_inventory('EXECUTION_SCHEMA_P3_v1.1.json',result); write(output/'queue.json',result); sync_directory(output)
+        validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',result); write(output/'queue.json',result); sync_directory(output)
         completion = dict(schema_id='EMBORA-P3-COMPLETION-v1.1',status='COMPLETE',error_type=None,failed_group=None,
                           boundary='after_payload_queue_fsync_hash_size_schema_before_terminal_commit',queue_sha256=sha((output/'queue.json').read_bytes()),
                           prior_output_bytes=prior['output_bytes'],output_bytes=output_size(output)+prior['output_bytes'],
                           wall_seconds=0.0,episode_seconds=0.0,peak_rss_bytes=0,cpu_seconds=prior_cpu)
-        validate_inventory('EXECUTION_SCHEMA_P3_v1.1.json',completion)
+        validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',completion)
         completion.update(measurements())
         reason = bound_error(completion,completion['output_bytes']-prior['output_bytes'])
         if failure is not None or reason:
@@ -394,6 +398,26 @@ def run_queue(plan, protocol, allowlist, permission, trusted_sha256, output):
                   failed_group=completion['failed_group'] or (plan['runs'][len(attempts)-1]['group_id'] if attempts else None),
                   boundary='after_terminal_commit_before_failure_marker_commit',output_bytes=size+prior['output_bytes'],**final))
             sync_directory(output)
+        # Positive evidence that the finite post-completion checks finished.
+        # No required policy check follows this last, excluded seal commit.
+        marker = output/'failure.json'
+        observed = read(marker) if marker.exists() else completion
+        seal = dict(schema_id='EMBORA-P3-TERMINAL-SEAL-v1.2',status=observed['status'],
+                    error_type=observed['error_type'],failed_group=observed['failed_group'],
+                    completion_sha256=sha((output/'completion.json').read_bytes()),
+                    failure_sha256=sha(marker.read_bytes()) if marker.exists() else None,
+                    boundary='after_finite_terminal_checks_before_final_seal_commit',
+                    output_bytes=output_size(output)+prior['output_bytes'],
+                    wall_seconds=final['wall_seconds'],episode_seconds=final['episode_seconds'],peak_rss_bytes=final['peak_rss_bytes'])
+        validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',seal)
+        measured = measurements()
+        for key in ('wall_seconds','episode_seconds','peak_rss_bytes'): seal[key] = measured[key]
+        reason = bound_error(seal,seal['output_bytes']-prior['output_bytes'])
+        # Include the known seal byte length in the output check, without a
+        # self-hash/self-size field. Failure retention may itself overshoot.
+        if reason or seal['output_bytes']+len((canonical(seal)+'\n').encode()) >= grant['caps']['output_bytes']:
+            seal.update(status='FAILED',error_type='ScopeError',failed_group=plan['runs'][len(attempts)-1]['group_id'])
+        write(output/'seal.json',seal); sync_directory(output)
         return outcome(output)
     finally:
         active = False; signal.setitimer(signal.ITIMER_REAL,*old_timer); signal.signal(signal.SIGALRM,old_handler)

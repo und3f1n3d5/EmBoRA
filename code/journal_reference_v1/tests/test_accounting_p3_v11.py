@@ -103,7 +103,8 @@ def test_P3_CPU_is_measured_process_child_not_wall(tmp_path):
     assert all(0<=cpu[k]<=after[k]-before[k]+1e-8 for k in cpu)
     assert sum(cpu.values())>0
     completion=x.read(args[-1]/'completion.json')
-    assert completion['cpu_seconds']==cpu and completion['wall_seconds']==result['wall_seconds']
+    assert completion['cpu_seconds']==cpu
+    assert completion['wall_seconds']<=x.read(args[-1]/'seal.json')['wall_seconds']==result['wall_seconds']
     assert x.validate_queue(args[-1],args[-2])['status']=='PASS'
 
 

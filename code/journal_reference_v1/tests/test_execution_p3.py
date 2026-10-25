@@ -51,12 +51,14 @@ def reseal(path):
         hashes = {n:x.sha((native/n).read_bytes()) for n in ('manifest.json','rounds.json','failures.json')}
         (native/'artifact_hashes.json').write_text(canonical(hashes)+'\n')
     queue = x.read(path/'queue.json')
-    queue['payload_hashes'] = {str(p.relative_to(path)):x.sha(p.read_bytes()) for p in path.rglob('*') if p.is_file() and p not in {path/n for n in ('queue.json','completion.json','failure.json')}}
-    payload = sum(p.stat().st_size for p in path.rglob('*') if p.is_file() and p not in {path/n for n in ('queue.json','completion.json','failure.json')})
+    queue['payload_hashes'] = {str(p.relative_to(path)):x.sha(p.read_bytes()) for p in path.rglob('*') if p.is_file() and p not in {path/n for n in ('queue.json','completion.json','failure.json','seal.json')}}
+    payload = sum(p.stat().st_size for p in path.rglob('*') if p.is_file() and p not in {path/n for n in ('queue.json','completion.json','failure.json','seal.json')})
     queue['output_bytes'] = payload
     (path/'queue.json').write_text(canonical(queue)+'\n')
     completion=x.read(path/'completion.json');completion.update(queue_sha256=x.sha((path/'queue.json').read_bytes()),output_bytes=payload+(path/'queue.json').stat().st_size)
     (path/'completion.json').write_text(canonical(completion)+'\n')
+    seal=x.read(path/'seal.json');seal.update(completion_sha256=x.sha((path/'completion.json').read_bytes()),failure_sha256=x.sha((path/'failure.json').read_bytes()) if (path/'failure.json').exists() else None,output_bytes=payload+(path/'queue.json').stat().st_size+(path/'completion.json').stat().st_size+((path/'failure.json').stat().st_size if (path/'failure.json').exists() else 0))
+    (path/'seal.json').write_text(canonical(seal)+'\n')
 
 
 @pytest.mark.parametrize('game',['PD','BoS','UG'])
@@ -185,7 +187,7 @@ def test_P3_replay_only_descriptor_cannot_execute(tmp_path):
 def recovery_inputs(args, output):
     plan,protocol,allowlist,permission,_,parent=args
     plan=copy.deepcopy(plan)
-    plan['parent_queue']=dict(path=str(parent),queue_sha256=x.sha((parent/'queue.json').read_bytes()),completion_sha256=x.sha((parent/'completion.json').read_bytes()),failure_sha256=x.sha((parent/'failure.json').read_bytes()) if (parent/'failure.json').exists() else None)
+    plan['parent_queue']=dict(path=str(parent),queue_sha256=x.sha((parent/'queue.json').read_bytes()),completion_sha256=x.sha((parent/'completion.json').read_bytes()),seal_sha256=x.sha((parent/'seal.json').read_bytes()),failure_sha256=x.sha((parent/'failure.json').read_bytes()) if (parent/'failure.json').exists() else None)
     for run in plan['runs']:
         run['replay_of']=run['attempt_id'];run['attempt_id']+='.repair01';run['run_id']+='.repair01'
     grant=parse_json(permission.decode());grant.update(output=str(output),permission_id='P3-TEST-ONLY-REPAIR',plan_sha256=x.digest(plan))

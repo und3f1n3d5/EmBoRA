@@ -1,4 +1,4 @@
-"""P3 v1.1 semantic verifier shared by complete validation and recovery.
+"""P3 v1.2 semantic verifier shared by complete validation and recovery.
 
 Transport hashes alone never establish counts, error consistency or lineage.
 Missing crash/finalization evidence is incomplete, not a repair authority.
@@ -55,7 +55,7 @@ def verify_accounting(output, trusted_sha256=None, *, expected_completion=None, 
         'Planned reservation differs from exact dispatch plus verified charged ancestors')
     require(q['not_started'] == [r['attempt_id'] for r in runs[n:]],'Known-unstarted tail mismatch')
     require(len(q['attempt_boundaries']) == n,'Missing durable attempt boundary')
-    expected_files = {'plan.json','permission.json','protocol.bin','allowlist.csv','reservation.json','queue.json','completion.json'}
+    expected_files = {'plan.json','permission.json','protocol.bin','allowlist.csv','reservation.json','queue.json','completion.json','seal.json'}
     receipts = []; native_replays = []; charged_rounds = 0
     for index,(run,item,boundary) in enumerate(zip(runs,items,q['attempt_boundaries'])):
         directory = output/run['attempt_id']; config = prepare_config(parse_json(run['config_text'])); horizon = config['horizon']
@@ -86,7 +86,7 @@ def verify_accounting(output, trusted_sha256=None, *, expected_completion=None, 
                 m['runtime_lock_sha256'] == plan['source']['runtime_sha256'],'Native plan source/config/runtime mismatch')
             require(m['source_identity']['code_tree'] == plan['source']['tree'] and m['source_identity']['tracked_inventory_sha256'] == plan['source']['inventory_sha256'],'Native tree/inventory mismatch')
             require(canonical(journal) == canonical(x.read(native/'rounds.json')),'Journal/native mismatch')
-            native_replays.append((native,run,item['status']!='COMPLETE'))
+            native_replays.append((native,run,item))
         else:
             require(item['status']=='FAILED' and item['committed_rounds']==0,'Missing native content')
         charged_rounds += horizon
@@ -125,9 +125,31 @@ def verify_accounting(output, trusted_sha256=None, *, expected_completion=None, 
         require(late['output_bytes']==c['output_bytes']+(output/'completion.json').stat().st_size,'Late byte boundary mismatch')
         require(over(late,grant) or late['episode_seconds']>=caps['episode_seconds'],'Late marker has no observed overrun')
         require(late['error_type']=='ScopeError' and late['failed_group']==last_group,'Late cause/group mismatch')
+    seal=x.read(output/'seal.json');x.validate_inventory('EXECUTION_SCHEMA_P3_v1.2.json',seal)
+    observed=x.read(late_path) if late_path.exists() else c
+    require(seal['completion_sha256']==x.sha((output/'completion.json').read_bytes()) and
+        seal['failure_sha256']==(x.sha(late_path.read_bytes()) if late_path.exists() else None),'Final seal binding mismatch')
+    require(seal['output_bytes']==observed['output_bytes']+(late_path.stat().st_size if late_path.exists() else (output/'completion.json').stat().st_size),'Final seal byte boundary mismatch')
+    require(seal['wall_seconds']>=observed['wall_seconds'] and seal['episode_seconds']>=observed['episode_seconds'] and
+        seal['peak_rss_bytes']>=observed['peak_rss_bytes'],'Final seal measurement regression')
+    seal_bound=over(seal,grant) or seal['episode_seconds']>=caps['episode_seconds'] or seal['output_bytes']+(output/'seal.json').stat().st_size>=caps['output_bytes']
+    require(seal['status']==('FAILED' if observed['status']=='FAILED' or seal_bound else 'COMPLETE'),'Final seal status contradiction')
+    require(seal['error_type']==('ScopeError' if seal_bound else observed['error_type']) and
+        seal['failed_group']==(last_group if seal_bound else observed['failed_group']),'Final seal cause contradiction')
     require({str(p.relative_to(output)) for p in output.rglob('*') if p.is_file()}==expected_files,'Administrative file set mismatch')
-    for native,run,partial in native_replays:
-        receipts.append(_validate_artifact(native,identity_requirement,x.authority(plan,grant,permission_sha,run),allow_partial=partial))
+    transient=('OSError','InterruptedError');native_recoverable=False;stages=[]
+    for native,run,item in native_replays:
+        receipts.append(_validate_artifact(native,identity_requirement,x.authority(plan,grant,permission_sha,run),allow_partial=item['status']!='COMPLETE'))
+        native_failures=x.read(native/'failures.json')
+        causes=[f['error_type'] for f in native_failures]
+        require(not (item['error_type'] in transient and any(cause not in transient for cause in causes)),
+                'Native nontransient failure '+str(causes)+' cannot be relabelled as transient administrative I/O')
+        stage=('native_execution_failure' if causes else 'complete_native_admin_finalization' if item['committed_rounds']==prepare_config(parse_json(run['config_text']))['horizon'] else 'outside_native_step')
+        stages.append(dict(attempt_id=run['attempt_id'],stage=stage,native_causes=causes))
+        if run['attempt_id']==runs[n-1]['attempt_id']:
+            native_recoverable=all(cause in transient for cause in causes)
     result=x.outcome(output)
-    result.update(identity_verified=bool(receipts) and all(r['identity']['strict_identity_satisfied'] for r in receipts),native_receipts=receipts)
+    result.update(identity_verified=bool(receipts) and all(r['identity']['strict_identity_satisfied'] for r in receipts),native_receipts=receipts,
+                  recoverable_transient=result['status']=='FAILED' and result['error_type'] in transient and native_recoverable,
+                  verified_native_stages=stages)
     return result
