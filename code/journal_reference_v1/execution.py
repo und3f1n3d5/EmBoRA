@@ -425,15 +425,23 @@ def run_queue(plan, protocol, allowlist, permission, trusted_sha256, output):
         resource.setrlimit(resource.RLIMIT_AS,old_as)
 
 
-def validate_queue(output, trusted_sha256, identity_requirement='required'):
+def validate_queue(output, trusted_sha256, identity_requirement='required', generation_source=None):
     from .accounting import verify_accounting
     if identity_requirement not in ('required','report'): raise IdentityError('Unknown identity requirement')
-    result = verify_accounting(output,trusted_sha256,identity_requirement=identity_requirement)
+    context = None
+    if generation_source is not None:
+        from .readback import prepare
+        context = prepare(read(Path(output)/'plan.json'), generation_source)
+    result = verify_accounting(output,trusted_sha256,identity_requirement=identity_requirement,readback=context)
     if result['status'] != 'COMPLETE': raise TraceError('Failed/incomplete queue cannot receive complete PASS')
-    return dict(interface_id=VERSION,status='PASS' if result['identity_verified'] else 'CONTENT_VALID_IDENTITY_UNVERIFIED',
+    receipt = dict(interface_id=VERSION,status='PASS' if result['identity_verified'] else 'CONTENT_VALID_IDENTITY_UNVERIFIED',
                 scope=read(Path(output)/'plan.json')['scope'],attempts=len(result['attempts']),validated_rounds=result['committed_rounds'],
                 identity_requirement=identity_requirement,accepted_code_binding_authorized=False,rounds_executed=0,
                 native_receipts=result['native_receipts'])
+    if context is not None:
+        from .readback import POLICY
+        receipt.update(interface_id=POLICY,historical_readback=context.receipt())
+    return receipt
 
 def main(argv=None):
     parser = argparse.ArgumentParser(prog='journal_reference_v1.execution')
@@ -443,9 +451,10 @@ def main(argv=None):
         p.add_argument('--allowlist',required=True); p.add_argument('--permission'); p.add_argument('--permission-sha256'); p.add_argument('--output',required=True)
     p = sub.add_parser('validate'); p.add_argument('output'); p.add_argument('--permission-sha256',required=True)
     p.add_argument('--identity-requirement',choices=('required','report'),default='required')
+    p.add_argument('--generation-source',help='Explicit initial01 historical readback; clean recorded generation checkout')
     args = parser.parse_args(argv)
     try:
-        if args.command == 'validate': result = validate_queue(args.output,args.permission_sha256,args.identity_requirement)
+        if args.command == 'validate': result = validate_queue(args.output,args.permission_sha256,args.identity_requirement,args.generation_source)
         else:
             plan = read(args.plan); protocol = Path(args.protocol).read_bytes(); allowlist = Path(args.allowlist).read_bytes()
             permission = None if args.permission is None else Path(args.permission).read_bytes()

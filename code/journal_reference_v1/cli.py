@@ -54,7 +54,7 @@ def validate_artifact(destination, identity_requirement='required'):
     return _validate_artifact(destination, identity_requirement)
 
 
-def _validate_artifact(destination, identity_requirement='required', execution_authority=None, allow_partial=False):
+def _validate_artifact(destination, identity_requirement='required', execution_authority=None, allow_partial=False, readback=None):
     if identity_requirement not in ('required', 'report'):
         raise IdentityError('Unknown identity requirement')
     destination = Path(destination)
@@ -85,7 +85,7 @@ def _validate_artifact(destination, identity_requirement='required', execution_a
         if version not in (('EMBORA-MANIFEST-P3-v1.0',) if execution_authority is not None else ('EMBORA-MANIFEST-C6-P2-v1.0', 'EMBORA-MANIFEST-C6-P2-v1.4')):
             raise TraceError('Unknown implementation manifest schema')
         validate_inventory('MANIFEST_SCHEMA_P3_v1.0.json' if execution_authority is not None else 'MANIFEST_SCHEMA_C6_v1.4.json' if version.endswith('v1.4') else 'MANIFEST_SCHEMA_C6_v1.0.json',manifest)
-        identity = verify_source_identity(manifest)
+        identity = verify_source_identity(manifest) if readback is None else readback.verify_manifest(manifest)
         if identity_requirement == 'required' and not identity['strict_identity_satisfied']:
             raise IdentityError('Required source identity is UNVERIFIED: '+identity['reason'])
         expected_manifest = engine.manifest(original,manifest.get('original_config_text'))
@@ -108,7 +108,7 @@ def _validate_artifact(destination, identity_requirement='required', execution_a
         if len(rounds) > config['horizon'] or (not allow_partial and len(rounds) != config['horizon']): raise TraceError('Incomplete conformance artifact')
         states = engine.states; history = []
         for t, record in enumerate(rounds,1):
-            validate_inventory('PRIVATE_ROUND_SCHEMA_P3_v1.0.json' if execution_authority is not None else 'PRIVATE_ROUND_SCHEMA_C6_v1.0.json',record)
+            validate_inventory('PRIVATE_ROUND_SCHEMA_P3_v1.1.json' if execution_authority is not None else 'PRIVATE_ROUND_SCHEMA_C6_v1.0.json',record)
             keys(record, ('schema_id','specification_id','condition_id','pair_id','episode_id','model_mode','game','round','selected_adapter_convention','selected_adapter_id','run_purpose','administrative_authority','agent_descriptors_by_seat','observations_by_seat','pre_states_by_seat','decisions_by_seat','actions_by_seat','payoffs_by_seat','results_by_seat','updates_by_seat','post_states_by_seat','intervention','event_order','event_counters','failure_status'), TraceError)
             observations=[];decisions=[];computed=[]
             for j, agent in enumerate(engine.agents):

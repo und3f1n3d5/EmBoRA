@@ -20,7 +20,7 @@ def over(metrics, grant, *, episode=False):
     return (metrics['wall_seconds'] >= caps['episode_seconds'] if episode else metrics['wall_seconds'] >= caps['wall_seconds']) or metrics['peak_rss_bytes'] >= caps['rss_bytes'] or metrics['output_bytes'] >= caps['output_bytes']
 
 
-def verify_accounting(output, trusted_sha256=None, *, expected_completion=None, identity_requirement='required', seen=()):
+def verify_accounting(output, trusted_sha256=None, *, expected_completion=None, identity_requirement='required', seen=(), readback=None):
     """Verify complete/failed ledgers and committed prefixes; execute zero games."""
     from .cli import _validate_artifact
     output = x.Path(output).resolve()
@@ -139,7 +139,7 @@ def verify_accounting(output, trusted_sha256=None, *, expected_completion=None, 
     require({str(p.relative_to(output)) for p in output.rglob('*') if p.is_file()}==expected_files,'Administrative file set mismatch')
     transient=('OSError','InterruptedError');native_recoverable=False;stages=[]
     for native,run,item in native_replays:
-        receipts.append(_validate_artifact(native,identity_requirement,x.authority(plan,grant,permission_sha,run),allow_partial=item['status']!='COMPLETE'))
+        receipts.append(_validate_artifact(native,identity_requirement,x.authority(plan,grant,permission_sha,run),allow_partial=item['status']!='COMPLETE',readback=readback))
         native_failures=x.read(native/'failures.json')
         causes=[f['error_type'] for f in native_failures]
         require(not (item['error_type'] in transient and any(cause not in transient for cause in causes)),
