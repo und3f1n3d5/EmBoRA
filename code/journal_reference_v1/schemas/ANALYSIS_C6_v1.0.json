@@ -1,0 +1,609 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "anyOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_id",
+        "kind",
+        "decision_id",
+        "protocol_id",
+        "protocol_sha256",
+        "analysis_source",
+        "validator_source",
+        "runtime_sha256",
+        "config_texts",
+        "contrasts",
+        "groups",
+        "sources"
+      ],
+      "properties": {
+        "schema_id": {
+          "const": "EMBORA-ANALYSIS-ADMISSION-C6-v1.0"
+        },
+        "kind": {
+          "enum": [
+            "PRODUCTION",
+            "SYNTHETIC_TEST_ONLY"
+          ]
+        },
+        "decision_id": {
+          "type": "string"
+        },
+        "protocol_id": {
+          "const": "EMBORA-P3-PAP-2026-10-18-C6-P2v1.4-v1.0"
+        },
+        "protocol_sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "analysis_source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "commit",
+            "tree",
+            "inventory_sha256"
+          ],
+          "properties": {
+            "commit": {
+              "type": "string",
+              "pattern": "[0-9a-f]{40}"
+            },
+            "tree": {
+              "type": "string",
+              "pattern": "[0-9a-f]{40}"
+            },
+            "inventory_sha256": {
+              "type": "string",
+              "pattern": "[0-9a-f]{64}"
+            }
+          }
+        },
+        "validator_source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "commit",
+            "tree",
+            "inventory_sha256"
+          ],
+          "properties": {
+            "commit": {
+              "type": "string",
+              "pattern": "[0-9a-f]{40}"
+            },
+            "tree": {
+              "type": "string",
+              "pattern": "[0-9a-f]{40}"
+            },
+            "inventory_sha256": {
+              "type": "string",
+              "pattern": "[0-9a-f]{64}"
+            }
+          }
+        },
+        "runtime_sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "config_texts": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "contrasts": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "condition_id",
+              "group_kind",
+              "members",
+              "selected",
+              "candidates"
+            ],
+            "properties": {
+              "condition_id": {
+                "type": "string"
+              },
+              "group_kind": {
+                "enum": [
+                  "base",
+                  "sensitivity"
+                ]
+              },
+              "members": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "selected": {
+                "type": "string"
+              },
+              "candidates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "group_attempt_id",
+                    "replaces",
+                    "repair_authority",
+                    "members"
+                  ],
+                  "properties": {
+                    "group_attempt_id": {
+                      "type": "string"
+                    },
+                    "replaces": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "repair_authority": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "decision_id",
+                            "status",
+                            "kind",
+                            "replaces",
+                            "group_attempt_id"
+                          ],
+                          "properties": {
+                            "decision_id": {
+                              "type": "string"
+                            },
+                            "status": {
+                              "const": "WHOLE_GROUP_REPAIR_AUTHORIZED"
+                            },
+                            "kind": {
+                              "enum": [
+                                "PRODUCTION",
+                                "SYNTHETIC_TEST_ONLY"
+                              ]
+                            },
+                            "replaces": {
+                              "type": "string"
+                            },
+                            "group_attempt_id": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "members": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "group_attempt_id",
+                          "source_id",
+                          "native_relative_path",
+                          "attempt_id",
+                          "run_id",
+                          "replay_of"
+                        ],
+                        "properties": {
+                          "group_attempt_id": {
+                            "type": "string"
+                          },
+                          "source_id": {
+                            "type": "string"
+                          },
+                          "native_relative_path": {
+                            "type": "string"
+                          },
+                          "attempt_id": {
+                            "type": "string"
+                          },
+                          "run_id": {
+                            "type": "string"
+                          },
+                          "replay_of": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sources": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "route",
+              "path",
+              "runtime_sha256",
+              "inventory_sha256",
+              "plan_sha256",
+              "permission_sha256"
+            ],
+            "properties": {
+              "route": {
+                "enum": [
+                  "queue",
+                  "conformance_test_only"
+                ]
+              },
+              "path": {
+                "type": "string"
+              },
+              "runtime_sha256": {
+                "type": "string",
+                "pattern": "[0-9a-f]{64}"
+              },
+              "inventory_sha256": {
+                "type": "string",
+                "pattern": "[0-9a-f]{64}"
+              },
+              "plan_sha256": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "[0-9a-f]{64}"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "permission_sha256": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "[0-9a-f]{64}"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_id",
+        "protocol_id",
+        "protocol_sha256",
+        "kind",
+        "status",
+        "admission_sha256",
+        "decision_id",
+        "analysis_identity",
+        "validation_identity",
+        "generation_identities",
+        "native_input_hashes",
+        "native_validation",
+        "whole_group_lineage",
+        "metrics",
+        "cells",
+        "alternatives",
+        "experimental_rounds_executed"
+      ],
+      "properties": {
+        "schema_id": {
+          "const": "EMBORA-ADMITTED-ANALYSIS-C6-v1.0"
+        },
+        "protocol_id": {
+          "const": "EMBORA-P3-PAP-2026-10-18-C6-P2v1.4-v1.0"
+        },
+        "protocol_sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "kind": {
+          "enum": [
+            "PRODUCTION",
+            "SYNTHETIC_TEST_ONLY"
+          ]
+        },
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE"
+          ]
+        },
+        "admission_sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "decision_id": {
+          "type": "string"
+        },
+        "analysis_identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "commit",
+            "tree",
+            "inventory_sha256"
+          ],
+          "properties": {
+            "commit": {
+              "type": "string",
+              "pattern": "[0-9a-f]{40}"
+            },
+            "tree": {
+              "type": "string",
+              "pattern": "[0-9a-f]{40}"
+            },
+            "inventory_sha256": {
+              "type": "string",
+              "pattern": "[0-9a-f]{64}"
+            }
+          }
+        },
+        "validation_identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "runtime_sha256"
+          ],
+          "properties": {
+            "source": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "commit",
+                "tree",
+                "inventory_sha256"
+              ],
+              "properties": {
+                "commit": {
+                  "type": "string",
+                  "pattern": "[0-9a-f]{40}"
+                },
+                "tree": {
+                  "type": "string",
+                  "pattern": "[0-9a-f]{40}"
+                },
+                "inventory_sha256": {
+                  "type": "string",
+                  "pattern": "[0-9a-f]{64}"
+                }
+              }
+            },
+            "runtime_sha256": {
+              "type": "string",
+              "pattern": "[0-9a-f]{64}"
+            }
+          }
+        },
+        "generation_identities": {
+          "type": "object"
+        },
+        "native_input_hashes": {
+          "type": "object"
+        },
+        "native_validation": {
+          "type": "object"
+        },
+        "whole_group_lineage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "condition_id",
+              "group_kind",
+              "members",
+              "selected",
+              "candidates"
+            ],
+            "properties": {
+              "condition_id": {
+                "type": "string"
+              },
+              "group_kind": {
+                "enum": [
+                  "base",
+                  "sensitivity"
+                ]
+              },
+              "members": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "selected": {
+                "type": "string"
+              },
+              "candidates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "group_attempt_id",
+                    "replaces",
+                    "repair_authority",
+                    "members"
+                  ],
+                  "properties": {
+                    "group_attempt_id": {
+                      "type": "string"
+                    },
+                    "replaces": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "repair_authority": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "decision_id",
+                            "status",
+                            "kind",
+                            "replaces",
+                            "group_attempt_id"
+                          ],
+                          "properties": {
+                            "decision_id": {
+                              "type": "string"
+                            },
+                            "status": {
+                              "const": "WHOLE_GROUP_REPAIR_AUTHORIZED"
+                            },
+                            "kind": {
+                              "enum": [
+                                "PRODUCTION",
+                                "SYNTHETIC_TEST_ONLY"
+                              ]
+                            },
+                            "replaces": {
+                              "type": "string"
+                            },
+                            "group_attempt_id": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "members": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "group_attempt_id",
+                          "source_id",
+                          "native_relative_path",
+                          "attempt_id",
+                          "run_id",
+                          "replay_of"
+                        ],
+                        "properties": {
+                          "group_attempt_id": {
+                            "type": "string"
+                          },
+                          "source_id": {
+                            "type": "string"
+                          },
+                          "native_relative_path": {
+                            "type": "string"
+                          },
+                          "attempt_id": {
+                            "type": "string"
+                          },
+                          "run_id": {
+                            "type": "string"
+                          },
+                          "replay_of": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "metrics": {
+          "type": "object"
+        },
+        "cells": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "alternatives": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "normalized_delta_Q",
+            "rank_Q",
+            "strict_discordance",
+            "persistence",
+            "reason"
+          ],
+          "properties": {
+            "normalized_delta_Q": {
+              "type": "null"
+            },
+            "rank_Q": {
+              "type": "null"
+            },
+            "strict_discordance": {
+              "type": "null"
+            },
+            "persistence": {
+              "type": "null"
+            },
+            "reason": {
+              "const": "PAP_OWNER_DISPOSITION_REQUIRED"
+            }
+          }
+        },
+        "experimental_rounds_executed": {
+          "const": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "status",
+    "receipt_kind",
+    "allocations",
+    "aggregate_reservations",
+    "nonadditive_caps"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "EMBORA-SEQUENTIAL-ACCOUNTING-v1.0"
+    },
+    "status": {
+      "const": "PROPOSED_NOT_AUTHORIZED"
+    },
+    "receipt_kind": {
+      "enum": [
+        "NATIVE_VERIFIED",
+        "SYNTHETIC_TEST_ONLY"
+      ]
+    },
+    "allocations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "batch_id",
+          "kind",
+          "block",
+          "plan_sha256",
+          "allowlist_sha256",
+          "run_ids",
+          "attempt_ids",
+          "group_ids",
+          "members",
+          "output_id",
+          "parent_queue",
+          "caps",
+          "reservation_intervals",
+          "stop_rule",
+          "replay_policy",
+          "repair_authority"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "INITIAL",
+              "REPAIR"
+            ]
+          },
+          "block": {
+            "type": "string"
+          },
+          "plan_sha256": {
+            "type": "string",
+            "pattern": "[0-9a-f]{64}"
+          },
+          "allowlist_sha256": {
+            "type": "string",
+            "pattern": "[0-9a-f]{64}"
+          },
+          "run_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attempt_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "group_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "members": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "output_id": {
+            "type": "string"
+          },
+          "parent_queue": {
+            "type": "null"
+          },
+          "caps": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "attempts",
+              "rounds",
+              "wall_seconds",
+              "episode_seconds",
+              "rss_bytes",
+              "output_bytes"
+            ],
+            "properties": {
+              "attempts": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "rounds": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "wall_seconds": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "episode_seconds": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "rss_bytes": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "output_bytes": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          "reservation_intervals": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "attempts",
+              "rounds",
+              "wall_seconds",
+              "output_bytes"
+            ],
+            "properties": {
+              "attempts": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "rounds": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "wall_seconds": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "output_bytes": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          },
+          "stop_rule": {
+            "const": "first_error_or_bound"
+          },
+          "replay_policy": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "additional_attempts",
+              "additional_rounds",
+              "max_groups",
+              "max_per_group"
+            ],
+            "properties": {
+              "additional_attempts": {
+                "const": 0
+              },
+              "additional_rounds": {
+                "const": 0
+              },
+              "max_groups": {
+                "const": 0
+              },
+              "max_per_group": {
+                "const": 0
+              }
+            }
+          },
+          "repair_authority": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "decision_id",
+                  "status",
+                  "parent_batch_id",
+                  "group_id",
+                  "new_run_ids",
+                  "replay_of"
+                ],
+                "properties": {
+                  "decision_id": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "const": "EXPLICIT_SEPARATE_REPAIR_ALLOCATION"
+                  },
+                  "parent_batch_id": {
+                    "type": "string"
+                  },
+                  "group_id": {
+                    "type": "string"
+                  },
+                  "new_run_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "replay_of": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "aggregate_reservations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempts",
+        "rounds",
+        "wall_seconds",
+        "output_bytes"
+      ],
+      "properties": {
+        "attempts": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rounds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wall_seconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_bytes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "nonadditive_caps": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rss_bytes",
+        "episode_seconds"
+      ],
+      "properties": {
+        "rss_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "episode_seconds": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
