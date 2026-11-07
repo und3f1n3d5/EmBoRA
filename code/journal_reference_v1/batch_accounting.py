@@ -22,6 +22,25 @@ DOMAINS=('attempts','rounds','wall_seconds','output_bytes')
 ZERO_REPLAY=dict(additional_attempts=0,additional_rounds=0,max_groups=0,max_per_group=0)
 
 
+
+INITIAL_REPLAY_POLICY_BRIDGE='EMBORA-INITIAL-ZERO-REPLAY-BRIDGE-v1.1'
+
+
+def verify_initial_replay_policy(allocation_policy,native_policy):
+    """Map the closed four-limit allocation domain to native initial reason=null.
+
+    No replay allowance, coercion, unknown key or repair reason is admitted.
+    Native schema/permission/content verification still runs independently.
+    """
+    require(type(allocation_policy) is dict and set(allocation_policy)==set(ZERO_REPLAY) and
+            all(type(allocation_policy[k]) is int and allocation_policy[k]==0 for k in ZERO_REPLAY),
+            'Initial allocation requires exact zero replay limits')
+    require(type(native_policy) is dict and set(native_policy)==set(ZERO_REPLAY)|{'reason'} and
+            native_policy['reason'] is None and
+            all(type(native_policy[k]) is int and native_policy[k]==allocation_policy[k] for k in ZERO_REPLAY),
+            'Native initial zero-replay policy differs from allocation')
+
+
 def verify_allocations(proposal):
     validate_inventory('ACCOUNTING_C6_v1.0.json',proposal)
     require(proposal['schema_id']==VERSION and proposal['status']=='PROPOSED_NOT_AUTHORIZED','Only explicit preparation allocations')
@@ -126,7 +145,9 @@ def reconcile_native(proposal,batch_id,source_spec,validator_root,python,validat
     plan=read(q/'plan.json');require(plan['parent_queue'] is None if b['kind']=='INITIAL' else plan['parent_queue'] is not None,'Batch continuation cannot masquerade as recovery')
     require([r['run_id'] for r in plan['runs']]==b['run_ids'] and [r['attempt_id'] for r in plan['runs']]==b['attempt_ids'],'Native dispatch IDs differ from allocation')
     require(read(q/'permission.json')['output']==b['output_id'],'Native output identity differs from allocation')
-    require(read(q/'permission.json')['caps']==b['caps'] and read(q/'permission.json')['replay_policy']==b['replay_policy'],'Native caps differ from allocation')
+    grant=read(q/'permission.json')
+    require(grant['caps']==b['caps'],'Native caps differ from allocation')
+    verify_initial_replay_policy(b['replay_policy'],grant['replay_policy'])
     native=validate_source(source_spec,validator_root,python,validator_source)
     result=native['result'];seal=read(q/'seal.json');queue=read(q/'queue.json')
     archive=Path(archive_path).resolve();require(not archive.is_relative_to(q),'Archive must be outside immutable queue')
