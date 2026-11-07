@@ -1,0 +1,1668 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "EMBORA-NUMERIC_EVIDENCE_IMPLEMENTATION_SCHEMA_C6_v1.0",
+  "title": "NUMERIC_EVIDENCE_IMPLEMENTATION_SCHEMA_C6_v1.0",
+  "description": "Complete structural inventory; cross-field, exact-bit, context and operation-graph invariants are enforced by the closed Python validators and CLI.",
+  "anyOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "absolute_tolerance_1e-12",
+        "actual_ideal_status",
+        "arithmetic_residual_B_minus_R",
+        "exact_categories",
+        "exact_invariant_checks",
+        "executable_B",
+        "executable_reference_sha256",
+        "ideal_input_known",
+        "implementation_discrepancy_O_minus_B",
+        "implementation_reference_comparison",
+        "independently_derived_bounds",
+        "input_origin",
+        "nodes",
+        "numeric_policy_id",
+        "observed_O",
+        "parameter_schema_id",
+        "real_on_rounded_R",
+        "relative_tolerance_1e-12",
+        "rounded_inputs",
+        "runtime_lock_sha256",
+        "specification_id"
+      ],
+      "properties": {
+        "absolute_tolerance_1e-12": {
+          "type": "number"
+        },
+        "actual_ideal_status": {
+          "type": "string"
+        },
+        "arithmetic_residual_B_minus_R": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "binary64_display",
+            "display_role",
+            "exact_rational"
+          ],
+          "properties": {
+            "binary64_display": {
+              "type": "number"
+            },
+            "display_role": {
+              "type": "string"
+            },
+            "exact_rational": {
+              "type": "string"
+            }
+          }
+        },
+        "exact_categories": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "delta_sign",
+            "identity"
+          ],
+          "properties": {
+            "delta_sign": {
+              "type": "number"
+            },
+            "identity": {
+              "type": "boolean"
+            }
+          }
+        },
+        "exact_invariant_checks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "current",
+            "delta",
+            "endpoint_signs",
+            "u",
+            "u_abs",
+            "urgency_range",
+            "vhat_range"
+          ],
+          "properties": {
+            "current": {
+              "type": "string"
+            },
+            "delta": {
+              "type": "string"
+            },
+            "endpoint_signs": {
+              "type": "string"
+            },
+            "u": {
+              "type": "string"
+            },
+            "u_abs": {
+              "type": "string"
+            },
+            "urgency_range": {
+              "type": "string"
+            },
+            "vhat_range": {
+              "type": "string"
+            }
+          }
+        },
+        "executable_B": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bits_hex",
+            "float",
+            "fraction",
+            "hex",
+            "sign_bit"
+          ],
+          "properties": {
+            "bits_hex": {
+              "type": "string"
+            },
+            "float": {
+              "type": "number"
+            },
+            "fraction": {
+              "type": "string"
+            },
+            "hex": {
+              "type": "string"
+            },
+            "sign_bit": {
+              "type": "number"
+            }
+          }
+        },
+        "executable_reference_sha256": {
+          "type": "string"
+        },
+        "ideal_input_known": {
+          "type": "boolean"
+        },
+        "implementation_discrepancy_O_minus_B": {
+          "type": "number"
+        },
+        "implementation_reference_comparison": {
+          "type": "string"
+        },
+        "independently_derived_bounds": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "arithmetic"
+          ],
+          "properties": {
+            "arithmetic": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "binary64_display",
+                "display_role",
+                "exact_rational"
+              ],
+              "properties": {
+                "binary64_display": {
+                  "type": "number"
+                },
+                "display_role": {
+                  "type": "string"
+                },
+                "exact_rational": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "input_origin": {
+          "type": "string"
+        },
+        "nodes": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "c",
+                "current",
+                "delta",
+                "denominator",
+                "identity",
+                "q",
+                "u",
+                "u_abs",
+                "v"
+              ],
+              "properties": {
+                "c": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "current": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "delta": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "denominator": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "identity": {
+                  "type": "boolean"
+                },
+                "q": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "u": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "u_abs": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "v": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "c",
+                "current",
+                "delta",
+                "denominator",
+                "identity",
+                "left",
+                "q",
+                "ratio",
+                "right",
+                "total",
+                "u",
+                "u_abs",
+                "v"
+              ],
+              "properties": {
+                "c": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "current": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "delta": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "denominator": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "identity": {
+                  "type": "boolean"
+                },
+                "left": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "q": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "ratio": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "right": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "total": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "u": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "u_abs": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "v": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "bits_hex",
+                    "float",
+                    "fraction",
+                    "hex",
+                    "sign_bit"
+                  ],
+                  "properties": {
+                    "bits_hex": {
+                      "type": "string"
+                    },
+                    "float": {
+                      "type": "number"
+                    },
+                    "fraction": {
+                      "type": "string"
+                    },
+                    "hex": {
+                      "type": "string"
+                    },
+                    "sign_bit": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "numeric_policy_id": {
+          "type": "string"
+        },
+        "observed_O": {
+          "type": "number"
+        },
+        "parameter_schema_id": {
+          "type": "string"
+        },
+        "real_on_rounded_R": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "binary64_display",
+            "display_role",
+            "exact_rational"
+          ],
+          "properties": {
+            "binary64_display": {
+              "type": "number"
+            },
+            "display_role": {
+              "type": "string"
+            },
+            "exact_rational": {
+              "type": "string"
+            }
+          }
+        },
+        "relative_tolerance_1e-12": {
+          "type": "number"
+        },
+        "rounded_inputs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "q",
+            "v"
+          ],
+          "properties": {
+            "q": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "v": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "runtime_lock_sha256": {
+          "type": "string"
+        },
+        "specification_id": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "absolute_tolerance_1e-12",
+        "arithmetic_residual_B_minus_R",
+        "exact_categories",
+        "exact_invariant_checks",
+        "executable_B",
+        "executable_reference_sha256",
+        "ideal_I",
+        "ideal_input_known",
+        "implementation_discrepancy_O_minus_B",
+        "implementation_reference_comparison",
+        "independently_derived_bounds",
+        "input_origin",
+        "input_residual_R_minus_I",
+        "nodes",
+        "numeric_policy_id",
+        "observed_O",
+        "original_exact_tokens",
+        "parameter_schema_id",
+        "real_on_rounded_R",
+        "relative_tolerance_1e-12",
+        "rounded_inputs",
+        "runtime_lock_sha256",
+        "specification_id",
+        "total_residual_B_minus_I"
+      ],
+      "properties": {
+        "absolute_tolerance_1e-12": {
+          "type": "number"
+        },
+        "arithmetic_residual_B_minus_R": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "binary64_display",
+            "display_role",
+            "exact_rational"
+          ],
+          "properties": {
+            "binary64_display": {
+              "type": "number"
+            },
+            "display_role": {
+              "type": "string"
+            },
+            "exact_rational": {
+              "type": "string"
+            }
+          }
+        },
+        "exact_categories": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "delta_sign",
+            "identity"
+          ],
+          "properties": {
+            "delta_sign": {
+              "type": "number"
+            },
+            "identity": {
+              "type": "boolean"
+            }
+          }
+        },
+        "exact_invariant_checks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "current",
+            "delta",
+            "endpoint_signs",
+            "u",
+            "u_abs",
+            "urgency_range",
+            "vhat_range"
+          ],
+          "properties": {
+            "current": {
+              "type": "string"
+            },
+            "delta": {
+              "type": "string"
+            },
+            "endpoint_signs": {
+              "type": "string"
+            },
+            "u": {
+              "type": "string"
+            },
+            "u_abs": {
+              "type": "string"
+            },
+            "urgency_range": {
+              "type": "string"
+            },
+            "vhat_range": {
+              "type": "string"
+            }
+          }
+        },
+        "executable_B": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bits_hex",
+            "float",
+            "fraction",
+            "hex",
+            "sign_bit"
+          ],
+          "properties": {
+            "bits_hex": {
+              "type": "string"
+            },
+            "float": {
+              "type": "number"
+            },
+            "fraction": {
+              "type": "string"
+            },
+            "hex": {
+              "type": "string"
+            },
+            "sign_bit": {
+              "type": "number"
+            }
+          }
+        },
+        "executable_reference_sha256": {
+          "type": "string"
+        },
+        "ideal_I": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "binary64_display",
+            "display_role",
+            "exact_rational"
+          ],
+          "properties": {
+            "binary64_display": {
+              "type": "number"
+            },
+            "display_role": {
+              "type": "string"
+            },
+            "exact_rational": {
+              "type": "string"
+            }
+          }
+        },
+        "ideal_input_known": {
+          "type": "boolean"
+        },
+        "implementation_discrepancy_O_minus_B": {
+          "type": "number"
+        },
+        "implementation_reference_comparison": {
+          "type": "string"
+        },
+        "independently_derived_bounds": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "arithmetic",
+            "input",
+            "total"
+          ],
+          "properties": {
+            "arithmetic": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "binary64_display",
+                "display_role",
+                "exact_rational"
+              ],
+              "properties": {
+                "binary64_display": {
+                  "type": "number"
+                },
+                "display_role": {
+                  "type": "string"
+                },
+                "exact_rational": {
+                  "type": "string"
+                }
+              }
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "binary64_display",
+                "display_role",
+                "exact_rational"
+              ],
+              "properties": {
+                "binary64_display": {
+                  "type": "number"
+                },
+                "display_role": {
+                  "type": "string"
+                },
+                "exact_rational": {
+                  "type": "string"
+                }
+              }
+            },
+            "total": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "binary64_display",
+                "display_role",
+                "exact_rational"
+              ],
+              "properties": {
+                "binary64_display": {
+                  "type": "number"
+                },
+                "display_role": {
+                  "type": "string"
+                },
+                "exact_rational": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "input_origin": {
+          "type": "string"
+        },
+        "input_residual_R_minus_I": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "binary64_display",
+            "display_role",
+            "exact_rational"
+          ],
+          "properties": {
+            "binary64_display": {
+              "type": "number"
+            },
+            "display_role": {
+              "type": "string"
+            },
+            "exact_rational": {
+              "type": "string"
+            }
+          }
+        },
+        "nodes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "c",
+            "current",
+            "delta",
+            "denominator",
+            "identity",
+            "left",
+            "q",
+            "ratio",
+            "right",
+            "total",
+            "u",
+            "u_abs",
+            "v"
+          ],
+          "properties": {
+            "c": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "current": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "delta": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "denominator": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "identity": {
+              "type": "boolean"
+            },
+            "left": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "q": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "ratio": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "right": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "total": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "u": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "u_abs": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "v": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "numeric_policy_id": {
+          "type": "string"
+        },
+        "observed_O": {
+          "type": "number"
+        },
+        "original_exact_tokens": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "alpha",
+            "epsilon",
+            "q",
+            "v"
+          ],
+          "properties": {
+            "alpha": {
+              "type": "string"
+            },
+            "epsilon": {
+              "type": "string"
+            },
+            "q": {
+              "type": "string"
+            },
+            "v": {
+              "type": "string"
+            }
+          }
+        },
+        "parameter_schema_id": {
+          "type": "string"
+        },
+        "real_on_rounded_R": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "binary64_display",
+            "display_role",
+            "exact_rational"
+          ],
+          "properties": {
+            "binary64_display": {
+              "type": "number"
+            },
+            "display_role": {
+              "type": "string"
+            },
+            "exact_rational": {
+              "type": "string"
+            }
+          }
+        },
+        "relative_tolerance_1e-12": {
+          "type": "number"
+        },
+        "rounded_inputs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "q",
+            "v"
+          ],
+          "properties": {
+            "q": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            },
+            "v": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "bits_hex",
+                "float",
+                "fraction",
+                "hex",
+                "sign_bit"
+              ],
+              "properties": {
+                "bits_hex": {
+                  "type": "string"
+                },
+                "float": {
+                  "type": "number"
+                },
+                "fraction": {
+                  "type": "string"
+                },
+                "hex": {
+                  "type": "string"
+                },
+                "sign_bit": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "runtime_lock_sha256": {
+          "type": "string"
+        },
+        "specification_id": {
+          "type": "string"
+        },
+        "total_residual_B_minus_I": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "binary64_display",
+            "display_role",
+            "exact_rational"
+          ],
+          "properties": {
+            "binary64_display": {
+              "type": "number"
+            },
+            "display_role": {
+              "type": "string"
+            },
+            "exact_rational": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "float_info": {
+    "mant_dig": 53,
+    "radix": 2,
+    "epsilon": 2.220446049250313e-16
+  },
+  "packages": {
+    "PyYAML": "6.0.3",
+    "pytest": "9.1.1",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "iniconfig": "2.3.0",
+    "packaging": "26.3",
+    "pluggy": "1.6.0",
+    "Pygments": "2.21.0"
+  },
+  "runtime_dependencies": [
+    "PyYAML"
+  ],
+  "test_dependencies": [
+    "pytest"
+  ],
+  "legacy_only_dependencies": [
+    "torch",
+    "numpy",
+    "matplotlib"
+  ],
+  "lock_sha256": "af8de7e9e176f50e0cbcccf03c9b6b036bc084d95840ba72c5a8db0d2db1f9c4",
+  "torch_index": "https://download.pytorch.org/whl/cpu",
+  "clean_environment_replay": "NOT_RUN; halted on literal frozen scalar oracle mismatch",
+  "fast_math": false,
+  "random_model_source": "none",
+  "full_frame_or_pilot_runs": 0
+}

@@ -1,0 +1,5935 @@
+{
+  "status": "OWNER_DERIVATION_PENDING_INDEPENDENT_RECHECK",
+  "definition": "abs(q_accept-q_reject) for one adapter, one current offer, one channel, UG responder",
+  "pairs": [
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "accept": "1/4",
+      "reject": "0",
+      "signed_gap": "1/4",
+      "absolute_gap": "1/4"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "accept": "2/5",
+      "reject": "3/5",
+      "signed_gap": "-1/5",
+      "absolute_gap": "1/5"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "3/4",
+      "signed_gap": "1/4",
+      "absolute_gap": "1/4"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "accept": "3/8",
+      "reject": "0",
+      "signed_gap": "3/8",
+      "absolute_gap": "3/8"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "accept": "3/5",
+      "reject": "2/5",
+      "signed_gap": "1/5",
+      "absolute_gap": "1/5"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "5/8",
+      "signed_gap": "3/8",
+      "absolute_gap": "3/8"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "accept": "1/2",
+      "reject": "0",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "accept": "4/5",
+      "reject": "1/5",
+      "signed_gap": "3/5",
+      "absolute_gap": "3/5"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "accept": "5/8",
+      "reject": "0",
+      "signed_gap": "5/8",
+      "absolute_gap": "5/8"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "3/8",
+      "signed_gap": "5/8",
+      "absolute_gap": "5/8"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "accept": "3/4",
+      "reject": "0",
+      "signed_gap": "3/4",
+      "absolute_gap": "3/4"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "accept": "4/5",
+      "reject": "1/5",
+      "signed_gap": "3/5",
+      "absolute_gap": "3/5"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/4",
+      "signed_gap": "3/4",
+      "absolute_gap": "3/4"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "accept": "7/8",
+      "reject": "0",
+      "signed_gap": "7/8",
+      "absolute_gap": "7/8"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "accept": "3/5",
+      "reject": "2/5",
+      "signed_gap": "1/5",
+      "absolute_gap": "1/5"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/8",
+      "signed_gap": "7/8",
+      "absolute_gap": "7/8"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "accept": "2/5",
+      "reject": "3/5",
+      "signed_gap": "-1/5",
+      "absolute_gap": "1/5"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "accept": "1/4",
+      "reject": "0",
+      "signed_gap": "1/4",
+      "absolute_gap": "1/4"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "accept": "2/5",
+      "reject": "0",
+      "signed_gap": "2/5",
+      "absolute_gap": "2/5"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "3/4",
+      "signed_gap": "1/4",
+      "absolute_gap": "1/4"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "accept": "3/8",
+      "reject": "0",
+      "signed_gap": "3/8",
+      "absolute_gap": "3/8"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "accept": "3/5",
+      "reject": "0",
+      "signed_gap": "3/5",
+      "absolute_gap": "3/5"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "5/8",
+      "signed_gap": "3/8",
+      "absolute_gap": "3/8"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "accept": "1/2",
+      "reject": "0",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "accept": "4/5",
+      "reject": "0",
+      "signed_gap": "4/5",
+      "absolute_gap": "4/5"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "accept": "5/8",
+      "reject": "0",
+      "signed_gap": "5/8",
+      "absolute_gap": "5/8"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "3/8",
+      "signed_gap": "5/8",
+      "absolute_gap": "5/8"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "accept": "3/4",
+      "reject": "0",
+      "signed_gap": "3/4",
+      "absolute_gap": "3/4"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "accept": "4/5",
+      "reject": "0",
+      "signed_gap": "4/5",
+      "absolute_gap": "4/5"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/4",
+      "signed_gap": "3/4",
+      "absolute_gap": "3/4"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "accept": "7/8",
+      "reject": "0",
+      "signed_gap": "7/8",
+      "absolute_gap": "7/8"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "accept": "3/5",
+      "reject": "0",
+      "signed_gap": "3/5",
+      "absolute_gap": "3/5"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/8",
+      "signed_gap": "7/8",
+      "absolute_gap": "7/8"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "accept": "2/5",
+      "reject": "0",
+      "signed_gap": "2/5",
+      "absolute_gap": "2/5"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "accept": "1/4",
+      "reject": "0",
+      "signed_gap": "1/4",
+      "absolute_gap": "1/4"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "accept": "2/5",
+      "reject": "1/2",
+      "signed_gap": "-1/10",
+      "absolute_gap": "1/10"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "3/4",
+      "signed_gap": "1/4",
+      "absolute_gap": "1/4"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "accept": "3/8",
+      "reject": "0",
+      "signed_gap": "3/8",
+      "absolute_gap": "3/8"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "accept": "3/5",
+      "reject": "1/2",
+      "signed_gap": "1/10",
+      "absolute_gap": "1/10"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "5/8",
+      "signed_gap": "3/8",
+      "absolute_gap": "3/8"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "accept": "1/2",
+      "reject": "0",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "accept": "4/5",
+      "reject": "1/2",
+      "signed_gap": "3/10",
+      "absolute_gap": "3/10"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "accept": "5/8",
+      "reject": "0",
+      "signed_gap": "5/8",
+      "absolute_gap": "5/8"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "3/8",
+      "signed_gap": "5/8",
+      "absolute_gap": "5/8"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "accept": "3/4",
+      "reject": "0",
+      "signed_gap": "3/4",
+      "absolute_gap": "3/4"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "accept": "4/5",
+      "reject": "1/2",
+      "signed_gap": "3/10",
+      "absolute_gap": "3/10"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/4",
+      "signed_gap": "3/4",
+      "absolute_gap": "3/4"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "accept": "7/8",
+      "reject": "0",
+      "signed_gap": "7/8",
+      "absolute_gap": "7/8"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "accept": "3/5",
+      "reject": "1/2",
+      "signed_gap": "1/10",
+      "absolute_gap": "1/10"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "1/8",
+      "signed_gap": "7/8",
+      "absolute_gap": "7/8"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "accept": "2/5",
+      "reject": "1/2",
+      "signed_gap": "-1/10",
+      "absolute_gap": "1/10"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "accept": "1",
+      "reject": "1/2",
+      "signed_gap": "1/2",
+      "absolute_gap": "1/2"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "accept": "1",
+      "reject": "0",
+      "signed_gap": "1",
+      "absolute_gap": "1"
+    }
+  ],
+  "minima": {
+    "N": "1/5",
+    "A": "1/4",
+    "B": "1/10"
+  },
+  "global_minimum": "1/10",
+  "alpha_B": "3152519739159347/9007199254740992",
+  "epsilon_B": "4722366482869645/4722366482869645213696",
+  "eta": "1/4503599627370496",
+  "arithmetic_error_per_projection": "8388608/4722366482869645",
+  "adapter_target_error_bound": "1/1125899906842624",
+  "adapter_appraisal_error_per_projection": "3152519739159347/10141204801825834753064960",
+  "total_perturbation_per_projection": "21166918248641331/10141204801825834753064960",
+  "real_appraisal_floors": {
+    "N": "3152519739159347/45035996273704960",
+    "A": "3152519739159347/36028797018963968",
+    "B": "3152519739159347/90071992547409920"
+  },
+  "uniform_margins": {
+    "N": {
+      "fraction": "595494106599446295155007701423/8507059173023461201623874797568",
+      "decimal": "0.0699999958255614229685191600483365507582698801870821510540860"
+    },
+    "A": {
+      "fraction": "14887352842547137134773850892823/170141183460469224032477495951360",
+      "decimal": "0.0874999958255614218582961354231800103346382120962618385540860"
+    },
+    "B": {
+      "fraction": "2977470355436251719876380149867/85070591730234612016238747975680",
+      "decimal": "0.0349999958255614251889652092986496316055332163687227760540860"
+    }
+  },
+  "global_margin_decimal": "0.0349999958255614251889652092986496316055332163687227760540860",
+  "static_boundary_identity_epsilon_checks": [
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "44662015996312512122979552398179484091/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3101527027713619242991560231590812835/7089208888303573802602636301599506432",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "1/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "826414134502187859968/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "-3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "-3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "-1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "-3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "-3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "-3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "-1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "-3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "-3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "826414134502187859968/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "3/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3101527027713619242991560231590812835/7089208888303573802602636301599506432",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "44662015996312512122979552398179484091/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 2,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "52105692772708040539004223648784892347/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "10235040680190298780977764601098114537/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "3/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1239621201753281789952/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1239621201753281789952/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "5/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "10235040680190298780977764601098114537/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "52105692772708040539004223648784892347/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 3,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9916969614026254319616/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "1/5",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/22517998136852480",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4/5",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9916969614026254319616/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 4,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "66993046325499097371053566149995708859/170141098389877501497075287477136130048",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "4031986624763060294994644137916488867/7089208888303573802602636301599506432",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "15762598695796735/36028797018963968",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "5/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1033017668127734824960/4722361760503162344051",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2066035336255469649920/9444728243372807557747",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2066035336255469649920/9444728243372807557747",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "1033017668127734824960/4722361760503162344051",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "3/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "15762598695796735/36028797018963968",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "4031986624763060294994644137916488867/7089208888303573802602636301599506432",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "66993046325499097371053566149995708859/170141098389877501497075287477136130048",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 5,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "74436723101894625787078237400601117115/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "13026419471338621936987016320075142633/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "3/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2479242403506563579904/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9916969614026254319616/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "1/5",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/22517998136852480",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4/5",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9916969614026254319616/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2479242403506563579904/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "13026419471338621936987016320075142633/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "74436723101894625787078237400601117115/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "81880399878290154203102908651206525371/170141098389877501497075287477136130048",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "13956879068388062988990100226400818665/21267626664910721407807908904798519296",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "22067638174115429/36028797018963968",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "7/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/674623108643308906293",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2892449470757657509888/9444728243372807557747",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2892449470757657509888/9444728243372807557747",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/674623108643308906293",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "22067638174115429/36028797018963968",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "13956879068388062988990100226400818665/21267626664910721407807908904798519296",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "81880399878290154203102908651206525371/170141098389877501497075287477136130048",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "-3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "-3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "-1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "-3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "-3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "-3152519739159347/27021597764222976",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "-1652828269004375719936/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "-3305656538008751439872/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "-3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/45035996273704960"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "N",
+      "offer": 8,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "44662015996312512122979552398179484091/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3101527027713619242991560231590812835/7089208888303573802602636301599506432",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "1/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "826414134502187859968/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "267972140639935731111045789494529869991/850705491949387507485376437385680650240",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "17368554332666978318963968970605416239/35446044441517869013013181507997532160",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/11258999068426240",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3305656538008751439872/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "6611313076017502879744/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "826414134502187859968/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "3/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3101527027713619242991560231590812835/7089208888303573802602636301599506432",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "44662015996312512122979552398179484091/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 2,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "52105692772708040539004223648784892347/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "10235040680190298780977764601098114537/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "3/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1239621201753281789952/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "327521554851099958439243159499373136039/850705491949387507485376437385680650240",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "59549339774396463372916578162421656973/106338133324553607039039544523992596480",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/22517998136852480",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9916969614026254319616/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1239621201753281789952/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "5/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "10235040680190298780977764601098114537/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "52105692772708040539004223648784892347/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 3,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/11258999068426240",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "387070969062264185767440529504216402087/850705491949387507485376437385680650240",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "66993016550791991788941249413027065229/106338133324553607039039544523992596480",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/5629499534213120",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4/5",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "6611313076017502879744/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "13222626152035005759488/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/11258999068426240",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 4,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "66993046325499097371053566149995708859/170141098389877501497075287477136130048",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "4031986624763060294994644137916488867/7089208888303573802602636301599506432",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "15762598695796735/36028797018963968",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "5/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1033017668127734824960/4722361760503162344051",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2066035336255469649920/9444728243372807557747",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2066035336255469649920/9444728243372807557747",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "1033017668127734824960/4722361760503162344051",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "3/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "15762598695796735/36028797018963968",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "4031986624763060294994644137916488867/7089208888303573802602636301599506432",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "66993046325499097371053566149995708859/170141098389877501497075287477136130048",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 5,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "74436723101894625787078237400601117115/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "13026419471338621936987016320075142633/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "3/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2479242403506563579904/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/11258999068426240",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "387070969062264185767440529504216402087/850705491949387507485376437385680650240",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "66993016550791991788941249413027065229/106338133324553607039039544523992596480",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/5629499534213120",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4/5",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "6611313076017502879744/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "13222626152035005759488/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/11258999068426240",
+      "real_gap_floor": "3152519739159347/11258999068426240"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2479242403506563579904/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "13026419471338621936987016320075142633/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "74436723101894625787078237400601117115/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "81880399878290154203102908651206525371/170141098389877501497075287477136130048",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "13956879068388062988990100226400818665/21267626664910721407807908904798519296",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "22067638174115429/36028797018963968",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "7/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/674623108643308906293",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2892449470757657509888/9444728243372807557747",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "327521554851099958439243159499373136039/850705491949387507485376437385680650240",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "59549339774396463372916578162421656973/106338133324553607039039544523992596480",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/22517998136852480",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1652828269004375719936/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9916969614026254319616/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/45035996273704960"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2892449470757657509888/9444728243372807557747",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/674623108643308906293",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "22067638174115429/36028797018963968",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "13956879068388062988990100226400818665/21267626664910721407807908904798519296",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "81880399878290154203102908651206525371/170141098389877501497075287477136130048",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "267972140639935731111045789494529869991/850705491949387507485376437385680650240",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "17368554332666978318963968970605416239/35446044441517869013013181507997532160",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/11258999068426240",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3305656538008751439872/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "6611313076017502879744/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/22517998136852480",
+      "real_gap_floor": "3152519739159347/22517998136852480"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "A",
+      "offer": 8,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "44662015996312512122979552398179484091/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3101527027713619242991560231590812835/7089208888303573802602636301599506432",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "1/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "826414134502187859968/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "-3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "-1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "-826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "-3152519739159347/54043195528445952",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "-3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "-826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "-1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "-3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "826414134502187859968/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "3/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3101527027713619242991560231590812835/7089208888303573802602636301599506432",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "44662015996312512122979552398179484091/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 2,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/36028797018963968",
+      "real_gap_floor": "3152519739159347/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "52105692772708040539004223648784892347/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "10235040680190298780977764601098114537/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "3/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1239621201753281789952/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "3152519739159347/54043195528445952",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1239621201753281789952/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "5/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "10235040680190298780977764601098114537/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "52105692772708040539004223648784892347/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 3,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/90071992547409920",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "4958484807013127159808/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4/5",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "4958484807013127159808/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/90071992547409920",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 4,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "66993046325499097371053566149995708859/170141098389877501497075287477136130048",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "4031986624763060294994644137916488867/7089208888303573802602636301599506432",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "15762598695796735/36028797018963968",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "5/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "1033017668127734824960/4722361760503162344051",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2066035336255469649920/9444728243372807557747",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2066035336255469649920/9444728243372807557747",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "1033017668127734824960/4722361760503162344051",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "3/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "15762598695796735/36028797018963968",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "4031986624763060294994644137916488867/7089208888303573802602636301599506432",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "66993046325499097371053566149995708859/170141098389877501497075287477136130048",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 5,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "15762598695796735/72057594037927936",
+      "real_gap_floor": "15762598695796735/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "74436723101894625787078237400601117115/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "13026419471338621936987016320075142633/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "3/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2479242403506563579904/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/90071992547409920",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "4958484807013127159808/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/45035996273704960",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4/5",
+      "signed_appraisal_gap": "9457559217478041/72057594037927936",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/7870602934171937240085",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "4958484807013127159808/47223641216864037788735",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/90071992547409920",
+      "real_gap_floor": "9457559217478041/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2479242403506563579904/9444728243372807557747",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "413207067251093929984/1574120586834387448017",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1/4",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "13026419471338621936987016320075142633/21267626664910721407807908904798519296",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "74436723101894625787078237400601117115/170141098389877501497075287477136130048",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 6,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "9457559217478041/36028797018963968",
+      "real_gap_floor": "9457559217478041/36028797018963968"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "81880399878290154203102908651206525371/170141098389877501497075287477136130048",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "13956879068388062988990100226400818665/21267626664910721407807908904798519296",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "22067638174115429/36028797018963968",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "7/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/674623108643308906293",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "2892449470757657509888/9444728243372807557747",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "3/5",
+      "signed_appraisal_gap": "3152519739159347/54043195528445952",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "2892449470757657509888/9444728243372807557747",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "206603533625546964992/674623108643308906293",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1/8",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "22067638174115429/36028797018963968",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "13956879068388062988990100226400818665/21267626664910721407807908904798519296",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "81880399878290154203102908651206525371/170141098389877501497075287477136130048",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 7,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "22067638174115429/72057594037927936",
+      "real_gap_floor": "22067638174115429/72057594037927936"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "material",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "0",
+      "signed_appraisal_gap": "-3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "-1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "-826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "2/5",
+      "signed_appraisal_gap": "-3152519739159347/54043195528445952",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "1/2",
+      "signed_appraisal_gap": "-3152519739159347/45035996273704960",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "-826414134502187859968/23611808802515811720255",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "-1652828269004375719936/47223641216864037788735",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "fairness",
+      "v": "1",
+      "signed_appraisal_gap": "-3152519739159347/90071992547409920",
+      "real_gap_floor": "3152519739159347/90071992547409920"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "1652828269004375719936/9444728243372807557747",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "826414134502187859968/4722361760503162344051",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "11165500277239739832980848507423790569/21267626664910721407807908904798519296",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "59549369549103568955028894899390300603/170141098389877501497075287477136130048",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "relationship",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/18014398509481984",
+      "real_gap_floor": "3152519739159347/18014398509481984"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "v": "0",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722366482869645/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722366482869645/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "v": "1/2",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "v": "4722361760503162344051/4722366482869645213696",
+      "signed_appraisal_gap": "3152519739159347/4503599627370496",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "v": "9444728243372807557747/9444732965739290427392",
+      "signed_appraisal_gap": "9457559217478041/18014398509481984",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    },
+    {
+      "adapter": "B",
+      "offer": 8,
+      "channel": "safety",
+      "v": "1",
+      "signed_appraisal_gap": "3152519739159347/9007199254740992",
+      "real_gap_floor": "3152519739159347/9007199254740992"
+    }
+  ],
+  "production_imports": 0,
+  "trajectories": 0
+}

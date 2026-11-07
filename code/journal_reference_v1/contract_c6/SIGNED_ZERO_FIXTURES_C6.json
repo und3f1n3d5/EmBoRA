@@ -1,0 +1,3599 @@
+{
+  "fixtures": [
+    {
+      "path": "candidate",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "all_four_signed_zero_identity_pairs",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_material_only_nonmaterial",
+      "label": "F32_bit_preserving_copy",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_full",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_material_only",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_material_only_nonmaterial",
+      "label": "F32_bit_preserving_copy",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_full",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_material_only",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_material_only_nonmaterial",
+      "label": "F32_bit_preserving_copy",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_full",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_material_only",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_material_only_nonmaterial",
+      "label": "F32_bit_preserving_copy",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_full",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate_material_only",
+      "label": "candidate_reads_raw_not_applied_target",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": true
+      },
+      "expected_bits": {
+        "current": "8000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1",
+          "float": 1.0,
+          "hex": "0x1.0000000000000p+0",
+          "bits_hex": "3ff0000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1",
+          "float": 1.0,
+          "hex": "0x1.0000000000000p+0",
+          "bits_hex": "3ff0000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "1463669878895411/2251799813685248",
+          "float": 0.6499999999999999,
+          "hex": "0x1.4ccccccccccccp-1",
+          "bits_hex": "3fe4cccccccccccc",
+          "sign_bit": 0
+        },
+        "right": {
+          "fraction": "3152519739159347/9007199254740992",
+          "float": 0.35,
+          "hex": "0x1.6666666666666p-2",
+          "bits_hex": "3fd6666666666666",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "3fefffffffffffff",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "3152519739159347/81129638414606678024519680",
+        "float": 3.885780586188048e-11,
+        "hex": "0x1.55cc000000000p-35",
+        "bits_hex": "3dc55cc000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "21875/562949953421312",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "-3152519739159347/81129638414606678024519680",
+        "float": -3.885780586188048e-11,
+        "hex": "-0x1.55cc000000000p-35",
+        "bits_hex": "bdc55cc000000000",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "-21875/562949953421312",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "right": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "0000000000000001",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "-3152519739159347/1823077425147505602355869730193213619113734201994914317888727682204258258185471045967418488905686683331621007838422437150496255326274874949559964789419208896201061013113647658140664795395372637467990891142585948991877453734412281740240337156332124582400026973679528491379531296186280144148015917930808341917539294444362803067601551360",
+        "float": -1.72923e-318,
+        "hex": "-0x0.0000000055730p-1022",
+        "bits_hex": "8000000000055730",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "-21875/12650140831706913647030959169932331690597290610258882397306334876714396222999709180747523981339820280949192366519800744461863046086612092304188337496296156870094839017285397585279181733880826021327485479904546566785125467714043293663631459728072472271300628532022423097020838413451906408261645469290375391456731733818343424",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "3152519739159347/1823077425147505602355869730193213619113734201994914317888727682204258258185471045967418488905686683331621007838422437150496255326274874949559964789419208896201061013113647658140664795395372637467990891142585948991877453734412281740240337156332124582400026973679528491379531296186280144148015917930808341917539294444362803067601551360",
+        "float": 1.72923e-318,
+        "hex": "0x0.0000000055730p-1022",
+        "bits_hex": "0000000000055730",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "21875/12650140831706913647030959169932331690597290610258882397306334876714396222999709180747523981339820280949192366519800744461863046086612092304188337496296156870094839017285397585279181733880826021327485479904546566785125467714043293663631459728072472271300628532022423097020838413451906408261645469290375391456731733818343424",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "right": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "-3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "candidate",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "right": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "-3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1",
+          "float": 1.0,
+          "hex": "0x1.0000000000000p+0",
+          "bits_hex": "3ff0000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1",
+          "float": 1.0,
+          "hex": "0x1.0000000000000p+0",
+          "bits_hex": "3ff0000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "1463669878895411/2251799813685248",
+          "float": 0.6499999999999999,
+          "hex": "0x1.4ccccccccccccp-1",
+          "bits_hex": "3fe4cccccccccccc",
+          "sign_bit": 0
+        },
+        "right": {
+          "fraction": "3152519739159347/9007199254740992",
+          "float": 0.35,
+          "hex": "0x1.6666666666666p-2",
+          "bits_hex": "3fd6666666666666",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "9007199254740991/9007199254740992",
+          "float": 0.9999999999999999,
+          "hex": "0x1.fffffffffffffp-1",
+          "bits_hex": "3fefffffffffffff",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "3fefffffffffffff",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "3152519739159347/81129638414606678024519680",
+        "float": 3.885780586188048e-11,
+        "hex": "0x1.55cc000000000p-35",
+        "bits_hex": "3dc55cc000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "21875/562949953421312",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "-3152519739159347/81129638414606678024519680",
+        "float": -3.885780586188048e-11,
+        "hex": "-0x1.55cc000000000p-35",
+        "bits_hex": "bdc55cc000000000",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "-21875/562949953421312",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "right": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "0000000000000001",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "-3152519739159347/1823077425147505602355869730193213619113734201994914317888727682204258258185471045967418488905686683331621007838422437150496255326274874949559964789419208896201061013113647658140664795395372637467990891142585948991877453734412281740240337156332124582400026973679528491379531296186280144148015917930808341917539294444362803067601551360",
+        "float": -1.72923e-318,
+        "hex": "-0x0.0000000055730p-1022",
+        "bits_hex": "8000000000055730",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "-21875/12650140831706913647030959169932331690597290610258882397306334876714396222999709180747523981339820280949192366519800744461863046086612092304188337496296156870094839017285397585279181733880826021327485479904546566785125467714043293663631459728072472271300628532022423097020838413451906408261645469290375391456731733818343424",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "3152519739159347/1823077425147505602355869730193213619113734201994914317888727682204258258185471045967418488905686683331621007838422437150496255326274874949559964789419208896201061013113647658140664795395372637467990891142585948991877453734412281740240337156332124582400026973679528491379531296186280144148015917930808341917539294444362803067601551360",
+        "float": 1.72923e-318,
+        "hex": "0x0.0000000055730p-1022",
+        "bits_hex": "0000000000055730",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "21875/12650140831706913647030959169932331690597290610258882397306334876714396222999709180747523981339820280949192366519800744461863046086612092304188337496296156870094839017285397585279181733880826021327485479904546566785125467714043293663631459728072472271300628532022423097020838413451906408261645469290375391456731733818343424",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "right": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "-3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    },
+    {
+      "path": "realized_full",
+      "label": "nonidentity_zero_delta",
+      "ideal_input_known": false,
+      "input_origin": "binary64_hex_designated",
+      "actual_ideal_status": "unavailable_no_known_preconversion_state",
+      "rounded_inputs": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        }
+      },
+      "nodes": {
+        "v": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "q": {
+          "fraction": "1/202402253307310618352495346718917307049556649764142118356901358027430339567995346891960383701437124495187077864316811911389808737385793476867013399940738509921517424276566361364466907742093216341239767678472745068562007483424692698618103355649159556340810056512358769552333414615230502532186327508646006263307707741093494784",
+          "float": 5e-324,
+          "hex": "0x0.0000000000001p-1022",
+          "bits_hex": "0000000000000001",
+          "sign_bit": 0
+        },
+        "c": {
+          "fraction": "5854679515581645/9007199254740992",
+          "float": 0.65,
+          "hex": "0x1.4cccccccccccdp-1",
+          "bits_hex": "3fe4cccccccccccd",
+          "sign_bit": 0
+        },
+        "left": {
+          "fraction": "0",
+          "float": -0.0,
+          "hex": "-0x0.0p+0",
+          "bits_hex": "8000000000000000",
+          "sign_bit": 1
+        },
+        "right": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "total": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "current": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "delta": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "denominator": {
+          "fraction": "4722366482869645/4722366482869645213696",
+          "float": 1e-06,
+          "hex": "0x1.0c6f7a0b5ed8dp-20",
+          "bits_hex": "3eb0c6f7a0b5ed8d",
+          "sign_bit": 0
+        },
+        "ratio": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "u_abs": {
+          "fraction": "0",
+          "float": 0.0,
+          "hex": "0x0.0p+0",
+          "bits_hex": "0000000000000000",
+          "sign_bit": 0
+        },
+        "identity": false
+      },
+      "expected_bits": {
+        "current": "0000000000000000",
+        "delta": "0000000000000000",
+        "u": "0000000000000000",
+        "u_abs": "0000000000000000"
+      },
+      "real_on_rounded_inputs": {
+        "fraction": "3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_error": {
+        "fraction": "-3152519739159347/1823077425147505684853565505719355547700399569971585245436292814341774517181276032977904794757305735120649472083851964668764442454428558070967603233164865544023051052435655059013062214762447905528904581431800959172490768971289208489330057268032432283309097348745905276287341195449699521008522680657205797358231134211088256337186042022985728",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1,
+        "displayed_binary64_fraction": "0",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "arithmetic_bound": {
+        "fraction": "8388608/4722366482869645",
+        "float": 1.7763568394002505e-09,
+        "hex": "0x1.e848000000000p-30",
+        "bits_hex": "3e1e848000000000",
+        "sign_bit": 0,
+        "displayed_binary64_fraction": "15625/8796093022208",
+        "ieee_metadata_role": "display_rounding_of_exact_rational"
+      },
+      "comparison": "exact_bits_not_numeric_tolerance"
+    }
+  ],
+  "material_only_copy_checks": [
+    {
+      "v": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0
+      },
+      "raw_q": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0
+      },
+      "q_star": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0
+      },
+      "copied_bits_equal_v": true,
+      "raw_q_untouched": true,
+      "channels": [
+        "fairness",
+        "relationship",
+        "safety"
+      ]
+    },
+    {
+      "v": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0
+      },
+      "raw_q": {
+        "fraction": "0",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1
+      },
+      "q_star": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0
+      },
+      "copied_bits_equal_v": true,
+      "raw_q_untouched": true,
+      "channels": [
+        "fairness",
+        "relationship",
+        "safety"
+      ]
+    },
+    {
+      "v": {
+        "fraction": "0",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1
+      },
+      "raw_q": {
+        "fraction": "0",
+        "float": 0.0,
+        "hex": "0x0.0p+0",
+        "bits_hex": "0000000000000000",
+        "sign_bit": 0
+      },
+      "q_star": {
+        "fraction": "0",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1
+      },
+      "copied_bits_equal_v": true,
+      "raw_q_untouched": true,
+      "channels": [
+        "fairness",
+        "relationship",
+        "safety"
+      ]
+    },
+    {
+      "v": {
+        "fraction": "0",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1
+      },
+      "raw_q": {
+        "fraction": "0",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1
+      },
+      "q_star": {
+        "fraction": "0",
+        "float": -0.0,
+        "hex": "-0x0.0p+0",
+        "bits_hex": "8000000000000000",
+        "sign_bit": 1
+      },
+      "copied_bits_equal_v": true,
+      "raw_q_untouched": true,
+      "channels": [
+        "fairness",
+        "relationship",
+        "safety"
+      ]
+    }
+  ],
+  "status": "OWNER_SELF_CHECK_ONLY_NOT_INDEPENDENT_CLOSURE"
+}

@@ -1,0 +1,258 @@
+schema_id: EMBORA-PARAMS-2026-10-04-R1C6-v1.1
+specification_id: EMBORA-MSJ1-2026-10-04-R1C6-v1.1
+status: c6_numeric_candidate_not_adopted_pending_targeted_R0_and_author_U1_addendum
+authority: Numeric constants and configuration domains only; equations and branches belong to MODEL_SPEC S01-S12.
+parameter_rule: All constants are fixed in this release except choices and frame factors explicitly enumerated below. General mathematical helper domains do not authorize run overrides.
+enums:
+  model_mode: [journal_reference_v1]
+  game: [PD, BoS, UG]
+  agent_id: [1, 2]
+  seat: [1, 2]
+  role_by_game:
+    PD: [player]
+    BoS: [player]
+    UG: [proposer, responder]
+  model_kind: [hybrid, emotional_only, rational_only]
+  controller_type: [model, baseline]
+  personality: [pessimistic, neutral, optimistic]
+  intensity: [low, neutral, high]
+  variant: [full, no_suppression, no_mood, no_fatigue, fixed_threshold, material_only]
+  selected_adapter_convention: [normative_resisted_inequity_v1, sensitivity_zero_exchange_v1, sensitivity_neutral_no_exchange_v1]
+  run_purpose: [confirmatory_frame, sensitivity, structural_fixture]
+  stochastic_mode: [none]
+  value_keys_order: [material, fairness, relationship, safety]
+  k_star: [material, fairness, relationship, safety, null]
+  selected_branch: [E, R, fixed]
+  baseline_id:
+    PD: [PD_AllC, PD_AllD, PD_TFT, PD_WSLS]
+    BoS: [BoS_Opera, BoS_Fight, BoS_Convention]
+    UG_proposer: [UG_Offer2, UG_Offer4, UG_Offer5, UG_Offer8, UG_Cycle]
+    UG_responder: [UG_AcceptAll, UG_RejectAll, UG_Threshold4, UG_Threshold5]
+personality_map:
+  pessimistic: 0.55
+  neutral: 0.75
+  optimistic: 0.95
+intensity_map:
+  low: 0.5
+  neutral: 1.0
+  high: 1.5
+constants:
+  alpha: 0.35
+  kappa: 1.0
+  epsilon: 0.000001
+  p_min: 0.5
+  p_max: 1.5
+  b_m: 1.0
+  b_f: -0.35
+  b_W: 0.15
+  W_center: 0.5
+  impulse_min: -1.5
+  impulse_max: 1.5
+  impulse_abs_max: 1.5
+  a_f: 0.45
+  m_negative_cut: -0.25
+  m_negative_offset: -0.12
+  m_positive_cut: 0.25
+  m_positive_offset: 0.05
+  resource_cut: 0.4
+  resource_offset: -0.10
+  theta_min: 0.15
+  theta_max: 1.25
+  pd_emotional_cut: -0.25
+  pd_rational_state_cut: -0.2
+  ug_offer_center: 5
+  ug_proposer_impulse_min: -2.0
+  ug_proposer_impulse_max: 2.0
+  ug_hybrid_system2_offer: 5
+  ug_rational_only_offer: 4
+  reaction_min: -1.5
+  reaction_max: 1.5
+  mood_min: -0.5
+  mood_max: 0.5
+  mood_decay: 0.94
+  mood_scale: 3.0
+  fatigue_load_rate: 0.08
+  fatigue_impulse_rate: 0.04
+  suppression_cost_rate: 0.03
+  recovery_rate: 0.015
+  lambda_W: 1.0
+  lambda_m: 1.0
+  lambda_f: 1.0
+  wellbeing_min: -1.0
+  wellbeing_max: 1.0
+game_parameters:
+  ug_endowment: 10
+  ug_legal_offers: [2, 3, 4, 5, 6, 7, 8]
+  o_min: 2
+  o_max: 8
+  round_origin: 1
+  confirmatory_horizon: 200
+  horizon_sensitivity: [100, 400]
+  BoS_confirmatory_parity: even
+  payoff_authority: MODEL_SPEC S02 tables; no configurable payoff overrides
+adapter_contract:
+  normative:
+    id: UG-ADAPTER-C3-NORM-RESISTED-INEQUITY-v1
+    config_key: normative_resisted_inequity_v1
+    reject_fairness: 1-minus-accepted-balance
+    reject_relationship: 0.0
+    allowed_run_purpose: [confirmatory_frame, sensitivity, structural_fixture]
+  sensitivity_A:
+    id: UG-ADAPTER-C3-SENS-ZERO-EXCHANGE-v1
+    config_key: sensitivity_zero_exchange_v1
+    reject_fairness: 0.0
+    reject_relationship: 0.0
+    allowed_run_purpose: [sensitivity]
+  sensitivity_B:
+    id: UG-ADAPTER-C3-SENS-NEUTRAL-NO-EXCHANGE-v1
+    config_key: sensitivity_neutral_no_exchange_v1
+    reject_fairness: 0.5
+    reject_relationship: 0.5
+    allowed_run_purpose: [sensitivity]
+  reference_selected_adapter_convention: normative_resisted_inequity_v1
+  selection_source: selected_adapter_convention
+  selection_required_explicit: true
+  candidate_and_realized_adapter_must_match_selected: true
+  per_row_or_per_action_override: forbidden
+  mixed_or_implicit_selection: reject
+  context_matrix:
+    normative_resisted_inequity_v1: [confirmatory_frame, sensitivity, structural_fixture]
+    sensitivity_zero_exchange_v1: [sensitivity]
+    sensitivity_neutral_no_exchange_v1: [sensitivity]
+responder_action_evaluation:
+  id: UG-CHOICE-C3-DIRECTIONAL-PRIORITY-VOTE-v1
+  candidate_actions_order: [accept, reject]
+  channel_comparison: exact_cmp_of_projected_F07_F08_signed_appraisals
+  executable_priority_inputs: post_clipping_binary64_p_in_value_keys_order
+  branch_numerator: math_fsum_of_p_clip_times_channel_comparison_in_value_keys_order
+  branch_numerator_name: N_VS
+  normalized_diagnostic: N_VS_divided_by_math_fsum_p_clip
+  normalized_diagnostic_name: D_VS
+  sign_and_tie_source: N_VS_only
+  accept_if: N_VS_strictly_greater_than_0
+  reject_if: N_VS_strictly_less_than_0
+  tie_rule: reject
+  tie_if: N_VS_binary64_equals_0.0
+  epsilon_or_tolerance_for_branch: forbidden
+  state_mutation: forbidden
+  future_offer_or_opponent_model: forbidden
+initial_primary_defaults:
+  v: {material: 0.5, fairness: 0.5, relationship: 0.5, safety: 0.5}
+  d: {material: 1.0, fairness: 1.0, relationship: 1.0, safety: 1.0}
+  p: {material: 1.0, fairness: 1.0, relationship: 1.0, safety: 1.0}
+  m: 0.0
+  f: 0.0
+derived_initial_fields: [pbar, r, W, Wtilde, S]
+priority_profiles:
+  equal: [1.0, 1.0, 1.0, 1.0]
+  material_high: [1.5, 0.5, 0.5, 0.5]
+  fairness_high: [0.5, 1.5, 0.5, 0.5]
+  relationship_high: [0.5, 0.5, 1.5, 0.5]
+  safety_high: [0.5, 0.5, 0.5, 1.5]
+readout_sensitivity:
+  lambda_W: [0.5, 1.0, 2.0]
+  lambda_m: [0.0, 0.5, 1.0]
+  lambda_f: [0.0, 0.5, 1.0]
+  interpretation: Cartesian product, preregistered readout recomputation only; never behavioral feedback.
+domains:
+  numeric: finite real only; no NaN/Inf or string-number coercion
+  v: '[0,1] for each of exactly four K keys'
+  d: singleton 1 for each K key in production
+  p: finite strictly positive real before normative clipping
+  m: '[-0.5,0.5]'
+  f: '[0,1]'
+  r: exactly 1-f
+  W: exactly F-25; [0,1]
+  Wtilde: exactly F-26; [-1,1]
+  S: exactly F-27; [-2.5,1.5] for behavioral unit lambdas
+  chi_1: selected solely by personality_map
+  chi_2: selected solely by intensity_map
+  horizon: integer 1..100000 for structural fixtures; otherwise only declared reference/sensitivity horizons
+  current_offer: integer member of exact ug_legal_offers; bool is not integer
+  candidate_q: exactly the raw vector emitted by selected_adapter_convention for the same role current_offer and candidate action; selected adapter is the sole source for both candidate and realized q; each component in [0,1]
+  candidate_uhat_signed: 'scientific |u|<=alpha; executable exact [-1,1] and diagnostic |u_B|<=alpha_B+8*2^-52/epsilon_B; no alpha snapping'
+  channel_comparison: each component exactly one of [-1,0,1]
+  N_VS: '[-6,6] from four p_clip terms in [-1.5,1.5]; binary64 zero is tie and rejects'
+  D_VS: '[-1,1]; normalized diagnostic only; sign and tie are copied from N_VS, never recomputed from normalized terms'
+  urgency_helper: finite prev,current,desired in [0,1], epsilon>0; no implicit clipping of invalid inputs
+  policy_helper_impulse: '[-1.5,1.5]'
+  normalization_helper: finite min<=payoff<=max; equal range allowed only as helper
+  regret_helper: finite 0<=g<=G; G=0 implies g=0
+  pair_keys: nonempty UTF-8 strings; max 128 characters; explicit, never inferred
+serialization:
+  format: JSON-compatible UTF-8 data; YAML table is declarative source
+  float: IEEE-754 binary64; no fast-math; fixed K order [material, fairness, relationship, safety]
+  branch_sum: Python-compatible math.fsum over the four binary64 products p_clip_k*z_k in fixed K order
+  diagnostic_denominator: Python-compatible math.fsum over p_clip in fixed K order; strictly positive after clipping
+  diagnostic_division: one binary64 division D_VS=N_VS/diagnostic_denominator
+  diagnostic_category: copy sign/tie label derived from N_VS; do not resummate pbar*z or inspect D_VS sign independently
+  comparison_tolerance: {absolute: 0.000000000001, relative: 0.000000000001}
+  comparison_target: independently_generated_executable_layer_B
+  comparison_rule: abs_error_le_max_absolute_relative_times_max_abs_pair
+  numeric_policy_id: EMBORA-NUMERIC-2026-10-04-C6-v1.1
+  identity_projection: exact_binary64_q_equals_v_bit_preserving_input_v_copy_including_negative_zero_and_positive_zero_delta_signed_absolute_urgency_on_both_paths
+  scientific_numeric_residuals: known_origin_only_I_input_total_residuals_and_bounds_unknown_origin_R_B_arithmetic_only_never_implementation_tolerance
+  reference_ieee_metadata: exact_dyadic_rational_plus_sign_bit_full_64bit_word_hex_signed_zero_checked_by_bits
+  branch_tolerance: 0
+  scientific_branch_fixtures: exact layer I scientific oracles preserved; independent layer B per NUMERICAL_CONTRACT_C6; exact branch comparisons
+  boundary_policy: no epsilon; normative N/B tie is a clipped-domain boundary with legal neighbors only on the positive side; negative-sign branch coverage is helper-level and not labelled a legal priority fixture
+  map_key_order: lexicographic for canonical JSON serialization, not appraisal tie selection
+  json: RFC8259 finite numbers; no NaN; no duplicate keys; compact separators; preserve array order
+  enums_case_sensitive: true
+  unknown_keys: reject_at_every_level
+  missing_required: reject
+  nulls: allowed only where explicitly enumerated
+  action_objects:
+    PD: '{name: C|D}; no other fields'
+    BoS: '{name: O|F}; no other fields'
+    UG_proposer: '{name: offer, offer: integer}; no other fields'
+    UG_responder: '{name: accept|reject}; no other fields'
+  observation_schema_id: EMBORA-OBS-2026-10-04-R1C6-v1.1
+  result_schema_id: EMBORA-RESULT-2026-10-04-R1C6-v1.1
+effective_config_contract:
+  required_no_default:
+    - schema_id
+    - specification_id
+    - condition_id
+    - pair_id
+    - game
+    - agents
+    - focal_agent_id
+    - selected_adapter_convention
+    - run_purpose
+  required_agent_fields: [agent_id, seat, role, controller_type]
+  model_agent_resolved_fields: [kind, personality, intensity, variant, priority_profile, initial_primary_state]
+  baseline_required_field: baseline_id
+  baseline_model_fields: forbidden
+  agent_default_resolution:
+    kind: hybrid
+    personality: neutral
+    intensity: neutral
+    variant: full
+    priority_profile: equal
+    initial_primary_state: initial_primary_defaults
+  common_default_resolution:
+    model_mode: journal_reference_v1
+    horizon: 200
+    stochastic_mode: none
+    rng_algorithm: null
+    stream_id: null
+    replicate_id: null
+    training: false
+    dqn_config: null
+    refocus_config: null
+  manifest_must_embed:
+    - full_resolved_effective_config_including_defaults
+    - constants_and_enum_versions
+    - c4_author_decision_id
+    - adapter_id_and_config_key
+    - spec_and_parameter_SHA256
+    - code_commit_and_dirty_state
+    - dependency_lock_hash
+    - pairing_and_data_generating_process_descriptor
+  run_authorized: false
+provenance:
+  inherited: C2 constants retained except obsolete UG responder reservation parameters removed; domains/defaults remain closed
+  removed_parameters: [ug_emotional_accept_cut, ug_responder_reference_offer, ug_responder_impulse_gain]
+  new_contract_objects: [adapter_contract, responder_action_evaluation]
+  no_numeric_calibration: All constants are modelling conventions, not fit to data.

@@ -1,0 +1,27 @@
+........................................................................ [ 50%]
+........................................................F............... [100%]
+=================================== FAILURES ===================================
+___ test_AT_URGENCY_near_epsilon_frozen_scientific_oracle[gain_near_desired] ___
+
+gain = True
+
+    @pytest.mark.parametrize('gain',[True,False],ids=['gain_near_desired','loss_near_zero'])
+    def test_AT_URGENCY_near_epsilon_frozen_scientific_oracle(gain):
+        # C5 S06-D and S12 AT-URGENCY: ±alpha/2, with table tolerance 1e-12.
+        v=1-C['epsilon']/2 if gain else C['epsilon']/2
+        # Material q=1 from legal offer-8 acceptance; q=0 from offer-5 rejection.
+        adapter=Adapter('normative_resisted_inequity_v1','structural_fixture')
+        q=adapter.raw('UG',2,'responder',[{'name':'offer','offer':8 if gain else 5},{'name':'accept' if gain else 'reject'}])
+        projected=projection(state_at(v), q)
+        expected=7/40 if gain else -7/40  # exact rational independent oracle
+        observed=projected['uhat_signed']['material']
+>       assert math.isclose(observed,expected,abs_tol=1e-12,rel_tol=1e-12), (observed,expected,abs(observed-expected))
+E       AssertionError: (0.1749999999356433, 0.175, 6.435668664650507e-11)
+E       assert False
+E        +  where False = <built-in function isclose>(0.1749999999356433, 0.175, abs_tol=1e-12, rel_tol=1e-12)
+E        +    where <built-in function isclose> = math.isclose
+
+code/journal_reference_v1/tests/test_partial_conformance.py:154: AssertionError
+=========================== short test summary info ============================
+FAILED code/journal_reference_v1/tests/test_partial_conformance.py::test_AT_URGENCY_near_epsilon_frozen_scientific_oracle[gain_near_desired]
+1 failed, 143 passed in 0.17s

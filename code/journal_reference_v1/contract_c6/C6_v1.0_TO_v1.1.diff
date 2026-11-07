@@ -1,0 +1,512 @@
+--- C6v1.0/ACCEPTANCE_MATRIX_C6.csv
++++ C6v1.1/ACCEPTANCE_MATRIX_C6.csv
+@@ -23,3 +23,6 @@
+ AT-CLAIMS,NUMERIC_DEPENDENT,"C1 cites frozen spec ID/hash; C2a separates raw-target invariance, E-proposal choice and selected final action; C2b retains all-cell nulls; C3 ties remain in denominator with normative/A/B sensitivities reported separately; state-invariant vote, tie-only normative rejection, A-always-accept, N/B proposal equivalence and material/safety redundancy are disclosed; no strategic-reflection or novelty promotion.",C6 exact invariants/categories + abs/rel 1e-12 against B; diagnostics separate,PRODUCTION_NOT_RUN / NOT_CERTIFIED,Engineer after adoption; independent code/spec audit
+ AT-LEGACY,PINNED_SCOPE,Prospective reference path has no DQN/refocus imports/objects/fallback/legacy wrapper dependencies; no old results enter new evidence map. Code audit/test only after U1.,C5 exact scope; ordered binary64 where numeric,PRODUCTION_NOT_RUN / NOT_CERTIFIED,Engineer after adoption; independent code/spec audit
+ AT-PACKAGE,NUMERIC_DEPENDENT,"Every review file hash matches manifest, internal/external manifest bytes match, ZIP has exact declared entries; receipt records independent ZIP/manifest hashes. This administrative check may be performed now.",C6 exact invariants/categories + abs/rel 1e-12 against B; diagnostics separate,PRODUCTION_NOT_RUN / NOT_CERTIFIED,Engineer after adoption; independent code/spec audit
++R0-C6-P1-01,BOUNDED_V1_1_RECHECK,"Scientific formulas/constants, +/-7/40, F35 votes/tie/tolerances unchanged","84 exact pairs, minima N=1/5 A=1/4 B=1/10; 642 rational boundary/identity/epsilon checks; exact positive global margin; 840 inherited F35 outputs unchanged",OWNER_CHECK_PASS / PENDING_INDEPENDENT_RECHECK,Coordinator integrity then independent R0
++R0-C6-P2-01,BOUNDED_V1_1_RECHECK,"Scientific formulas/constants, +/-7/40, F35 votes/tie/tolerances unchanged","28 exact-bit cases including 4 identity pairs on each candidate/realized path, four material_only copies, nonidentity zero-delta; input v never normalized",OWNER_CHECK_PASS / PENDING_INDEPENDENT_RECHECK,Coordinator integrity then independent R0
++R0-C6-P2-02,BOUNDED_V1_1_RECHECK,"Scientific formulas/constants, +/-7/40, F35 votes/tie/tolerances unchanged",28 inherited unknown scalar rows audited; 17 known exact-rational rows and original diagnostics unchanged; 840 unknown F35 rows/6720 nested R/B residuals; signed-zero and ancillary executable witnesses audited; no counterfactual actual diagnostics,OWNER_CHECK_PASS / PENDING_INDEPENDENT_RECHECK,Coordinator integrity then independent R0
+--- C6v1.0/AUTHOR_IMPACT_AND_DEPENDENCIES_C6.md
++++ C6v1.1/AUTHOR_IMPACT_AND_DEPENDENCIES_C6.md
+@@ -2,16 +2,16 @@
+ 
+ This is a new executable acceptance contract, not a metadata repair. Author has accepted **nothing new**. U1 C5 remains unchanged. Requested next route: independent targeted R0 numerical review → Coordinator verification of exact candidate hashes → concise author U1 addendum → Engineer implementation of only the adopted delta → complete P2 and independent code/spec audit → new versioned PAP/schema/config binding. Pilot still requires separate authority; full frame/ablation/sensitivity trajectories remain blocked until U2. No claims or frame choices change.
+ 
+-Proposed IDs, dated at actual saving 2026-10-03:
++Proposed IDs, dated at actual saving 2026-10-04 for v1.1:
+ 
+ | Object | Candidate identity / impact |
+ |---|---|
+-| Package | EMBORA-R0PKG-2026-10-03-C6-v1.0 |
+-| Full derivative spec | EMBORA-MSJ1-2026-10-03-R1C6-v1.0 |
+-| Parameter schema | EMBORA-PARAMS-2026-10-03-R1C6-v1.0 |
+-| Numeric policy | EMBORA-NUMERIC-2026-10-03-C6-v1.0 |
+-| Observation/result schema | EMBORA-OBS-2026-10-03-R1C6-v1.0 / EMBORA-RESULT-2026-10-03-R1C6-v1.0 |
+-| Numeric evidence schema | EMBORA-NUMERIC-EVIDENCE-2026-10-03-C6-v1.0 |
++| Package | EMBORA-R0PKG-2026-10-04-C6-v1.1 |
++| Full derivative spec | EMBORA-MSJ1-2026-10-04-R1C6-v1.1 |
++| Parameter schema | EMBORA-PARAMS-2026-10-04-R1C6-v1.1 |
++| Numeric policy | EMBORA-NUMERIC-2026-10-04-C6-v1.1 |
++| Observation/result schema | EMBORA-OBS-2026-10-04-R1C6-v1.1 / EMBORA-RESULT-2026-10-04-R1C6-v1.1 |
++| Numeric evidence schema | EMBORA-NUMERIC-EVIDENCE-2026-10-04-C6-v1.1 |
+ | Claims / frame / adapter IDs | Pin C5 exact bytes and IDs; no changed scientific scope or new roster |
+ | Code | draft 142f9a4feb6e3e8879d45cfd9e7636f1c1db99a0 remains draft, not accepted snapshot; new adopted implementation commit/environment receipt required |
+ | Effective config | schema_id and specification_id change only after adoption; new config hashes; same constants/enums/parameter values and selected adapter/run purpose |
+@@ -22,4 +22,6 @@
+ 
+ P1 proposed disposition: **ADDRESSED BY CANDIDATE / PENDING INDEPENDENT R0, AUTHOR ADOPTION AND ENGINEER CONFORMANCE; OPEN**. No self-review closes it. New observed P0=0; existing open P1=1; this count is an owner status, not a reviewer verdict. Remaining scientific-author choice is acceptance or rejection of the layered contract and common exact identity node after R0; there is no permitted alternate tolerance/representation knob. Runtime qualification and full production audit remain Engineer/Reviewer work. No author replay/signature/pilot approval is implied.
+ 
+-Targeted reviewer scope: validate C5/C6 archives and external manifests; independently derive both ideal and rounded-input error layers and operation graph; challenge the uniform envelope/crossed-sign proof, identity ordering and all boundary/nextafter cases; verify finite stagnation/endpoints, real versus rounded reachability, labels, F35 separation proof/votes/tie/one-sided neighbors and adapter purity; audit full spec/YAML/S12 consistency and all pinned substantive sections; confirm code/config/PAP impact. Reviewer must generate expectations independently rather than accept these fixture outputs as proof. Return a separate workspace/manifest/ZIP and exact PASS_TO_U1_ADDENDUM or REVISE. Do not review production conformance as though already completed; do not run experiments or edit C5/global state.
++Targeted v1.1 reviewer scope: independently verify all three R0 findings against the exact new archive: same-offer/channel enumeration and positive uniform perturbation proof; identity input-v signed-zero copying, positive-zero outputs, material_only and nonidentity bit fixtures; complete known/unknown provenance and applicable bounds. Check linked spec/YAML/schema/reference consistency, exact v1.0→v1.1 inventory and frozen-section regressions. Recompute expectations independently; the owner's checks do not close findings. Broader v1.0 scientific-contract review remains the recorded REVISE input; this bounded recheck does not certify production or reopen scientific choices. Return PASS_TO_U1_ADDENDUM or REVISE with fresh independent evidence.
++
++Bounded v1.1 disposition: R0-C6-P1-01/P2-01/P2-02 each addressed / pending independent recheck; R0 v1.0 REVISE is preserved. Only the same-offer/channel gap proof, signed-zero evidence conformity, unknown-origin provenance and dependent version metadata change. The next author choice remains acceptance of the reviewed exact executable contract after PASS; no adoption, Engineer patch or PAP binding is accomplished here.
+--- C6v1.0/C5_TO_C6.diff
++++ C6v1.1/C5_TO_C6.diff
+@@ -1,5 +1,5 @@
+ --- C5/MODEL_SPEC_JOURNAL_V1_R1C5.md
+-+++ C6/MODEL_SPEC_JOURNAL_V1_R1C6.md
+++++ C6v1.1/MODEL_SPEC_JOURNAL_V1_R1C6.md
+ @@ -1,9 +1,9 @@
+ -# MODEL_SPEC_JOURNAL_V1_R1C5
+ -
+@@ -7,8 +7,8 @@
+ -- Review package ID: `EMBORA-R0PKG-2026-09-24-C5`
+ +# MODEL_SPEC_JOURNAL_V1_R1C6
+ +
+-+- Specification ID: `EMBORA-MSJ1-2026-10-03-R1C6-v1.0`
+-+- Review package ID: `EMBORA-R0PKG-2026-10-03-C6-v1.0`
+++- Specification ID: `EMBORA-MSJ1-2026-10-04-R1C6-v1.1`
+++- Review package ID: `EMBORA-R0PKG-2026-10-04-C6-v1.1`
+  - Claim contract: `EMBORA-CC-2026-09-24-R1C5`
+ -- Status: **C5 DELTA-REVISION CANDIDATE; TARGETED R0 C5 PENDING; U1 NOT APPROVED**
+ +- Status: **C6 NUMERICAL CANDIDATE / NOT_ADOPTED; TARGETED R0 AND AUTHOR U1 ADDENDUM PENDING**
+@@ -20,7 +20,7 @@
+  ## S00 — Authority, scope and normative ownership
+  
+ -The [C4 decision record](https://drive.google.com/file/d/1OLKGRr1ebA3Mi2I_YIqpyrG2MwGpBdAo/view) authorizes only a contract-level repair of two R0 C3 P1 defects and disposition of two P2s. The C3 scientific semantics remain parent authority. RUN_BOARD has a stale C4 status; independent R0 C4 returned REVISE. C5 requires a new targeted R0 C5 and then Coordinator consolidation and explicit final author U1 before implementation. No test, pilot, experiment or reference-model code was run or created for this package. Arithmetic tables and proofs below are specification oracles, not observed results.
+-+C6 responds only to P2-C5-P1-01 under Coordinator disposition 2026-10-03. C5 was independently reviewed PASS_TO_U1 and author U1 APPROVED. C5 artifacts and U1 remain unchanged. Author has not adopted C6. Owner arithmetic checks are specification fixtures, not production conformance, independent R0 or empirical evidence.
+++C6 v1.1 responds only to R0-C6-P1-01/P2-01/P2-02 under Coordinator disposition EMBORA-COORD-R0C6-DISPOSITION-2026-10-04-v1.0. Preexisting P2-C5-P1-01 remains CONFIRMED OPEN. C5 was independently reviewed PASS_TO_U1 and author U1 APPROVED. C5 artifacts and U1 remain unchanged. Author has not adopted C6. Owner arithmetic checks are specification fixtures, not production conformance, independent R0 or empirical evidence.
+ +NUMERICAL_CONTRACT_C6.md is the sole proposed numerical policy; PARAMETER_TABLE_R1C6.yaml is the derivative schema. Other normative scientific sources below retain exact C5 bytes/IDs under UPSTREAM_C5. Their historical pending labels do not determine live gates. Claims/frame/adapters remain pinned.
+  
+  Normative ownership is exclusive:
+@@ -62,7 +62,7 @@
+  
+  This tie is the boundary of the legal clipped-priority domain: `N_VS=p_m+p_r+p_s-p_f>=3p_min-p_max=0`. Replacing `p_f=1.5` by its immediate lower binary64 neighbor, or replacing any other `.5` by its immediate higher neighbor, gives `N_VS>0` and accept. No legal priority perturbation gives `N_VS<0`; a negative-number branch oracle is therefore helper-level only and must not be described as a legal model state.
+ +
+-+Executable qualification: arbitrary nextafter targets need not remain strictly ordered after rounding. The frozen UG grid retains its exact votes by the C6 separation proof (minimum raw gap 1/8 versus independently bounded conversion/arithmetic error). Code still compares rounded appraisals, not raw q. Candidate and realized paths share the same helper and exact q=v identity. Fixture enumeration supplements, rather than replaces, the uniform proof.
+++Executable qualification: arbitrary nextafter targets need not remain strictly ordered after rounding. The frozen UG grid retains its exact votes by the C6 separation proof (same-offer/channel minima N=1/5, A=1/4, B=1/10; global executable margin alpha_B/10 - 2*(8eta/epsilon_B+4alpha_B*eta/epsilon_B)>0.0349999958255614). Code still compares rounded appraisals, not raw q. Candidate and realized paths share the same helper and exact q=v identity; vhat preserves the IEEE input-v sign of zero while Delta and signed/absolute urgency are +0. Actual I/conversion/total residuals are unavailable for unknown-origin rows; the reference/schema keep R/B/B-R and do not invent I. Fixture enumeration supplements, rather than replaces, the uniform proof.
+  
+  Under sensitivity A all four votes are positive for every legal offer, so A always proposes accept. N and B have identical proposal partitions across the legal grid, although their candidate magnitudes, realized updates, subsequent state/history and F-14 branch selection can differ. For the responder the material and safety action gaps are both `o/8`: they cast the same payoff direction under separately named priorities. This is directional redundancy, not repeated multiplication of `pbar`. The `material_only` switch acts at F-32 on realized applied targets; it does not delete fairness, relationship or safety from F-35 candidate voting.
+  
+@@ -110,15 +110,14 @@
+  
+ -This revision owner does not close targeted R0 C5 or U1. R0 must independently assess selected-adapter validation, all 84 vectors, F-35 binary64 numerator/tie/logging semantics, one-sided legal boundary neighbors, universal vote reductions, the corrected C2 witness, and unchanged C3 scope. Human verification is one concise U1 note. Disclosure/editor decisions remain at the manuscript/compliance stage; no correspondence or scientific figure was produced here.
+ +Owner does not close P2-C5-P1-01, R0 C6 or author adoption. Independent targeted R0 must challenge graph, error bounds, identity, reachability, labels, F-35 separation, full diff and pinned sections. Coordinator verifies the exact reviewed package before short author U1 addendum. C6 is not a baseline for Engineer/PAP before adoption. No pilot, full runs, code freeze, claim promotion or submission is authorized.
+-
+ --- C5/PARAMETER_TABLE_R1C5.yaml
+-+++ C6/PARAMETER_TABLE_R1C6.yaml
+++++ C6v1.1/PARAMETER_TABLE_R1C6.yaml
+ @@ -1,6 +1,6 @@
+ -schema_id: EMBORA-PARAMS-2026-09-24-R1C5
+ -specification_id: EMBORA-MSJ1-2026-09-24-R1C5
+ -status: c4_review_candidate_not_executable_until_targeted_R0_and_final_U1
+-+schema_id: EMBORA-PARAMS-2026-10-03-R1C6-v1.0
+-+specification_id: EMBORA-MSJ1-2026-10-03-R1C6-v1.0
+++schema_id: EMBORA-PARAMS-2026-10-04-R1C6-v1.1
+++specification_id: EMBORA-MSJ1-2026-10-04-R1C6-v1.1
+ +status: c6_numeric_candidate_not_adopted_pending_targeted_R0_and_author_U1_addendum
+  authority: Numeric constants and configuration domains only; equations and branches belong to MODEL_SPEC S01-S12.
+  parameter_rule: All constants are fixed in this release except choices and frame factors explicitly enumerated below. General mathematical helper domains do not authorize run overrides.
+@@ -132,29 +131,30 @@
+    channel_comparison: each component exactly one of [-1,0,1]
+    N_VS: '[-6,6] from four p_clip terms in [-1.5,1.5]; binary64 zero is tie and rejects'
+    D_VS: '[-1,1]; normalized diagnostic only; sign and tie are copied from N_VS, never recomputed from normalized terms'
+-@@ -187,8 +187,13 @@
++@@ -187,8 +187,14 @@
+    diagnostic_division: one binary64 division D_VS=N_VS/diagnostic_denominator
+    diagnostic_category: copy sign/tie label derived from N_VS; do not resummate pbar*z or inspect D_VS sign independently
+    comparison_tolerance: {absolute: 0.000000000001, relative: 0.000000000001}
+ +  comparison_target: independently_generated_executable_layer_B
+ +  comparison_rule: abs_error_le_max_absolute_relative_times_max_abs_pair
+-+  numeric_policy_id: EMBORA-NUMERIC-2026-10-03-C6-v1.0
+-+  identity_projection: exact_binary64_q_equals_v_returns_v_and_positive_zero_delta_urgency_on_both_paths
+-+  scientific_numeric_residuals: separate_input_arithmetic_total_bounds_never_implementation_tolerance
+++  numeric_policy_id: EMBORA-NUMERIC-2026-10-04-C6-v1.1
+++  identity_projection: exact_binary64_q_equals_v_bit_preserving_input_v_copy_including_negative_zero_and_positive_zero_delta_signed_absolute_urgency_on_both_paths
+++  scientific_numeric_residuals: known_origin_only_I_input_total_residuals_and_bounds_unknown_origin_R_B_arithmetic_only_never_implementation_tolerance
+++  reference_ieee_metadata: exact_dyadic_rational_plus_sign_bit_full_64bit_word_hex_signed_zero_checked_by_bits
+    branch_tolerance: 0
+ -  scientific_branch_fixtures: exact decimals/rationals remain scientific oracles; their post-clipping binary64 executable inputs are evaluated by branch_sum
+ +  scientific_branch_fixtures: exact layer I scientific oracles preserved; independent layer B per NUMERICAL_CONTRACT_C6; exact branch comparisons
+    boundary_policy: no epsilon; normative N/B tie is a clipped-domain boundary with legal neighbors only on the positive side; negative-sign branch coverage is helper-level and not labelled a legal priority fixture
+    map_key_order: lexicographic for canonical JSON serialization, not appraisal tie selection
+    json: RFC8259 finite numbers; no NaN; no duplicate keys; compact separators; preserve array order
+-@@ -201,8 +206,8 @@
++@@ -201,8 +207,8 @@
+      BoS: '{name: O|F}; no other fields'
+      UG_proposer: '{name: offer, offer: integer}; no other fields'
+      UG_responder: '{name: accept|reject}; no other fields'
+ -  observation_schema_id: EMBORA-OBS-R1C5
+ -  result_schema_id: EMBORA-RESULT-R1C5
+-+  observation_schema_id: EMBORA-OBS-2026-10-03-R1C6-v1.0
+-+  result_schema_id: EMBORA-RESULT-2026-10-03-R1C6-v1.0
+++  observation_schema_id: EMBORA-OBS-2026-10-04-R1C6-v1.1
+++  result_schema_id: EMBORA-RESULT-2026-10-04-R1C6-v1.1
+  effective_config_contract:
+    required_no_default:
+      - schema_id
+--- C6v1.0/MODEL_SPEC_JOURNAL_V1_R1C6.md
++++ C6v1.1/MODEL_SPEC_JOURNAL_V1_R1C6.md
+@@ -1,7 +1,7 @@
+ # MODEL_SPEC_JOURNAL_V1_R1C6
+ 
+-- Specification ID: `EMBORA-MSJ1-2026-10-03-R1C6-v1.0`
+-- Review package ID: `EMBORA-R0PKG-2026-10-03-C6-v1.0`
++- Specification ID: `EMBORA-MSJ1-2026-10-04-R1C6-v1.1`
++- Review package ID: `EMBORA-R0PKG-2026-10-04-C6-v1.1`
+ - Claim contract: `EMBORA-CC-2026-09-24-R1C5`
+ - Status: **C6 NUMERICAL CANDIDATE / NOT_ADOPTED; TARGETED R0 AND AUTHOR U1 ADDENDUM PENDING**
+ - Model family: prospective `journal_reference_v1`; no implementation or empirical evidence is asserted.
+@@ -11,7 +11,7 @@
+ 
+ ## S00 — Authority, scope and normative ownership
+ 
+-C6 responds only to P2-C5-P1-01 under Coordinator disposition 2026-10-03. C5 was independently reviewed PASS_TO_U1 and author U1 APPROVED. C5 artifacts and U1 remain unchanged. Author has not adopted C6. Owner arithmetic checks are specification fixtures, not production conformance, independent R0 or empirical evidence.
++C6 v1.1 responds only to R0-C6-P1-01/P2-01/P2-02 under Coordinator disposition EMBORA-COORD-R0C6-DISPOSITION-2026-10-04-v1.0. Preexisting P2-C5-P1-01 remains CONFIRMED OPEN. C5 was independently reviewed PASS_TO_U1 and author U1 APPROVED. C5 artifacts and U1 remain unchanged. Author has not adopted C6. Owner arithmetic checks are specification fixtures, not production conformance, independent R0 or empirical evidence.
+ NUMERICAL_CONTRACT_C6.md is the sole proposed numerical policy; PARAMETER_TABLE_R1C6.yaml is the derivative schema. Other normative scientific sources below retain exact C5 bytes/IDs under UPSTREAM_C5. Their historical pending labels do not determine live gates. Claims/frame/adapters remain pinned.
+ 
+ Normative ownership is exclusive:
+@@ -149,7 +149,7 @@
+ 
+ This tie is the boundary of the legal clipped-priority domain: `N_VS=p_m+p_r+p_s-p_f>=3p_min-p_max=0`. Replacing `p_f=1.5` by its immediate lower binary64 neighbor, or replacing any other `.5` by its immediate higher neighbor, gives `N_VS>0` and accept. No legal priority perturbation gives `N_VS<0`; a negative-number branch oracle is therefore helper-level only and must not be described as a legal model state.
+ 
+-Executable qualification: arbitrary nextafter targets need not remain strictly ordered after rounding. The frozen UG grid retains its exact votes by the C6 separation proof (minimum raw gap 1/8 versus independently bounded conversion/arithmetic error). Code still compares rounded appraisals, not raw q. Candidate and realized paths share the same helper and exact q=v identity. Fixture enumeration supplements, rather than replaces, the uniform proof.
++Executable qualification: arbitrary nextafter targets need not remain strictly ordered after rounding. The frozen UG grid retains its exact votes by the C6 separation proof (same-offer/channel minima N=1/5, A=1/4, B=1/10; global executable margin alpha_B/10 - 2*(8eta/epsilon_B+4alpha_B*eta/epsilon_B)>0.0349999958255614). Code still compares rounded appraisals, not raw q. Candidate and realized paths share the same helper and exact q=v identity; vhat preserves the IEEE input-v sign of zero while Delta and signed/absolute urgency are +0. Actual I/conversion/total residuals are unavailable for unknown-origin rows; the reference/schema keep R/B/B-R and do not invent I. Fixture enumeration supplements, rather than replaces, the uniform proof.
+ 
+ Under sensitivity A all four votes are positive for every legal offer, so A always proposes accept. N and B have identical proposal partitions across the legal grid, although their candidate magnitudes, realized updates, subsequent state/history and F-14 branch selection can differ. For the responder the material and safety action gaps are both `o/8`: they cast the same payoff direction under separately named priorities. This is directional redundancy, not repeated multiplication of `pbar`. The `material_only` switch acts at F-32 on realized applied targets; it does not delete fairness, relationship or safety from F-35 candidate voting.
+ 
+--- C6v1.0/NUMERICAL_CONTRACT_C6.md
++++ C6v1.1/NUMERICAL_CONTRACT_C6.md
+@@ -1,12 +1,12 @@
+-# C6 numerical contract candidate — 2026-10-03 v1.0
++# C6 numerical contract candidate — 2026-10-04 v1.1
+ 
+-Package `EMBORA-R0PKG-2026-10-03-C6-v1.0`; specification `EMBORA-MSJ1-2026-10-03-R1C6-v1.0`; parameter schema `EMBORA-PARAMS-2026-10-03-R1C6-v1.0`; numeric policy `EMBORA-NUMERIC-2026-10-03-C6-v1.0`.
++Package `EMBORA-R0PKG-2026-10-04-C6-v1.1`; specification `EMBORA-MSJ1-2026-10-04-R1C6-v1.1`; parameter schema `EMBORA-PARAMS-2026-10-04-R1C6-v1.1`; numeric policy `EMBORA-NUMERIC-2026-10-04-C6-v1.1`.
+ 
+ **CANDIDATE / NOT_ADOPTED / CONDITIONAL FOR TARGETED R0 ONLY.** P2-C5-P1-01 remains CONFIRMED P1 / OPEN. This file is the sole proposed numerical delta to the full derivative MODEL_SPEC. It is not a Coordinator or author decision. Existing U1 C5 remains in force for its existing scope. No production patch, pilot, empirical trajectory, full run or global STATE/RUN_BOARD mutation occurred.
+ 
+ ## Definitions and independent premise assessment
+ 
+-Three objects must be distinguished: I, the ideal real model on exact intended decimal/rational inputs; R, the real model on the binary64-converted inputs; B, the specified rounded evaluation graph on those same binary64 inputs. Implementation output O is a fourth object. Record `R-I` (input conversion), `B-R` (arithmetic), `B-I` (total numerical residual), and `O-B` (implementation discrepancy) separately. Fractions are signed residuals; absolute residuals are obtained after subtraction.
++Three objects must be distinguished: I, the ideal real model on exact intended decimal/rational inputs; R, the real model on the binary64-converted inputs; B, the specified rounded evaluation graph on those same binary64 inputs. Implementation output O is a fourth object. For known-origin rows record R-I (input conversion), B-R (arithmetic), B-I (total numerical residual), and O-B (implementation discrepancy) separately. For unknown-origin rows actual I, R-I and B-I are unavailable and are omitted; retain R/B/B-R. No counterfactual I is published as actual diagnostics. Fractions are signed residuals; absolute residuals are obtained after subtraction.
+ 
+ The premise is confirmed without importing production projection, urgency or engine, and without reading production observed values as expected. The reference implements integer round-to-nearest-even and exact Fraction arithmetic per node. For ideal alpha=7/20, epsilon=1/1000000, v=1999999/2000000, q=d=1, scientific u=7/40. B gives `0.1749999999356433` / `0x1.6666666430500p-3`. Ideal loss v=1/2000000,q=0 gives -7/40 and B `-0.17499999999999996`. Every intermediate is saved in ORACLE_FIXTURES_C6.json.
+ 
+@@ -20,7 +20,7 @@
+ 
+ Validated v,q in [0,1], fixed alpha and epsilon converted once. For each channel of both candidate and realized projection:
+ 
+-1. **Exact semantic identity node:** if binary64 q equals binary64 v, return vhat=v and Delta=+0.0, signed/absolute urgency=+0.0. This is exact equality, with branch tolerance 0. It applies to all channels and both paths, not solely material_only. It neither snaps a neighbor nor changes a nonidentity input.
++1. **Exact semantic identity node:** if binary64 q equals binary64 v, return vhat=v by bit-preserving copy, including the input-v sign of zero; Delta=+0.0, signed/absolute urgency=+0.0. Numeric equality admits all four combinations of +/-0 v/q. The reference retains exact rationals alongside IEEE sign bit/full 64-bit word/hex; Fraction equality alone is not a bit-sensitive assertion. This is exact equality, with branch tolerance 0. It applies to all channels and both paths, not solely material_only. It neither snaps a neighbor nor changes a nonidentity input.
+ 2. Otherwise c=RN(1-alpha); left=RN(c*v); right=RN(alpha*q); total=RN(left+right); vhat=min(1,max(0,total)); Delta=RN(vhat-v).
+ 3. If Delta==0, return +0.0. If Delta>0, distance=abs(RN(d-v)), H=max(epsilon,distance). If Delta<0, H=max(epsilon,v). ratio=RN(abs(Delta)/H); magnitude=min(1,ratio); signed magnitude follows the exact sign of Delta. abs/min/max do not add rounding nodes. No extra clipping of Delta or urgency to alpha.
+ 
+@@ -40,7 +40,7 @@
+ 
+ `E_input = |da|/e_min + a_max*|dq|/e_min + a_max*|dv|*(1/e_min+1/e_min^2) + a_max*|de|/e_min^2`.
+ 
+-Use path bounds with all intermediate alpha/epsilon in the declared domain. This envelope is deliberately loose; exact Fraction residual decomposition is preferable for fixtures. |B-I|<=E_input+8eta/e. Endpoints, signed zero and clipped branches still use the continuous piecewise map. A scientific-to-executable residual beyond its independently derived bound fails numerical diagnostics; it cannot be excused by an O-B pass. Unknown ideal inputs are labelled unknown, never assigned zero input error.
++Use path bounds with all intermediate alpha/epsilon in the declared domain. This envelope is deliberately loose; exact Fraction residual decomposition is preferable for fixtures. |B-I|<=E_input+8eta/e. Endpoints, signed zero and clipped branches still use the continuous piecewise map. A scientific-to-executable residual beyond its independently derived bound fails numerical diagnostics; it cannot be excused by an O-B pass. Unknown ideal inputs are labelled unknown: actual ideal_inputs, I, R-I, B-I, input_bound and total_bound are absent. The input and total envelopes above are evaluated only with known original exact inputs; arithmetic B-R and its envelope remain available for known binary64 inputs. Optional counterfactuals require a separate explicitly labelled object and cannot populate actual fields; this release emits none.
+ 
+ Executable guards enforce finite [0,1] vhat and [-1,1] urgency exactly, semantic identity and endpoint impossible signs exactly, and the diagnostic tighter envelope `|u_B|<=alpha_B+8eta/e`. The old exact-alpha upper bound is not a hard binary64 assertion: rounded recurrence can slightly exceed alpha (e.g. v=0.5,q=1). F-09's exact-alpha bound remains real; ordered normalized weights and accumulation add their own numerical residuals, so validators compare to their executable graph rather than clip V/L to alpha. The generic production urgency saturation at 1 remains unreachable because alpha_B+8eta/e<1; wider-helper urgency saturation is retained separately. No bound creates a branch epsilon.
+ 
+@@ -54,8 +54,7 @@
+ 
+ Keep cmp of **rounded candidate signed appraisals**, exact no tolerance; do not replace it with cmp(q) in code. Independent reference recomputes both projections. Raw-target ordering is only an analytic cross-check. Finite rounding means generic arbitrary closely spaced helper q can tie; positive real difference does not imply a positive rounded vote without separation analysis.
+ 
+-For the frozen UG responder grid under N/A/B, the smallest distinct candidate raw-target gap is 1/8. The real signed-appraisal map for d=1 has slope at least alpha_B on either side (denominators<=1 and no production saturation). Thus distinct target signed-appraisal gaps are >=alpha_B/8≈.04375. Literal adapter errors are below 4eta per component and scalar arithmetic errors below 8eta/e per projection. Their combined perturbation is many orders below .04375, uniformly over legal v, including endpoints and identity. Therefore the C5 directional votes/partitions remain valid for this grid in the proposed executable contract. This separation proof, not a sample sweep, supports the universal state-invariant vote claim. 840 direct fixtures independently check 3 adapters×7 offers×8 boundary/interior values×5 profiles; this is no empirical census.
+-
++For one adapter, one current offer and one channel, define the gap abs(q_accept-q_reject). Independent exact-rational enumeration gives minima N=1/5, A=1/4, B=1/10; the global minimum is 1/10 (B fairness at offer 3/7: 3/5 versus 1/2). The real signed-appraisal map on fixed rounded v/alpha/epsilon has slope at least alpha_B on every nonempty piece and is continuous at identity. At v=0 or 1 only the applicable gain/loss piece remains; epsilon denominators remain between epsilon_B and 1. Thus real appraisal separation is >=alpha_B*g. The same map is Lipschitz alpha_B/epsilon_B in q, so literal adapter error <=4eta contributes <=4alpha_B*eta/epsilon_B per projection. Add the independently bounded arithmetic error <=8eta/epsilon_B. The uniform executable margin is alpha_B/10 - 2*(8eta/epsilon_B+4alpha_B*eta/epsilon_B) = 0.0349999958255614251889652092986496316055332163687227760540860... > 0. Identity and sign crossing remain covered by continuity; signed zeros do not change numeric ordering. GAP_SEPARATION_PROOF_C6.md and GAP_SEPARATION_DERIVATION_C6.json give every exact pair, rational margin and boundary/identity/epsilon check. Therefore the frozen C5 votes/partitions remain unchanged uniformly over legal v; the 840 fixtures supplement this proof and are not empirical trajectories.
+ With K=(material,fairness,relationship,safety), preserve exactly N=math.fsum(p_clip*z), P=math.fsum(p_clip), D=RN(N/P), sign/category/action solely from N. Fairness-high endpoint terms (.5,-1.5,.5,.5) yield exact zero and tie_reject. Lower fairness nextafter yields N=2^-52; increasing material nextafter yields N=2^-53; both accept. A fairness-above-pmax negative numerator fixture is helper-only. No legal strict-negative priority neighbor exists with these votes and clipped bounds. Clipping a raw priority beyond the boundary does not create a negative model neighbor. Exact-zero identity does not supply a fuzzy tie. No hidden branch epsilon, normalized resummation, D-owned sign or universal bitwise assertion is introduced.
+ 
+ ## Acceptance rules
+@@ -65,3 +64,7 @@
+ Enforce graph order by code audit/intermediate conformance; a tolerance pass alone does not authorize reassociation. Candidate and realized same-input/same-raw-target full paths use the identical rule and agree; realized material_only copied targets trigger identity, while all four candidate channels remain unchanged. Layered diagnostics are schema/report provenance, not a model parameter, adapter, decision threshold or extra free config override. No production adoption until targeted independent R0 and short author U1 addendum on the exact package.
+ 
+ Downstream F-10 compares rounded w_k=RN(pbar_k*abs(u_signed_k)) exactly, in K order; the all-zero and tie rules are unchanged. A mathematical cardinal tie need not remain a rounded tie for arbitrary inputs. Independent executable focus expectations must be derived from B, not imposed by a tolerance around scientific weights. The same rule applies to all exact policy/threshold comparisons: compare rounded defined operands, retain exact inequality/equality direction, never add a scientific-error envelope as a decision tolerance. F-35's frozen-grid partition has the stronger separation proof above; no analogous universal partition claim is invented for other arbitrary state boundaries.
++
++## Bounded v1.1 issue disposition
++
++R0-C6-P1-01, R0-C6-P2-01 and R0-C6-P2-02 are addressed / pending independent recheck. The uniform gap correction, bit-sensitive identity/reference checks and unknown-origin provenance repair are the only semantic-evidence deltas from v1.0. C5 and v1.0 remain immutable; tolerances, formulas, votes, claims and frame are unchanged. The revised reference saves 28 signed-zero fixtures plus four material-only copying vectors, and audits all 28 inherited unknown-origin scalar rows and other unknown-origin diagnostics without inventing actual I. See ISSUE_TO_FIX_ACCEPTANCE_C6_v1.1.json and REVISION_CHECKS_C6_v1.1.json.
+--- C6v1.0/NUMERICAL_TRACEABILITY_C6.csv
++++ C6v1.1/NUMERICAL_TRACEABILITY_C6.csv
+@@ -1,7 +1,7 @@
+ formula,candidate_delta,reference_evidence,acceptance,production_status
+-F-05,Literal RN graph plus common identity,ORACLE_FIXTURES_C6.json / reference_binary64.py,B comparison; exact identity/range,NOT_PATCHED / NOT_CERTIFIED
++F-05,Literal RN graph plus common identity,ORACLE_FIXTURES_C6.json / SIGNED_ZERO_FIXTURES_C6.json / reference_binary64.py,B comparison; exact identity/range,NOT_PATCHED / NOT_CERTIFIED
+ F-07/F-08,Rounded Delta-owned graph; same real equations,ORACLE_FIXTURES_C6.json,scientific +/-7/40 retained; separate diagnostics,NOT_PATCHED / NOT_CERTIFIED
+ F-32,Copied material_only targets invoke identity,SELF_CHECK_C6.json / NUMERICAL_CONTRACT_C6,exact nonmaterial Delta=0; four candidate votes retained,NOT_PATCHED / NOT_CERTIFIED
+-F-35,Unchanged scientific choice; executable gap proof,F35_FIXTURES_C6.json / SELF_CHECK_C6.json,exact z; fixed-K fsum; N-only tie; one-sided neighbors,NOT_PATCHED / NOT_CERTIFIED
++F-35,Unchanged scientific choice; executable gap proof,F35_FIXTURES_C6.json / GAP_SEPARATION_PROOF_C6.md / GAP_SEPARATION_DERIVATION_C6.json,exact z; fixed-K fsum; N-only tie; one-sided neighbors,NOT_PATCHED / NOT_CERTIFIED
+ F-09/F-10/F-11,Dependent ordered/focus/branch checks,C5 S06 / NUMERICAL_CONTRACT_C6,no alpha snap; Engineer checks required,NOT_PATCHED / NOT_CERTIFIED
+ F-34,Unchanged trajectory hash; not material_only,UPSTREAM_C5 S11,canonical hash; new numbers/config imply new hashes,NOT_PATCHED / NOT_CERTIFIED
+--- C6v1.0/P1_DISPOSITION_PROPOSED_C6.csv
++++ C6v1.1/P1_DISPOSITION_PROPOSED_C6.csv
+@@ -1,2 +1,5 @@
+ issue_id,severity,current_status,owner_proposal,closure_authority,remaining_requirements
+ P2-C5-P1-01,P1,CONFIRMED_OPEN,ADDRESSED_BY_CANDIDATE_NOT_CLOSED,Independent_R0_plus_author_U1_addendum_plus_Engineer_conformance,Exact_reviewed_package_adoption_complete_P2_and_independent_code_spec_audit
++R0-C6-P1-01,P1,OPEN_PENDING_INDEPENDENT_RECHECK,addressed / pending independent recheck,Independent_R0_only,Exact_v1.1_package_targeted_recheck_then_Coordinator_routing
++R0-C6-P2-01,P2,OPEN_PENDING_INDEPENDENT_RECHECK,addressed / pending independent recheck,Independent_R0_only,Exact_v1.1_package_targeted_recheck_then_Coordinator_routing
++R0-C6-P2-02,P2,OPEN_PENDING_INDEPENDENT_RECHECK,addressed / pending independent recheck,Independent_R0_only,Exact_v1.1_package_targeted_recheck_then_Coordinator_routing
+--- C6v1.0/PARAMETER_TABLE_R1C6.yaml
++++ C6v1.1/PARAMETER_TABLE_R1C6.yaml
+@@ -1,5 +1,5 @@
+-schema_id: EMBORA-PARAMS-2026-10-03-R1C6-v1.0
+-specification_id: EMBORA-MSJ1-2026-10-03-R1C6-v1.0
++schema_id: EMBORA-PARAMS-2026-10-04-R1C6-v1.1
++specification_id: EMBORA-MSJ1-2026-10-04-R1C6-v1.1
+ status: c6_numeric_candidate_not_adopted_pending_targeted_R0_and_author_U1_addendum
+ authority: Numeric constants and configuration domains only; equations and branches belong to MODEL_SPEC S01-S12.
+ parameter_rule: All constants are fixed in this release except choices and frame factors explicitly enumerated below. General mathematical helper domains do not authorize run overrides.
+@@ -189,9 +189,10 @@
+   comparison_tolerance: {absolute: 0.000000000001, relative: 0.000000000001}
+   comparison_target: independently_generated_executable_layer_B
+   comparison_rule: abs_error_le_max_absolute_relative_times_max_abs_pair
+-  numeric_policy_id: EMBORA-NUMERIC-2026-10-03-C6-v1.0
+-  identity_projection: exact_binary64_q_equals_v_returns_v_and_positive_zero_delta_urgency_on_both_paths
+-  scientific_numeric_residuals: separate_input_arithmetic_total_bounds_never_implementation_tolerance
++  numeric_policy_id: EMBORA-NUMERIC-2026-10-04-C6-v1.1
++  identity_projection: exact_binary64_q_equals_v_bit_preserving_input_v_copy_including_negative_zero_and_positive_zero_delta_signed_absolute_urgency_on_both_paths
++  scientific_numeric_residuals: known_origin_only_I_input_total_residuals_and_bounds_unknown_origin_R_B_arithmetic_only_never_implementation_tolerance
++  reference_ieee_metadata: exact_dyadic_rational_plus_sign_bit_full_64bit_word_hex_signed_zero_checked_by_bits
+   branch_tolerance: 0
+   scientific_branch_fixtures: exact layer I scientific oracles preserved; independent layer B per NUMERICAL_CONTRACT_C6; exact branch comparisons
+   boundary_policy: no epsilon; normative N/B tie is a clipped-domain boundary with legal neighbors only on the positive side; negative-sign branch coverage is helper-level and not labelled a legal priority fixture
+@@ -206,8 +207,8 @@
+     BoS: '{name: O|F}; no other fields'
+     UG_proposer: '{name: offer, offer: integer}; no other fields'
+     UG_responder: '{name: accept|reject}; no other fields'
+-  observation_schema_id: EMBORA-OBS-2026-10-03-R1C6-v1.0
+-  result_schema_id: EMBORA-RESULT-2026-10-03-R1C6-v1.0
++  observation_schema_id: EMBORA-OBS-2026-10-04-R1C6-v1.1
++  result_schema_id: EMBORA-RESULT-2026-10-04-R1C6-v1.1
+ effective_config_contract:
+   required_no_default:
+     - schema_id
+--- C6v1.0/README_C6.md
++++ C6v1.1/README_C6.md
+@@ -1,17 +1,21 @@
+ # EmBoRA bounded C6 candidate
+ 
+-Package EMBORA-R0PKG-2026-10-03-C6-v1.0. Owner: Model Architect / numerical scientific-contract revision owner. One executor, no subagents. Readiness: CONDITIONAL_FOR_TARGETED_R0 / NOT_ADOPTED / NOT_APPROVED.
++Package EMBORA-R0PKG-2026-10-04-C6-v1.1. Owner: Model Architect / numerical scientific-contract revision owner. One executor, no subagents. Readiness: see fresh external integrity receipt for READY_FOR_TARGETED_R0_RECHECK / NOT_ADOPTED / NOT_APPROVED.
+ 
+-Read MODEL_SPEC_JOURNAL_V1_R1C6.md, NUMERICAL_CONTRACT_C6.md and PARAMETER_TABLE_R1C6.yaml together. Claims/frame/adapter tables remain exact C5 anchors in UPSTREAM_C5. C5_SOURCE_INTEGRITY_RECEIPT.json verifies the original immutable ZIP and manifest; current decisions are copied in AUTHORITY_SOURCES. Historical C5 pending labels do not supersede U1 C5.
++Read MODEL_SPEC_JOURNAL_V1_R1C6.md, NUMERICAL_CONTRACT_C6.md and PARAMETER_TABLE_R1C6.yaml together. Claims/frame/adapter tables remain exact C5 anchors in UPSTREAM_C5. C5_SOURCE_INTEGRITY_RECEIPT.json verifies the original immutable ZIP and manifest; v1.0 decisions remain historical in AUTHORITY_SOURCES; current v1.1 decisions/review are copied in REVISION_AUTHORITY_SOURCES. Historical C5 pending labels do not supersede U1 C5.
+ 
+ Independent reference source: reference_binary64.py. It imports only Python standard-library modules; exact rational arithmetic and integer RNE generate expected nodes before any native comparison. It neither imports production nor reads observed production outputs. Reproduce in an empty scratch directory with Python 3.12.14:
+ 
+     python /path/to/reference_binary64.py /path/to/new_reference_output
+ 
+-Compare generated ORACLE_FIXTURES_C6.json and F35_FIXTURES_C6.json to package copies. SELF_CHECK_C6.json contains runtime metadata and therefore may vary across environments; numerical payload must match after explicit qualification. This is a scalar/helper specification check, no engine, population, episode or neutral-frame trajectory run. The supplied fixtures supplement proofs, not independent review.
++Compare generated ORACLE_FIXTURES_C6.json, F35_FIXTURES_C6.json and SIGNED_ZERO_FIXTURES_C6.json to package copies. SELF_CHECK_C6.json contains runtime metadata and therefore may vary across environments; numerical payload must match after explicit qualification. This is a scalar/helper specification check, no engine, population, episode or neutral-frame trajectory run. The supplied fixtures supplement proofs, not independent review.
+ 
+-Evidence: 45 scalar fixtures, 840 F35 combinations, exact rational residuals, independent per-node RN, exact identity witness, epsilon/endpoints/nextafter, subnormal/halfway RNE, legal tie/one-sided neighbors, helper-negative distinction, material_only realized identity, all-24 fsum permutations, invalid scalar-domain rejection. Remaining production code/config/schema/CLI/PAP checks are NOT_RUN and require Engineer after adoption; C5 full S12 remains in ACCEPTANCE_MATRIX_C6.csv.
++Evidence: 45 scalar fixtures (17 known-origin / 28 unknown-origin), 840 F35 combinations, 28 bit-sensitive signed-zero fixtures, four material_only signed copying vectors, 84 exact same-offer/channel gaps, exact rational residuals, independent per-node RN, exact identity witness, epsilon/endpoints/nextafter, subnormal/halfway RNE, legal tie/one-sided neighbors, helper-negative distinction, material_only realized identity, all-24 fsum permutations, invalid scalar-domain rejection. Remaining production code/config/schema/CLI/PAP checks are NOT_RUN and require Engineer after adoption; C5 full S12 remains in ACCEPTANCE_MATRIX_C6.csv.
+ 
+-P0 observed by owner=0; P1=1 OPEN (P2-C5-P1-01). Proposed disposition is addressed by candidate, pending R0/author/Engineer, never self-closed. C5 U1 unchanged; no new author adoption. Next owner Coordinator should register this candidate and route a separate targeted independent numerical R0, then request short author U1 addendum only after verified PASS. Production patch, pilot/full runs, code freeze and global RUN_BOARD/STATE edits are outside this task.
++P0 observed by owner=0; P1=1 OPEN (P2-C5-P1-01). Proposed disposition is addressed by candidate, pending R0/author/Engineer, never self-closed. C5 U1 unchanged; no new author adoption. The three R0 C6 findings are addressed / pending independent recheck. Next owner Coordinator should verify this v1.1 candidate and route targeted independent R0 recheck, then request short author U1 addendum only after verified PASS. Production patch, pilot/full runs, code freeze and global RUN_BOARD/STATE edits are outside this task.
+ 
+ The external manifest describes all package payloads except itself; the ZIP contains those files plus byte-identical manifest. External fresh readback receipt and final linked handoff are generated after ZIP publication and kept outside the immutable archive to avoid circular hashes. Use the exact linked handoff/receipt to identify remote objects. No PDF/slide/report summary substitutes for archive/reference recovery.
++
++The v1.0 corrected-gap/signed-zero/unknown-origin review is an immutable historical input, not an adoption decision. Active v1.1 proof is GAP_SEPARATION_PROOF_C6.md; exact enumeration is GAP_SEPARATION_DERIVATION_C6.json. ISSUE_TO_FIX_ACCEPTANCE_C6_v1.1.json and REVISION_CHECKS_C6_v1.1.json connect each issue to its actual checks. Full v1.0-to-v1.1 diff inventory covers every changed/unchanged/deleted/new payload; historical false bounds remain only in frozen parent/history.
++
++Reproduce the gap derivation with `python derive_gap_proof.py /path/to/gap_output.json`. Reproduce owner regressions with `python verify_revision_v11.py /path/to/extracted_parent_v1.0 /path/to/new_candidate`; the audit requires PyYAML 6.0.3 and writes a checks receipt. Recover exact parent from UPSTREAM_C6_v1.0 ZIP/manifest. The old files under UPSTREAM_C5 and AUTHORITY_SOURCES remain immutable historical scientific/provenance anchors. Use NUMERIC_EVIDENCE_SCHEMA_C6.json as the explicit evidence envelope/fixture field contract; its logical layer names are mapped to serialized fixture names.
+--- C6v1.0/reference_binary64.py
++++ C6v1.1/reference_binary64.py
+@@ -28,23 +28,65 @@
+ K=('material','fairness','relationship','safety')
+ 
+ def real(v,q,a=A,e=EPS,d=Q(1)):
++    v=Q(v);q=Q(q)
+     current=clip((1-a)*v+a*q); delta=current-v
+     h=max(e,abs(d-v) if delta>0 else v)
+     u=(1 if delta>0 else -1)*min(Q(1),abs(delta)/h) if delta else Q(0)
+     return current,delta,u
+ 
++class Binary64:
++    """Exact dyadic value plus the zero sign; bits never inferred from Fraction zero."""
++    def __init__(self,value,negative_zero=False):
++        original=Q(value);self.value=rn(original)
++        self.negative_zero=(original<0 or negative_zero) if not self.value else False
++    @classmethod
++    def input(cls,x):
++        if isinstance(x,cls): return x
++        if isinstance(x,float):
++            if not math.isfinite(x): raise ValueError('nonfinite binary64 input')
++            return cls(Q.from_float(x),x==0 and math.copysign(1.,x)<0)
++        return cls(x)
++    @property
++    def sign(self): return self.value<0 or (self.value==0 and self.negative_zero)
++    def metadata(self):
++        f=-0.0 if self.value==0 and self.negative_zero else float(self.value)
++        return dict(fraction=str(self.value),float=f,hex=f.hex(),bits_hex=struct.pack('>d',f).hex(),sign_bit=int(self.sign))
++
++def binary(op,x,y):
++    x=Binary64.input(x);y=Binary64.input(y)
++    if op=='add':
++        r=x.value+y.value;neg=(not r and not x.value and not y.value and x.sign and y.sign)
++    elif op=='sub':
++        r=x.value-y.value;neg=(not r and not x.value and not y.value and x.sign and not y.sign)
++    elif op=='mul': r=x.value*y.value;neg=x.sign!=y.sign
++    elif op=='div': r=x.value/y.value;neg=x.sign!=y.sign
++    else: raise ValueError(op)
++    return Binary64(r,negative_zero=bool(neg and not r))
++
++def babs(x): return Binary64(abs(x.value))
++def bclip(x):
++    # Literal min(1,max(+0,total)): equality selects first operand +0.
++    if x.value<=0:return Binary64(0)
++    return Binary64(1) if x.value>1 else x
++
+ def graph(v,q,identity=True,d=Q(1),e=EB):
+     if not (0<=v<=1 and 0<=q<=1 and 0<=d<=1 and e>0): raise ValueError('invalid oracle projection domain')
+-    v=rn(v); q=rn(q); d=rn(d); e=rn(e)
+-    if q==v and identity:
+-        return dict(v=v,q=q,c= sub(Q(1),AB),current=v,delta=Q(0),denominator=e,u=Q(0),identity=True)
+-    c=sub(Q(1),AB); left=mul(c,v); right=mul(AB,q); total=add(left,right)
+-    current=clip(total); delta=sub(current,v)
+-    distance=abs(sub(d,v)) if delta>0 else v
+-    denominator=max(e,distance)
+-    ratio=div(abs(delta),denominator) if delta else Q(0)
+-    u=(1 if delta>0 else -1)*min(Q(1),ratio) if delta else Q(0)
+-    return dict(v=v,q=q,c=c,left=left,right=right,total=total,current=current,delta=delta,denominator=denominator,ratio=ratio,u=u,identity=False)
++    bv=Binary64.input(v);bq=Binary64.input(q);bd=Binary64.input(d);be=Binary64.input(e)
++    ba=Binary64(AB);c=binary('sub',1,ba)
++    same=bq.value==bv.value and identity
++    nodes=dict(v=bv,q=bq,c=c)
++    if same:
++        nodes.update(current=bv,delta=Binary64(0),denominator=be,u=Binary64(0),u_abs=Binary64(0))
++    else:
++        left=binary('mul',c,bv);right=binary('mul',ba,bq);total=binary('add',left,right)
++        current=bclip(total);delta=binary('sub',current,bv)
++        distance=babs(binary('sub',bd,bv)) if delta.value>0 else bv
++        denominator=be if be.value>=distance.value else distance
++        ratio=binary('div',babs(delta),denominator) if delta.value else Binary64(0)
++        magnitude=Binary64(1) if ratio.value>1 else ratio
++        u=Binary64(-magnitude.value,negative_zero=magnitude.value==0) if delta.value<0 else magnitude if delta.value>0 else Binary64(0)
++        nodes.update(left=left,right=right,total=total,current=current,delta=delta,denominator=denominator,ratio=ratio,u=u,u_abs=babs(u))
++    return {**{k:x.value for k,x in nodes.items()},'identity':same,'ieee_nodes':{k:x.metadata() for k,x in nodes.items()}}
+ 
+ def native(v,q):
+     v=float(v);q=float(q);a=float(AB);e=float(EB)
+@@ -54,7 +96,47 @@
+     u=math.copysign(min(1.,abs(delta)/den),delta) if delta else 0.
+     return cur,delta,u
+ 
+-def record(x): return {'fraction':str(x),'float':float(x),'hex':float(x).hex()}
++def record(x):
++    b=Binary64.input(x)
++    return b.metadata() | {'fraction':str(Q(x)),'displayed_binary64_fraction':str(b.value),'ieee_metadata_role':'display_rounding_of_exact_rational'}
++def node_records(g): return g['ieee_nodes'] | {'identity':g['identity']}
++
++def signed_zero_checks():
++    rows=[];positive='0000000000000000';negative='8000000000000000'
++    def check(path,label,v,q,expected_current_bits,expected_identity):
++        g=graph(v,q);nodes=node_records(g)
++        assert g['identity']==expected_identity
++        assert nodes['current']['bits_hex']==expected_current_bits
++        if v==0:
++            assert nodes['v']['bits_hex']==(negative if math.copysign(1.,v)<0 else positive)
++        for k in ['delta','u','u_abs']:assert nodes[k]['bits_hex']==positive,k
++        native_values=native(v,q)
++        assert struct.pack('>d',native_values[0]).hex()==expected_current_bits
++        assert struct.pack('>d',native_values[1]).hex()==positive
++        assert struct.pack('>d',native_values[2]).hex()==positive
++        rb=real(Q.from_float(v),Q.from_float(q),AB,EB)
++        bound=8*Q(2)**-52/EB
++        assert abs(g['u']-rb[2])<=bound
++        rows.append(dict(path=path,label=label,ideal_input_known=False,input_origin='binary64_hex_designated',actual_ideal_status='unavailable_no_known_preconversion_state',rounded_inputs={'v':Binary64.input(v).metadata(),'q':Binary64.input(q).metadata()},nodes=nodes,expected_bits={'current':expected_current_bits,'delta':positive,'u':positive,'u_abs':positive},real_on_rounded_inputs=record(rb[2]),arithmetic_error=record(g['u']-rb[2]),arithmetic_bound=record(bound),comparison='exact_bits_not_numeric_tolerance'))
++    for path in ['candidate','realized_full']:
++        for v,q in itertools.product([0.,-0.],repeat=2):
++            check(path,'all_four_signed_zero_identity_pairs',v,q,negative if math.copysign(1.,v)<0 else positive,True)
++    material=[]
++    for v,q_raw in itertools.product([0.,-0.],repeat=2):
++        # Bit-preserving F32 copy, never round/reconstruct from Fraction.
++        q_star=v
++        expected=negative if math.copysign(1.,v)<0 else positive
++        check('realized_material_only_nonmaterial','F32_bit_preserving_copy',v,q_star,expected,True)
++        for candidate_path in ['candidate_full','candidate_material_only']:
++            check(candidate_path,'candidate_reads_raw_not_applied_target',v,q_raw,expected,True)
++        material.append(dict(v=Binary64.input(v).metadata(),raw_q=Binary64.input(q_raw).metadata(),q_star=Binary64.input(q_star).metadata(),copied_bits_equal_v=True,raw_q_untouched=True,channels=['fairness','relationship','safety']))
++    nonidentity=[(math.nextafter(1.,0.),1.),(math.nextafter(0.,1.),0.),(0.,math.nextafter(0.,1.)),(-0.,math.nextafter(0.,1.))]
++    for path in ['candidate','realized_full']:
++        for v,q in nonidentity:
++            # First two current bits retain interior v; zero cases clip to +0.
++            bits=struct.pack('>d',v).hex() if v else positive
++            check(path,'nonidentity_zero_delta',v,q,bits,False)
++    return dict(fixtures=rows,material_only_copy_checks=material,status='OWNER_SELF_CHECK_ONLY_NOT_INDEPENDENT_CLOSURE')
+ def ug(o,action,adapter):
+     # Independently derived exact F31/F04 responder targets, no CSV/production import.
+     balance=1-Q(abs(10-2*o),10)
+@@ -79,15 +161,23 @@
+     assert Q.from_float(math.fsum(float(t) for t in map(rn,priorities)))==p
+     return z,n,p,diagnostic,'accept' if n>0 else 'reject','positive' if n>0 else 'negative' if n<0 else 'tie_reject'
+ 
++def candidate_diagnostics(o,adapter,values):
++    data={}
++    for action in ['accept','reject']:
++        data[action]={}
++        for k,v,q in zip(K,values,ug_exec(o,action,adapter)):
++            g=graph(v,q);r=real(rn(v),q,AB,EB)[2]
++            assert abs(g['u']-r)<=8*Q(2)**-52/EB
++            data[action][k]={'real_on_rounded_inputs':record(r),'executable_B':g['ieee_nodes']['u'],'arithmetic_error':record(g['u']-r),'arithmetic_bound':record(8*Q(2)**-52/EB)}
++    return data
++
+ def main(out):
+     out=Path(out);out.mkdir(parents=True,exist_ok=True)
+     cases=[]; asserts=0
+     def fixture(name,v,q,label,ideal=True):
+         nonlocal asserts
+-        g=graph(v,q);rb=real(rn(v),rn(q),AB,EB);ri=real(v,q)
+-        # Separate input residual, arithmetic residual, total; exact rational identities.
+-        inp=rb[2]-ri[2];arith=g['u']-rb[2];total=g['u']-ri[2]
+-        assert inp+arith==total
++        g=graph(v,q);rb=real(rn(v),rn(q),AB,EB)
++        arith=g['u']-rb[2]
+         eta=Q(2)**-52;bound=8*eta/EB
+         assert abs(arith)<=bound
+         assert Q(0)<=g['current']<=1 and abs(g['u'])<=1
+@@ -96,7 +186,17 @@
+         assert tuple(Q.from_float(x) for x in native(v,q))==(g['current'],g['delta'],g['u'])
+         if rn(v)==rn(q): assert g['current']==rn(v) and g['delta']==0 and g['u']==0
+         asserts+=6
+-        cases.append(dict(id=name,label=label,ideal_input_known=ideal,ideal_inputs={'v':str(v),'q':str(q),'alpha':str(A),'epsilon':str(EPS)},rounded_inputs={'v':record(rn(v)),'q':record(rn(q)),'alpha':record(AB),'epsilon':record(EB)},nodes={k:record(x) if isinstance(x,Q) else x for k,x in g.items()},scientific_ideal=record(ri[2]),real_on_rounded_inputs=record(rb[2]),input_error=record(inp),arithmetic_error=record(arith),total_error=record(total),arithmetic_bound=record(bound)))
++        row=dict(id=name,label=label,ideal_input_known=ideal,input_origin='exact_decimal_or_rational_known' if ideal else 'binary64_hex_designated',rounded_inputs={'v':Binary64.input(v).metadata(),'q':Binary64.input(q).metadata(),'alpha':record(AB),'epsilon':record(EB)},nodes=node_records(g),real_on_rounded_inputs=record(rb[2]),arithmetic_error=record(arith),arithmetic_bound=record(bound))
++        if ideal:
++            ri=real(v,q);inp=rb[2]-ri[2];total=g['u']-ri[2];assert inp+arith==total
++            emin=min(EPS,EB);amax=max(A,AB)
++            input_bound=abs(AB-A)/emin+amax*abs(rn(q)-q)/emin+amax*abs(rn(v)-v)*(1/emin+1/emin**2)+amax*abs(EB-EPS)/emin**2
++            assert abs(inp)<=input_bound and abs(total)<=input_bound+bound
++            row.update(ideal_inputs={'v':str(v),'q':str(q),'alpha':str(A),'epsilon':str(EPS)},original_exact_tokens={'alpha':'0.35','epsilon':'0.000001','v_rational':str(v),'q_rational':str(q)},scientific_ideal=record(ri[2]),input_error=record(inp),total_error=record(total),input_bound=record(input_bound),total_bound=record(input_bound+bound))
++        else:
++            row['actual_ideal_status']='unavailable_no_known_preconversion_state'
++            assert not any(k in row for k in ['ideal_inputs','scientific_ideal','input_error','total_error','input_bound','total_bound'])
++        cases.append(row)
+     fixture('near_epsilon_gain',1-EPS/2,Q(1),'legal_injected_UG_R_offer8_accept_material')
+     fixture('near_epsilon_loss',EPS/2,Q(0),'legal_injected_UG_R_reject_material')
+     for name,v,q in [('near_gain',1-EPS/2,Q(1)),('near_loss',EPS/2,Q(0))]:
+@@ -123,13 +223,15 @@
+             for v in values:
+                 for p in profiles:
+                     z,n,den,d,action,category=vote(o,adapter,[v]*4,p); assert z==target
+-                    votes.append(dict(adapter=adapter,offer=o,v_hex=float(v).hex(),p=list(map(float,p)),z=z,N=record(n),P=record(den),D=record(d),action=action,category=category));asserts+=2
++                    votes.append(dict(adapter=adapter,offer=o,v_hex=float(v).hex(),input_origin='binary64_hex_designated',ideal_input_known=False,actual_ideal_status='unavailable_no_known_preconversion_state',p=list(map(float,p)),z=z,N=record(n),P=record(den),D=record(d),action=action,category=category,candidate_appraisal_diagnostics=candidate_diagnostics(o,adapter,[v]*4)));asserts+=2
+     neighbors=[]
+     for p,label in [(profiles[2],'legal_tie'),((Q(1,2),Q.from_float(math.nextafter(1.5,-math.inf)),Q(1,2),Q(1,2)),'legal_fairness_lower'),((Q.from_float(math.nextafter(.5,math.inf)),Q(3,2),Q(1,2),Q(1,2)),'legal_material_upper')]:
+         z,n,den,d,action,cat=vote(8,'N',[Q(1,2)]*4,p);neighbors.append(dict(label=label,N=record(n),D=record(d),action=action,category=cat))
+     negative=rn(sum((Q(1,2),-Q.from_float(math.nextafter(1.5,math.inf)),Q(1,2),Q(1,2)),Q(0)))
+     assert negative<0
+     neighbors.append(dict(label='helper_only_fairness_above_pmax',N=record(negative),action='reject'))
++    for row in neighbors:
++        row.update(input_origin='binary64_hex_designated',ideal_input_known=False,actual_ideal_status='unavailable_no_known_preconversion_state')
+     # Extremal one-step stagnation: literal fixed-alpha graph does NOT reach endpoints.
+     sat=graph(Q.from_float(math.nextafter(1.,0.)),Q(1));assert sat['current']==Q.from_float(math.nextafter(1.,0.))
+     low=graph(Q.from_float(math.nextafter(0.,1.)),Q(0));assert low['current']==Q.from_float(math.nextafter(0.,1.))
+@@ -153,9 +255,13 @@
+     assert rn(1+Q(2)**-53)==1
+     assert rn(1+3*Q(2)**-53)==1+Q(2)**-51
+     assert rn(Q(2)**-1075)==0 and rn(3*Q(2)**-1075)==Q(2)**-1073
+-    report=dict(status='OWNER_SELF_CHECK_ONLY_NOT_INDEPENDENT_R0',python=sys.version,platform=platform.platform(),float_info=str(sys.float_info),scalar_fixtures=len(cases),vote_fixtures=len(votes),assertions=asserts,additional_checks=['endpoint_signs','24_fsum_permutations','material_only_four_channel_identity_and_material_equality','3_illegal_domains','4_RNE_halfway_subnormal_cases'],identity_witness=identity_witness,upper_stagnation={k:record(x) if isinstance(x,Q) else x for k,x in sat.items()},lower_stagnation={k:record(x) if isinstance(x,Q) else x for k,x in low.items()},helper_saturation=record(helper_u),branch_neighbors=neighbors,empirical_pilot_full_runs=0,production_imports=0)
++    zero=signed_zero_checks()
++    ancillary_origin=dict(input_origin='binary64_hex_designated',ideal_input_known=False,actual_ideal_status='unavailable_no_known_preconversion_state',scope=['identity_witness','upper_stagnation','lower_stagnation','helper_saturation','branch_neighbors'],rule='executable witnesses only; no actual I, conversion or total residual fields')
++    report=dict(status='OWNER_SELF_CHECK_ONLY_NOT_INDEPENDENT_R0',python=sys.version,platform=platform.platform(),float_info=str(sys.float_info),scalar_fixtures=len(cases),known_ideal_scalar_rows=sum(c['ideal_input_known'] for c in cases),unknown_ideal_scalar_rows=sum(not c['ideal_input_known'] for c in cases),vote_fixtures=len(votes),signed_zero_fixtures=len(zero['fixtures']),material_only_signed_copy_vectors=len(zero['material_only_copy_checks']),assertions=asserts,additional_checks=['endpoint_signs','24_fsum_permutations','material_only_four_channel_identity_and_material_equality','3_illegal_domains','4_RNE_halfway_subnormal_cases','exact_bit_signed_zero_checks'],identity_witness=identity_witness,upper_stagnation=node_records(sat),lower_stagnation=node_records(low),helper_saturation=record(helper_u),branch_neighbors=neighbors,empirical_pilot_full_runs=0,production_imports=0)
+     (out/'ORACLE_FIXTURES_C6.json').write_text(json.dumps(cases,indent=2)+'\n')
++    report['ancillary_input_origin']=ancillary_origin
+     (out/'F35_FIXTURES_C6.json').write_text(json.dumps(votes,indent=2)+'\n')
+     (out/'SELF_CHECK_C6.json').write_text(json.dumps(report,indent=2)+'\n')
++    (out/'SIGNED_ZERO_FIXTURES_C6.json').write_text(json.dumps(zero,indent=2)+'\n')
+     print(json.dumps(report,indent=2))
+ if __name__=='__main__': main(sys.argv[1] if len(sys.argv)>1 else '.')

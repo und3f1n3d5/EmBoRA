@@ -1,0 +1,533 @@
+{
+  "manifest_id": "EMBORA-MANIFEST-2026-10-04-C6-v1.1",
+  "package_id": "EMBORA-R0PKG-2026-10-04-C6-v1.1",
+  "specification_id": "EMBORA-MSJ1-2026-10-04-R1C6-v1.1",
+  "parameter_schema_id": "EMBORA-PARAMS-2026-10-04-R1C6-v1.1",
+  "numeric_policy_id": "EMBORA-NUMERIC-2026-10-04-C6-v1.1",
+  "observation_schema_id": "EMBORA-OBS-2026-10-04-R1C6-v1.1",
+  "result_schema_id": "EMBORA-RESULT-2026-10-04-R1C6-v1.1",
+  "numeric_evidence_schema_id": "EMBORA-NUMERIC-EVIDENCE-2026-10-04-C6-v1.1",
+  "created_utc": "2026-10-04T11:51:54.337805+00:00",
+  "save_date_moscow": "2026-10-04",
+  "workspace_url": "https://drive.google.com/drive/folders/1jTBgeoouxCn4v6ZS8u3npgmyP7WyMAzl",
+  "parent_package_id": "EMBORA-R0PKG-2026-10-03-C6-v1.0",
+  "parent_zip_sha256": "aaf0f4b81168f2dc275444c2165afd176af6a40d27d0385671f576b39005ee17",
+  "parent_manifest_sha256": "beec0e5a890759b269b331895f77d7817ba4ba7101e3160bf3b05114e949d457",
+  "coordinator_disposition_id": "EMBORA-COORD-R0C6-DISPOSITION-2026-10-04-v1.0",
+  "status": "IMMUTABLE_CANDIDATE_NOT_ADOPTED_PENDING_INDEPENDENT_RECHECK",
+  "readiness": "fresh_external_integrity_receipt_controls_READY_FOR_TARGETED_R0_RECHECK",
+  "issue_statuses": {
+    "R0-C6-P1-01": "addressed / pending independent recheck",
+    "R0-C6-P2-01": "addressed / pending independent recheck",
+    "R0-C6-P2-02": "addressed / pending independent recheck"
+  },
+  "R0_v1_0_counts_preserved": {
+    "P0": 0,
+    "P1": 1,
+    "P2": 2,
+    "Observation": 0
+  },
+  "P0_owner_observed": 0,
+  "preexisting_implementation_issue": "P2-C5-P1-01 CONFIRMED P1 OPEN; not an additional R0 finding",
+  "author_adoption": false,
+  "independent_closure": false,
+  "production_patch": false,
+  "production_conformance": "NOT_RUN",
+  "P2_completion": false,
+  "code_freeze": false,
+  "trajectories_pilot_full_sensitivity_runs": 0,
+  "self_hash_policy": "Manifest excludes itself; ZIP exact set equals 62 listed payloads plus byte-identical manifest; fresh readback receipt and linked Coordinator handoff external to avoid circular hashes",
+  "payload_count": 62,
+  "exact_payload_set": [
+    "ACCEPTANCE_MATRIX_C6.csv",
+    "AUTHORITY_SOURCES/COORDINATOR_VERIFICATION_C5_P2P3_v1.0.json",
+    "AUTHORITY_SOURCES/board.txt",
+    "AUTHORITY_SOURCES/context.txt",
+    "AUTHORITY_SOURCES/disposition.txt",
+    "AUTHORITY_SOURCES/handoff.txt",
+    "AUTHORITY_SOURCES/issue.txt",
+    "AUTHORITY_SOURCES/master.txt",
+    "AUTHORITY_SOURCES/r0.txt",
+    "AUTHORITY_SOURCES/rules.txt",
+    "AUTHORITY_SOURCES/state.txt",
+    "AUTHORITY_SOURCES/tz.txt",
+    "AUTHORITY_SOURCES/tz2.txt",
+    "AUTHORITY_SOURCES/u1.txt",
+    "AUTHOR_IMPACT_AND_DEPENDENCIES_C6.md",
+    "C5_SOURCE_INTEGRITY_RECEIPT.json",
+    "C5_TO_C6.diff",
+    "C5_TO_C6_CHANGELOG.md",
+    "C6_v1.0_TO_v1.1.diff",
+    "DIFF_INVENTORY_C6_v1.0_TO_v1.1.json",
+    "F35_FIXTURES_C6.json",
+    "GAP_SEPARATION_DERIVATION_C6.json",
+    "GAP_SEPARATION_PROOF_C6.md",
+    "ISSUE_TO_FIX_ACCEPTANCE_C6_v1.1.json",
+    "MODEL_SPEC_JOURNAL_V1_R1C6.md",
+    "NUMERICAL_CONTRACT_C6.md",
+    "NUMERICAL_TRACEABILITY_C6.csv",
+    "NUMERIC_EVIDENCE_SCHEMA_C6.json",
+    "ORACLE_FIXTURES_C6.json",
+    "P1_DISPOSITION_PROPOSED_C6.csv",
+    "PARAMETER_TABLE_R1C6.yaml",
+    "PINNED_SECTIONS_C6.json",
+    "README_C6.md",
+    "REVISION_AUTHORITY_SOURCES/ISSUE_REGISTER_R0_C6_v1.0.json",
+    "REVISION_AUTHORITY_SOURCES/PARENT_INTEGRITY.json",
+    "REVISION_AUTHORITY_SOURCES/coordinator.txt",
+    "REVISION_AUTHORITY_SOURCES/handoff.txt",
+    "REVISION_AUTHORITY_SOURCES/report.txt",
+    "REVISION_CHECKS_C6_v1.1.json",
+    "SELF_CHECK_C6.json",
+    "SIGNED_ZERO_FIXTURES_C6.json",
+    "STRUCTURED_DIFF_C6_v1.0_TO_v1.1.json",
+    "UPSTREAM_C5/AUTHOR_VERIFICATION_NOTE_U1_R1C5.md",
+    "UPSTREAM_C5/BASELINE_AND_COMPARATOR_MATRIX_R1C5.md",
+    "UPSTREAM_C5/C4_TO_C5_CHANGELOG.md",
+    "UPSTREAM_C5/CLAIM_CONTRACT_R1C5.md",
+    "UPSTREAM_C5/DRAFT_FINAL_U1_BRIEF_C5.md",
+    "UPSTREAM_C5/EMBORA_R0_RECHECK_PACKAGE_2026-09-24_C5.zip",
+    "UPSTREAM_C5/FORMULA_CODE_TRACEABILITY_R1C5.csv",
+    "UPSTREAM_C5/MECHANISM_STATUS_MATRIX_R1C5.md",
+    "UPSTREAM_C5/MODEL_SPEC_JOURNAL_V1_R1C5.md",
+    "UPSTREAM_C5/PARAMETER_TABLE_R1C5.yaml",
+    "UPSTREAM_C5/R0_C4_ISSUE_DISPOSITION_C5.csv",
+    "UPSTREAM_C5/R0_RECHECK_PACKAGE_MANIFEST_C5.json",
+    "UPSTREAM_C5/SELF_REVIEW_C5.md",
+    "UPSTREAM_C5/UG_OUTCOME_TABLE_R1C5.csv",
+    "UPSTREAM_C5/UG_REJECTION_SEMANTICS_R1C5.md",
+    "UPSTREAM_C6_v1.0/EMBORA_R0PKG_2026-10-03_C6_v1.0.zip",
+    "UPSTREAM_C6_v1.0/MANIFEST_C6_v1.0.json",
+    "derive_gap_proof.py",
+    "reference_binary64.py",
+    "verify_revision_v11.py"
+  ],
+  "review_files": [
+    {
+      "path": "ACCEPTANCE_MATRIX_C6.csv",
+      "bytes": 11177,
+      "sha256": "206340256097a96cd851f51387fd07abf6124fe79b7cf4e970aeb962e947c4bd",
+      "crc32": "5023e452",
+      "drive_id": "177Zv9rIs2LoYbJja8Re1IPZozhwfhiCa",
+      "url": "https://drive.google.com/file/d/177Zv9rIs2LoYbJja8Re1IPZozhwfhiCa/view?usp=drivesdk"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/COORDINATOR_VERIFICATION_C5_P2P3_v1.0.json",
+      "bytes": 2757,
+      "sha256": "303f8dbc32250dc03b0cbee13ecc559697d3cfb0880fd8d5fb96678a3ab7180f",
+      "crc32": "866f69c5"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/board.txt",
+      "bytes": 12590,
+      "sha256": "20a5c0c83158fea1c1aa016a0179f6e7e3995a83f76387ee35cc962e76bef4ba",
+      "crc32": "a5d90a19"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/context.txt",
+      "bytes": 6600,
+      "sha256": "9f5c86626da0545c0cd32625c862abe22182b618393461080282e3b53797add7",
+      "crc32": "d8aa7f55"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/disposition.txt",
+      "bytes": 17761,
+      "sha256": "6b363c6662d25171ab7b555ae75e60be1e0b29526b04311234ba7f9498704aa4",
+      "crc32": "13148e36"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/handoff.txt",
+      "bytes": 8255,
+      "sha256": "86fbd4268d3018ec1446d55f27288a2bad38e2193a2d868b283bc886994aa55c",
+      "crc32": "187d64fe"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/issue.txt",
+      "bytes": 3349,
+      "sha256": "243fbec397f9bd83cffc0735688304a69d5555af9ec49f4e2b9463a37875fd35",
+      "crc32": "664f4ea3"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/master.txt",
+      "bytes": 3415,
+      "sha256": "4179fd2839021f235245946f5926eb27e121b089cf4ea029a86bc1aaa2a1ace9",
+      "crc32": "5ec9cc67"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/r0.txt",
+      "bytes": 7357,
+      "sha256": "924cc8c92b25345beed0201906db885ff583c109fd7fcb171b5fd33ca800f882",
+      "crc32": "2302ef21"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/rules.txt",
+      "bytes": 2818,
+      "sha256": "11831780ab8f5c91f69cbde1e8603f3661213f5ca019dc67273d6206aa796858",
+      "crc32": "0a19e282"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/state.txt",
+      "bytes": 8157,
+      "sha256": "a3f0522018ad0f309ab43fc7c843a480b6729c4eea7e360dac77ba7c6aca653f",
+      "crc32": "63d9b2c9"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/tz.txt",
+      "bytes": 31142,
+      "sha256": "df2bcf740d1a215aa0d4606552df2e1cf396f79a284b3d5e80b7bfd44d1e3bf5",
+      "crc32": "4e004c1f"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/tz2.txt",
+      "bytes": 8565,
+      "sha256": "76cecede0f610bea21c3f811b5547770ba9df12bb3155197dffb79da0267bcea",
+      "crc32": "12b994b1"
+    },
+    {
+      "path": "AUTHORITY_SOURCES/u1.txt",
+      "bytes": 13915,
+      "sha256": "603f8f4be204b3c0df96ce1ad6ae5e351ddd6adff6bfc51e6abc8a4bef3b81dd",
+      "crc32": "fee38dc4"
+    },
+    {
+      "path": "AUTHOR_IMPACT_AND_DEPENDENCIES_C6.md",
+      "bytes": 4313,
+      "sha256": "47d68344fac810b25f64cdb147d6757f0953b73c7a653ec80fec114eb5254319",
+      "crc32": "5948600a",
+      "drive_id": "1OckXQ2qxlkiOgBGaV-QOR057waFo5j9Z",
+      "url": "https://drive.google.com/file/d/1OckXQ2qxlkiOgBGaV-QOR057waFo5j9Z/view?usp=drivesdk"
+    },
+    {
+      "path": "C5_SOURCE_INTEGRITY_RECEIPT.json",
+      "bytes": 602,
+      "sha256": "3ff1c198219b33cc1d93b896491e77862c8a17cfecdbc9a5ad5510d42fa5efb1",
+      "crc32": "dfe6648b",
+      "drive_id": "1yttc2YIynQLdJDs7qTLh0EIUH6TU6UTc",
+      "url": "https://drive.google.com/file/d/1yttc2YIynQLdJDs7qTLh0EIUH6TU6UTc/view?usp=drivesdk"
+    },
+    {
+      "path": "C5_TO_C6.diff",
+      "bytes": 21520,
+      "sha256": "f824a2bd8e2cc5378f7fea1f9e3f9639a5dab3747b516bb3afcb91fe8998cf78",
+      "crc32": "740d58a7",
+      "drive_id": "1b5SMuCpwIXg9V8F3hOZWDaM3RyVWvCXG",
+      "url": "https://drive.google.com/file/d/1b5SMuCpwIXg9V8F3hOZWDaM3RyVWvCXG/view?usp=drivesdk"
+    },
+    {
+      "path": "C5_TO_C6_CHANGELOG.md",
+      "bytes": 3182,
+      "sha256": "d655149d97a34cae687e0e46fd552f0b72c0cd82d00961d9758e9429c3bed7ab",
+      "crc32": "3cc382ad",
+      "drive_id": "1b5Cgn5qOa_Q-AcMlzmPD0d7006Onv2w0",
+      "url": "https://drive.google.com/file/d/1b5Cgn5qOa_Q-AcMlzmPD0d7006Onv2w0/view?usp=drivesdk"
+    },
+    {
+      "path": "C6_v1.0_TO_v1.1.diff",
+      "bytes": 59363,
+      "sha256": "a242a6f9b423f29154c78cb04d89f128c42e7f66a219d0903c55662a699b44e0",
+      "crc32": "955a66d5",
+      "drive_id": "1W4ELPZPnlAw2Loh_Rw74-T-ItfnyQs8z",
+      "url": "https://drive.google.com/file/d/1W4ELPZPnlAw2Loh_Rw74-T-ItfnyQs8z/view?usp=drivesdk"
+    },
+    {
+      "path": "DIFF_INVENTORY_C6_v1.0_TO_v1.1.json",
+      "bytes": 25881,
+      "sha256": "e6b1e95c1de2b05e5e67a208927b2a148728f7c46e6d6effad512b17d710694b",
+      "crc32": "d166a581",
+      "drive_id": "1hiKdjzFdy2RW9NgZZKd46f4FFbC9ErO2",
+      "url": "https://drive.google.com/file/d/1hiKdjzFdy2RW9NgZZKd46f4FFbC9ErO2/view?usp=drivesdk"
+    },
+    {
+      "path": "F35_FIXTURES_C6.json",
+      "bytes": 11716971,
+      "sha256": "ceeb2ec66f441608229c5d17eb928b0d9883cfafb0e46f27147a7c56be12da7e",
+      "crc32": "fe65d0ba",
+      "drive_id": "1vAV5XMdDi2MYnEbacTlOsFZabRbn_dbC",
+      "url": "https://drive.google.com/file/d/1vAV5XMdDi2MYnEbacTlOsFZabRbn_dbC/view?usp=drivesdk"
+    },
+    {
+      "path": "GAP_SEPARATION_DERIVATION_C6.json",
+      "bytes": 182678,
+      "sha256": "5433c142832280e45ef73260d3ce2feb95b193e518de81eac0f0526a8bbb6a87",
+      "crc32": "b413e17b",
+      "drive_id": "1mHkKsdKAr4Wv2pQvrrBvg40YSibGBvLk",
+      "url": "https://drive.google.com/file/d/1mHkKsdKAr4Wv2pQvrrBvg40YSibGBvLk/view?usp=drivesdk"
+    },
+    {
+      "path": "GAP_SEPARATION_PROOF_C6.md",
+      "bytes": 5128,
+      "sha256": "4227b8b6a770ea9b58ca42d9361f739cae5d4a45b719836fbae782405a400f82",
+      "crc32": "baa0a18f",
+      "drive_id": "1myLZin-tVsUGtKNLtFvYmF8OJMrFzTTZ",
+      "url": "https://drive.google.com/file/d/1myLZin-tVsUGtKNLtFvYmF8OJMrFzTTZ/view?usp=drivesdk"
+    },
+    {
+      "path": "ISSUE_TO_FIX_ACCEPTANCE_C6_v1.1.json",
+      "bytes": 3872,
+      "sha256": "d872aa1d2077fbfbe75d25e876f3a69e73f7f96d8fbb17a6bd63a35ec4ceda93",
+      "crc32": "ce7a8511",
+      "drive_id": "1YjNAu5sntbg2qb-4wm2BgNyAz5qERygD",
+      "url": "https://drive.google.com/file/d/1YjNAu5sntbg2qb-4wm2BgNyAz5qERygD/view?usp=drivesdk"
+    },
+    {
+      "path": "MODEL_SPEC_JOURNAL_V1_R1C6.md",
+      "bytes": 53311,
+      "sha256": "6000a98f2fc6451522b56f932ab93f4a36a1e8947301c871a5951bce55a7fb70",
+      "crc32": "2ef83001",
+      "drive_id": "1CWk54k3P9x9e3s5HF6eC39wysIh-SXmj",
+      "url": "https://drive.google.com/file/d/1CWk54k3P9x9e3s5HF6eC39wysIh-SXmj/view?usp=drivesdk"
+    },
+    {
+      "path": "NUMERICAL_CONTRACT_C6.md",
+      "bytes": 16893,
+      "sha256": "72440a5e22e07a949da3c5e7b2cfcc676d4b7c70cf4e0c55be2ae8b635f617ad",
+      "crc32": "08a1e522",
+      "drive_id": "1DfccvJToJIp5COB6rgROAAiGKy9uMfya",
+      "url": "https://drive.google.com/file/d/1DfccvJToJIp5COB6rgROAAiGKy9uMfya/view?usp=drivesdk"
+    },
+    {
+      "path": "NUMERICAL_TRACEABILITY_C6.csv",
+      "bytes": 1116,
+      "sha256": "2953d073389c07ccef7a364bb1b500037e06c5049c54ac1c22f4ffe7dcb624b3",
+      "crc32": "93b848c0",
+      "drive_id": "1x07qOs-zj09MfPuTxqiq8LXOLuKiAZzm",
+      "url": "https://drive.google.com/file/d/1x07qOs-zj09MfPuTxqiq8LXOLuKiAZzm/view?usp=drivesdk"
+    },
+    {
+      "path": "NUMERIC_EVIDENCE_SCHEMA_C6.json",
+      "bytes": 3736,
+      "sha256": "17240c5687b227b490602d331e3b79a22bc7ce64c667328b2609053e93316d70",
+      "crc32": "a0c066db",
+      "drive_id": "1aGOngRMHmZlBsIV9mhg4K0EJCdwZVyYk",
+      "url": "https://drive.google.com/file/d/1aGOngRMHmZlBsIV9mhg4K0EJCdwZVyYk/view?usp=drivesdk"
+    },
+    {
+      "path": "ORACLE_FIXTURES_C6.json",
+      "bytes": 243204,
+      "sha256": "6a0e9188fcba8b5da0552189193521691a7476f478638998c849729f59935982",
+      "crc32": "2ad3871d",
+      "drive_id": "1maZVl8HBvvRN1HCbOHsaAkI3-tJMmeTs",
+      "url": "https://drive.google.com/file/d/1maZVl8HBvvRN1HCbOHsaAkI3-tJMmeTs/view?usp=drivesdk"
+    },
+    {
+      "path": "P1_DISPOSITION_PROPOSED_C6.csv",
+      "bytes": 806,
+      "sha256": "c99f2bcbc35109d7582438bc765e7971e02167ce7a448af272e0b3871f377db4",
+      "crc32": "88323f01",
+      "drive_id": "1wfr_GYbV5lD0k8btYxCRqwhZCFJtKYhC",
+      "url": "https://drive.google.com/file/d/1wfr_GYbV5lD0k8btYxCRqwhZCFJtKYhC/view?usp=drivesdk"
+    },
+    {
+      "path": "PARAMETER_TABLE_R1C6.yaml",
+      "bytes": 11192,
+      "sha256": "e22fceab6edcb99de00d04e4ef547e813bb05ce4f296cf4594ad59bc69196a86",
+      "crc32": "44ea2c4e",
+      "drive_id": "1OScAPxiAETHHILMXyBH3HkiRC6t-X_8J",
+      "url": "https://drive.google.com/file/d/1OScAPxiAETHHILMXyBH3HkiRC6t-X_8J/view?usp=drivesdk"
+    },
+    {
+      "path": "PINNED_SECTIONS_C6.json",
+      "bytes": 10651,
+      "sha256": "3412db1d3b1459b8fcbc332c00dd5ffea372a689d1497842103f0c5df1efd788",
+      "crc32": "f65e8930",
+      "drive_id": "18fR5kfIvxmeg0f7SBpJ-TJVgonSqLAls",
+      "url": "https://drive.google.com/file/d/18fR5kfIvxmeg0f7SBpJ-TJVgonSqLAls/view?usp=drivesdk"
+    },
+    {
+      "path": "README_C6.md",
+      "bytes": 4222,
+      "sha256": "f79623da97efad02fabfd4639edadfb6465131ca19ddb5d176deae6d85b8fc35",
+      "crc32": "bfb456ce",
+      "drive_id": "10SQ9d-zPpedxyC9S3f8XQYanN0XYv5d8",
+      "url": "https://drive.google.com/file/d/10SQ9d-zPpedxyC9S3f8XQYanN0XYv5d8/view?usp=drivesdk"
+    },
+    {
+      "path": "REVISION_AUTHORITY_SOURCES/ISSUE_REGISTER_R0_C6_v1.0.json",
+      "bytes": 4739,
+      "sha256": "d4f6d7963a901e9756a89cfb8c103d227dee378ca44240ef54633dad649d75fb",
+      "crc32": "a65ab2f1"
+    },
+    {
+      "path": "REVISION_AUTHORITY_SOURCES/PARENT_INTEGRITY.json",
+      "bytes": 339,
+      "sha256": "ba6d272151947a1e625e98111594174f8f2c3458868948c2858b561fbbf9ca70",
+      "crc32": "4d281d54"
+    },
+    {
+      "path": "REVISION_AUTHORITY_SOURCES/coordinator.txt",
+      "bytes": 9663,
+      "sha256": "e8eea9216051802c2521461fc38ed3942908c88a07b37e187ba50a73d1ad58d6",
+      "crc32": "1152d29b"
+    },
+    {
+      "path": "REVISION_AUTHORITY_SOURCES/handoff.txt",
+      "bytes": 2135,
+      "sha256": "eb3d2c03262b4531c2c77144077a0055f6e17310b02fd8870b8fc0321d40e414",
+      "crc32": "df3bacf8"
+    },
+    {
+      "path": "REVISION_AUTHORITY_SOURCES/report.txt",
+      "bytes": 15847,
+      "sha256": "2a4c4d02643f208c2ee634730b6c8f1a3cf36d7427469a418ccd6eec15e24909",
+      "crc32": "ce7196c3"
+    },
+    {
+      "path": "REVISION_CHECKS_C6_v1.1.json",
+      "bytes": 7847,
+      "sha256": "5a777e8df822a0edb5367bd1fccaffa4e828fdd15a5246af906aa905725dd1cb",
+      "crc32": "b9833b2d",
+      "drive_id": "1Qm_Wp6WIjQhgI-nxOpo5cYkF1b-jbIWh",
+      "url": "https://drive.google.com/file/d/1Qm_Wp6WIjQhgI-nxOpo5cYkF1b-jbIWh/view?usp=drivesdk"
+    },
+    {
+      "path": "SELF_CHECK_C6.json",
+      "bytes": 11861,
+      "sha256": "a2942071faf79b6c6405ac4b3fee09accdfc1be184bbdf73fde5d1d90fefe445",
+      "crc32": "649e4f4d",
+      "drive_id": "1bUbJPZnuf6_UmF6kyAlfJhtL0RMEO-pA",
+      "url": "https://drive.google.com/file/d/1bUbJPZnuf6_UmF6kyAlfJhtL0RMEO-pA/view?usp=drivesdk"
+    },
+    {
+      "path": "SIGNED_ZERO_FIXTURES_C6.json",
+      "bytes": 115191,
+      "sha256": "20f23ad010536fe7f242abc2f0233b782b9dc6641ef3787514f2b66ddcbd85a2",
+      "crc32": "30fb94b4",
+      "drive_id": "1n1wLgYKUoHFxPq723pKXC2gAEB63SG17",
+      "url": "https://drive.google.com/file/d/1n1wLgYKUoHFxPq723pKXC2gAEB63SG17/view?usp=drivesdk"
+    },
+    {
+      "path": "STRUCTURED_DIFF_C6_v1.0_TO_v1.1.json",
+      "bytes": 4280324,
+      "sha256": "3e20169f05f2761055ee2793f20b1f20356042dc81a5ce1b3b1c55953ff547b9",
+      "crc32": "0b500216",
+      "drive_id": "1pR9uzoTvEHrj2KxPI99IfzfNtqHIQdcx",
+      "url": "https://drive.google.com/file/d/1pR9uzoTvEHrj2KxPI99IfzfNtqHIQdcx/view?usp=drivesdk"
+    },
+    {
+      "path": "UPSTREAM_C5/AUTHOR_VERIFICATION_NOTE_U1_R1C5.md",
+      "bytes": 3377,
+      "sha256": "04031875ff0aaa592326fac7ec46b44eee661ce9b0bb64932c4c245acad8cf8a",
+      "crc32": "199888f2"
+    },
+    {
+      "path": "UPSTREAM_C5/BASELINE_AND_COMPARATOR_MATRIX_R1C5.md",
+      "bytes": 14500,
+      "sha256": "c677c57ad8cf55f44946c677f2f394d07cb07a3ce3a03f90f51969b607cba308",
+      "crc32": "3e0220d9"
+    },
+    {
+      "path": "UPSTREAM_C5/C4_TO_C5_CHANGELOG.md",
+      "bytes": 1827,
+      "sha256": "b2ae403c213fe81454bd84aad473796cdbee7e0ae51069426902e50af66b595a",
+      "crc32": "3e9edf23"
+    },
+    {
+      "path": "UPSTREAM_C5/CLAIM_CONTRACT_R1C5.md",
+      "bytes": 18188,
+      "sha256": "da95060e88ac5ecb1f960779ec6e4b75ddfcbc6810d3e7579ce111d960ff017d",
+      "crc32": "b70fd660"
+    },
+    {
+      "path": "UPSTREAM_C5/DRAFT_FINAL_U1_BRIEF_C5.md",
+      "bytes": 4396,
+      "sha256": "d46e58c5a5df7e33538f83a425758c8e28e229d891ab66fb9ede784f665e9fa7",
+      "crc32": "7d5658c7"
+    },
+    {
+      "path": "UPSTREAM_C5/EMBORA_R0_RECHECK_PACKAGE_2026-09-24_C5.zip",
+      "bytes": 58842,
+      "sha256": "7018b7271d4ce9159bff7344f6aca5a6e74021791bde07a5c7623d7a6e6a0c4c",
+      "crc32": "fa24827f"
+    },
+    {
+      "path": "UPSTREAM_C5/FORMULA_CODE_TRACEABILITY_R1C5.csv",
+      "bytes": 17004,
+      "sha256": "1d3e678893c7fc91700c6c3b5f842aa5197475a215b6294ec4ada413dbd6d544",
+      "crc32": "9d04e79f"
+    },
+    {
+      "path": "UPSTREAM_C5/MECHANISM_STATUS_MATRIX_R1C5.md",
+      "bytes": 5638,
+      "sha256": "4f74b05603b3e9815bbab6b9a5960ea84469455c2261b66b44fbeeb95fd6d6df",
+      "crc32": "49c0c93b"
+    },
+    {
+      "path": "UPSTREAM_C5/MODEL_SPEC_JOURNAL_V1_R1C5.md",
+      "bytes": 51651,
+      "sha256": "5bb19bcf8db77184489ed90a3674d65785cc23393cc69f3c8173559c42da9434",
+      "crc32": "93302434"
+    },
+    {
+      "path": "UPSTREAM_C5/PARAMETER_TABLE_R1C5.yaml",
+      "bytes": 10478,
+      "sha256": "1f72c9cbc679fd61a3c71979a22c49c6f48a5e326b3d57df030d76be8db7dc68",
+      "crc32": "0a1522aa"
+    },
+    {
+      "path": "UPSTREAM_C5/R0_C4_ISSUE_DISPOSITION_C5.csv",
+      "bytes": 634,
+      "sha256": "644658168531c560ca66f1a8b867690643e5292d7a78dd9bbab815dd21f73279",
+      "crc32": "4f0e2112"
+    },
+    {
+      "path": "UPSTREAM_C5/R0_RECHECK_PACKAGE_MANIFEST_C5.json",
+      "bytes": 4854,
+      "sha256": "f1a8b850d8f78676e8bd6db0f36a81dff5d75dd4725837fb0af73e38eebcb47c",
+      "crc32": "ba0889f8"
+    },
+    {
+      "path": "UPSTREAM_C5/SELF_REVIEW_C5.md",
+      "bytes": 1500,
+      "sha256": "b30df479a43ad161d0b90043ac18df149d7b7d39b84e695eca96ba1cae272113",
+      "crc32": "61380378"
+    },
+    {
+      "path": "UPSTREAM_C5/UG_OUTCOME_TABLE_R1C5.csv",
+      "bytes": 13456,
+      "sha256": "28625e870675a893488fb8cb6ba7c3dd5e6758bcfef10a3ce43cf94bfd3f7cfd",
+      "crc32": "eb75c336"
+    },
+    {
+      "path": "UPSTREAM_C5/UG_REJECTION_SEMANTICS_R1C5.md",
+      "bytes": 10479,
+      "sha256": "39317f80494920a26330e9adca4fc3d910d956a99526bc310bd2f2760659ef13",
+      "crc32": "3c0aae44"
+    },
+    {
+      "path": "UPSTREAM_C6_v1.0/EMBORA_R0PKG_2026-10-03_C6_v1.0.zip",
+      "bytes": 247442,
+      "sha256": "aaf0f4b81168f2dc275444c2165afd176af6a40d27d0385671f576b39005ee17",
+      "crc32": "fd47f63f"
+    },
+    {
+      "path": "UPSTREAM_C6_v1.0/MANIFEST_C6_v1.0.json",
+      "bytes": 13343,
+      "sha256": "beec0e5a890759b269b331895f77d7817ba4ba7101e3160bf3b05114e949d457",
+      "crc32": "ab3c72d5"
+    },
+    {
+      "path": "derive_gap_proof.py",
+      "bytes": 3033,
+      "sha256": "b55faee37993a6e5a7a7956d6c32c49706dec6abd2383d2b09fa6defc845a5d8",
+      "crc32": "60ee74cc",
+      "drive_id": "1ezX6NzYLiMhSb9wG15OAc62IdHlpjWGv",
+      "url": "https://drive.google.com/file/d/1ezX6NzYLiMhSb9wG15OAc62IdHlpjWGv/view?usp=drivesdk"
+    },
+    {
+      "path": "reference_binary64.py",
+      "bytes": 17835,
+      "sha256": "32f3a17610a45a6713222dde013fc1741edcfaa12b1aaf887c8f110a57eae1e8",
+      "crc32": "4e87c95c",
+      "drive_id": "1CXP_isj-m2Pn_jqQZlUY4rbKcBgMUSOs",
+      "url": "https://drive.google.com/file/d/1CXP_isj-m2Pn_jqQZlUY4rbKcBgMUSOs/view?usp=drivesdk"
+    },
+    {
+      "path": "verify_revision_v11.py",
+      "bytes": 11476,
+      "sha256": "beee78f2d01307a2bc350052b24252f56f4f8d360ef2141e4afeaa072b870100",
+      "crc32": "c327a2d4",
+      "drive_id": "11Ve7_g-H_fH8b2v9fM2v0vAZHtNDS4xC",
+      "url": "https://drive.google.com/file/d/11Ve7_g-H_fH8b2v9fM2v0vAZHtNDS4xC/view?usp=drivesdk"
+    }
+  ]
+}

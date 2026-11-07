@@ -1,0 +1,5 @@
+issue_id,severity,incoming_R0_C4_status,C5_owner_disposition,evidence,independent_verification
+R0-C3-P1-01,P1,REOPENED,ADDRESSED_PENDING_R0_VERIFICATION,"S09/S10 exact enums; B01/B03 exact pair fields; YAML selected enum/context matrix; 84 CSV cells; condition-identity and fail-hard static oracle",PENDING
+R0-C3-P1-02,P1,CLOSED,UNCHANGED_CLOSED,"Binary64 F-35 block and tie policy copied with provenance-only substitutions",NOT_REOPENED_BY_C5
+R0-C3-P2-01,P2,CLOSED,UNCHANGED_CLOSED,"All-state disclosures retained",NOT_REOPENED_BY_C5
+R0-C3-P2-02,P2,CLOSED,UNCHANGED_CLOSED,"C2 witness and claim boundary retained",NOT_REOPENED_BY_C5

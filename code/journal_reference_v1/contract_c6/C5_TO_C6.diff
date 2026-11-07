@@ -1,0 +1,160 @@
+--- C5/MODEL_SPEC_JOURNAL_V1_R1C5.md
++++ C6v1.1/MODEL_SPEC_JOURNAL_V1_R1C6.md
+@@ -1,9 +1,9 @@
+-# MODEL_SPEC_JOURNAL_V1_R1C5
+-
+-- Specification ID: `EMBORA-MSJ1-2026-09-24-R1C5`
+-- Review package ID: `EMBORA-R0PKG-2026-09-24-C5`
++# MODEL_SPEC_JOURNAL_V1_R1C6
++
++- Specification ID: `EMBORA-MSJ1-2026-10-04-R1C6-v1.1`
++- Review package ID: `EMBORA-R0PKG-2026-10-04-C6-v1.1`
+ - Claim contract: `EMBORA-CC-2026-09-24-R1C5`
+-- Status: **C5 DELTA-REVISION CANDIDATE; TARGETED R0 C5 PENDING; U1 NOT APPROVED**
++- Status: **C6 NUMERICAL CANDIDATE / NOT_ADOPTED; TARGETED R0 AND AUTHOR U1 ADDENDUM PENDING**
+ - Model family: prospective `journal_reference_v1`; no implementation or empirical evidence is asserted.
+ - Normative UG adapter: `normative_resisted_inequity_v1`. C2 adapters A/B are sensitivity-only and cannot be selected as the reference rule.
+ 
+@@ -11,27 +11,28 @@
+ 
+ ## S00 — Authority, scope and normative ownership
+ 
+-The [C4 decision record](https://drive.google.com/file/d/1OLKGRr1ebA3Mi2I_YIqpyrG2MwGpBdAo/view) authorizes only a contract-level repair of two R0 C3 P1 defects and disposition of two P2s. The C3 scientific semantics remain parent authority. RUN_BOARD has a stale C4 status; independent R0 C4 returned REVISE. C5 requires a new targeted R0 C5 and then Coordinator consolidation and explicit final author U1 before implementation. No test, pilot, experiment or reference-model code was run or created for this package. Arithmetic tables and proofs below are specification oracles, not observed results.
++C6 v1.1 responds only to R0-C6-P1-01/P2-01/P2-02 under Coordinator disposition EMBORA-COORD-R0C6-DISPOSITION-2026-10-04-v1.0. Preexisting P2-C5-P1-01 remains CONFIRMED OPEN. C5 was independently reviewed PASS_TO_U1 and author U1 APPROVED. C5 artifacts and U1 remain unchanged. Author has not adopted C6. Owner arithmetic checks are specification fixtures, not production conformance, independent R0 or empirical evidence.
++NUMERICAL_CONTRACT_C6.md is the sole proposed numerical policy; PARAMETER_TABLE_R1C6.yaml is the derivative schema. Other normative scientific sources below retain exact C5 bytes/IDs under UPSTREAM_C5. Their historical pending labels do not determine live gates. Claims/frame/adapters remain pinned.
+ 
+ Normative ownership is exclusive:
+ 
+ | Subject | Sole normative source |
+ |---|---|
+ | Equations, branches, clipping, event timing, payloads, invariants, test-oracle definitions | This file, S01–S12; formula IDs F-01…F-35 |
+-| Numeric constants, closed enums, parameter domains, serialized reference defaults | `PARAMETER_TABLE_R1C5.yaml` |
++| Numeric constants, closed enums, parameter domains, serialized reference defaults | `PARAMETER_TABLE_R1C6.yaml` |
+ | Exact baseline policies, comparator scope, deterministic condition frame and pairing roster | `BASELINE_AND_COMPARATOR_MATRIX_R1C5.md`, B01–B05 |
+ | Estimands, exclusions, rankings, multiplicity, sensitivity and claim promotion | `CLAIM_CONTRACT_R1C5.md`, C0–C5 |
+ | Historical formula/code provenance and mapping to future acceptance tests | `FORMULA_CODE_TRACEABILITY_R1C5.csv`; pointers are historical, not new code |
+ 
+ Tables of numeric examples are derived oracles, never an alternative definition. A mismatch between an oracle and its normative formula is a defect requiring a new version, not permission to choose one silently. Other documents reference these sources instead of redefining formulas.
+ 
+-Frozen C1, C2 and C3 remain unchanged. C4 changes no C3 scientific formula: it repairs selected-adapter validation, makes the already accepted tie rule executable without normalization cancellation, discloses analytic limitations, and corrects the C2 comparison in the brief. Historical evidence is not reanalysed or transferred. EUMAS is treated as accepted/unpublished under the governing freeze; no new public bibliographic status is asserted.
++Frozen C1-C5 remain unchanged. Exact changes and unchanged section hashes are in C5_TO_C6.diff and PINNED_SECTIONS_C6.json; dependencies in AUTHOR_IMPACT_AND_DEPENDENCIES_C6.md. No scientific equation, constant, adapter, F-35 scientific choice, claim or finite frame changes.
+ 
+ <a id="s01"></a>
+ 
+ ## S01 — Numeric and state domain
+ 
+-Write clip[a,b](z)=min(b,max(a,z)). Validate finite inputs and declared domains **before** applying model clipping; clipping never repairs an illegal action or malformed state. Scientific equations are real-valued. Executable branch inputs are the post-clipping IEEE-754 binary64 priorities and the exact enum votes. F-35 uses the explicitly specified `math.fsum` numerator below; there is no tolerance or epsilon in a branch predicate. Exact decimal/rational fixtures remain scientific oracles and must be replayed through the declared binary64 input conversion.
++Write clip[a,b](z)=min(b,max(a,z)). Validate finite inputs and declared domains before clipping. Scientific equations and exact rational fixtures remain real layer I oracles, including +/-7/40. NUMERICAL_CONTRACT_C6 defines layer R (real equations on rounded inputs) and layer B (ordered executable graph). Continuous implementation comparisons retain abs/rel 1e-12 against independent B; I/R/B bounds are separate diagnostics. Identity, votes, categories and branches are exact, branch tolerance zero. F-35 retains fixed-K math.fsum and N-only sign/tie. The numerical policy explicitly defines RN nodes, identity, no FMA/fast-math/reassociation and qualified runtime assumptions; no universal bitwise promise.
+ 
+ State x_i(t-1) is the immutable state entering round t; x_i(t) is the state after its single outcome update. This eliminates C1's ambiguous reuse of t as both the first round and the initialized state. The ordered value keys K are `material, fairness, relationship, safety` (YAML). v_k∈[0,1], desired d_k=1, raw priorities p_k are positive finite reals, mood m∈[-.5,.5], fatigue f∈[0,1]. Resources and aggregates are derived, never independently chosen:
+ 
+@@ -134,7 +135,7 @@
+ 
+ The directional comparison prevents larger numeric range in one operational channel from silently determining all trade-offs. It intentionally discards between-channel cardinal magnitude at the final vote; that design choice is a falsifiable contract limitation. F-09 remains the cardinal post-outcome valence after the actually realized action and is not added to F-35.
+ 
+-The following partition is valid for **every legal pre-state**, not only `v_k=.5`. For fixed `v`, the F-07/F-08 signed-appraisal map is strictly increasing in candidate `q` on `[0,1]`, including `v=0`, `v=1` and epsilon-denominator branches. Hence `z_k=sign(q_accept,k-q_reject,k)` and is independent of current value state, mood, fatigue, personality and intensity. Offers 2 and 8 under N/B have `(material:+1,fairness:-1,relationship:+1,safety:+1)`; offers 3–7 have `(+1,+1,+1,+1)`. Therefore:
++The following partition is valid for **every legal pre-state**, not only `v_k=.5`. For fixed `v`, the real-valued F-07/F-08 signed-appraisal map is strictly increasing in candidate `q` on `[0,1]`, including `v=0`, `v=1` and epsilon-denominator branches. Hence `z_k=sign(q_accept,k-q_reject,k)` and is independent of current value state, mood, fatigue, personality and intensity. Offers 2 and 8 under N/B have `(material:+1,fairness:-1,relationship:+1,safety:+1)`; offers 3–7 have `(+1,+1,+1,+1)`. Therefore:
+ 
+ | Priority profile | offer 2 | offers 3–7 | offer 8 | exact N_VS / D_VS at 2/8 |
+ |---|---|---|---|---:|
+@@ -147,6 +148,8 @@
+ For fairness_high, binary64 inputs `(0.5,1.5,0.5,0.5)` and fixed-order votes `(+1,-1,+1,+1)` yield `math.fsum(0.5,-1.5,0.5,0.5)==0.0`; the exact scientific fixture and executable tie/category therefore agree. Recomputing the sign from normalized sixths is forbidden because it recreates the C3 cancellation defect. Permuting serialized map keys changes neither the K-vector nor the result.
+ 
+ This tie is the boundary of the legal clipped-priority domain: `N_VS=p_m+p_r+p_s-p_f>=3p_min-p_max=0`. Replacing `p_f=1.5` by its immediate lower binary64 neighbor, or replacing any other `.5` by its immediate higher neighbor, gives `N_VS>0` and accept. No legal priority perturbation gives `N_VS<0`; a negative-number branch oracle is therefore helper-level only and must not be described as a legal model state.
++
++Executable qualification: arbitrary nextafter targets need not remain strictly ordered after rounding. The frozen UG grid retains its exact votes by the C6 separation proof (same-offer/channel minima N=1/5, A=1/4, B=1/10; global executable margin alpha_B/10 - 2*(8eta/epsilon_B+4alpha_B*eta/epsilon_B)>0.0349999958255614). Code still compares rounded appraisals, not raw q. Candidate and realized paths share the same helper and exact q=v identity; vhat preserves the IEEE input-v sign of zero while Delta and signed/absolute urgency are +0. Actual I/conversion/total residuals are unavailable for unknown-origin rows; the reference/schema keep R/B/B-R and do not invent I. Fixture enumeration supplements, rather than replaces, the uniform proof.
+ 
+ Under sensitivity A all four votes are positive for every legal offer, so A always proposes accept. N and B have identical proposal partitions across the legal grid, although their candidate magnitudes, realized updates, subsequent state/history and F-14 branch selection can differ. For the responder the material and safety action gaps are both `o/8`: they cast the same payoff direction under separately named priorities. This is directional redundancy, not repeated multiplication of `pbar`. The `material_only` switch acts at F-32 on realized applied targets; it does not delete fairness, relationship or safety from F-35 candidate voting.
+ 
+@@ -315,7 +318,7 @@
+ 
+ **F-32:** q is the immutable validated output of S05. Compute a separate applied q_star: under full and all variants except material_only, q_star=q; under material_only, q_star_material=q_material and q_star_k=v_k for the other three keys. Never mutate q. Both vectors and switch identity are logged. In subsequent rounds raw q may differ if earlier interventions changed actions; same-q invariance is a same-input, one-step assertion.
+ 
+-**F-05:** v'_k=clip[0,1]((1−alpha)v_k+alpha q_star_k); Δ_k=v'_k−v_k. The clip is a bounded model operation, not validation. For valid inputs the convex combination is already in [0,1].
++**F-05:** v'_k=clip[0,1]((1−alpha)v_k+alpha q_star_k); Δ_k=v'_k−v_k. The clip is a bounded model operation, not validation. For valid inputs the convex combination is already in [0,1]. C6 executable graph adds common exact q_star=v identity and ordered literal RN nodes otherwise; no alpha-bound snap.
+ 
+ **F-07/F-08:** u_signed_k=min(1,|Δ_k|/max(epsilon,|d_k−v_k|)) if Δ_k>0; −min(1,|Δ_k|/max(epsilon,v_k)) if Δ_k<0; 0 if Δ_k=0. u_k=|u_signed_k|.
+ 
+@@ -331,11 +334,13 @@
+ 
+ ### S06-D — F-07/F-08 domain proof and corrected R0 wording
+ 
+-Production has d=1 and Δ=alpha(q_star−v), alpha fixed between 0 and 1. If v=1 then Δ≤0: a **positive** gain at exact desired value is unreachable. If v=0 then Δ≥0: a **negative** loss at zero is unreachable. From strictly interior neutral initialization and alpha<1, exact endpoints remain unattainable in finite exact-arithmetic time, though legal injected endpoint states are valid fixtures.
++The real-valued production model has d=1 and Δ=alpha(q_star−v), alpha fixed between 0 and 1. If v=1 then Δ≤0: a **positive** gain at exact desired value is unreachable. If v=0 then Δ≥0: a **negative** loss at zero is unreachable. From strictly interior neutral initialization and alpha<1, exact endpoints remain unattainable in finite exact-arithmetic time, though legal injected endpoint states are valid fixtures.
+ 
+ It does **not** follow that the epsilon-denominator branch is unreachable. In-domain counterexample: v=1−epsilon/2,q_star=1 gives Δ=alpha·epsilon/2>0 and denominator epsilon, so u_signed=alpha/2. Similarly v=epsilon/2,q_star=0 gives u_signed=−alpha/2. These are legal injected states; neutral-reachable finite-horizon prevalence is unknown. The broad epsilon-unreachable assertion in R0 is refined, not copied as a false proof.
+ 
+ For Δ>0, q_star−v≤1−v; for Δ<0, v−q_star≤v. Hence |u_signed|≤alpha under this update, including the epsilon case. The outer saturation at 1 is unreachable in production with fixed alpha<1. Likewise L≤alpha and |V|≤alpha; the generic [-1,1] output envelope is conservative. With current chi_2, rho clipping is unreachable in production. F-12 clipping is also inactive inside its tighter S03-U envelope. These clips are defensive helper branches, not active mechanisms offered as C3 evidence.
++
++C6 executable qualification: exact-alpha inequalities above are real statements, not hard rounded scalar guards. Rounded vhat in [0,1] and urgency in [-1,1] remain exact guards; |u_B|<=alpha_B+8*2^-52/epsilon_B is a derived diagnostic envelope, never a comparison tolerance or clip. C6 independently separates input/arithmetic residuals, preserves exact identity and proves fixed-alpha rounded endpoint nonreachability, interior stagnation and finite input-conversion saturation. Neutral-frame prevalence remains unknown.
+ 
+ Helper domain for urgency tests is independently supplied finite prev,current,desired∈[0,1], epsilon>0, without requiring F-05 correspondence. Gain at prev=desired=.5,current=.6 activates epsilon and saturates at 1: valid helper-only, invalid production d and recurrence. A loss with prev=0,current<0 is invalid even as a helper and must fail, not be coerced. Helper tests do not count as production branch reachability.
+ 
+@@ -426,11 +431,11 @@
+ | AT-LEAK | Enumerate S04-O allowlist; add each denied field at top/nested levels and require failure; hold public payload fixed while changing opponent private data and require identical own trace. |
+ | AT-UG-ADAPTER | Enumerate all 84 selected-adapter vectors in UG_OUTCOME_TABLE (3x7x2x2), each admitted exactly in its authorized context; all targets in [0,1]; N r monotone in |E-2o|, symmetric endpoints and offer-5 zero; three IDs/keys distinct; role swap retains seat semantics; priorities/state/impulse changes leave raw rows identical. Candidate and realized vectors both equal the selected-adapter row. |
+ | AT-ADAPTER-PDBOS | S05-G enumeration; equality score after PD DD/BoS mismatch explicitly retained; positive payoff/regret ranges verified analytically. |
+-| AT-URGENCY | Δ signs/zero, legal endpoints, near-epsilon ±alpha/2, proof of impossible endpoint signs and production saturation; separately labelled wider-helper saturation. No fabricated production coverage. |
++| AT-URGENCY | Δ signs/zero, legal endpoints, scientific near-epsilon ±alpha/2 plus independent C6 B oracles, conversion/arithmetic diagnostics, identity/epsilon/endpoint nextafter cases; impossible endpoint signs and executable bounds; separately labelled wider-helper saturation. No fabricated production coverage. |
+ | AT-FOCUS | Equal positive material/fairness weights→material; fairness/relationship→fairness; all-zero→null; permuted serialized map fields leave K-ordered output unchanged. |
+ | AT-THRESHOLD | Exact m at both cuts and r at cut gives zero offset; below/above changes correct modifier; |iota|=theta→R; legal state fixture (.5,.9,.5, pessimistic/high) in order (m,f,W) gives iota=.2775,theta=.27725: full E=C, fixed threshold R=D. |
+ | AT-PD | Equality at iota emotional cut→C and S rational cut→C; rational_only always D; emotional_only aR diagnostic follows the hybrid S rule. |
+-| AT-STATE | F-05/06/09/11/12/22–27 exact component substitution; nonnegative fatigue increment terms and recovery; saturation/zero endpoints; helper-only clipping explicitly labelled. |
++| AT-STATE | F-05/06/09/11/12/22–27 scientific exact substitution plus C6 ordered executable comparison and bound diagnostics; nonnegative fatigue increment terms and recovery; saturation/zero endpoints; helper-only clipping explicitly labelled. |
+ | AT-SUPPRESSION | Same pre-state v=.5,m=.2,f=.5,neutral/neutral gives iota=.025,aE=C,aR=D,a=D; preclip fatigue difference=.00075. Same sigma=0 inputs give identical outputs; saturated outputs use clip difference; inherited unequal states need not reconverge. |
+ | AT-MATERIAL | Identical one-step input produces identical raw q and identical four-channel F-35 candidates/votes in full/material_only; q_star nonmaterial equals pre-v; exactly those realized Δ=0; material Δ unchanged; later divergence permitted. `material_only` is not a candidate-vote deletion. |
+ | AT-SWITCH | Each S08 intervention changes only its stated entry point and descendants; opponent configuration fixed; no_suppression cannot change current action. Full traces expose raw and projected quantities. |
+@@ -455,4 +460,4 @@
+ 
+ ## S14 — Gate boundary
+ 
+-This revision owner does not close targeted R0 C5 or U1. R0 must independently assess selected-adapter validation, all 84 vectors, F-35 binary64 numerator/tie/logging semantics, one-sided legal boundary neighbors, universal vote reductions, the corrected C2 witness, and unchanged C3 scope. Human verification is one concise U1 note. Disclosure/editor decisions remain at the manuscript/compliance stage; no correspondence or scientific figure was produced here.
++Owner does not close P2-C5-P1-01, R0 C6 or author adoption. Independent targeted R0 must challenge graph, error bounds, identity, reachability, labels, F-35 separation, full diff and pinned sections. Coordinator verifies the exact reviewed package before short author U1 addendum. C6 is not a baseline for Engineer/PAP before adoption. No pilot, full runs, code freeze, claim promotion or submission is authorized.
+--- C5/PARAMETER_TABLE_R1C5.yaml
++++ C6v1.1/PARAMETER_TABLE_R1C6.yaml
+@@ -1,6 +1,6 @@
+-schema_id: EMBORA-PARAMS-2026-09-24-R1C5
+-specification_id: EMBORA-MSJ1-2026-09-24-R1C5
+-status: c4_review_candidate_not_executable_until_targeted_R0_and_final_U1
++schema_id: EMBORA-PARAMS-2026-10-04-R1C6-v1.1
++specification_id: EMBORA-MSJ1-2026-10-04-R1C6-v1.1
++status: c6_numeric_candidate_not_adopted_pending_targeted_R0_and_author_U1_addendum
+ authority: Numeric constants and configuration domains only; equations and branches belong to MODEL_SPEC S01-S12.
+ parameter_rule: All constants are fixed in this release except choices and frame factors explicitly enumerated below. General mathematical helper domains do not authorize run overrides.
+ enums:
+@@ -170,7 +170,7 @@
+   horizon: integer 1..100000 for structural fixtures; otherwise only declared reference/sensitivity horizons
+   current_offer: integer member of exact ug_legal_offers; bool is not integer
+   candidate_q: exactly the raw vector emitted by selected_adapter_convention for the same role current_offer and candidate action; selected adapter is the sole source for both candidate and realized q; each component in [0,1]
+-  candidate_uhat_signed: each component in [-0.35,0.35] on the production recurrence
++  candidate_uhat_signed: 'scientific |u|<=alpha; executable exact [-1,1] and diagnostic |u_B|<=alpha_B+8*2^-52/epsilon_B; no alpha snapping'
+   channel_comparison: each component exactly one of [-1,0,1]
+   N_VS: '[-6,6] from four p_clip terms in [-1.5,1.5]; binary64 zero is tie and rejects'
+   D_VS: '[-1,1]; normalized diagnostic only; sign and tie are copied from N_VS, never recomputed from normalized terms'
+@@ -187,8 +187,14 @@
+   diagnostic_division: one binary64 division D_VS=N_VS/diagnostic_denominator
+   diagnostic_category: copy sign/tie label derived from N_VS; do not resummate pbar*z or inspect D_VS sign independently
+   comparison_tolerance: {absolute: 0.000000000001, relative: 0.000000000001}
++  comparison_target: independently_generated_executable_layer_B
++  comparison_rule: abs_error_le_max_absolute_relative_times_max_abs_pair
++  numeric_policy_id: EMBORA-NUMERIC-2026-10-04-C6-v1.1
++  identity_projection: exact_binary64_q_equals_v_bit_preserving_input_v_copy_including_negative_zero_and_positive_zero_delta_signed_absolute_urgency_on_both_paths
++  scientific_numeric_residuals: known_origin_only_I_input_total_residuals_and_bounds_unknown_origin_R_B_arithmetic_only_never_implementation_tolerance
++  reference_ieee_metadata: exact_dyadic_rational_plus_sign_bit_full_64bit_word_hex_signed_zero_checked_by_bits
+   branch_tolerance: 0
+-  scientific_branch_fixtures: exact decimals/rationals remain scientific oracles; their post-clipping binary64 executable inputs are evaluated by branch_sum
++  scientific_branch_fixtures: exact layer I scientific oracles preserved; independent layer B per NUMERICAL_CONTRACT_C6; exact branch comparisons
+   boundary_policy: no epsilon; normative N/B tie is a clipped-domain boundary with legal neighbors only on the positive side; negative-sign branch coverage is helper-level and not labelled a legal priority fixture
+   map_key_order: lexicographic for canonical JSON serialization, not appraisal tie selection
+   json: RFC8259 finite numbers; no NaN; no duplicate keys; compact separators; preserve array order
+@@ -201,8 +207,8 @@
+     BoS: '{name: O|F}; no other fields'
+     UG_proposer: '{name: offer, offer: integer}; no other fields'
+     UG_responder: '{name: accept|reject}; no other fields'
+-  observation_schema_id: EMBORA-OBS-R1C5
+-  result_schema_id: EMBORA-RESULT-R1C5
++  observation_schema_id: EMBORA-OBS-2026-10-04-R1C6-v1.1
++  result_schema_id: EMBORA-RESULT-2026-10-04-R1C6-v1.1
+ effective_config_contract:
+   required_no_default:
+     - schema_id

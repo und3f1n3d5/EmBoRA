@@ -1,0 +1,317 @@
+{
+  "schema_version": "EMBORA-SCHEMA-P2-C5-DRAFT-v1.0",
+  "status": "DRAFT_PARTIALLY_TESTED_NOT_ACCEPTED",
+  "effective_config": {
+    "required_no_default": [
+      "schema_id",
+      "specification_id",
+      "condition_id",
+      "pair_id",
+      "game",
+      "agents",
+      "focal_agent_id",
+      "selected_adapter_convention",
+      "run_purpose"
+    ],
+    "required_agent_fields": [
+      "agent_id",
+      "seat",
+      "role",
+      "controller_type"
+    ],
+    "model_agent_resolved_fields": [
+      "kind",
+      "personality",
+      "intensity",
+      "variant",
+      "priority_profile",
+      "initial_primary_state"
+    ],
+    "baseline_required_field": "baseline_id",
+    "baseline_model_fields": "forbidden",
+    "agent_default_resolution": {
+      "kind": "hybrid",
+      "personality": "neutral",
+      "intensity": "neutral",
+      "variant": "full",
+      "priority_profile": "equal",
+      "initial_primary_state": "initial_primary_defaults"
+    },
+    "common_default_resolution": {
+      "model_mode": "journal_reference_v1",
+      "horizon": 200,
+      "stochastic_mode": "none",
+      "rng_algorithm": null,
+      "stream_id": null,
+      "replicate_id": null,
+      "training": false,
+      "dqn_config": null,
+      "refocus_config": null
+    },
+    "manifest_must_embed": [
+      "full_resolved_effective_config_including_defaults",
+      "constants_and_enum_versions",
+      "c4_author_decision_id",
+      "adapter_id_and_config_key",
+      "spec_and_parameter_SHA256",
+      "code_commit_and_dirty_state",
+      "dependency_lock_hash",
+      "pairing_and_data_generating_process_descriptor"
+    ],
+    "run_authorized": false
+  },
+  "constants_and_enums": {
+    "model_mode": [
+      "journal_reference_v1"
+    ],
+    "game": [
+      "PD",
+      "BoS",
+      "UG"
+    ],
+    "agent_id": [
+      1,
+      2
+    ],
+    "seat": [
+      1,
+      2
+    ],
+    "role_by_game": {
+      "PD": [
+        "player"
+      ],
+      "BoS": [
+        "player"
+      ],
+      "UG": [
+        "proposer",
+        "responder"
+      ]
+    },
+    "model_kind": [
+      "hybrid",
+      "emotional_only",
+      "rational_only"
+    ],
+    "controller_type": [
+      "model",
+      "baseline"
+    ],
+    "personality": [
+      "pessimistic",
+      "neutral",
+      "optimistic"
+    ],
+    "intensity": [
+      "low",
+      "neutral",
+      "high"
+    ],
+    "variant": [
+      "full",
+      "no_suppression",
+      "no_mood",
+      "no_fatigue",
+      "fixed_threshold",
+      "material_only"
+    ],
+    "selected_adapter_convention": [
+      "normative_resisted_inequity_v1",
+      "sensitivity_zero_exchange_v1",
+      "sensitivity_neutral_no_exchange_v1"
+    ],
+    "run_purpose": [
+      "confirmatory_frame",
+      "sensitivity",
+      "structural_fixture"
+    ],
+    "stochastic_mode": [
+      "none"
+    ],
+    "value_keys_order": [
+      "material",
+      "fairness",
+      "relationship",
+      "safety"
+    ],
+    "k_star": [
+      "material",
+      "fairness",
+      "relationship",
+      "safety",
+      null
+    ],
+    "selected_branch": [
+      "E",
+      "R",
+      "fixed"
+    ],
+    "baseline_id": {
+      "PD": [
+        "PD_AllC",
+        "PD_AllD",
+        "PD_TFT",
+        "PD_WSLS"
+      ],
+      "BoS": [
+        "BoS_Opera",
+        "BoS_Fight",
+        "BoS_Convention"
+      ],
+      "UG_proposer": [
+        "UG_Offer2",
+        "UG_Offer4",
+        "UG_Offer5",
+        "UG_Offer8",
+        "UG_Cycle"
+      ],
+      "UG_responder": [
+        "UG_AcceptAll",
+        "UG_RejectAll",
+        "UG_Threshold4",
+        "UG_Threshold5"
+      ]
+    }
+  },
+  "initial_primary": [
+    "v",
+    "d",
+    "p",
+    "m",
+    "f"
+  ],
+  "derived_state_fields": [
+    "pbar",
+    "r",
+    "W",
+    "Wtilde",
+    "S"
+  ],
+  "state_fixed_fields": [
+    "personality",
+    "intensity"
+  ],
+  "observation_required": [
+    "schema_id",
+    "game",
+    "round",
+    "horizon",
+    "agent_id",
+    "seat",
+    "role",
+    "game_parameters",
+    "legal_actions",
+    "history"
+  ],
+  "observation_conditional": "current_offer required only UG responder; forbidden otherwise",
+  "history_entry_exact": [
+    "round",
+    "actions_by_seat",
+    "payoffs_by_seat"
+  ],
+  "result_exact": [
+    "schema_id",
+    "game",
+    "round",
+    "agent_id",
+    "seat",
+    "role",
+    "actions_by_seat",
+    "payoffs_by_seat"
+  ],
+  "decision_exact": [
+    "aE",
+    "aR",
+    "selected_branch",
+    "proposals_differ",
+    "action",
+    "iota",
+    "rho",
+    "theta",
+    "theta_reference",
+    "impulse_mode",
+    "source_pre_state",
+    "decision_pre_state",
+    "choice",
+    "selected_adapter_convention",
+    "adapter_id"
+  ],
+  "choice_exact": [
+    "candidates",
+    "p_clip",
+    "z",
+    "N_VS",
+    "P_VS",
+    "D_VS",
+    "category",
+    "action"
+  ],
+  "candidate_exact": [
+    "adapter_id",
+    "selected_adapter_convention",
+    "q",
+    "vhat",
+    "Deltahat",
+    "uhat_signed"
+  ],
+  "realized_model_update_exact": [
+    "raw_q",
+    "q_star",
+    "delta",
+    "u_signed",
+    "u",
+    "V",
+    "L",
+    "k_star",
+    "rho",
+    "sigma",
+    "Csup_raw",
+    "Csup_applied",
+    "mood_preclip",
+    "fatigue_preclip",
+    "unprojected_post_state",
+    "post_state",
+    "adapter_id",
+    "selected_adapter_convention",
+    "variant",
+    "update_count"
+  ],
+  "private_round_exact": [
+    "schema_id",
+    "specification_id",
+    "condition_id",
+    "pair_id",
+    "episode_id",
+    "model_mode",
+    "game",
+    "round",
+    "selected_adapter_convention",
+    "selected_adapter_id",
+    "run_purpose",
+    "administrative_authority",
+    "agent_descriptors_by_seat",
+    "observations_by_seat",
+    "pre_states_by_seat",
+    "decisions_by_seat",
+    "actions_by_seat",
+    "payoffs_by_seat",
+    "results_by_seat",
+    "updates_by_seat",
+    "post_states_by_seat",
+    "intervention",
+    "event_order",
+    "event_counters",
+    "failure_status"
+  ],
+  "validation_owners": {
+    "config": "schema.py::validate_config",
+    "state": "schema.py::State.from_dict",
+    "observation": "games.py::validate_observation",
+    "result": "games.py::Result.validate",
+    "decision": "model.py::Agent.prepare_update (exact recomputation)",
+    "candidate": "model.py::validate_choice (exact recomputation)"
+  },
+  "counter_semantics": "one external execute; both results built before either update; atomic both-state commit; NOT YET EXECUTION TESTED",
+  "known_limits": "Full log/event/trace validation and schema acceptance remain NOT_RUN. The field inventory describes draft code, not passing S04/S09 coverage."
+}

@@ -1,0 +1,281 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "EMBORA-SOURCE-CONFIG-C6-v1.0",
+  "title": "Source config with only YAML-declared defaults optional",
+  "description": "Complete structural inventory; cross-field, exact-bit, context and operation-graph invariants are enforced by the closed Python validators and CLI.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "specification_id",
+    "condition_id",
+    "pair_id",
+    "game",
+    "agents",
+    "focal_agent_id",
+    "selected_adapter_convention",
+    "run_purpose"
+  ],
+  "properties": {
+    "agents": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "agent_id",
+              "seat",
+              "role",
+              "controller_type"
+            ],
+            "properties": {
+              "agent_id": {
+                "type": "integer"
+              },
+              "controller_type": {
+                "type": "string",
+                "enum": [
+                  "model",
+                  "baseline"
+                ]
+              },
+              "initial_primary_state": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "d",
+                  "f",
+                  "m",
+                  "p",
+                  "v"
+                ],
+                "properties": {
+                  "d": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "fairness",
+                      "material",
+                      "relationship",
+                      "safety"
+                    ],
+                    "properties": {
+                      "fairness": {
+                        "type": "number"
+                      },
+                      "material": {
+                        "type": "number"
+                      },
+                      "relationship": {
+                        "type": "number"
+                      },
+                      "safety": {
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "f": {
+                    "type": "number"
+                  },
+                  "m": {
+                    "type": "number"
+                  },
+                  "p": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "fairness",
+                      "material",
+                      "relationship",
+                      "safety"
+                    ],
+                    "properties": {
+                      "fairness": {
+                        "type": "number"
+                      },
+                      "material": {
+                        "type": "number"
+                      },
+                      "relationship": {
+                        "type": "number"
+                      },
+                      "safety": {
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "v": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "fairness",
+                      "material",
+                      "relationship",
+                      "safety"
+                    ],
+                    "properties": {
+                      "fairness": {
+                        "type": "number"
+                      },
+                      "material": {
+                        "type": "number"
+                      },
+                      "relationship": {
+                        "type": "number"
+                      },
+                      "safety": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              },
+              "intensity": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "neutral",
+                  "high"
+                ]
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "hybrid",
+                  "emotional_only",
+                  "rational_only"
+                ]
+              },
+              "personality": {
+                "type": "string",
+                "enum": [
+                  "pessimistic",
+                  "neutral",
+                  "optimistic"
+                ]
+              },
+              "priority_profile": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "seat": {
+                "type": "integer"
+              },
+              "variant": {
+                "type": "string",
+                "enum": [
+                  "full",
+                  "no_suppression",
+                  "no_mood",
+                  "no_fatigue",
+                  "fixed_threshold",
+                  "material_only"
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "agent_id",
+              "seat",
+              "role",
+              "controller_type",
+              "baseline_id"
+            ],
+            "properties": {
+              "agent_id": {
+                "type": "integer"
+              },
+              "baseline_id": {
+                "type": "string"
+              },
+              "controller_type": {
+                "type": "string",
+                "enum": [
+                  "model",
+                  "baseline"
+                ]
+              },
+              "role": {
+                "type": "string"
+              },
+              "seat": {
+                "type": "integer"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "condition_id": {
+      "type": "string"
+    },
+    "dqn_config": {
+      "type": "null"
+    },
+    "focal_agent_id": {
+      "type": "integer"
+    },
+    "game": {
+      "type": "string",
+      "enum": [
+        "PD",
+        "BoS",
+        "UG"
+      ]
+    },
+    "horizon": {
+      "type": "integer"
+    },
+    "model_mode": {
+      "type": "string"
+    },
+    "pair_id": {
+      "type": "string"
+    },
+    "refocus_config": {
+      "type": "null"
+    },
+    "replicate_id": {
+      "type": "null"
+    },
+    "rng_algorithm": {
+      "type": "null"
+    },
+    "run_purpose": {
+      "enum": [
+        "confirmatory_frame",
+        "sensitivity",
+        "structural_fixture"
+      ]
+    },
+    "schema_id": {
+      "const": "EMBORA-PARAMS-2026-10-04-R1C6-v1.1"
+    },
+    "selected_adapter_convention": {
+      "enum": [
+        "normative_resisted_inequity_v1",
+        "sensitivity_zero_exchange_v1",
+        "sensitivity_neutral_no_exchange_v1"
+      ]
+    },
+    "specification_id": {
+      "const": "EMBORA-MSJ1-2026-10-04-R1C6-v1.1"
+    },
+    "stochastic_mode": {
+      "type": "string"
+    },
+    "stream_id": {
+      "type": "null"
+    },
+    "training": {
+      "type": "boolean"
+    }
+  }
+}
