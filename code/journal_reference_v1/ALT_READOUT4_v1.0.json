@@ -1,0 +1,16 @@
+{
+  "id": "EMBORA-ALT-READOUT4-ADDENDUM-v1.0",
+  "author_disposition": "ADOPTED_2026-11-08",
+  "protocol_id": "EMBORA-P3-PAP-2026-10-18-C6-P2v1.4-v1.0",
+  "protocol_raw_sha256": "e093a94888ef4f510aeb4cfd3e035022245d260672a204c7d8361988fef40b80",
+  "scope": "registered lambda/component readouts only; no new interactions",
+  "alternative_delta_Q_divisor": 4,
+  "cutoff": 1e-9,
+  "equality": "tie",
+  "aggregation": "post-round mean t=1..T; no S0",
+  "production_context": "primary confirmatory T200/N; separate axes unchanged",
+  "legacy_export": "ANALYSIS_C6_v1.0 unchanged; alternative fields remain unavailable in that historical interface",
+  "successor_export": "EMBORA-ADMITTED-ALTERNATIVES-C6-v1.1",
+  "primary_Q_divisor": 4,
+  "execution_authorized": false
+}
